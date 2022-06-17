@@ -1,0 +1,520 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+.micro-response
+{
+	font-family: Arial, Avenir, Myriad;
+	font-size: 11pt;
+}
+
+.micro-response html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+.micro-response html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+.micro-response html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+.micro-response h1
+{
+	font-weight: bold;
+	font-size: 2em;
+	color: #45494c;
+	font-family: Arial, Avenir, Myriad;
+}
+
+.micro-response h2
+{
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+.micro-response h3
+{
+	font-weight: bold;
+	font-size: 1.6em;
+}
+
+.micro-response h4
+{
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.micro-response p
+{
+	font-size: 1em;
+	font-family: 'Roboto Light', Arial, Avenir, Myriad;
+}
+
+.micro-response ol,
+.micro-response ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.micro-response img
+{
+	border: none;
+	max-width: 100%;
+}
+
+.micro-response li
+{
+	margin-bottom: 6pt;
+	margin-top: 6pt;
+}
+
+.micro-response p.note
+{
+	margin-top: 0pt;
+	margin-bottom: 12pt;
+	mc-auto-number-format: '{color red}{b}Note: {/b}{/color} ';
+	padding-left: 0px;
+}
+
+.micro-response a.Popup
+{
+	
+}
+
+.micro-response MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+.micro-response MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+.micro-response MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: #45494c;
+	font-size: 20pt;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+.micro-response MadCap|xref
+{
+	color: #076685;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+.micro-response div.home-layout
+{
+	padding: 2% 5%;
+}
+
+.micro-response div.home-section
+{
+	padding: 5% 0;
+	border-bottom: solid 1px #dadada;
+}
+
+.micro-response div.home-section:last-of-type	/*Removes the border on the last section of the home page*/
+{
+	border-bottom: none;
+}
+
+.micro-response MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #888888;
+}
+
+.micro-response a:link
+{
+	color: #076685;
+}
+
+.micro-response a:visited
+{
+	color: #076685;
+}
+
+.micro-response a:hover
+{
+	color: #076685;
+}
+
+.micro-response a:active
+{
+	color: #a82384;
+}
+
+.micro-response a.home-button
+{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.micro-response MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+.micro-response MadCap|dropDown
+{
+	border-bottom: 1px solid #dadada;
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	padding: 10px 0;
+	mc-closed-image: url('../Images/Home/plus.png');
+	mc-open-image: url('../Images/Home/minus.png');
+}
+
+.micro-response div.topic-hero
+{
+	padding: 5%;
+	background-image: url('../Images/Home/Hero-Background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.micro-response div.topic-hero h1
+{
+	color: #fff;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+.micro-response div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.micro-response div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #b9bec1;
+	padding: 2%;
+	height: 250px;
+}
+
+.micro-response div.home-tiles > div:nth-child(1)
+{
+	width: 30%;
+	margin-left: 19%;
+}
+
+.micro-response div.home-tiles > div:nth-child(2)
+{
+	width: 30%;
+	margin-left: 2%;
+}
+
+.micro-response div.article-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.article-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.article-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.article-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dadada;
+}
+
+.micro-response div.article-tiles > div:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 0.8s cubic-bezier(.25,.8,.25,1);
+}
+
+.micro-response div.article-tiles > div:nth-child(1)
+{
+	width: 18%;
+	margin-left: 0%;
+}
+
+.micro-response div.article-tiles > div:nth-child(2)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+.micro-response div.article-tiles > div:nth-child(3)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+.micro-response div.article-tiles > div:nth-child(4)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+.micro-response div.article-tiles > div:nth-child(5)
+{
+	width: 18%;
+	margin-left: 2%;
+}
+
+.micro-response div.article-tiles img
+{
+	max-width: 90%;
+}
+
+.micro-response div.home-footer	/*Controls the look of the footer in the Home master page.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response div.home-footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response div.home-footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response div.home-footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response div.home-footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+.micro-response div.home-footer > div:nth-child(2)
+{
+	width: 75%;
+	margin-left: 0%;
+}
+
+.micro-response p.footer-sub
+{
+	color: #FFF;
+	font-family: Arial, Avenir, Myriad;
+	font-size: 14pt;
+}
+
+.micro-response .footer
+{
+	background-color: #076685;
+	padding: 25px 25px 10px 25px;
+}
+
+.micro-response .footer-logo
+{
+	max-width: 100%;
+	margin: 0;
+	text-align: left;
+}
+
+.micro-response .footer-links a
+{
+	padding-right: 15px;
+}
+
+.micro-response .footer-icons
+{
+	text-align: right;
+}
+
+.micro-response .footer-icons > a:first-of-type
+{
+	padding-right: 10px;
+}
+
+@media print
+{
+	.micro-response MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width: 1279px)
+{
+	.micro-response .footer
+	{
+		padding: 2% 2% 1%;
+	}
+
+	.micro-response html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	.micro-response div.home-footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.home-footer > div:nth-child(2)
+	{
+		width: 75%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.micro-response div.topic-hero h1
+	{
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	.micro-response div.home-tiles p
+	{
+		line-height: 1.2;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10px;
+	}
+
+	.micro-response div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.article-tiles > div
+	{
+		margin-bottom: 10px;
+	}
+
+	.micro-response div.article-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.article-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.article-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.article-tiles > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.article-tiles > div:nth-child(5)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response div.article-tiles img
+	{
+		width: 75%;
+	}
+
+	.micro-response .footer-icons
+	{
+		text-align: center;
+	}
+
+	.micro-response .footer
+	{
+		padding: 5% 7%;
+		text-align: center;
+	}
+
+	.micro-response .footer-logo
+	{
+		text-align: center;
+	}
+
+	.micro-response div.home-footer > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	.micro-response div.home-footer > div:nth-child(2)
+	{
+		width: 100%;
+		margin: 3% 0;
+	}
+}
+

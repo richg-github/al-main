@@ -1,0 +1,32 @@
+﻿{
+  "Version": "2012-10-17",
+  "Statement": [{
+      "Sid": "1",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::<S3BUCKET_NAME>/*"
+      ]
+    },
+    {
+      "Sid": "2",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::<S3BUCKET_NAME>"
+      ]
+    },
+    {
+      "Sid": "AllowDecryptOfCloudTrailKey",
+      "Action": [
+        "kms:Decrypt"
+      ],
+      "Effect": "Allow",
+      "Resource": "<ARN_FOR_KMS_KEY>"
+    }
+  ]
+}

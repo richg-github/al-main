@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>How Alert Logic sets up CloudTrail</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>How <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets up CloudTrail</h1>
+                                        <p>If you configure an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment in Automatic Mode with the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> CloudFormation template, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets up <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> for you automatically as explained in this document. </p>
+                                        <p>For information about how to configure an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment to take advantage of automatic setup, see <a href="../prepare/aws-full-permission-deployment.htm" class="MCXref xref">Configure AWS Full Permission Deployment</a>.</p>
+                                        <h2><span class="mc-variable ALVariables.AWS variable">AWS</span> account types</h2>
+                                        <p>Explanations that follow refer to these types of <span class="mc-variable ALVariables.AWS variable">AWS</span> accounts:</p>
+                                        <ul>
+                                            <li><b>Protected account</b>—The account protected by <span class="mc-variable ALVariables.Company variable">Alert Logic</span></li>
+                                        </ul>
+                                        <ul>
+                                            <li><b>Receiving account</b>—The account that owns the S3 bucket where a <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> trail is configured to store its log files</li>
+                                        </ul>
+                                        <p>Full permission deployment allows CloudTrail setup in either the protected account or in the separate receiving account (master account for a <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> organization trail). <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets up the CloudTrail  in the receiving account if the user chooses to configure centralized CloudTrail log collection during deployment configuration. </p>
+                                        <h2>Requirements for automatic setup</h2>
+                                        <p>If you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to set up CloudTrail automatically, you must configure a full permission <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment as explained in <a href="../prepare/aws-full-permission-deployment.htm" class="MCXref xref">Configure AWS Full Permission Deployment</a>. </p>
+                                        <p>CloudTrail setup in a receiving account requires that you choose the option for configuring centralized log collection and then provide cross-account credentials, which is also explained  in <a href="../prepare/aws-full-permission-deployment.htm" class="MCXref xref">Configure AWS Full Permission Deployment</a>.</p>
+                                        <p>Full permission deployment grants <span class="mc-variable ALVariables.Company variable">Alert Logic</span> permissions to make these changes to your environment:</p>
+                                        <ul>
+                                            <li> Enable or modify <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> settings</li>
+                                            <li>Create an Amazon SQS queue and an Amazon SNS topic</li>
+                                            <li>Modify permissions</li>
+                                        </ul>
+                                        <p>Organization trails have additional requirements:</p>
+                                        <ul>
+                                            <li>An organization trail must have an existing S3 bucket and SNS topic. If either is missing, setup fails with an error message.</li>
+                                            <li><span class="mc-variable ALVariables.Company variable">Alert Logic</span> can only reuse an organization trail  for multiple regions. Single-region organization trails are not supported. An error occurs and <span class="mc-variable ALVariables.Company variable">Alert Logic</span> does not attempt to reuse any other available trail. </li>
+                                        </ul>
+                                        <p data-mc-conditions="Primary.includeDev">When you create an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> and set up your IAM roles with correct permissions, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> automatically starts collecting CloudTrail logs. Automatic collection requires that you provide access to your:</p>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.includeDev">S3 bucket that stores your CloudTrail logs</li>
+                                            <li data-mc-conditions="Primary.includeDev">SNS topic that receives notifications when log files are delivered</li>
+                                            <li data-mc-conditions="Primary.includeDev">SQS queue subscribed to the SNS topic for the CloudTrail</li>
+                                        </ul>
+                                        <h2><span class="mc-variable ALVariables.Company variable">Alert Logic</span> trail installation</h2>
+                                        <p>If you already have a CloudTrail trail set up in your <span class="mc-variable ALVariables.AWS variable">AWS</span> account, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> tries to reuse the existing trail. If your account does not have a trail set up for delivering <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> events to an Amazon S3 bucket, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates an "AlertLogicCT" trail in your account for you.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> picks a <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> trail for reuse among existing trails according to the following priorities:</p>
+                                        <ol>
+                                            <li value="1">ControlTower organizational trail</li>
+                                            <li value="2">Any other organizational trail</li>
+                                            <li value="3">Trail named "AlertLogicCT"</li>
+                                            <li value="4">Multiregion trail named "Default"</li>
+                                            <li value="5">Any other multiregion cloud trail</li>
+                                            <li value="6">Trail named "Default"</li>
+                                            <li value="7">The first trail from the list sorted by name</li>
+                                        </ol>
+                                        <p>The following table describes how <span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates trails, depending on combinations of whether:</p>
+                                        <ul>
+                                            <li> A trail exists and the type of trail</li>
+                                            <li>An S3 bucket  exists and if it is for the protected or receiving account</li>
+                                            <li>An SNS topic exists and if it is for the protected or receiving account</li>
+                                            <li>Cross-account credentials for centralized log collection exist</li>
+                                        </ul>
+                                        <table style="width: 100%;">
+                                            <col style="width: 84px;" />
+                                            <col style="width: 229px;" />
+                                            <col style="width: 190px;" />
+                                            <col />
+                                            <col style="width: 176px;" />
+                                            <col />
+                                            <col style="width: 32px;" />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>No. </th>
+                                                    <th>Existing Trail</th>
+                                                    <th>Existing S3 Bucket</th>
+                                                    <th>Existing SNS Topic</th>
+                                                    <th>Centralized log collection</th>
+                                                    <th><span class="mc-variable ALVariables.Company variable">Alert Logic</span> S3 Bucket</th>
+                                                    <th><span class="mc-variable ALVariables.Company variable">Alert Logic</span> SNS Topic</th>
+                                                    <th><span class="mc-variable ALVariables.Company variable">Alert Logic</span> SQS Queue</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>No</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                    <td>No</td>
+                                                    <td>protected</td>
+                                                    <td>protected</td>
+                                                    <td>protected</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>No</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                    <td>Yes</td>
+                                                    <td>receiving</td>
+                                                    <td>receiving</td>
+                                                    <td>receiving</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>X</td>
+                                                    <td>No</td>
+                                                    <td>reuse</td>
+                                                    <td>protected</td>
+                                                    <td>protected</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>X</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>protected</td>
+                                                    <td>protected</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>protected</td>
+                                                    <td>No</td>
+                                                    <td>reuse</td>
+                                                    <td>reuse</td>
+                                                    <td>protected</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>protected</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>reuse</td>
+                                                    <td>protected</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Yes</td>
+                                                    <td>receiving</td>
+                                                    <td>any</td>
+                                                    <td>No</td>
+                                                    <td>Missing credentials error</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Yes</td>
+                                                    <td>receiving</td>
+                                                    <td>X</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>receiving</td>
+                                                    <td>receiving</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Yes</td>
+                                                    <td>receiving</td>
+                                                    <td>receiving</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>reuse</td>
+                                                    <td>receiving</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Yes</td>
+                                                    <td>receiving</td>
+                                                    <td>protected</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>reuse</td>
+                                                    <td>receiving</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>receiving</td>
+                                                    <td>No</td>
+                                                    <td>Missing credentials error</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>receiving</td>
+                                                    <td>Yes</td>
+                                                    <td>protected</td>
+                                                    <td>receiving</td>
+                                                    <td>protected</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>Yes (organizational)</td>
+                                                    <td>X</td>
+                                                    <td>No</td>
+                                                    <td>Org. trail without topic error</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>Yes (organizational single region)</td>
+                                                    <td>Org. trail single region error</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>Yes (organizational)</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>reuse</td>
+                                                    <td>master</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>Yes (organizational)</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>Missing credentials error</td>
+                                                    <td>X</td>
+                                                    <td>X</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>Yes (ControlTower)</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>reuse</td>
+                                                    <td>reuse</td>
+                                                    <td>receiving</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>For organizational trails, an existing S3 bucket and SNS topic are required. If either is missing, setup fails with an error message.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> always installs the SQS queue in the same AWS account where the S3 bucket for storing CloudTrail events is located.</p>
+                                        <h3><span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> setup if a trail does not exist </h3>
+                                        <p>If no CloudTrail trail exists in the target AWS account, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets up CloudTrail as follows. </p>
+                                        <p>In these steps, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> replaces placeholder information as follows:</p>
+                                        <ul>
+                                            <li>The customer's account ID replaces <code>[CustomerAccountId]</code>. An example  is 12345678.</li>
+                                            <li> The native AWS account on which the resources exist replaces <code>[AWSAccountId]</code>. An example is 123456789012.</li>
+                                        </ul>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets all permissions within the IAM role policy for the associated AWS resource.</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>If an S3 bucket named <code>outcomesbucket-[CustomerAccountId]</code> does not already exist, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates it (see the AWS document <a href="https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html">Creating a bucket</a>), ensuring the following permissions are set:</p>
+                                                <div style="caption-side: ; mc-caption-repeat: ;" class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&lt;&lt;"s3:ListBucket"&gt;&gt;<br />&lt;&lt;"s3:GetBucketLocation"&gt;&gt;<br />&lt;&lt;"s3:GetObject"&gt;&gt;<br />&lt;&lt;"s3:GetBucket*"&gt;&gt;<br />&lt;&lt;"s3:GetLifecycleConfiguration"&gt;&gt;<br />&lt;&lt;"s3:GetObjectAcl"&gt;&gt;<br />&lt;&lt;"s3:GetObjectVersionAcl"&gt;&gt;</code></pre>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li value="2">
+                                                <p>If an SNS topic named <code>outcomestopic</code> does not already exist, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates it (see the AWS document <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html">Getting started with Amazon SNS</a>), ensuring the following permissions are set:</p>
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&lt;&lt;"sns:ListSubscriptions"&gt;&gt;<br />&lt;&lt;"sns:ListSubscriptionsByTopic"&gt;&gt;<br />&lt;&lt;"sns:ListTopics"&gt;&gt;<br />&lt;&lt;"sns:GetEndpointAttributes"&gt;&gt;<br />&lt;&lt;"sns:GetSubscriptionAttributes"&gt;&gt;<br />&lt;&lt;"sns:GetTopicAttributes"&gt;&gt;</code></pre>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li value="3">
+                                                <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates a trail to publish data to the S3 bucket and send notifications to the SNS topic (see the AWS document <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html">Creating a Trail For Your AWS Account</a>).</p>
+                                            </li>
+                                            <li value="4">
+                                                <p>If an SQS queue named <code>outcomesbucket-[CustomerAccountId]</code> does not already exist, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates it, ensuring the following permissions are set (see the <span class="mc-variable ALVariables.AWS variable">AWS</span> document <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html">What is Amazon Simple Queue Service?</a>).</p>
+                                                <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates the SQS queue in the <span class="mc-variable ALVariables.AWS variable">AWS</span> us-east-1 region. If the region needs to be changed, a deployment config must be updated first.</p>
+                                                <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                                    <div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>&lt;&lt;"sqs:GetQueueAttributes"&gt;&gt;<br />&lt;&lt;"sqs:ReceiveMessage"&gt;&gt;<br />&lt;&lt;"sqs:DeleteMessage"&gt;&gt;<br />&lt;&lt;"sqs:GetQueueUrl"&gt;&gt;<br />&lt;&lt;"sqs:ListQueues"&gt;&gt;</code></pre>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li value="5">
+                                                <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> configures the IAM policies for the above resources as follows (see the AWS document ).</p>
+                                                <p>&#160;</p>
+                                            </li>
+                                        </ol>
+                                        <h2>When to contact <span class="mc-variable ALVariables.Company variable">Alert Logic</span> about <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> configuration changes</h2>
+                                        <p>If you disable a <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> trail that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> uses and configure a new one, contact <span class="mc-variable ALVariables.Tech_Support variable">Technical Support</span> and let them know that you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to use the new trail. </p>
+                                        <p>&#160;</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> re-creates a deleted trail, so it <span class="mc-variable ALVariables.Company variable">Alert Logic</span> always tries to reuse an existing <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> trail to reduce <span class="mc-variable ALVariables.AWS variable">AWS</span> costs. associated with multiple trails. </p>
+                                        <p>&#160;</p>
+                                        <h2>CloudTrail configuration monitoring and updates</h2>
+                                        <p>If you configured AWS with full permissions, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> periodically checks for <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> configuration changes in your environment  and attempts to fix any issues. You can use the information in the following table to understand actions that occur automatically when your configuration changes and troubleshoot issues that cannot be detected and fixed automatically.</p>
+                                        <table style="width: 100%;">
+                                            <col style="width: 283px;" />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>If this happens</th>
+                                                    <th><span class="mc-variable ALVariables.Company variable">Alert Logic</span> does this</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CloudTrail configuration that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> used is deleted</td>
+                                                    <td>Reinstalls a new CloudTrail or reuses an existing one</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>S3 bucket [for CloudTrail collection?] is reassigned</td>
+                                                    <td>Picks this configuration and reads messages from the new bucket</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>S3 bucket inline policy is changed</td>
+                                                    <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span> does not validate an existing CloudTrail bucket policy. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> only applies the default S3 bucket CloudTrail policy if a protected AWS account does not have CloudTrail set up</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>S3 bucket is deleted</td>
+                                                    <td>Creates a default bucket named <code> outcomes-&lt;AWS account id&gt;</code></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SNS topic is changed</td>
+                                                    <td>Picks up this configuration</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SNS topic inline policy is changed</td>
+                                                    <td>Applies default SNS policy if new one fails <code>aws_validator:match()</code></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SNS topic is deleted</td>
+                                                    <td>Re-creates a default topic <code>outcomestopic</code></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SQS subscription is removed</td>
+                                                    <td>This case cannot be detected. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SQS inline policy is changed</td>
+                                                    <td>If the new policy fails, applies the default SQS policy  <code>aws_validator:match()</code></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SQS is deleted</td>
+                                                    <td>Re-creates the queue</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Reference" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how AWS CloudTrail can log activity from your Alert Logic AWS accounts, including log sources, asset monitoring, event logs, and compliance issues." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>About AWS CloudTrail and Alert Logic</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>About <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> and <span class="mc-variable ALVariables.Company variable">Alert Logic</span></h1>
+                                        <p><span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> is an <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span>  service that logs all of your <span class="mc-variable ALVariables.AWS variable">AWS</span> account activity. <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> records actions taken by a user, role, or <span class="mc-variable ALVariables.AWS variable">AWS</span> service as events. Recorded actions include those taken in the <span class="mc-variable ALVariables.AWS variable">AWS</span> Management Console, <span class="mc-variable ALVariables.AWS variable">AWS</span> Command Line Interface, and <span class="mc-variable ALVariables.AWS variable">AWS</span> SDKs and APIs. </p>
+                                        <p><span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> is enabled on your <span class="mc-variable ALVariables.AWS variable">AWS</span> account when you create it. <span class="mc-variable ALVariables.AWS variable">AWS</span> allows you to create additional trails to record events in specific regions and deliver them to a specified S3 bucket. For more information, see the AWS document <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html" target="_blank" title="How CloudTrail Works" alt="How CloudTrail Works">How CloudTrail Works</a>.</p>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <p><a href="https://alertlogic.atlassian.net/browse/ENG-17219">ENG-17219</a>: We are missing contextual information and information about requirements for CloudTrail. Much of this can go into this doc:</p>
+                                            <p>A customer recently had a huge charge on their AWS account due to CloudTrail and was looking for someplace in the documentation where that is noted. It is not clear.</p>
+                                            <p>Questions to answer:</p>
+                                            <ul>
+                                                <li>What all do we need the customer to have set up?</li>
+                                                <li>How does our collection work?</li>
+                                                <li>How could it possibly result in customer charges (ie, we turn on the default CloudTrail on their accounts)</li>
+                                            </ul>
+                                        </div>
+                                        <h2>How <span class="mc-variable ALVariables.Company variable">Alert Logic</span> products work with <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span></h2>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> products treat <MadCap:conditionalText data-mc-conditions="Primary.includeDev"><span class="mc-variable ALVariables.AWS variable">AWS</span> </MadCap:conditionalText>API activity data as any other data source to capture and manage. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.NetworkIDS variable">Network IDS</span> and <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.LogManagement variable">Log Management</span> with LogReview integrate with <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> to collect API activity data within an <span class="mc-variable ALVariables.AWS variable">AWS</span> account, and then combines the data with log data from other applications and systems. </p>
+                                        <h3>Continual asset monitoring</h3>
+                                        <p>When you create an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, you can configure the deployment with centralized <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span>&#160;log collection to provide continual asset updates.</p>
+                                        <p><span class="mc-variable ALVariables.AWS variable">AWS</span> allows you to use a separate, dedicated account with <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> enabled to centralize your <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span>&#160;log collection, which requires a second IAM role to allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to access the <span class="mc-variable ALVariables.AWS variable">AWS</span> receiving account that collects <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> data. For more information, see <a href="../prepare/aws-cross-account-role-setup.htm#ShouldyoucentralizeCloudTraillogcollection">Should you centralize CloudTrail log collection?</a>. </p>
+                                        <h3><span class="mc-variable ALVariables.LogManagement variable">Log Management</span>
+                                        </h3>
+                                        <p data-mc-conditions="Primary.inBhoofAndDev">You can create an <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span> that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> can use to collect, store, and make searchable for any type of operational activity. For more information, see <a href="../deploy/log-sources.htm" class="MCXref xref">Log Sources</a>.</p>
+                                        <p data-mc-conditions="Primary.includeDev">If you  have an <span class="mc-variable ALVariables.Professional_1 variable">Alert Logic MDR Professional</span> or <span class="mc-variable ALVariables.Enterprise_1 variable">Alert Logic MDR Enterprise</span> subscription with the <span class="mc-variable ALVariables.LogManagement variable">Log Management</span> add-on and configured the <span class="mc-variable ALVariables.AWS variable">AWS</span>deployment with centralized <span class="mc-variable ALVariables.CloudTrail_1 variable">AWS CloudTrail</span>&#160;log collection, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> collects <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> log messages automatically. For more information, see <a href="../prepare/aws-cross-account-role-setup.htm#ShouldyoucentralizeCloudTraillogcollection">Should you centralize CloudTrail log collection?</a>. </p>
+                                        <p data-mc-conditions="Primary.includeDev">The collected <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> event logs are available for log search and log correlations. For more information, see <a href="../get-started/search-a.htm" class="MCXref xref">Get Started with Search</a> and <a href="../configure/notifications/log-correlation.htm" class="MCXref xref">Correlations and Notifications</a>.</p>
+                                        <h3>Incident management</h3>
+                                        <p><span class="mc-variable ALVariables.GuardDuty_1 variable">Amazon GuardDuty</span> is a continuous security monitoring service that requires no customer-managed hardware or software. <span class="mc-variable ALVariables.GuardDuty_2 variable">GuardDuty</span> analyzes and processes VPC Flow Logs and <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> event logs. <span class="mc-variable ALVariables.GuardDuty_2 variable">GuardDuty</span> uses security logic and <span class="mc-variable ALVariables.AWS variable">AWS</span> usage statistics techniques to identify unexpected and potentially unauthorized and malicious activity, such as: </p>
+                                        <ul>
+                                            <li>Escalations of privileges</li>
+                                            <li>Uses of exposed credentials</li>
+                                            <li>Communication with malicious IPs, URLs, or domains </li>
+                                        </ul>
+                                        <p>For more information, see <a href="../configure/integrate-guard-duty-findings.htm#integrate-gd-findings" class="Bookmark MCXref xref xrefBookmark">Integrate Amazon GuardDuty Findings into Alert Logic Incidents</a>.</p>
+                                        <h3>Compliance goals</h3>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> uses <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> data to identify potential compliance issues or threats through our analytics and reporting features.</p>
+                                        <div class="note">The security and compliance goals of your organization could require you to create and configure additional trails. For example, you must configure separate AWS CloudTrail logs for discovery of your AWS assets, and for Log Management.</div>
+                                        <div data-mc-conditions="Primary.includeDev">
+                                            <h2>CloudTrail setup</h2>
+                                            <p>If you configure an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment in Automatic Mode with full permission, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets up <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> for you automatically. For technical details about how <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sets up <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> and responds if your <span class="mc-variable ALVariables.CloudTrail_2 variable">CloudTrail</span> configuration changes, see <a href="cloudtrail-setup.htm" class="MCXref xref">How Alert Logic sets up CloudTrail</a>.</p>
+                                            <p>&#160;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

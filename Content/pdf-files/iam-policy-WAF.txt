@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PolicyCheck",
+            "Effect": "Allow",
+            "Action": [
+                "iam:SimulatePrincipalPolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "WAFIPSetUpdate",
+            "Effect": "Allow",
+            "Action": [
+                "wafv2:GetIPSet",
+                "wafv2:UpdateIPSet"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

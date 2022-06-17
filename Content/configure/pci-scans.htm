@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Configure" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to manage PCI scans, including how to schedule external scans, view results, view legacy results, address a vulnerability, create a dispute, and generate a report." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Manage PCI Scans</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="Manage2"></a>Manage PCI Scans</h1>
+                                        <p>Through the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, you can schedule  quarterly external scans that are required for Payment Card Industry (PCI) compliance. You can quickly and easily view the results of those scans in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, and then work with <span class="mc-variable ALVariables.Company variable">Alert Logic</span>, as needed, to resolve vulnerabilities and prove compliance to auditors. </p>
+                                        <p>Working with PCI compliance requires documents available from the <a href="https://www.pcisecuritystandards.org/" target="_blank">PCI Security Standards Council</a> (PCI SSC). Documents include the <i>Payment Card Industry  Data Security Standard</i> (DSS) and the current release of the <i>ASV Program Guide</i>.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> also offers PCI&#160;compliance reports in the Reports page of the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. The PCI&#160;compliance reports provide convenient access to analysis, statistics, and trending data related to compliance assessment status and audit preparedness from your subscribed products and services.  To learn more about the PCI compliance reports, see <a href="../analyze/reports/compliance/reports.htm#PCI_DSS_Audit" class="MCXref xref">PCI&#160;DSS Audit</a>.</p>
+                                        <h3><a name="Review"></a>Review the recommended process</h3>
+                                        <p>The following procedure outlines the suggested workflow to use <span class="mc-variable ALVariables.Company variable">Alert Logic</span> vulnerability scans for your PCI compliance requirements.</p>
+                                        <p style="font-weight: bold;">To use <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scans for PCI compliance:</p>
+                                        <ol>
+                                            <li value="1"><a href="#scheduleScan" class="Bookmark MCXref xref xrefBookmark">Schedule a PCI scan</a>.
+			<br />When you run a PCI scan, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> generates a preliminary PCI compliance report and sends an email to the configured devices. </li>
+                                            <li value="2"><a href="#viewStatusHistory" class="Bookmark MCXref xref xrefBookmark">View PCI compliance status and history</a>. </li>
+                                            <li value="3">If your preliminary PCI compliance report indicates that you are compliant, then <a href="#complete-final-PCI-documentation">complete your final PCI compliance documentation</a>. <br /></li>
+                                            <li value="4">If your preliminary PCI compliance report indicates that you are not compliant, or if you need to scan again, complete the following actions:
+			<ul><li><a href="#addressCompVulnerabilities" class="Bookmark MCXref xref xrefBookmark">Address PCI compliance vulnerabilities</a>.</li><li>If you have a vulnerability that you believe contains a false positive, you can submit a dispute. For more information about how to submit a dispute, see <a href="pci-scan-dispute.htm" class="MCXref xref">PCI Scan Disputes</a>. You can also contact <span class="mc-variable ALVariables.Tech_Support variable">Technical Support</span> to discuss the vulnerability.</li><li>If you have a vulnerability that you cannot address due to a business or technological constraint, you can submit a dispute. For more information about how to submit a dispute, see <a href="pci-scan-dispute.htm" class="MCXref xref">PCI Scan Disputes</a>. You can also contact <span class="mc-variable ALVariables.Tech_Support variable">Technical Support</span> to discuss the vulnerability and any compensating controls in your environment that reduce the risk associated with the vulnerability.</li><div class="note"><p><span class="mc-variable ALVariables.Tech_Support variable">Technical Support</span> (US:<span class="mc-variable ALVariables.US_support_number variable">(877) 484-8383</span>, EU: <span class="mc-variable ALVariables.UK_support_sales_number variable">+44 (0) 203 011 5533</span>) requires specific information for PCI scan disputes. Before you contact <span style="font-weight: normal;" class="mc-variable ALVariables.Tech_Support variable">Technical Support</span>, have the following information ready:</p><ul><li>The PCI compliance report ID number, which you can find in the heading of the PCI compliance report</li><li>The date and time when the PCI compliance report was generated, which you can find in the heading of the PCI compliance report</li><li>Any compensating control documentation associated with the vulnerability before you contact the <span class="mc-variable ALVariables.ALSOC_1 variable">Alert Logic Security Operations Center (SOC)</span></li></ul></div><li>After you address all vulnerabilities and resolve disputes, then <a href="#complete-final-PCI-documentation">complete final PCI compliance documentation</a>.</li></ul></li>
+                                        </ol>
+                                        <h3><a name="scheduleScan"></a>Schedule a PCI scan</h3>
+                                        <p>When you schedule a PCI scan, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> runs the scan as specified in the schedule, and then displays the results of the scan in the PCI Compliance tab.</p>
+                                        <p style="font-weight: normal;">When you schedule a PCI scan, you attest that, at a minimum:</p>
+                                        <ul>
+                                            <li>You are responsible for proper scoping of the scans, and the scan includes all required components for a  PCI DSS scope.</li>
+                                            <li>You implemented network segmentation if you excluded any components from PCI DSS scope.</li>
+                                        </ul>
+                                        <p>For more information about attestations, see the <i>ASV Program Guide</i>.</p>
+                                        <p style="font-weight: bold;">To schedule a PCI scan:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />) to see the navigation menu, and then click the <img src="../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b> menu item.
+            </li>
+                                            <li value="2">Click <b>PCI Scanning</b> to access the PCI Scanning page. </li>
+                                            <li style="font-weight: normal;" value="3">Click <b>Schedule New Scan</b>.</li>
+                                            <li style="font-weight: normal;" value="4">On the New PCI Scan page, in the <b>Scan Title</b> field, enter a descriptive title for the scan.</li>
+                                            <li style="font-weight: normal;" value="5">Select the check box if you want to create a case when the scan completes.</li>
+                                            <li style="font-weight: normal;" value="6">
+                In <b>All Targets (domain names of your web sites to distinguish multiple websites on the same IP address) and IP addresses to scan</b>, enter all targets. PCI DSS requires customers to supply FQDNs in addition to external-facing IP addresses and other unique entryways into applications for the entire in-scope infrastructure. This includes, but is not limited to:
+                <ul><li>Discrete IP addresses</li><li>IP address ranges</li><li>Domains for all web servers</li><li>Domains for mail servers</li><li>Domains used in name-based virtual hosting</li><li>Web-server URLs to directories that cannot be reached by crawling the website from the home page</li><li>Any other public-facing domains or domain aliases</li></ul><p>To include multiple domains, enter each domain on a separate line. Do not use commas, semicolons, or other separators.</p><p>The box also uses what you enter to seed the scanner. Seed entries include hidden URLs that cannot be reached from the homepage. These seed URLs allow the scanner to reach more of your application, ensuring the most thorough possible scan.</p></li>
+                                            <li style="font-weight: normal;" value="7">In <b>Addresses to exclude</b>, enter the TCP/IP addresses of the hosts you want to exclude from the scan operation, if applicable.</li>
+                                            <li style="font-weight: normal;" value="8">In <b>Your top level domains for scoping suggestions</b>, enter top-level domains to help the PCI scanner find more scan targets that you want to include in the scan.</li>
+                                            <li style="font-weight: normal;" value="9">Under <b>Scan Schedule</b>, specify how often to run the scan, the start time, and your time zone.</li>
+                                            <li style="font-weight: normal;" value="10">Under <b>Notification Settings</b>, type the email address where you want to receive notifications when the scan is finished.</li>
+                                            <li style="font-weight: normal;" value="11">Click <b>Submit PCI scan job</b>.</li>
+                                        </ol>
+                                        <h3><a name="viewStatusHistory"></a>View PCI compliance status and history</h3>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> simplifies tracking, analyzing, and documenting your PCI compliance. You can view your current and historical PCI compliance status in the PCI Scanning page.</p>
+                                        <div class="note">
+                                            <p> By default, your PCI compliance status is "Non-Compliant." The status changes to "Compliant" only after you generate your final PCI compliance report. For more information, see <a href="#complete-final-PCI-documentation" class="Bookmark MCXref xref xrefBookmark">Complete final PCI compliance documentation</a>.</p>
+                                        </div>
+                                        <p style="font-weight: bold;">To view your PCI compliance status and history:</p>
+                                        <ol>
+                                            <li value="1">Access the PCI Scanning page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>.</li>
+                                            <li value="2">Under<b> Latest 25 Reports</b>, click the name of the report you want to view. </li>
+                                        </ol>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <h4>Legacy scan results and archived reports</h4>
+                                            <p>            If you were subscribed to legacy products, you can view your legacy scan results from the Settings menu. Click the Settings icon (<img src="../Resources/Images/supportThreeDots.png" />), and then click <b>Legacy Scan Results</b>. You can also access the legacy scan results from the Reports page.
+</p>
+                                            <p><![CDATA[            ]]><b>To access legacy scan results</b>:
+            </p>
+                                            <ol>
+                                                <li value="1">Click <b>REPORTS</b>, and then click <b>Scheduled</b>.</li>
+                                                <li value="2">Click <b>Saved Scheduled Reports</b>, and then click <b>Archived Reports</b>. </li>
+                                            </ol>
+                                        </div>
+                                        <h3><a name="addressCompVulnerabilities"></a>Address PCI compliance vulnerabilities</h3>
+                                        <p>After viewing the results of a PCI compliance scan, if the status displays "Non-compliant," you must address vulnerabilities.</p>
+                                        <div class="note">
+                                            <p> A scan retains its non-compliant status until you generate a final report.</p>
+                                        </div>
+                                        <p style="font-weight: bold;">To address PCI compliance vulnerabilities:</p>
+                                        <ol>
+                                            <li value="1">Access the PCI Scanning page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>.</li>
+                                            <li value="2">Under <b>Latest 25 Reports</b>, click the name of the non-compliant results that contain the vulnerabilities to address.</li>
+                                            <li value="3">In the <b>PCI Scan Result</b> report, click the name of the vulnerability you want to address to view information about the vulnerability, including the CVE number, a brief description of the vulnerability, and possible solutions. </li>
+                                            <li value="4">Review the information for the vulnerability and address as necessary. If you cannot address the vulnerability due to a business or technical constraint, you can dispute the vulnerability. For more information, see <a href="pci-scan-dispute.htm#Dispute" class="MCXref xref">Dispute scan results</a>.<br /></li>
+                                            <li value="5">After you address each vulnerability identified in the PCI Scan Result report, run the scan again to verify you addressed the vulnerability. See <a href="#rescan" class="Bookmark MCXref xref xrefBookmark">Re-scan  a non-compliant PCI scan</a>.</li>
+                                        </ol>
+                                        <h3><a name="disableWeakAnonCiphers"></a>Disable weak and anonymous ciphers</h3>
+                                        <p>PCI-DSS requires websites to use strong cryptography and security protocols such as Secure Socket Layer/Transport Layer Security (SSL/TLS) or Internet Protocol Security (IPsec) to safeguard sensitive cardholder data during transmission over open public networks. In addition, you must disable insecure protocols like SSL 2.0 and weak ciphers, or you will fail a PCI compliance scan.</p>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Apache</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>Most versions of Apache have SSL 2.0 enabled by default. To disable SSL 2.0 and weak ciphers:</p>
+                                                <ol>
+                                                    <li value="1">Open the httpd.conf or ssl.conf file, and then search for the SSLCipherSuite directive. If you do not have the directive, add it.</li>
+                                                    <li value="2">Replace the contents with the following:<br /><kbd>SSLProtocol -ALL +SSLv3 +TLSv1</kbd><br /><kbd>SSLCipherSuite ALL:!ADH:RC4+RSA:+HIGH:+MEDIUM:!LOW:!SSLv2:!EXPORT</kbd><br /></li>
+                                                    <li value="3">Save the file.</li>
+                                                    <li value="4">Restart Apache.</li>
+                                                </ol>
+                                                <p style="font-weight: bold;">More resources:</p>
+                                                <p><a href="http://httpd.apache.org/docs/2.0/mod/mod_ssl.html#sslproxyciphersuite" target="_blank">mod_ssl documentation for disabling SSL 2.0 and weak ciphers</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Windows</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>The following registry settings can help secure ciphers and encryption settings for Microsoft Internet Information Server (IIS).</p>
+                                                <p style="font-style: normal;"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> makes no warranty as to the efficacy of the script. Many services on a Windows computer may use SSL/TLS such as Remote Desktop, LDAP, HTTPs, SMTPs, or Windows remote management ports.  Changing the encryption settings may affect other services.  This script may need to be customized for your environment. Use this script at your own risk, and try it on a development environment first. Before you edit the registry, export the keys in the registry that you plan to edit, or back up the whole registry.</p>
+                                                <p>Restart the server after implementing the registry changes. </p>
+                                                <div><kbd>Windows Registry Editor Version 5.00<br />                    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders]<br />“SecurityProviders”=”msapsspc.dll, schannel.dll, digest.dll, msnsspc.dll”<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SaslProfiles]<br />“GSSAPI”=”Kerberos”<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL]<br />“EventLogging”=dword:00000001<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL]<br />“AllowInsecureRenegoServers”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\NULL]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168/168]<br />“Enabled”=dword:ffffffff<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA]<br />“Enabled”=dword:ffffffff<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS]<br />“Enabled”=dword:ffffffff<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server]<br />“Enabled”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client]<br />“Enabled”=dword:00000001<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server]<br />“Enabled”=dword:00000001<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]<br />“Enabled”=dword:00000001<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]<br />“Enabled”=dword:00000001<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest]<br />“Negotiate”=dword:00000000<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest]<br />“UTF8HTTP”=dword:00000001<br />                [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest]<br />“UTF8SASL”=dword:00000001</kbd>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3><a name="rescan"></a>Re-scan  a non-compliant PCI scan</h3>
+                                        <p>You can run a PCI&#160;scan between scheduled scan times. If a scheduled PCI&#160;scan result is "Non-compliant," and you have addressed the vulnerabilities discovered by the scan, you can use the re-scan feature to determine compliance. </p>
+                                        <p><b>To re-scan a scheduled PCI&#160;scan policy:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Access the PCI Scanning page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>.</li>
+                                            <li style="font-weight: normal;" value="2">Under <b>Latest 25 Reports</b>, click the PCI Scan Result with a status of "Non-compliant."  </li>
+                                            <li style="font-weight: normal;" value="3">Click <b>Re-scan</b>.</li>
+                                        </ol>
+                                        <h3><a name="Dispute"></a>Dispute failing vulnerabilities</h3>
+                                        <p>A PCI scan can report findings that you want to dispute. For example, the scan can identify a vulnerability in your environment that may be a false positive. Another example is that the scan can identify a vulnerability that you cannot address due to a business or technological constraint, but you can resolve through the use of a compensating control. In these and similar situations, you can dispute the vulnerability through an official dispute process. To learn how to dispute a vulnerability, see <a href="pci-scan-dispute.htm" class="MCXref xref">PCI Scan Disputes</a>.</p>
+                                        <h3><a name="complete-final-PCI-documentation"></a>Complete final PCI compliance documentation</h3>
+                                        <p>After you address all your PCI vulnerabilities, you need to prepare required PCI compliance documentation and submit it to your <i>acquirer</i>. Required PCI compliance documentation includes:</p>
+                                        <ul>
+                                            <li>Final PCI&#160;scan reports</li>
+                                            <li>Self-Assessment Questionnaire (SAQ) and Attestation of Compliance</li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>An <i>acquirer</i> is typically the entity, such as a credit card processor, that provides credit card processing services. </p>
+                                        </div>
+                                        <p style="font-weight: bold;">To complete final PCI&#160;compliance documentation:</p>
+                                        <ol>
+                                            <li value="1"><a href="#prepare-final-pci-scan-reports" class="Bookmark MCXref xref xrefBookmark">Prepare final PCI&#160;scan reports</a>.</li>
+                                            <li value="2"><a href="#prepare-saq-and-attestation-of-compliance" class="Bookmark MCXref xref xrefBookmark">Prepare Self-Assessment Questionnaire and Attestation of Compliance</a>.</li>
+                                            <li value="3">Submit final PCI scan reports, SAQ, and Attestation of Compliance to your acquirer.</li>
+                                        </ol>
+                                        <h4><a name="prepare-final-pci-scan-reports"></a>Prepare final PCI&#160;scan reports</h4>
+                                        <p>When your PCI scan results are compliant, you can generate your final reports for submission to an acquirer.</p>
+                                        <p style="font-weight: bold;">To prepare final PCI scan reports:
+		</p>
+                                        <ol>
+                                            <li value="1">Access the PCI Scanning page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>.</li>
+                                            <li value="2">Under <b>Latest 25 Reports</b>, click the name of the scan results to submit to your acquirer. <i>The scan results must have a status of compliant.</i></li>
+                                            <li value="3">Under <b>Report Downloads</b>, click each of the following reports to generate and download: <ul style="list-style-type: circle;"><li><b>Executive Summary</b></li><li><b>Vulnerability Details</b></li><li><b>Attestation of scan compliance</b></li></ul><div class="note"><p>The <b>Vulnerability Details</b> report is available as a CSV file in addition to the PDF download. The CSV&#160;file includes less detail than the PDF, but the information is easy to view and analyze in a spreadsheet.</p></div></li>
+                                        </ol>
+                                        <p>If you want to send feedback to the PCI SSC regarding your scanning experience, your experience with <span class="mc-variable ALVariables.Company variable">Alert Logic</span>, or any other aspects of PCI&#160;scans, click the <b>PCI ASV Feedback Form</b> link below the list of reports.</p>
+                                        <h4><a name="prepare-saq-and-attestation-of-compliance"></a>Prepare Self-Assessment Questionnaire and Attestation of Compliance</h4>
+                                        <p>To validate compliance with PCI DSS, you must submit a Self-Assessment Questionnaire and Attestation of Compliance with your final PCI scan reports. You can obtain the required documents from the PCI SSC, as described in the following procedure.</p>
+                                        <p style="font-weight: bold;">To prepare the Self-Assessment Questionnaire and Attestation of Compliance:</p>
+                                        <ol>
+                                            <li style="font-weight: normal;" value="1">Use the guidelines provided in the table on the <a href="https://www.pcisecuritystandards.org/pci_security/completing_self_assessment" target="_blank">PCI SSC website</a> to determine the appropriate questionnaire for your company. Note the letter code for the questionnaire.</li>
+                                            <li style="font-weight: normal;" value="2">Referencing the letter code, locate and download the appropriate questionnaire from the <a href="https://www.pcisecuritystandards.org/document_library?category=saqs#results" target="_blank">PCI SSC document library</a>. You can choose DOC or PDF format.</li>
+                                            <li style="font-weight: normal;" value="3">Complete the questionnaire.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Analyze|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn about Alert Logic local host vulnerability scanning." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Agent-Based Scanning</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Agent-Based Scanning</h1>
+                                        <p>Agent-based scanning enables users to leverage the vulnerability assessment coverage of authenticated network scanning without the need to manage credentials and with a reduction in network traffic and impact.</p>
+                                        <p data-mc-conditions="Primary.Draft Content"><b>State Monitor</b>—</p>
+                                        <p data-mc-conditions="Primary.Draft Content"><b>OSQuery</b>—</p>
+                                        <p data-mc-conditions="Primary.Draft Content"><b>OVALdi</b>—</p>
+                                        <h2>Upgrades to the scanning experience</h2>
+                                        <p>The agent-based scan upgrade  improves the efficiency, accuracy, and usability of <span class="mc-variable ALVariables.Company variable">Alert Logic</span> vulnerability scanning features.</p>
+                                        <h3>No credential management</h3>
+                                        <p style="font-weight: normal;"> Agent-based scanning does not require credential management. Users of authenticated network scans had to configure access and manage credentials for assets and networks. The <span class="mc-variable ALVariables.Agent/Remote_Collector variable">agent</span> is installed on the host and does not require any further credential management to maintain.</p>
+                                        <h3>Reduced network traffic</h3>
+                                        <p style="font-weight: normal;">Agent-based scanning reduces network traffic by running locally on the host before sending results to <span class="mc-variable ALVariables.Company variable">Alert Logic</span> for final analysis.</p>
+                                        <h3>Limited network and host processing impact</h3>
+                                        <p style="font-weight: normal;">Agent-based scanning reduces network impacts by running locally on the host and limits host processing impact to less than 5 minutes. For detailed information on host impacts, see <a href="#RequirementsfortheAlertLogicagentwithscancomponents" class="MCXref xref">Requirements for the Alert Logic agent with scan components</a>.</p>
+                                        <h3>Increased host-target availability </h3>
+                                        <p style="font-weight: normal;">You can deploy the agent on hosts that are impossible or impractical to scan from the network. Agent-based scanning makes it possible to protect even hardened systems that prevent network scanning, hosts on low bandwidth networks, and transient hosts such as laptops.</p>
+                                        <h3>Better vulnerability accuracy</h3>
+                                        <p style="font-weight: normal;">Agent-based scanning increases the  accuracy and reliability of vulnerability scan results. Improved coverage includes better operating system, application, patch, and kernel level vulnerability assessment. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">The <span class="mc-variable ALVariables.Agent/Remote_Collector variable">agent</span> is able to assess false positives.</MadCap:conditionalText><MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> For more information, see <a href="#Scan-basedvulnerabilityassessmentcoveragedetails" class="MCXref xref">Scan-based vulnerability assessment coverage details</a>.</MadCap:conditionalText></p>
+                                        <h3>No redundant vulnerability assessment</h3>
+                                        <p style="font-weight: normal;">Agent-based scans and credentialed network scans provide similar  vulnerability assessment coverage for operating system, application, patch, and kernel level vulnerabilities. To reduce impact to the network and host, when a network scan begins scanning a particular host, it checks in with that host for the presence of agent-based scan configuration. </p>
+                                        <table style="width: 100%;" data-mc-conditions="Primary.Draft Content">
+                                            <col />
+                                            <col style="width: 325px;" />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Is agent-based scanning configured on the host?</th>
+                                                    <th>Agent-based scans perform these checks</th>
+                                                    <th>Internal network scans perform these checks</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Yes</td>
+                                                    <td>Evaluate operating system, application, patch, and kernel vulnerabilities</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The network scan will only evaluate vulnerabilities for TLS checks, default account checks, web applications testing, and active exploit, SQL injection, and so on.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Does not run redundant vulnerability assessments for the host</p>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No</td>
+                                                    <td>None</td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The network scan runs  vulnerability assessments as configured (with or without credentials) against the host. </p>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                <p>The credentialed network scan evaluates for operating system, application, patch, and kernel vulnerabilities vulnerabilities for configuration checks, web applications testing, and active exploit, SQL injection, and so on.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p><b>If agent-based scan is configured on the host</b>:</p>
+                                        <p>The agent will evaluate operating system, application, patch, and kernel vulnerabilities. The network scan will not run redundant vulnerability assessments for the host.</p>
+                                        <p><b>If  agent-based scan is not configured on the host</b>:</p>
+                                        <p>The network scan runs  vulnerability assessments as configured (with or without credentials) against the host. The credentialed network scan will evaluate vulnerabilities for configuration checks, web applications testing, and active exploit, SQL injection, and so on.</p>
+                                        <h2>Requirements<a name="Requirements"></a></h2>
+                                        <p>A host must meet the following criteria to support agent-based scanning.</p>
+                                        <h3>Node subscription level</h3>
+                                        <p> The host node must be configured for <span class="mc-variable ALVariables.Essentials_1 variable">Alert Logic MDR Essentials</span>, <span class="mc-variable ALVariables.Professional_1 variable">Alert Logic MDR Professional</span>, or <span class="mc-variable ALVariables.Enterprise_1 variable">Alert Logic MDR Enterprise</span> level of protection. You can verify or change the protection levels by using <a href="../reports/service/entitlement/entitlement-summary.htm" class="MCXref xref">Entitlement Summary</a> or <a href="../../deploy/change-protection.htm" class="MCXref xref">Change Protection Level of an Asset</a>.</p>
+                                        <h3>Host operating system</h3>
+                                        <p>The host must run a supported Windows or Linux operating system. </p>
+                                        <div class="note">The container agent can install the scan components but does not run the scan function. Hosts with only the <span class="mc-variable ALVariables.endpoint variable">Extended Endpoint Protection</span> agent  do not install the agent-based scan components.</div>
+                                        <p>The agent-based scanning components are supported on the following operating systems. Older Linux and Windows operating systems may work, but they will report a large amount of vulnerabilities.</p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Operating System</th>
+                                                    <td><b>Versions</b>
+                                                    </td>
+                                                    <th>Installation Guide</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Amazon Linux</td>
+                                                    <td>1.x, 2.x</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CentOS</td>
+                                                    <td>6.x, 7.x, 8.x</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>
+                                                    </td>
+                                                </tr>
+                                                <tr data-mc-conditions="Primary.Draft Content">
+                                                    <td>Debian </td>
+                                                    <td>9.x, 10.x</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Red Hat Enterprise Linux (RHEL)</td>
+                                                    <td>
+                                                        <p>6.x, 7.x, 8.x</p>
+                                                    </td>
+                                                    <td><a href="../../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>
+                                                    </td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Ubuntu</td>
+                                                    <td>16.x, 18.x, 20.x</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>
+                                                    </td>
+                                                </tr>
+                                                <tr data-mc-conditions="Primary.Draft Content">
+                                                    <td>SUSE</td>
+                                                    <td>11.3, 11.4, 12.0, 12.1</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows 7</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows 8</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows 10</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows Server 2008</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows Server 2012</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows Server 2016</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Windows Server 2019</td>
+                                                    <td>All</td>
+                                                    <td><a href="../../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="note" data-mc-conditions="SnippetConditions.ExcludedText">If you have <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span> Systems Manager managed instances, you can use <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor.html"><span class="mc-variable ALVariables.AWS variable">AWS</span> Systems Manager Distributor</a>     to install the  <span class="mc-variable ALVariables.AgentName variable">Alert Logic agent</span> on the instances instead of installing the agent on each host manually. For more information, see <a href="../../prepare/agent-install-automated-aws.htm" class="MCXref xref">Automate Alert Logic Agent Installation with AWS Systems Manager Distributor</a>.</div>
+                                        <h3>Installed agent and agent health</h3>
+                                        <p>The <span class="mc-variable ALVariables.Agent/Remote_Collector variable">agent</span> must be installed on the host. The health status of the agent related to connectivity or resource issues may affect the installation and execution of agent-based scanning. You can verify the health status and presence of an agent on a specific host using Agent view on the <a href="../topology.htm" class="MCXref xref">Topology</a> page.</p>
+                                        <p>You can also verify the health and presence of an agent on a specific host by using the <a href="../health.htm" class="MCXref xref">Health</a> and the <a href="../reports/service/health/missing-agent-digest.htm" class="MCXref xref">Missing Agent Digest</a> report. </p>
+                                        <h3>Requirements for the <span class="mc-variable ALVariables.AgentName variable">Alert Logic agent</span> with scan components<a name="RequirementsfortheAlertLogicagentwithscancomponents"></a></h3>
+                                        <p>Scan components of the agent require the following in addition to  the standard <a href="../../requirements/agent.htm" class="MCXref xref">Requirements for the Alert Logic Agent</a>.</p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col data-mc-conditions="" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Requirement Type</th>
+                                                    <th>Additional System Requirement for Scan Components</th>
+                                                    <td style="font-weight: bold;">Total System Requirement (Agent +&#160;Scan Components)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Storage</td>
+                                                    <td>102MB</td>
+                                                    <td>652MB</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4>Processing requirements and host impact for running an agent-based scan</h4>
+                                        <p>The agent-based scan runs at a different time than the network scan, though if you choose to use internal network scan schedules for agent-based scans the results are not enumerated and delivered  until a network scan is complete with the host in scope. The host impact for processing requirements only occurs for the duration defined below, at run-time. </p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>Operating Systems</th>
+                                                    <th>Scan Components</th>
+                                                    <th>System Requirement</th>
+                                                    <th>Duration of Demand (Estimate)</th>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="4">RAM (Max)</td>
+                                                    <td rowspan="2">Windows</td>
+                                                    <td>OSQuery</td>
+                                                    <td>50MB</td>
+                                                    <td>5 seconds</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>OVALdi</td>
+                                                    <td>70MB</td>
+                                                    <td>3 minutes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">Linux</td>
+                                                    <td>OSQuery</td>
+                                                    <td>30-70MB</td>
+                                                    <td>5 seconds</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>OVALdi</td>
+                                                    <td>90MB</td>
+                                                    <td>4 minutes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">CPU</td>
+                                                    <td>Windows</td>
+                                                    <td>Both</td>
+                                                    <td>Up to 100%, running at low priority</td>
+                                                    <td>3-4 minutes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Linux</td>
+                                                    <td>Both</td>
+                                                    <td>Up to 100%, running at low priority</td>
+                                                    <td>4-5 minutes</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="note">Estimates are based on Amazon EC2 t2/3_small for Linux and t3_medium for Windows. Actual duration varies based on the processing power of the host.</div>
+                                        <h2>How to enable or disable agent-based scanning<a name="Howtoenableordisableagent-basedscanning"></a></h2>
+                                        <p>Agent-based scanning is enabled and disabled by deployment. By default, agent-based scanning is disabled on all deployments. Once enabled, current and future agents will automatically install the new scan components as an update <MadCap:conditionalText data-mc-conditions="Primary.NOTinBHOOF">(using port 443) </MadCap:conditionalText>following <a href="../../requirements/us-firewall-rules.htm#Agentorremotecollectoroutboundrules" class="MCXref xref">Agent or remote collector outbound rules</a> (US) or <a href="../../requirements/uk-eu-firewall-rules.htm#Agentoutbound" class="MCXref xref">Agent or remote collector outbound rules</a> (UK).</p>
+                                        <p><b>To enable agent-based scanning for an existing deployment</b>:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />) to see the navigation menu.</li>
+                                            <li value="2">Click <img src="../../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b>, and then click <b>Deployments</b>.</li>
+                                            <li value="3">Find the deployment you want to edit, and then click <b>EDIT</b>.</li>
+                                            <li value="4">In the left navigation panel, click <b>Agent-Based Scanning</b>.</li>
+                                            <li value="5">Select <b>Enable agent-based scanning (recommended)</b>.</li>
+                                            <li value="6">Click <b>SAVE</b>.</li>
+                                            <li value="7">In the confirmation window, click <b>ENABLE</b>.</li>
+                                        </ol>
+                                        <p><b>To disable agent-based scanning for an existing deployment</b>:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />) to see the navigation menu.</li>
+                                            <li value="2">Click <img src="../../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b>, and then click <b>Deployments</b>.</li>
+                                            <li value="3">Find the deployment you want to edit, and then click <b>EDIT</b>.</li>
+                                            <li value="4">In the left navigation panel, click <b>Agent-Based Scanning</b>.</li>
+                                            <li value="5">Select <b>Disable agent-based scanning (default)</b>.</li>
+                                            <li value="6">Click <b>SAVE</b>.</li>
+                                            <li value="7">In the confirmation window, click <b>DISABLE</b>.</li>
+                                        </ol>
+                                        <div class="note">Allow up to 4 hours for hosts to disable agent-based scanning components. Any vulnerabilities detected by agent-based scans while active will be removed from the Exposures page the next time an internal network scan completes. The vulnerabilities detected by the agent-based scan will remain in reports generated previously and on pages that track vulnerability count trends, such as the <a href="../dashboard/vulnerability-summary.htm">Vulnerability Summary dashboard</a>,<a href="../reports/Vulnerabilities/reports.htm" class="MCXref xref">Vulnerabilities Reports</a>, and <a href="../reports/remediations/reports.htm" class="MCXref xref">Remediations Reports</a>.</div>
+                                        <h2>Scan using the <span class="mc-variable ALVariables.AgentName variable">Alert Logic agent</span></h2>
+                                        <p>An internal scan of a host that meets the <a href="#Requirements" class="MCXref xref">Requirements</a> for agent-based scanning will optimize vulnerability assessment.</p>
+                                        <div>
+                                            <p>Methods to schedule agent-based scans include:</p>
+                                            <ul>
+                                                <li><a href="#Useagentbasedscanschedules" class="MCXref xref">Use agent-based scan schedules</a>
+                                                </li>
+                                                <li><a href="#Useinternalnetworkscanschedules" class="MCXref xref">Use internal network scan schedules</a>
+                                                </li>
+                                                <li><a href="#UseScanNow" class="MCXref xref">Use Scan Now</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3>Use agent-based scan schedules<a name="Useagentbasedscanschedules"></a></h3>
+                                        <p>Because of the default schedule, the initial agent-based scan  runs within 12 hours after the install of the scan components on the host. If you choose to use custom agent-based scan schedules, scan windows defined in the agent-based scan schedules govern agent-based scans.</p>
+                                        <p><b>To use agent-based scan schedules:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />) to see the navigation menu.</li>
+                                            <li value="2">Click <img src="../../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b>, and then click <b>Deployments</b>.</li>
+                                            <li value="3">Find the deployment you want to edit, and then click <b>EDIT</b>.</li>
+                                            <li value="4">In the left navigation panel, click <b>Scan Schedules</b>.</li>
+                                            <li value="5">On the Agent-Based Scans page, ensure <b>Use internal network scan schedules</b> is turned off.</li>
+                                        </ol>
+                                        <p><b>If the scan frequency is set to scan as often as necessary and the scan window is set to scan any time (default)</b>:</p>
+                                        <p>The agent-based scan runs at every 12-hour interval from the initial execution. The results of the agent-based host scan are visible in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> once the scan completes.</p>
+                                        <p><b>If the scan window is defined to specific start and end times</b>
+                                        </p>
+                                        <p>The agent-based scan runs at the start of the window. The results of the agent-based host scan are   visible in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> once the  scan completes for the window. For more information on asset scopes in scan schedules, see <a href="schedules.htm#Definethescopeoftheassetstoscan" class="MCXref xref">Define the scope of the assets to scan</a>.</p>
+                                        <h3>Use internal network scan schedules<a name="Useinternalnetworkscanschedules"></a></h3>
+                                        <p> If you choose to use internal network scan schedules for agent-based scans, the scan windows defined in internal network scan schedules govern agent-based scan run-times. </p>
+                                        <p><b>To use internal network scan schedules for agent-based scans:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />) to see the navigation menu.</li>
+                                            <li value="2">Click <img src="../../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b>, and then click <b>Deployments</b>.</li>
+                                            <li value="3">Find the deployment you want to edit, and then click <b>EDIT</b>.</li>
+                                            <li value="4">In the left navigation panel, click <b>Scan Schedules</b>.</li>
+                                            <li value="5">On the Agent-Based Scans page, turn on <b>Use internal network scan schedules</b>.</li>
+                                        </ol>
+                                        <p><b>If the scan frequency is set to scan as often as necessary and the scan window is set to scan any time (default)</b>:</p>
+                                        <p>The agent-based scan runs at every 12-hour interval from the initial execution. The consolidated results of the agent-based host scan are visible in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> once an internal network scan completes.</p>
+                                        <p><b>If the scan window is defined to specific start and end times</b>:</p>
+                                        <p>The agent-based scan runs at the start of the window. The consolidated results of the agent-based host scan are   visible in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> once the internal network scan completes for the window. For more information on asset scopes in scan schedules, see <a href="schedules.htm#Definethescopeoftheassetstoscan" class="MCXref xref">Define the scope of the assets to scan</a>.</p>
+                                        <h3>Use Scan Now<a name="UseScanNow"></a></h3>
+                                        <p>If you need to run a scan on a specific host immediately, you can use the Scan Now feature on the Topology page. This feature scans the selected host right away or as soon as possible, outside the normal schedule. </p>
+                                        <div class="note">For hosts with <a href="#" class="MCXref xref selected">Agent-Based Scanning</a>, Scan Now triggers an agent-based scan at the same time as the internal network scan. The results of both scans are merged once the internal network scan completes.</div>
+                                        <p>To see which internal network scans are in progress, click the scan icon (<img src="../../Resources/Images/Icons/icon-scan-map.PNG" style="vertical-align: bottom;" />) to see the scan statuses of your assets. For more information about scan status, see <a href="../topology.htm#customize-display" class="MCXref xref">Customize the diagram display</a>.</p>
+                                        <p><b>To use the Scan Now feature:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">On the Topology page, specify a deployment or region in the respective drop-down menus.</li>
+                                            <li value="2">Click the host you want to scan immediately, if a scan is not in progress. </li>
+                                            <li value="3">In the slideout panel, click <b>Actions</b>, and then click <b>SCAN&#160;NOW</b>.<p>If the host is excluded from scanning in the deployment scope of protection, a message prompts you to confirm whether to continue with the scan. If ports are excluded, a message prompts you to choose whether to honor or override the exclusions. If you choose to honor exclusions, the scanner does not scan the excluded ports.</p></li>
+                                            <li value="4"> Click <b>OK</b> to run the scan.</li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>Scan Now prompts <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to scan the host as soon as possible. Depending on technological factors such as the current load on the scanner and the availability of a scan appliance, a delay of up to 25 minutes may occur before the internal network scan begins.</p>
+                                        </div>
+                                        <h2>View the results of an agent-based scan<a name="Viewtheresultsofanagent-basedscan"></a></h2>
+                                        <p>Agent-based scan results are consolidated with latest internal network scan results, if available. Only agent-based scan results are posted if internal network scans are not configured or if internal network scan results are expired (more than 100 days old). If you choose to use internal network scan schedules for your agent-based scans, results are made visible when an internal network scan is completed. The consolidated results from agent-based and internal network scans are found on the <a href="../exposures.htm" class="MCXref xref">Exposures</a> page, and you can use the "Agent" category filter to isolate vulnerabilities detected by agent-based scans. </p>
+                                        <div class="note">Expect a significant increase in the number of detected vulnerabilities with a new agent-based scan if you did not previously use credentials for internal network scans on the host.</div>
+                                        <p>
+                                            <img src="../../Resources/Images/agent-based-scan/exposure-category-agent.png" style="max-width: 100%;" />
+                                        </p>
+                                        <p>Agent-based scan results are also available in <a href="../reports/Vulnerabilities/reports.htm" class="MCXref xref">Vulnerabilities Reports</a> and <a href="../reports/remediations/reports.htm" class="MCXref xref">Remediations Reports</a>.</p>
+                                        <h2>Scan-based vulnerability assessment coverage details<a name="Scan-basedvulnerabilityassessmentcoveragedetails"></a></h2>
+                                        <p>Agent-based scans detect vulnerabilities and missing patches on hosts with an agent installed. For the most comprehensive vulnerability assessment coverage, you must also schedule internal network scans to run configuration checks (such as for missing TLS certificates and use of default account passwords)  and conduct standard web application testing. See <a href="schedules.htm" class="MCXref xref">Manage Scan Schedules</a> for details about scheduling internal network scans. Agent-based host scanning alone cannot be used for PCI compliance. See <a href="../../configure/pci-scans.htm" class="MCXref xref">Manage PCI Scans</a> for details.</p>
+                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Basic.css');" class="TableStyle_Basic" cellspacing="0">
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <tbody>
+                                                <tr>
+                                                    <th class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Vulnerability Type</th>
+                                                    <th class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Host-based Scan (Agent)</th>
+                                                    <th class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Network Scan (no credentials)</th>
+                                                    <th class="TableStyle_Basic_Body_0_0_RowSep_ColEnd" data-mc-conditions="Primary.includeDev">Authenticated Network Scan (credentials)</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">System-level vulnerabilities </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Yes</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Partial</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd" data-mc-conditions="Primary.includeDev">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Application-level exposures </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Yes</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">&#160;</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd" data-mc-conditions="Primary.includeDev">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Configuration Check (TLS/Certificates, Common U/P)</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">&#160;</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Yes</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd" data-mc-conditions="Primary.includeDev">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Web Application Testing</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">&#160;</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" data-mc-conditions="Primary.includeDev">Partial</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd" data-mc-conditions="Primary.includeDev">Partial</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep" data-mc-conditions="Primary.includeDev">Active Exploits/&#160;SQL&#160;Injections/ Etc</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep" data-mc-conditions="Primary.includeDev">&#160;</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep" data-mc-conditions="Primary.includeDev">Partial</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowEnd_ColEnd" data-mc-conditions="Primary.includeDev">Partial</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2 data-mc-conditions="Primary.Draft Content">Beta Feature Release Notes</h2>
+                                        <p data-mc-conditions="Primary.Draft Content">Initial feature</p>
+                                        <p data-mc-conditions="Primary.Draft Content">Scan window feature</p>
+                                        <p data-mc-conditions="Primary.Draft Content">Topology feature</p>
+                                        <p data-mc-conditions="Primary.Draft Content">Essentials nodes</p>
+                                        <h2 data-mc-conditions="Primary.Draft Content">Beta Details</h2>
+                                        <p data-mc-conditions="Primary.Draft Content">Beta-flag and the agent-update process</p>
+                                        <h3 data-mc-conditions="Primary.Draft Content">Comparison of Vulnerability Assessment Results</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">This section is a placeholder for a technical description of before and after results from unauth network scan or credentialed network scan to the agent-based scan addition, with some explanation. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Inline WAF|Web Application Firewall&#160;Manual|System" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Clustering
+</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1 id="Clustering" data-magellan-target="Clustering">Clustering
+<a name="ref_system_clustering.htm"></a></h1>
+                                        <p>The System Clustering page includes the following sections. Click on the link to go to the corresponding section to learn more: </p>
+                                        <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menuInBody mc-component">
+                                            <li><a href="#Clustering">Clustering
+</a>
+                                            </li>
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="#ClustervirtualIPconfiguration">Cluster virtual IP configuration
+</a>
+                                                    </li>
+                                                    <li><a href="#Synchronizationconfiguration">Synchronization configuration</a>
+                                                    </li>
+                                                    <li><a href="#Clusterconfigurationexamples">Cluster configuration examples
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Configuringafailovercluster">Configuring a fail-over cluster
+</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#VRRPInterfaces">VRRP Interfaces
+</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                        <p>To go to the documentation for the previous section of System, see <a href="ch_system.htm" class="MCXref xref">System</a>. To go to  the documentation for next subsection in the System section, see <a href="ref_system_configuration.htm" class="MCXref xref">Configuration</a>.</p>
+                                        <p>To access the Clustering page in the <b><span style="font-weight: normal;" class="mc-variable ALVariables.WAF_2 variable">WAF</span></b> management interface, on the left panel, under System, click <b>Clustering</b>. </p>
+                                        <div class="titlepage">
+                                            <div>
+                                                <p>To save configuration changes or edits you make to any features and options, you must click <b>Save</b> on the lower-right of the section or page where you are making changes. Click <b>apply changes</b> on the upper-left corner of the page, and then click <b>OK</b>. Your changes will not be stored if you do not properly save your changes. </p>
+                                            </div>
+                                        </div>
+                                        <p>Clustering in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is based on VRRP. It allows for configuring high availability <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> pairs running Active/Passive
+ with automatic fail-over within three seconds.
+         </p>
+                                        <p>When deployed in combination with a load balancer in a separate load balancing pool many <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> nodes can be run Active/Active
+ with the policy synchronized across all nodes by the master.
+</p>
+                                        <div class="sect2" title="1.1.&#160;Cluster virtual IP configuration">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 class="title" id="ClustervirtualIPconfiguration" data-magellan-target="ClustervirtualIPconfiguration">Cluster virtual IP configuration
+<a name="ref_system_clustering_vip.htm"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The Cluster virtual IP configuration section allows for adding new virtual interfaces with virtual IP addresses.</p>
+                                            <p>It is important that the exact same number of interfaces are configured on the master and worker and that the interfaces are
+ configured in the same order.
+         </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Virtual IP</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Virtual IP address of the cluster.</p>
+                                                                <p>This is the IP address the nodes in the cluster are sharing.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Netmask</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The netmask defining the virtual IP's subnet.</p>
+                                                                <p>The netmask should be the same as the netmask assigned to the IP address of the physical interface to which Inbound Traffic
+ is bound.
+                        </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Interface</span></b>
+                                                                <p>Drop down list</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Which interface to bind the cluster intrface to..</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Options</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>System interfaces</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>First interface in the list</p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Type</span></b>
+                                                                <p>Drop down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The type of the virtual IP.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Options</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">FAILOVER MASTER</code> and <code class="literal">FAILOVER BACKUP</code></p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">FAILOVER MASTER</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <p>To configure a failover IP address, on the master select <code class="literal">FAILOVER MASTER</code> and on the worker select FAILOVER BACKUP.
+                        </p>
+                                                                <p>See the examples below for more information. </p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="sect2" title="1.2.&#160;Synchronization configuration">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 class="title" id="Synchronizationconfiguration" data-magellan-target="Synchronizationconfiguration">Synchronization configuration<a name="ref_system_cluster_sync.htm"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>When Web Security Manager nodes are running a cluster one of the Web Security Manager nodes can be designated the TEACH role
+ and the worker the LEARN role .
+         </p>
+                                            <p>In order to keep load balancing and backup nodes up-to-date with the current configuration the TEACHER is keeping the LEARNER
+ updated with changes to configured websites.
+         </p>
+                                            <p>To keep the synchronization packages private in the cluster the messages are encrypted using a password as key. Synchronization
+ messages can be sent using either MULTICAST or UNICAST.
+         </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Enable proxy settings synchronization</span></b>
+                                                                <p>Check box</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Enable or disable proxy settings synchronization.</p>
+                                                                <p>If enabled, Web Security Manager will synchronize the current ACL database and other parameters with other Web Security Manager
+ nodes.
+                        </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Mode</span></b>
+                                                                <p>Drop down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Synchronization role.</p>
+                                                                <p>If set to <code class="literal">Teach</code>, this Web Security Manager will multicast the ACL database to other Web Security Manager installations. If set to <code class="literal">Learn</code>, this Web Security Manager will update it's ACL database according to synchronization messages from other Web Security Manager
+ installations.
+                        </p>
+                                                                <p>Synchronization settings affects the operation of the <code class="literal">Learner</code>. When synchronization is enabled and the node synchronization mode is set to <code class="literal">Learn</code>, the node will not sample learn data but wait for the node master to dispatch a policy.
+                        </p>
+                                                                <div class="note">
+                                                                    <p>You need to configure an interface that will be used for synchronization before the ACL database synchronization will be activated.</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Password</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Password used for synchronization message authentication.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>Any string.</p>
+                                                                            <p>A long password is recommended as it do not have to be memorable by humans.</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">98974953Q38512432324CU4859229842784</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">none</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Protocol</span></b>
+                                                                <p>Drop down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Synchronization network protocol.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Options</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">MULTICAST</code>
+                                                                            </p>
+                                                                            <p><code class="literal">UNICAST</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">MULTICAST</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <p>The MULTICAST method is selected by default. This method is the easiest to configure but as the name suggests the messages
+ are sent to all nodes within the network and may not always work in complex networks. To keep network traffic at a minimum
+ and to make things work in complex networks UNICAST should be preferred. This method requires the LEARN node to be specified
+ on the TEACH node. When sending synchronization messages using UNICAST the TEACHER sends the messages directly to the LEARNERS
+ ip address using UDP.
+                        </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Sync type</span></b>
+                                                                <p>Drop down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>How websites are synchronized are synchronized in a cluster.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Options</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">FULL SYNC</code>
+                                                                            </p>
+                                                                            <p><code class="literal">TEMPLATE</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">FULL SYNC</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <p>This option applies to learning nodes and controls how websites are synchronized.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">FULL SYNC</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>Everything, including "Listen IP", backend servers and health checking configuration is synchronized.</p>
+                                                                            <p>For HTTPS websites and HTTP websites configured to listen to a specific IP address it is required that the same IP addresses
+ are configured on the learn node - typically in the form of a Cluster IP address configured for high availability or load
+ balancing. Otherwise configuring the proxy core will fail.
+                                 </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">TEMPLATE</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>When new website configuration is received by worker node: All information, including listen IP is included but website is
+ created with disabled status meaning it will not served by the learning node until the website is enabled in ADC : <a href="ref_services_virtual_host.htm" class="MCXref xref">Virtual Host
+</a>.
+                                 </p>
+                                                                            <p>When synchronizing changes Listen IP, backend server configuration, load balancing settings and health checking configuration
+ will not be synchronized. This allows for synchronizing across datacenters or for synchronizing a cluster that is used in
+ combination with a network load balancer.
+                                 </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Peer(s)</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>The IP address(es) of the other node(s) in the cluster.</p>
+                                                                <p>This input field is disabled if <code class="literal">MULTICAST</code> is selected. In this case it displays the multicast address which cannot be changed.
+                        </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The IP address(s) of the corresponding node(s) in the cluster - i.e. on the TEACHER it should be the LEARNER(s) and vice versa.</p>
+                                                                            <p>Note that the IP address should be the IP address assigned to the network interface to which synchronization is bound on the
+ corresponding node.
+                                 </p>
+                                                                            <p>To synchronize to more than one LEARNER node using UNICAST add a list of LEARNER IP addresses separated by comma or space.</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">none</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="sect2" title="1.3.&#160;Cluster configuration examples">
+                                            <div>
+                                                <h3 class="title" id="Clusterconfigurationexamples" data-magellan-target="Clusterconfigurationexamples">Cluster configuration examples
+<a name="ref_system_clustering_conf_examples.htm"></a></h3>
+                                            </div>
+                                            <p>Below are given examples of configuring a high availability cluster running in active/passive mode and a "self load balancing"
+ cluster running in active/active mode.
+         </p>
+                                            <div class="sect3" title="1.3.1.&#160;Configuring a fail-over cluster">
+                                                <div>
+                                                    <h4 class="title" id="Configuringafailovercluster" data-magellan-target="Configuringafailovercluster">Configuring a fail-over cluster
+<a name="ref_system_clustering_conf_examples.htm#ref_system_clustering_conf_examples_failover"></a></h4>
+                                                </div>
+                                                <p>To configure a fail-over (active/passive) cluster of two Web Security Manager nodes do the following:</p>
+                                                <div class="informaltable">
+                                                    <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                        <colgroup>
+                                                            <col width="25%" align="left" />
+                                                            <col width="75%" align="left" />
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Node 1 configuration</span></b>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                    <p>Create a FAILOVER-MASTER interface by doing the following:</p>
+                                                                    <div class="orderedlist">
+                                                                        <ol class="orderedlist" style="list-style-type: decimal;">
+                                                                            <li class="listitem" value="1">
+                                                                                <p>In <b><span class="guilabel">Cluster virtual IP configuration</span></b> enter the virtual IP address of the cluster in the the <b><span class="guilabel">Virtual IP</span></b> field.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="2">
+                                                                                <p>In <b><span class="guilabel">Netmask</span></b> enter the <code class="literal">netmask</code> specifying the subnet for the virtual ip.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="3">
+                                                                                <p>Select the interface to bind the cluster interface to. If the configured cluster IP is within one of the system interfaces'
+ netmask the system interface with the mask that matches must be selected.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="4">
+                                                                                <p>In the Type drop-down menu select <code class="literal">FAILOVER-MASTER</code>.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="5">
+                                                                                <p>Click the <b><span class="guibutton">Add virtual IP</span></b> button.
+                                    </p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </div>
+                                                                    <p>Enable cluster synchronization and designate the role TEACH in the <b><span class="guilabel">Synchronization configuration</span></b> section:
+                           </p>
+                                                                    <div class="orderedlist">
+                                                                        <ol class="orderedlist" style="list-style-type: decimal;">
+                                                                            <li class="listitem" value="1">
+                                                                                <p>Select <b><span class="guilabel">Enable proxy settings synchronization</span></b></p>
+                                                                            </li>
+                                                                            <li class="listitem" value="2">
+                                                                                <p>Select <code class="literal">TEACH</code> in the Mode drop-down.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="3">
+                                                                                <p>Enter a password for the cluster in the <b><span class="guilabel">Password</span></b> field.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="4">
+                                                                                <p>In the <b><span class="guilabel">Protocol</span></b> drop-down select the default <code class="literal">MULTICAST</code></p>
+                                                                            </li>
+                                                                            <li class="listitem" value="5">
+                                                                                <p>Click the <b><span class="guibutton">Save</span></b> button.
+                                    </p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Node 2 configuration</span></b>
+                                                                </td>
+                                                                <td align="left">
+                                                                    <p>Create a FAILOVER-BACKUP interface for the same virtual IP by doing the following:</p>
+                                                                    <div class="orderedlist">
+                                                                        <ol class="orderedlist" style="list-style-type: decimal;">
+                                                                            <li class="listitem" value="1">
+                                                                                <p>In <b><span class="guilabel">Cluster virtual IP configuration</span></b> enter the virtual IP address of the cluster in the <b><span class="guilabel">Virtual IP</span></b> field.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="2">
+                                                                                <p>In <b><span class="guilabel">Netmask</span></b> enter the <code class="literal">netmask</code> specifying the subnet for the virtual ip.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="3">
+                                                                                <p>Select the interface to bind the cluster interface to. If the configured cluster IP is within one of the system interfaces'
+ netmask the system interface with the mask that matches must be selected.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="4">
+                                                                                <p>In the Type drop-down menu select FAILOVER-BACKUP.</p>
+                                                                            </li>
+                                                                            <li class="listitem" value="5">
+                                                                                <p>Click the <b><span class="guibutton">Add virtual IP</span></b> button.
+                                    </p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </div>
+                                                                    <p>Enable cluster synchronization and designate the role LEARN in the <b><span class="guilabel">Synchronization configuration</span></b> section:
+                           </p>
+                                                                    <div class="orderedlist">
+                                                                        <ol class="orderedlist" style="list-style-type: decimal;">
+                                                                            <li class="listitem" value="1">
+                                                                                <p>Select <b><span class="guilabel">Enable proxy settings synchronization</span></b></p>
+                                                                            </li>
+                                                                            <li class="listitem" value="2">
+                                                                                <p>Select <code class="literal">LEARN</code> in the Mode drop-down.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="3">
+                                                                                <p>Enter the same cluster password as for node 1for the cluster in the <b><span class="guilabel">Password</span></b> field.
+                                    </p>
+                                                                            </li>
+                                                                            <li class="listitem" value="4">
+                                                                                <p>In the <b><span class="guilabel">Protocol</span></b> drop-down select the default <code class="literal">MULTICAST</code></p>
+                                                                            </li>
+                                                                            <li class="listitem" value="5">
+                                                                                <p>Click the <b><span class="guibutton">Save</span></b> button.
+                                    </p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p>The cluster can also be configured to synchronize and maintain fail-over state using UNICAST targeting a specific peer IP
+ see <a href="#ref_system_cluster_sync.htm" class="MCXref xref">Synchronization configuration</a> and <a href="#ref_system_clustering_vip.htm" class="MCXref xref">Cluster virtual IP configuration
+</a> for more information.
+            </p>
+                                            </div>
+                                        </div>
+                                        <div class="sect2" title="1.4.&#160;VRRP Interfaces">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 class="title" id="VRRPInterfaces" data-magellan-target="VRRPInterfaces">VRRP Interfaces
+<a name="ref_system_clustering_carp_interfaces.htm"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The <b><span class="guilabel">VRRP Interfaces</span></b> configuration section provides an overview of VRRP interfaces and allows for post configuration.
+         </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">ID</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The VRRP interface id on the node.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">VIP</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Virtual IP address of the cluster.</p>
+                                                                <p>This is the IP address the nodes in the cluster is sharing.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Netmask</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">The netmask defining the virtual IP's subnet.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Proto</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Peer</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">VHID</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Virtual host identifier number of the VRRP group.</p>
+                                                                <p>On each Web Security Manager node VHIDs are required to be unique.</p>
+                                                                <p>VHIDs identify cluster groups accros Web Security Manager nodes. The same VHIDs are therefore required to be configured on
+ both cluster nodes.
+                        </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>An even integer in the range 2-254</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">Next available VHID number</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Interface</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">The physical network interface the VRRP interface is bound to.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">State</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>State of the VRRP interface can be either <code class="literal">MASTER</code> or <code class="literal">BACKUP</code>.
+                        </p>
+                                                                <p>If a VRRP interface with a low priority (automatically set when selecting the types FAILOVER-BACKUP or LOADBALANCE-FAILOVER)
+ is assuming the role of MASTER then probably the original MASTER node is experiencing problems.
+                        </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Type</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Priority</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>The priority of the interface in the VRRP group.</p>
+                                                                <p>Do not edit this property unless you are familiar with the VRRP protocol.</p>
+                                                                <p>The priority itself is an abstraction over the <code class="literal">advskev</code> VRRP parameter. When setting <code class="literal">priority</code><code class="literal">advskev</code> is calculated as <code class="literal">254 - priority</code>.
+                        </p>
+                                                                <p>Interfaces of type FAILOVER-MASTER are configured with a high priority and interfaces of type FAILOVER-BACKUP are configured
+ with a lower priority.
+                        </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>An integer in the range 1-254</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">FAILOVER-MASTER: 254</code>
+                                                                            </p>
+                                                                            <p><code class="literal">FAILOVER-BACKUP: 154</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

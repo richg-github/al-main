@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Analyze|Search" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how you can save and schedule any log search for frequent use." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Create Saved and Scheduled Log Searches</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="top"></a>Saved and Scheduled Searches</h1>
+                                        <p>The Search experience in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> is intended to allow you to perform basic and advanced searches for different data types. The Search feature is flexible for structuring advanced search queries, and using fields and predefined expressions to help you find and organize  messages most relevant to your investigation. </p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> saves your recent executed searches and allows you to save and schedule any search for frequent use. You must successfully run the search to save and schedule a search. The Saved Searches feature lists all recent executed searches, and recent scheduled searches. You can also view  scheduled search results or export them to a CSV file.</p>
+                                        <p>To access the  Search page,  click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../../Resources/Images/dashboard/investigate-icon.png" style="vertical-align: bottom;" /><b>Investigate</b>. Click <b>Search</b>, and then click the <b>Search</b> tab.</p>
+                                        <h2>Saved Searches side panel</h2>
+                                        <p> From the Search page, you can view your recent executed searches and recent schedules searches, load searches and download search results to a CSV file. Click <b>Saved Searches</b> in the Search page to view your recent executed searches and recent schedules searches. From the <b>Saved Searches</b> side panel, click the side arrow (<img src="../../Resources/Images/Icons/input-icon.png" />) for the search query you want to load for search. To download search results to a CSV file, click <b>Download</b>. </p>
+                                        <p>To manage your saved searches, click <b>Managed saved searches</b> to be redirected to the <b>Saved Searches</b> page. To view a list of all your search results from schedules searches, click <b>See More</b> to be redirected to the <a href="downloads.htm" class="MCXref xref">Downloads</a> page. </p>
+                                        <h2><a name="Save"></a>Save a search</h2>
+                                        <div class="note">
+                                            <p>You cannot save a search with  the <b>Search Managed Account</b> toggle on for <span class="mc-variable ALVariables.IDS_Event variable">IDS&#160;Event</span> data type. </p>
+                                        </div>
+                                        <p>If the security goals for your organization require you to run specific searches more than once,  you can create a saved search so you can easily find and run the search in the future. </p>
+                                        <p style="font-weight: bold;">To save a search:</p>
+                                        <ol>
+                                            <li value="1">On the Search page, enter a valid search query. </li>
+                                            <li value="2">On the <b>SEARCH</b> button, click the down arrow (<img src="../../Resources/Images/search/down-arrow_21x23.png" style="width: 21;height: 23;" />), and then click <b>Save and Schedule Search</b>.</li>
+                                            <li value="3">Under Saved Search Details, type a name and description for the search query.</li>
+                                            <li value="4">(Optional) Under Add Tags, you can tag a search with an existing tag or create a new one to help you organize your searches. </li>
+                                            <li value="5">(Optional) Under Schedule Search, you can create a schedule for the search query to run automatically. For further instructions, see <a href="schedule-searches.htm#Create" class="MCXref xref">Create a search schedule and notification</a>.</li>
+                                            <li value="6">Under Search Query, make any necessary changes to your search template.</li>
+                                            <li value="7">Click <b>SAVE</b>. </li>
+                                        </ol>
+                                        <h2><a name="Create"></a>Create a search schedule and notification</h2>
+                                        <div class="note">
+                                            <p>You cannot schedule a search with  the <b>Search Managed Account</b> toggle on for  <span class="mc-variable ALVariables.IDS_Event variable">IDS&#160;Event</span> data type. </p>
+                                        </div>
+                                        <p>Create a schedule and subscribe users  to receive a notification when the search is complete in the Notifications page. </p>
+                                        <p style="font-weight: bold;">To create a search schedule and notification:</p>
+                                        <ol>
+                                            <li value="1">From the <b>Create a Saved Search</b> form, toggle the <b>Create Schedule Search</b> option. </li>
+                                            <li value="2">Type a descriptive name for the search schedule<span style="font-family: 'Microsoft Sans Serif'">—</span>for example, "Security search for security team."</li>
+                                            <li value="3">If you want the schedule to be active, leave  <b>Schedule Is Active</b> turned on. Turn it off if you want to save the schedule but not activate it yet. </li>
+                                            <li value="4">Specify how often you want to conduct the search:<ul><li><b>Once</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Conducts a search at your requested time and date once. </li><li><b>As soon as possible</b>—Conducts a search immediately. </li><li><b>Every 15 minutes</b>—Conducts a search every 15 minutes until you cancel this schedule. </li><li><b>Daily</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Conducts a search every day for data from the previous day.</li><li><b>Weekly</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Conducts a search on the day you select for data from the previous calendar week (Monday<span style="font-family: 'Microsoft Sans Serif'">—</span>Sunday). </li><li><b>Monthly</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Conducts a search on the day of the month you select for data from the previous calendar month. </li></ul></li>
+                                            <li value="5">Select the time you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to conduct the search, using the 24-hour clock standard. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> schedules the search in the time zone reported by your web browser.<div class="note"><p>If you chose <b>Once</b> or <b>As soon as possible</b>, you can opt to search for data for the last hour, six hours, 12 hours, 24 hours, seven days, 30 days, or enter an explicit start and end time. </p></div></li>
+                                            <li value="6">Under <b>Search Query</b>, make any necessary changes to your search template. </li>
+                                            <li value="7">Under <b>Recipients</b>, to subscribe yourself and other users to receive a notification email, click <b>Subscribe User(s)</b>, and then:<ol style="list-style-type: lower-alpha;"><li value="1">Under <b>Notification Delivery</b>, select the users that you want to receive the notification. The list includes your name and other user names in the customer account. You can use the search bar to help you find recipients. </li><li value="2">(Optional) Customize the <b>Email Subject</b>. You can change the text and insert the {{scheduled_search_name}} variable to include the name of the scheduled search.</li><li value="3">If you want to send the schedule as a CSV file attachment, select the <b>Attach CSV File</b> check box. If you leave it cleared, the email will provide only a link to the Downloads page with the list filtered to display the search generated by the schedule. </li><div class="note">The CSV File search attachment contains a maximum of 500,000 logs. The email attachment is unencrypted and may contain sensitive information about your organization. If a search result is too large to be attached to an email message, a note will be included in the email notification. All results can always be downloaded in full using the <a href="downloads.htm" class="MCXref xref">Downloads</a> page.</div><li value="4">If you want to receive a notification even if the search yielded no results, select the <b>Receive a notification even if the scheduled search yields no results</b>. </li></ol></li>
+                                            <li value="8">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h2>View and manage search schedules and notifications</h2>
+                                        <p>You can view and manage search schedules and their notifications from the <b>Saved Searches</b> page in Search. The page shows lists of existing search schedules and  the number of recipients notified when the scheduled search is generated. You can also view a list of saved searches that are not on a schedule. </p>
+                                        <p style="font-weight: bold;">To execute a saved search:</p>
+                                        <ol>
+                                            <li value="1">On the Search page, click <b>Saved Searches</b>. </li>
+                                            <li value="2">From the <b>Saved Searches</b> list, click the saved search you want to run.</li>
+                                            <li value="3">Select the search you want to run.</li>
+                                            <li value="4">Click <b>SEARCH</b> to add the saved search. </li>
+                                            <li value="5">Click <b>SEARCH</b>.</li>
+                                        </ol>
+                                        <h3><a name="delete-edit"></a>Delete or edit saved and scheduled searches</h3>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> allows you to make the following changes to saved searches and search schedules you created:</p>
+                                        <ul>
+                                            <li>Delete a saved search</li>
+                                            <li>Edit the search name</li>
+                                            <li>Edit or delete existing search schedules</li>
+                                            <li>Add search schedules</li>
+                                        </ul>
+                                        <p style="font-weight: bold;">To delete a saved search:</p>
+                                        <ol>
+                                            <li value="1">On the Search page, click <b>Saved Searches</b>. </li>
+                                            <li value="2">From the <b>Saved Searches</b> page, select and expand the saved search you want to delete.</li>
+                                            <li value="3">Click the delete icon (<img src="../../Resources/Images/Icons/trash_icon.png" style="vertical-align: text-bottom;" />) to delete the search.</li>
+                                            <li value="4">When prompted, click <b>YES</b>.
+			</li>
+                                        </ol>
+                                        <p style="font-weight: bold;">To edit the details of a saved search:</p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>On the Search page, click <b>Saved Searches</b>. </p>
+                                            </li>
+                                            <li value="2">From the <b>Saved Searches</b> page, select and expand the saved search you want to delete.</li>
+                                            <li value="3"> edit.</li>
+                                            <li value="4">Click the edit icon (<img src="../../Resources/Images/pencil_icon.png" style="vertical-align: text-bottom;" />) to edit the search.</li>
+                                            <li value="5">Make changes to any of the following:<ul><li>Name</li><li>Description</li><li>Tags</li><li>Schedule Search (Opens in a separate window)</li><li>Search Query </li></ul></li>
+                                            <li value="6">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p style="font-weight: bold;">To edit a schedule for a saved search:</p>
+                                        <ol>
+                                            <li value="1">On the Search page, click <b>Saved Searches</b>.</li>
+                                            <li value="2">From the <b>Saved Searches</b> page, select and expand the group that contains the saved search you want to edit.</li>
+                                            <li value="3">Select the saved search with the schedule you want to edit. </li>
+                                            <li value="4">Click the edit icon (<img src="../../Resources/Images/pencil_icon.png" style="vertical-align: text-bottom;" />) to edit the search.</li>
+                                            <li value="5">Select the schedule you want to edit, and then make changes as described in <a href="#Create" title="Schedule log searches and configure notifications" alt="Schedule log searches and configure notifications" class="MCXref xref">Create a search schedule and notification</a>.
+            </li>
+                                            <li value="6">Click <b>SAVE&#160;SCHEDULE</b>.</li>
+                                            <li value="7">Click <b>SAVE</b>. </li>
+                                        </ol>
+                                        <p style="font-weight: bold;">To delete a schedule for a saved search:</p>
+                                        <ol>
+                                            <li value="1">On the Search page, click <b>Saved Searches</b>.</li>
+                                            <li value="2">From the <b>Saved Searches</b>  page, select and expand the group that contains the saved search you want to edit.</li>
+                                            <li value="3">Select the saved search with the schedule you want to delete. </li>
+                                            <li value="4">Click <b>EDIT SCHEDULES</b>.</li>
+                                            <li value="5">Select the schedule you want to delete.</li>
+                                            <li value="6">Click <b>DELETE</b>.</li>
+                                            <li value="7">Click <b>SAVE</b>. </li>
+                                        </ol>
+                                        <p style="font-weight: bold;">To add a schedule to a saved search:</p>
+                                        <ol>
+                                            <li value="1">On the Search page, click <b>Saved Searches</b>.</li>
+                                            <li value="2">From the <b>Saved Searches</b>  page, select and expand the group that contains the saved search you want to edit.</li>
+                                            <li value="3">Click the edit icon (<img src="../../Resources/Images/pencil_icon.png" style="vertical-align: text-bottom;" />) to edit the search.</li>
+                                            <li value="4">Select the saved search to which you want to add a schedule. </li>
+                                            <li value="5">Click <b>+ ADD&#160;SCHEDULE</b> to specify the frequency for the new schedule, as described in <a href="#Create" class="MCXref xref">Create a search schedule and notification</a>.</li>
+                                            <li value="6">Click <b>SAVE&#160;SCHEDULE</b>. </li>
+                                            <li value="7">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h3><a name="view-export-results"></a>View and export scheduled search results</h3>
+                                        <p>The Saved Searches panel lists your recent searches. Click a recently executed scheduled search to perform the following tasks:</p>
+                                        <ul>
+                                            <li>View the results of the search on your screen</li>
+                                            <li>Export the results of the search to a CSV file</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Deploy" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn about deployment types you can create to monitor and protect assets in your AWS, Azure, and other cloud-based or physical data centers." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>About  Deployment Types</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="get-started-deployments"></a>About  Deployment Types</h1>
+                                        <p>A deployment allows you to monitor and protect a defined set of assets from your appliances, agents, hosts, and collectors from your environments. You can create deployments for assets found in your <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span>, <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span>, and other cloud-based or physical data centers. </p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> discovers and organizes deployments into a visual topology where you can select the desired levels of protection for your assets. You must choose one of the following levels of coverage for each asset:</p>
+                                        <ul>
+                                            <li> Unprotected</li>
+                                            <li><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Essentials coverage</li>
+                                            <li><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Professional coverage </li>
+                                        </ul>
+                                        <h2>Coverage protection levels</h2>
+                                        <p>For more detailed information about protection levels, see <a href="subscriptions-addons.htm" class="MCXref xref">Get Started with Alert Logic   Subscriptions and Add-ons</a>.</p>
+                                        <h3><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Essentials</h3>
+                                        <p><span class="mc-variable ALVariables.Essentials_1 variable">Alert Logic MDR Essentials</span> coverage provides deployment automation for assets in your <span class="mc-variable ALVariables.AWS variable">AWS</span> or <span class="mc-variable ALVariables.Azure variable">Azure</span> environments, access to continuous asset discovery, and asset visibility for your deployments. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> continuously tests your environments with vulnerability scanning and cloud configuration scanning to help you detect and remediate exposures. </p>
+                                        <h3><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Professional</h3>
+                                        <p><span class="mc-variable ALVariables.Professional_1 variable">Alert Logic MDR Professional</span> coverage provides the capabilities from Essentials, plus access to network intrusion detection, and log and security analytics.</p>
+                                        <h2><a name="deployment-types"></a>Deployment types</h2>
+                                        <h3><a name="aws-deployments"></a><span class="mc-variable ALVariables.AWS variable">AWS</span> Deployments</h3>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> supports integrations with several <span class="mc-variable ALVariables.AWS variable">AWS</span> security services. To protect your <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment, you must set up an <span class="mc-variable ALVariables.AWS variable">AWS</span> cross-account role to allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> access to your <span class="mc-variable ALVariables.AWS variable">AWS</span> account. The <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> steps you through IAM role creation.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> supports integration with <a href="https://aws.amazon.com/outposts/"><span class="mc-variable ALVariables.AWS variable">AWS</span> Outposts</a>. <span class="mc-variable ALVariables.AWS variable">AWS</span> Outposts is a fully managed service that offers <span class="mc-variable ALVariables.AWS variable">AWS</span> infrastructure, services, APIs, and tools to any datacenter, co-location space, or on-premises facility for a consistent hybrid experience. <span class="mc-variable ALVariables.AWS variable">AWS</span> compute, storage, database, and other services run locally on Outposts, and you can access the full range of <span class="mc-variable ALVariables.AWS variable">AWS</span> services to build, manage, and scale your on-premises applications using <span class="mc-variable ALVariables.AWS variable">AWS</span> services and tools. If you have <span class="mc-variable ALVariables.AWS variable">AWS</span> Outposts configured, you can deploy <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> using whichever deployment mode you prefer.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudFormation templates to automate creation of the correct policy and role for the deployment mode you choose. The deployment mode you choose determines how <span class="mc-variable ALVariables.Company variable">Alert Logic</span> deploys your scanning instances. You can also choose to employ manual setup in which you log into the <span class="mc-variable ALVariables.AWS variable">AWS</span> console and create your IAM policy and role.</p>
+                                        <p>Each <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment mode allows a different level of control over the creation of scanning instances and subnets.</p>
+                                        <h4><a name="aws-automatic-mode"></a>Automatic Mode</h4>
+                                        <p>Automatic Mode is available only for <span class="mc-variable ALVariables.AWS variable">AWS</span> deployments. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends  Automatic Mode  if you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to deploy and maintain new VPC subnets used for scanning instances. If you choose Automatic Mode, you can create the IAM&#160;policy and role by using either an <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudFormation template or your own policy document. </p>
+                                        <p>If you create a deployment with Automatic Mode, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> creates the following <span class="mc-variable ALVariables.AWS variable">AWS</span> resources:</p>
+                                        <ul>
+                                            <li>A CloudTrail log source if one is not present</li>
+                                            <li>A new Outcomes SQS Queue</li>
+                                            <li>An SNS Topic if one is not available and linked to the CloudTrail log source</li>
+                                        </ul>
+                                        <p>For an <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscription, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> automatically deploys the following <span class="mc-variable ALVariables.AWS variable">AWS</span> resources:</p>
+                                        <ul>
+                                            <li>A single /28 subnet per scoped VPC with required routing to the Internet (Internet gateway and routing table setup)</li>
+                                            <li>A single scanning EC2 instance (c5.large by default)</li>
+                                        </ul>
+                                        <p>For a <span class="mc-variable ALVariables.Professional variable">Professional</span> subscription or the <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span> add-on, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> automatically deploys the following <span class="mc-variable ALVariables.AWS variable">AWS</span> resources:</p>
+                                        <ul>
+                                            <li>One /28 subnet per VPC for the scanning appliance</li>
+                                            <li>A single scanning EC2 instance (c5.large by default)—outbound Internet connectivity required </li>
+                                            <li>A /28 subnet for each IDS appliance deployed in each Availability Zone</li>
+                                            <li>One IDS instance per Availability Zone (c5.xlarge by default)—outbound Internet connectivity required </li>
+                                        </ul>
+                                        <p>For information about creating an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment for each subscription level by using Automatic Mode, see: </p>
+                                        <ul>
+                                            <li><a href="../deploy/aws-auto-essentials.htm" title="AWS Deployment Creation in Automatic Mode for an Essentials Subscription" alt="AWS Deployment Creation in Automatic Mode for an Essentials Subscription" target="_blank" class="MCXref xref">Amazon Web Services (AWS) Deployment Configuration—Automatic Mode (Essentials Subscription)</a>
+                                            </li>
+                                            <li><a href="../deploy/aws-auto-pro-ent.htm" target="_blank" title="AWS Deployment Creation in Automatic Mode for a Professional Subscription" alt="AWS Deployment Creation in Automatic Mode for a Professional Subscription" class="MCXref xref">Amazon Web Services (AWS) Deployment Configuration—Automatic Mode (Professional Subscription)</a>
+                                            </li>
+                                        </ul>
+                                        <h4><a name="aws-manual-mode"></a>Manual Mode</h4>
+                                        <p>Select Manual Mode if you want to manage subnets for scanning instances when you create an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment. If you choose Manual Mode, you can create the IAM&#160;policy and role by using either an <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudFormation template or your own policy document. </p>
+                                        <p>An <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscription requires that you log into <span class="mc-variable ALVariables.AWS variable">AWS</span> and set up a  single scanning EC2 instance (c5.large by default)—outbound Internet connectivity required—deployed into the subnet of your choice. </p>
+                                        <p><span class="mc-variable ALVariables.Professional variable">Professional</span> <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">and <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span> </MadCap:conditionalText>subscriptions require you to log into <span class="mc-variable ALVariables.AWS variable">AWS</span> and set up the following resources:</p>
+                                        <ul>
+                                            <li>A single scanning EC2 instance (c5.large by default)—outbound Internet connectivity required—deployed into the subnet of your choice </li>
+                                            <li>Minimum of one IDS per VPC (c5.large by default)</li>
+                                        </ul>
+                                        <div class="note">If you feel that you need to scale your appliance to a size larger than c5.2xlarge, you can mitigate costs by using multiple smaller appliances.  <span class="mc-variable ALVariables.Company variable">Alert Logic</span> supports the use of multiple appliances with Availability Zone awareness. </div>
+                                        <p>In addition, Manual Mode deployments require you to log into the <span class="mc-variable ALVariables.AWS variable">AWS</span> console and configure the following <span class="mc-variable ALVariables.AWS variable">AWS</span> services:</p>
+                                        <ul>
+                                            <li>Set up a CloudTrail log source: <ul><li>Create a CloudTrail and SNS topic, or</li><li>Use an existing CloudTrail and SNS&#160;topic.</li></ul></li>
+                                            <li>Configure an Amazon S3 bucket policy.</li>
+                                            <li>Deploy a network IDS appliance (<span class="mc-variable ALVariables.Professional variable">Professional</span><MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> and <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span></MadCap:conditionalText> subscription<MadCap:conditionalText data-mc-conditions="Primary.Draft Content">s</MadCap:conditionalText> only).</li>
+                                            <li>Deploy a scanning appliance.</li>
+                                        </ul>
+                                        <p>For information about creating an <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment for each subscription level using Manual Mode, see:</p>
+                                        <ul>
+                                            <li><a href="../deploy/aws-manual-essentials.htm" target="_blank" title="AWS Deployment Creation in Manual Mode for an Essentials Subscription" alt="AWS Deployment Creation in Manual Mode for an Essentials Subscription" class="MCXref xref">Amazon Web Services (AWS) Deployment Configuration—Manual Mode (Essentials Subscription)</a> </li>
+                                            <li><a href="../deploy/aws-manual-pro-ent.htm" target="_blank" title="AWS Deployment Creation in Manual Mode for a Professional Subscription" alt="AWS Deployment Creation in Manual Mode for a Professional Subscription" class="MCXref xref">Amazon Web Services (AWS) Deployment Configuration—Manual Mode  (Professional Subscription)</a>.</li>
+                                        </ul>
+                                        <h3><a name="azure-deployments"></a><span class="mc-variable ALVariables.Azure variable">Azure</span> Deployments</h3>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> supports integration with several <span class="mc-variable ALVariables.Azure variable">Azure</span> services. To protect your <span class="mc-variable ALVariables.Azure variable">Azure</span> deployment, you must create a Role-Based Access Control (RBAC) role in <span class="mc-variable ALVariables.Azure variable">Azure</span> to allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to access your account. </p>
+                                        <p>As part of deployment creation, you must log into <span class="mc-variable ALVariables.Azure variable">Azure</span> and deploy appliances. An <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscription requires that you set up a single IDS appliance which, for an  <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscription, goes into scan-only mode. </p>
+                                        <p>For <span class="mc-variable ALVariables.Professional variable">Professional</span><MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> and <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span></MadCap:conditionalText> subscriptions, set up:</p>
+                                        <ul>
+                                            <li>Install appliance</li>
+                                            <li>Install agent</li>
+                                        </ul>
+                                        <p>For information about creating an <span class="mc-variable ALVariables.Azure variable">Azure</span> deployment for each subscription level, see:</p>
+                                        <ul>
+                                            <li><a href="../deploy/azure-essentials.htm" target="_blank" title="Azure Deployment Creation for an Essentials Subscription" alt="Azure Deployment Creation for an Essentials Subscription" class="MCXref xref">Microsoft Azure Deployment Configuration (Essentials Subscription)</a>
+                                            </li>
+                                            <li><a href="../deploy/azure-pro-ent.htm" target="_blank" title="Azure Deployment Creation for a Professional Subscription" alt="Azure Deployment Creation for a Professional Subscription" class="MCXref xref">Microsoft Azure Deployment Configuration (Professional Subscription)</a>
+                                            </li>
+                                        </ul>
+                                        <h3><a name="data-center-deployments"></a>Data Center deployments</h3>
+                                        <p>The Data Center deployments allow you to monitor and protect your cloud-based or on-premisis data centers. The Data Center page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span> displays the list of appliances, agents, hosts, and log collectors if subscribed to the Professional  coverage.</p>
+                                        <p>For an <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscription, you must:</p>
+                                        <ul>
+                                            <li>Go through the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> setup in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>.</li>
+                                            <li>Deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> appliance.</li>
+                                            <li>Implement necessary <span class="mc-variable ALVariables.Company variable">Alert Logic</span> firewall rules for the <a href="../requirements/us-firewall-rules.htm">US</a> or <a href="../requirements/uk-eu-firewall-rules.htm">UK/EU</a>.</li>
+                                        </ul>
+                                        <p>For <span class="mc-variable ALVariables.Professional variable">Professional</span> and <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span> subscriptions, set up:</p>
+                                        <ul>
+                                            <li>Go through the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> setup in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>.</li>
+                                            <li>Deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> appliance.</li>
+                                            <li>Install agents or, if you do not set up agents, set up network SPAN.</li>
+                                            <li>Implement necessary <span class="mc-variable ALVariables.Company variable">Alert Logic</span> firewall rules for the <a href="../requirements/us-firewall-rules.htm">US</a> or <a href="../requirements/uk-eu-firewall-rules.htm">UK/EU</a>.</li>
+                                        </ul>
+                                        <p>For more information about creating a Data Center deployment for each subscription level, see:</p>
+                                        <ul>
+                                            <li><a href="../deploy/data-center-essentials.htm" target="_blank" title="Data Center Deployment Configuration (Essentials Subscription)" alt="Data Center Deployment Configuration (Essentials Subscription)" class="MCXref xref">Data Center Deployment Configuration (Essentials Subscription)</a>
+                                            </li>
+                                            <li><a href="../deploy/data-center-pro-ent.htm" class="MCXref xref">Data Center Deployment Configuration (Professional Subscription)</a>
+                                            </li>
+                                        </ul>
+                                        <p>For information about using the Data Center deployment method for a <span class="mc-variable ALVariables.Google_1 variable">Google Cloud Platform</span> environment, see:</p>
+                                        <ul>
+                                            <li><a href="../deploy/google-cloud-essentials.htm" class="MCXref xref">Data Center Deployment Configuration for Google Cloud Platform (Essentials Subscription)&#160;</a>
+                                            </li>
+                                            <li><a href="../deploy/google-cloud-pro-ent.htm" class="MCXref xref">Data Center Deployment for Google Cloud Platform (Professional Subscription)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

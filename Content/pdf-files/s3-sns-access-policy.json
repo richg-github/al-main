@@ -1,0 +1,35 @@
+{
+  "Version": "2012-10-17",
+  "Id": "AlertLogicS3SNSTopicPolicyDocument",
+  "Statement": [
+    {
+      "Sid": "AllowS3Notifications",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": [
+        "SNS:Publish",
+        "SNS:Receive"
+      ],
+      "Resource": "arn:aws:sns:us-east-2:123456789101:my-sns-topic",
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceAccount": "123456789101"
+        },
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::my-bucket"
+        }
+      }
+    },
+    {
+      "Sid": "AllowAlertLogicSubscription",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::230378978437:root"
+      },
+      "Action": "sns:Subscribe",
+      "Resource": "arn:aws:sns:us-east-2:123456789101:my-sns-topic"
+    }
+  ]
+}

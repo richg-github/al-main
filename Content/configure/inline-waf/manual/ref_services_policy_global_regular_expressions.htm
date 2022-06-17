@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Regular Expressions</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <div>
+                                            <h1 id="RegularExpressions" data-magellan-target="RegularExpressions"><a name="top"></a>Regular Expressions</h1>
+                                            <div>
+                                                <p>The <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> Regular Expressions page includes the following sections. Click on the link to go to the corresponding section to learn more: </p>
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menuInBody mc-component">
+                                                    <li><a href="#RegularExpressions">Regular Expressions</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Whatareregularexpressions">What are regular expressions
+                     </a>
+                                                        </li>
+                                                        <ul>
+                                                            <ul>
+                                                                <li><a href="#Metacharacters">Metacharacters
+                     </a>
+                                                                </li>
+                                                                <li><a href="#Repetition">Repetition
+                     </a>
+                                                                </li>
+                                                                <li><a href="#Specialnotationswith">Special notations with \
+                     </a>
+                                                                </li>
+                                                                <li><a href="#Charactersets">Character sets [...]
+                     </a>
+                                                                </li>
+                                                                <li><a href="#Lookaround">Lookaround
+                     </a>
+                                                                </li>
+                                                                <li><a href="#Examples">Examples
+                     </a>
+                                                                </li>
+                                                                <li><a href="#Furtherreading">Further reading
+                     </a>
+                                                                </li>
+                                                            </ul>
+                                                        </ul>
+                                                    </ul>
+                                                </ul>
+                                                <div>
+                                                    <p>To go to the documentation for the previous section of <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span>, see <a href="ref_services_policy_web_applications.htm" class="MCXref xref">Web Applications
+</a>. To go to  the documentation for next section in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> section, see <a href="ref_services_deny_and_error_handling.htm" class="MCXref xref">Deny and Error Handling
+</a>.</p>
+                                                    <p><b>To access the Regular expressions section in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> management interface</b>:</p>
+                                                    <ol>
+                                                        <li value="1">On the left panel, under Services, click <b>Websites</b>. </li>
+                                                        <li value="2">On the Websites page, click the website you want to manage. </li>
+                                                        <li value="3">Under <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>, click <b>Policy</b>, and then scroll down to the Regular expression section. </li>
+                                                    </ol>
+                                                </div>
+                                                <p>If you want to see all the settings on the Policy page, on the upper-right corner, change  the <b>Display preset</b> to <b>Advance</b>. </p>
+                                            </div>
+                                        </div>
+                                        <p>To save configuration changes or edits you make to any features and options, you must click <b>Save</b> on the lower-right of the section or page where you are making changes. Click <b>apply changes</b> on the upper-left corner of the page, and then click <b>OK</b>. Your changes will not be stored if you do not properly save your changes. </p>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> has full support for standard PCRE (Perl Compatible Regular Expressions).</p>
+                                        <p>Following below is a brief regular expression "survival guide". For a more thorough explanation of the subject some links
+ and books are recommended at the end of the section.
+         </p>
+                                        <div class="sect3" title="1.8.1.&#160;What are regular expressions">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h2 id="Whatareregularexpressions" data-magellan-target="Whatareregularexpressions"><a name="ap_what_are_regular_expressions"></a>What are regular expressions
+                     </h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>A regular expression is a formula for matching strings that follow some pattern.</p>
+                                            <p>Regular expressions are made up of normal characters and special characters. Normal characters include upper and lower case
+ letters and digits. The characters with special meanings and are described in detail below.
+            </p>
+                                            <p>In the simplest case, a regular expression looks like a standard text string. For example, the regular expression "john" contains
+ no special characters. It will match "john" and "john doe" but it will not match "John".
+            </p>
+                                            <p>In an input validation context we always want the expression to match the whole string. The expression above would now be
+ expressed as ^john$, where the characters ^ and $ means starting of line and end of line. Now john will only match "john"
+ but not "john doe". To obtain match of "john doe" as well as "john smith" etc. we employ a few more simple special characters.
+ In its simplest form "john <span class="emphasis"><em>lastname</em></span>" could be expressed as "^john.*$" meaning: A string starting with the characters "john" followed by zero or more (the "*")
+ occurrences of any character (the "."). For those familiar with the simple wild-card character "*" in (a.o.) DOS and Unix,
+ ".*" equals "*" - that is: <span class="emphasis"><em>anything</em></span>.
+            </p>
+                                            <p>Specifying <span class="emphasis"><em>anything</em></span> is not very useful in an input validation context. With regular expressions much more fine grained input validation masks
+ can be defined with the rich set of meta characters, character classes, repetition quantifiers, etc.
+            </p>
+                                            <p>A brief explanation with some examples follows below.</p>
+                                        </div>
+                                        <div class="sect3" title="1.8.2.&#160;Metacharacters">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Metacharacters" data-magellan-target="Metacharacters"><a name="ap_metacharacters"></a>Metacharacters
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table"><a name="regexp_meta"></a>
+                                                <div class="table-contents">
+                                                    <table summary="Metacharacters in regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                        <colgroup>
+                                                            <col width="10%" align="left">
+                                                            </col>
+                                                            <col width="90%" align="left">
+                                                            </col>
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">^</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Beginning of string (implied in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">$</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">End of string (implied in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">.</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Any character except newline</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">*</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Match 0 or more times</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">+</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Match 1 or more times</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">?</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Match 0 or 1 times; or: shortest match quantifier (i.e. *?)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">|</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Alternative (like logical OR)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">()</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Grouping</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[]</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Set of characters (a list of characters)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">{}</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Repetition modifier</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;" align="left"><code class="literal">\</code>
+                                                                </td>
+                                                                <td align="left">Quote or special</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="title"><b>Metacharacters in regular expressions</b>
+                                                </p>
+                                            </div>
+                                            <br class="table-break">
+                                            </br>
+                                            <p>To present a metacharacter as a data character standing for itself, precede it with \ (e.g. \. matches the full stop character
+ "." only).
+            </p>
+                                            <div class="note" title="Note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                                <p>In <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> all regular expressions are forced to match the entire string (URL path or parameter value) by automatically
+ prefixing an expression with "^" and suffixing it with "$".
+                        </p>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="1.8.3.&#160;Repetition">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Repetition" data-magellan-target="Repetition"><a name="ap_repetition"></a>Repetition
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table"><a name="regexp_repetition"></a>
+                                                <div class="table-contents">
+                                                    <table summary="Repetition in regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                        <colgroup>
+                                                            <col width="18%" align="left">
+                                                            </col>
+                                                            <col width="82%" align="left">
+                                                            </col>
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">a*</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Zero or more a's</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">a+</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">One or more a's</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">a?</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Zero or one a's (i.e., optional a)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">a{m}</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Exactly m a's</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">a{m,}</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">At least m a's</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">a{m,n}</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">At least m but at most n a's</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;" align="left"><code class="literal">repetition?</code>
+                                                                </td>
+                                                                <td align="left">Same as repetition but the shortest match is taken</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="title"><b>Repetition in regular expressions</b>
+                                                </p>
+                                            </div>
+                                            <br class="table-break">
+                                            </br>
+                                            <p>Read "a's" as "occurrences of strings, each of which matches the pattern a".</p>
+                                            <p>Read <span class="emphasis"><em>repetition</em></span> as any of the repetition expressions listed above it.
+            </p>
+                                            <p>Shortest match means that the shortest string matching the pattern is taken. The default is "greedy matching", which finds
+ the longest match.
+            </p>
+                                        </div>
+                                        <div class="sect3" title="1.8.4.&#160;Special notations with \">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Specialnotationswith" data-magellan-target="Specialnotationswith"><a name="ap_special_notations_with_backslash"></a>Special notations with \
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table"><a name="regexp_backslash"></a>
+                                                <div class="table-contents">
+                                                    <table summary="Notations with \ in Web Security Manager regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                        <colgroup>
+                                                            <col width="10%" align="left">
+                                                            </col>
+                                                            <col width="90%" align="left">
+                                                            </col>
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\t</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">tab</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\n</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">newline</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\r</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">return (CR)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\xhh</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">character with hex. code hh</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\b</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">"word" boundary (zero space assertion)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\B</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">not a "word" boundary</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\w</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any single international character classified as a "word" character (alphanumeric or _). Examples: A, z, 1, 9, Æ,
+ â
+                           </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\W</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any non-"word" character</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\s</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any whitespace character (space, tab, newline)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\S</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any non-whitespace character</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\d</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any digit character, equiv. to [0-9]</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\D</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any non-digit character</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;" align="left"><code class="literal">\pN</code>
+                                                                </td>
+                                                                <td align="left">Matches any UNICODE character classified as numeric</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="title"><b>Notations with \ in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> regular expressions</b>
+                                                </p>
+                                            </div>
+                                            <br class="table-break">
+                                            </br>
+                                        </div>
+                                        <div class="sect3" title="1.8.5.&#160;Character sets [...]">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Charactersets" data-magellan-target="Charactersets"><a name="ap_character_sets"></a>Character sets [...]
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>A character set is denoted by [...]. Different meanings apply inside a character set ("character class") so that, instead
+ of the normal rules given here, the following apply:
+            </p>
+                                            <div class="table"><a name="regexp_charsets"></a>
+                                                <div class="table-contents">
+                                                    <table summary="Character sets in regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                        <colgroup>
+                                                            <col width="21%" align="left">
+                                                            </col>
+                                                            <col width="79%" align="left">
+                                                            </col>
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[characters]</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any of the characters in the list (c,h,a,r,a,c,t,e,r,s)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[x-y]</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches any of the characters from x to y (inclusively) in the ASCII code</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[\-]</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches the hyphen character -</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[\n]</code>
+                                                                </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">matches the newline; other single character denotations with \ apply normally, too</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;" align="left"><code class="literal">[^something]</code>
+                                                                </td>
+                                                                <td align="left">Negation. Matches any character except those that [something] denotes; that is, immediately after the leading [ the circumflex
+ ^ means "not" applied to all of the rest
+                           </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="title"><b>Character sets in regular expressions</b>
+                                                </p>
+                                            </div>
+                                            <br class="table-break">
+                                            </br>
+                                        </div>
+                                        <div class="sect3" title="1.8.6.&#160;Lookaround">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" data-mc-conditions="Primary.NOTinBHOOF" id="Lookaround" data-magellan-target="Lookaround"><a name="ap_lookaround"></a>Lookaround
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p data-mc-conditions="Primary.NOTinBHOOF">The lookaround construct allows for the creation of regular expressions matching <span class="emphasis"><em>something</em></span> but only when it is followed/preceded or <span class="emphasis"><em>not</em></span> followed/preceded by <span class="emphasis"><em>something else</em></span>. Note that the lookaround construct is a zero-width assertion. It is testing for a match of something else but it will not
+ actually match it - that is why it is called an assertion. The lookaround constructs allows for the creation of otherwise
+ impossible or too complex expressions.
+            </p>
+                                            <p data-mc-conditions="Primary.NOTinBHOOF">In an input validation context look ahead could be used for specifying an expression allowing angle brackets &lt;&gt; but only when
+ they are not closed.
+            </p>
+                                            <div class="table" data-mc-conditions="Primary.NOTinBHOOF"><a name="regexp_lookaround"></a>
+                                                <div class="table-contents">
+                                                    <table summary="Lookaround in regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                        <colgroup>
+                                                            <col width="33%" align="left">
+                                                            </col>
+                                                            <col width="67%" align="left">
+                                                            </col>
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">a(?!<span class="emphasis"><em>expression</em></span>)
+                           </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Negative lookahead. Matches "a" when not followed by <span class="emphasis"><em>expression</em></span>, where expression is any regular expression.
+                           </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">a(?=<span class="emphasis"><em>expression</em></span>)
+                           </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Positive lookahead. Matches "a", when followed by <span class="emphasis"><em>expression</em></span>.
+                           </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">(?&lt;!<span class="emphasis"><em>fixed-expression</em></span>)a
+                           </td>
+                                                                <td style="border-bottom: 0.5pt solid;" align="left">Negative lookbehind. Matches "a" when not preceded by <span class="emphasis"><em>fixed-expression</em></span>, where fixed-expression is any regular expression specifying a fixed number of characters. That is "aaa" wil work but a+
+ will not work.
+                           </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-right: 0.5pt solid;" align="left">(?&lt;=<span class="emphasis"><em>fixed-expression</em></span>)a
+                           </td>
+                                                                <td align="left">Positive lookbehind. Matches "a" when preceded by <span class="emphasis"><em>fixed-expression</em></span>.
+                           </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="title"><b>Lookaround in regular expressions</b>
+                                                </p>
+                                            </div>
+                                            <br class="table-break">
+                                            </br>
+                                        </div>
+                                        <div class="sect3" title="1.8.7.&#160;Examples">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Examples" data-magellan-target="Examples"><a name="ap_examples"></a>Examples
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sect4" title="1.8.7.1.&#160;Global URL regular expressions">
+                                                <div class="titlepage">
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="title"><a name="ap_global_url_regular_expressions"></a>Global URL regular expressions
+                        </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>The URL regular expressions filter matches URLs without parameters on a proxy global basis. If a request matches any of the
+ defined regular expressions, it will be marked as valid by <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> and forwarded to the back-end server.
+               </p>
+                                                <div class="table"><a name="regexp_globurl"></a>
+                                                    <div class="table-contents">
+                                                        <table summary="Examples of global URL regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                            <colgroup>
+                                                                <col width="50%" align="left">
+                                                                </col>
+                                                                <col width="50%" align="left">
+                                                                </col>
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="center">Expression</th>
+                                                                    <th style="border-bottom: 0.5pt solid;" align="center">Matches</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(/[\w\-]+)+\.html</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">URL with the extension html containing any international word characters, digits, _ and -. (\w matches upper and lower case
+ alphanumeric characters plus _).
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">/abc(?:/[\w\-]+)*\.html</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Same URL starting with <code class="literal">/abc</code>, including the URL <code class="literal">/abc.html</code>.
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(/[\w\-]+)+\.html?</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Same URL matching extensions <code class="literal">html</code> and <code class="literal">htm</code></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(/[\w\-]+)+\.(html|pdf)</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Same URL matching extensions <code class="literal">html</code> and pdf.
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(/[abcdefgh]+)+\.html</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">URL with the extension <code class="literal">html</code> containing any of the lower case letters <code class="literal">abcdefgh</code>.
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">/index\.html</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Exact match of <code class="literal">/index.html</code></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(/[\w\-]+)+/?</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">"Natural" URL containing international alphanumeric characters, digits, <code class="literal">_</code> and <code class="literal">-</code>.
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">/sw[0-9]{0,12}\.asp</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">URL with the extension <code class="literal">asp</code> starting with <code class="literal">/sw</code> followed by 0-12 digits.
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">/(login|logout)</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Only URLs <code class="literal">/login</code> or <code class="literal">/logout</code></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;" align="left"><code class="literal">(/[\w\-]+)+\.(htm|html|shtml|pdf) </code>
+                                                                    </td>
+                                                                    <td align="left">Any international characters URL with one of the extensions htm, html shtml or pdf.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p class="title"><b>Examples of global URL regular expressions</b>
+                                                    </p>
+                                                </div>
+                                                <br class="table-break">
+                                                </br>
+                                            </div>
+                                            <div class="sect4" title="1.8.7.2.&#160;Validating input parameters">
+                                                <div class="titlepage">
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="title"><a name="ap_validating_input_parameters"></a>Validating input parameters
+                        </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table"><a name="regexp_parm"></a>
+                                                    <div class="table-contents">
+                                                        <table summary="Examples of regular expressions for input validation" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                            <colgroup>
+                                                                <col width="25%" align="left">
+                                                                </col>
+                                                                <col width="75%" align="left">
+                                                                </col>
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="center">regular expression</th>
+                                                                    <th style="border-bottom: 0.5pt solid;" align="center">matches</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">^[\w \.@()\-]+$</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">International alphanumeric characters, underscore, a space, dot, @, parentheses and a dash.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">^[0-9a-za-z. ]+$</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">digits, ASCII characters a-z, a dot and a space.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">^[0-9]+$</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">only digits. <code class="literal">[0-9]</code> can also be expressed as <code class="literal">\d</code></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">^[\d]{1,5}$</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">one to five digits.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">^[a-z]+$</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">only lower case ASCII characters from a-z.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;" align="left"><code class="literal">^[a-z]{0,32}$</code>
+                                                                    </td>
+                                                                    <td align="left">matches only lower case ASCII characters from a-z and limits the total length to maximum 32 characters.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p class="title"><b>Examples of regular expressions for input validation</b>
+                                                    </p>
+                                                </div>
+                                                <br class="table-break">
+                                                </br>
+                                            </div>
+                                            <div class="sect4" title="1.8.7.3.&#160;Global parameters">
+                                                <div class="titlepage">
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="title"><a name="d0e12930"></a>Global parameters
+                        </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>When specifying global parameters both the name and the value are defined using regular expressions.</p>
+                                                <div class="table"><a name="regex_globparm"></a>
+                                                    <div class="table-contents">
+                                                        <table summary="Examples of global parameters regular expressions" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                            <colgroup>
+                                                                <col width="17%" align="left">
+                                                                </col>
+                                                                <col width="41%" align="left">
+                                                                </col>
+                                                                <col width="42%" align="left">
+                                                                </col>
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="center">Name</th>
+                                                                    <th style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="center">Value</th>
+                                                                    <th style="border-bottom: 0.5pt solid;" align="center">Matches</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">usepf</code>
+                                                                    </td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">true</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">The specific parameter <code class="literal">usepf</code> with the static value <code class="literal">true</code></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">parm\d{3}</code>
+                                                                    </td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[a-zA-Z\d]{3,32}</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">All parameters with name starting with <code class="literal">parm</code> followed by three digits with the value any combination of letters <code class="literal">a-Z</code> (upper and lowercase) or digits with a minimum length of 3 and a maximum length of 32 characters.
+                              </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;" align="left"><code class="literal">\w{1,25}</code>
+                                                                    </td>
+                                                                    <td style="border-right: 0.5pt solid;" align="left"><code class="literal">[\w\s_,/:()@$*\.\-]*</code>
+                                                                    </td>
+                                                                    <td align="left">Any parameter with name consisting of international word characters and with values containing zero or more"friendly characters".</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p class="title"><b>Examples of global parameters regular expressions</b>
+                                                    </p>
+                                                </div>
+                                                <br class="table-break">
+                                                </br>
+                                            </div>
+                                            <div class="sect4" title="1.8.7.4.&#160;Predefined standard classes in Web Security Manager">
+                                                <div class="titlepage">
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="title"><a name="predefined_standard_classes_in_profense"></a>Predefined standard classes in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span><![CDATA[
+                        ]]></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>The following classes are predefined in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. The classes are presented in the order the <code class="literal">Automatic Policy Generator</code> evaluates them when automatically mapping classes to input parameters.
+               </p>
+                                                <div class="table"><a name="d0e12997"></a>
+                                                    <div class="table-contents">
+                                                        <table summary="Predefined standard classes in Web Security Manager" style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                            <colgroup>
+                                                                <col width="24%" align="left">
+                                                                </col>
+                                                                <col width="41%" align="left">
+                                                                </col>
+                                                                <col width="35%" align="left">
+                                                                </col>
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="center">Class</th>
+                                                                    <th style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="center">Regular expression</th>
+                                                                    <th style="border-bottom: 0.5pt solid;" align="center">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">empty</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">No values allowed</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">num</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\d{1,32}</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Digits - a maximum of 32 digits</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">payment_card</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(?:\d{4}[\-\x20]?){2}\d{4,5}[\-\x20]?(?:\d{2,4})?</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Payment card numbers, allows for spaces and hyphens between number groups.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">ms_ident</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">{?[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}}?</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Microsoft identifier with optional preceding and trailing curly brackets.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">alphanum</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">\w{1,256}</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">International alphanumeric characters. No spaces. max. 256 chars.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">text</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(?!.*(\.\.|//).*)[\w\x20+.,\-:@=/]+</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Simple international text.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">url</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">(?:https?://)?(?!.*(\.\.|//).*)[\w\x20@,.(){}/\-=?&amp;]+</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Simple international URL match. With parameters. Consecutive "/" or "." not allowed (negative look ahead)</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">standard</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[\w\s@,.(){}/\-=?&amp;_:]+</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Text input, international, several special characters allowed including newline.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">printable</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">[^\x00-\x08\x0b\x0c\x0e-\x1f\x7f]+</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Any number of printable characters. Defined by negating character class containing non-printable characters.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">anything</td>
+                                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><code class="literal">.+</code>
+                                                                    </td>
+                                                                    <td style="border-bottom: 0.5pt solid;" align="left">Anything but newline.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border-right: 0.5pt solid;" align="left">Anything_multiline</td>
+                                                                    <td style="border-right: 0.5pt solid;" align="left"><code class="literal">(?:.|\n)*</code>
+                                                                    </td>
+                                                                    <td align="left">Anything including newline.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p class="title"><b>Predefined standard classes in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span></b>
+                                                    </p>
+                                                </div>
+                                                <br class="table-break">
+                                                </br>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="1.8.8.&#160;Further reading">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Furtherreading" data-magellan-target="Furtherreading"><a name="d0e13099"></a>Further reading
+                     </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>A number of web sites and books are describing regular expressions in more detail.</p>
+                                            <div class="sect4" title="1.8.8.1.&#160;Web sites">
+                                                <div class="titlepage">
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="title"><a name="d0e13104"></a>Web sites
+                        </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="variablelist">
+                                                    <dl>
+                                                        <dt><span class="term">Wikipedia</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>A general description</p>
+                                                            <p><a class="ulink" href="http://en.wikipedia.org/wiki/Regular_expression" target="_top">http://en.wikipedia.org/wiki/Regular_expression</a>
+                                                            </p>
+                                                        </dd>
+                                                        <dt><span class="term">The 30 Minute Regex Tutorial</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>The code project</p>
+                                                            <p>.NET specific tutorial, includes a software tool for testing.</p>
+                                                            <p><a class="ulink" href="http://www.codeproject.com/dotnet/RegexTutorial.asp" target="_top">http://www.codeproject.com/dotnet/RegexTutorial.asp</a>
+                                                            </p>
+                                                        </dd>
+                                                        <dt><span class="term">Regular-Expressions.info</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>Excellent web site dealing extensively with the subject.</p>
+                                                            <p><a class="ulink" href="http://www.codeproject.com/dotnet/RegexTutorial.asp" target="_top">http://www.regular-expressions.info</a>
+                                                            </p>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="sect4" title="1.8.8.2.&#160;Books">
+                                                <div class="titlepage">
+                                                    <div>
+                                                        <div>
+                                                            <h5 class="title"><a name="d0e13137"></a>1.8.8.2.&#160;Books
+                        </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>There are many good books covering regular expressions. Here we mention a few.</p>
+                                                <div class="variablelist">
+                                                    <dl>
+                                                        <dt><span class="term">Regular Expression Pocket Reference</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>Introduction and quick reference from O'Reilly.</p>
+                                                            <p><a class="ulink" href="http://www.oreilly.com/catalog/regexppr/index.html" target="_top">http://www.oreilly.com/catalog/regexppr/index.html</a>
+                                                            </p>
+                                                        </dd>
+                                                        <dt><span class="term">Regular Expression Pocket Reference</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>Introduction and quick reference from O'Reilly.</p>
+                                                            <p><a class="ulink" href="http://www.oreilly.com/catalog/regexppr/index.html" target="_top">http://www.oreilly.com/catalog/regexppr/index.html</a>
+                                                            </p>
+                                                        </dd>
+                                                        <dt><span class="term">Mastering Regular Expressions, Second Edition</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>Learning to use regular expressions efficiently. Does not pretend to be introductory in any way. Also from O'Reilly.</p>
+                                                            <p><a class="ulink" href="http://www.oreilly.com/catalog/regex2/index.html" target="_top">http://www.oreilly.com/catalog/regex2/index.html</a>
+                                                            </p>
+                                                        </dd>
+                                                        <dt><span class="term">Sams Teach Yourself Regular Expressions in 10 Minutes</span>
+                                                        </dt>
+                                                        <dd>
+                                                            <p>Sounds appealing. If you are new to regular expressions this is probably a good place to start. From Sams Publishing.</p>
+                                                            <p><a class="ulink" href="http://www.samspublishing.com/title/0672325667" target="_top">http://www.samspublishing.com/title/0672325667</a>
+                                                            </p>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

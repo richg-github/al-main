@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Prepare|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to configure an AWS deployment with the minimal permission policy to maintain full control and perform all required actions manually in your deployment." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Configure  AWS Minimal Permission Deployment in Manual Mode</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="top"></a>Configure  <span class="mc-variable ALVariables.AWS variable">AWS</span> Minimal Permission Deployment<MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> in Manual Mode</MadCap:conditionalText></h1>
+                                        <div class="note">
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> strongly recommends deploying with full permissions to facilitate the discovery of your <span class="mc-variable ALVariables.AWS variable">AWS</span> environment and allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to automate required <span class="mc-variable ALVariables.AWS variable">AWS</span> services. To learn more about full permission deployment, see <a href="aws-full-permission-deployment.htm" class="MCXref xref">Configure AWS Full Permission Deployment</a>.</p>
+                                        </div>
+                                        <p>Minimal permission deployment employs the most limited privileges that still allow  <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to work properly in <span class="mc-variable ALVariables.AWS variable">AWS</span>. </p>
+                                        <p>Minimal permission deployment allows you to set up CloudTrail in either the <span class="mc-variable ALVariables.AWS variable">AWS</span> account you want protected by <span class="mc-variable ALVariables.Company variable">Alert Logic</span> or in a separate account with an S3 bucket to which CloudTrail is configured for centralized log collection.</p>
+                                        <h2><a name="configure-min-permissions"></a>Configure minimal
+                        permission deployment</h2>
+                                        <p>To perform minimal permission cross-account role configuration, you must log into your <span class="mc-variable ALVariables.AWS variable">AWS</span> account and create an IAM role. <span class="mc-variable ALVariables.AWS variable">AWS</span> role creation requires that you provide an <span class="mc-variable ALVariables.AWS variable">AWS</span> policy, a document that specifies the permissions assigned to the <span class="mc-variable ALVariables.AWS variable">AWS</span> role you create for <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to access your <span class="mc-variable ALVariables.AWS variable">AWS</span> account. The policy document grants only the permissions required to monitor your environments.</p>
+                                        <p><b>To deploy minimal permissions for your <span class="mc-variable ALVariables.AWS variable">AWS</span> implementation:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1"><a href="#set-up-aws-cloudtrail" class="Bookmark MCXref xref xrefBookmark">Set up AWS CloudTrail</a>. Choose to:<ul><li><a href="#enable-cloudtrail" class="Bookmark MCXref xref xrefBookmark">Create a CloudTrail and SNS topic</a>, or</li><li><a href="#configure-existing-cloudtrail" class="Bookmark MCXref xref xrefBookmark">Use an existing CloudTrail and SNS topic</a></li></ul></li>
+                                            <li value="2"><a href="#create-iam-policy-role" class="Bookmark MCXref xref xrefBookmark">Create an IAM policy and role for minimal permission deployment</a>.</li>
+                                            <li value="3"><a href="#configure-s3-bucket-policies" class="Bookmark MCXref xref xrefBookmark">Configure Amazon S3 bucket policies for CloudTrail log collection</a>
+                                            </li>
+                                        </ol>
+                                        <h3><a name="set-up-aws-cloudtrail"></a>Set up <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail</h3>
+                                        <p>For minimal permission deployment to work properly, you must set up your <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail manually. The process to set up <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail depends on whether you need to create an SNS topic or edit an existing SNS topic for CloudTrail.</p>
+                                        <h4><a name="enable-cloudtrail" style="font-weight: bold;"></a><b>Create a CloudTrail and SNS topic</b>
+                                        </h4>
+                                        <p>If <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail is not yet enabled for your account, you must create a new trail, with an S3 bucket and SNS topic, and configure it for use with <span class="mc-variable ALVariables.Company variable">Alert Logic</span>. </p>
+                                        <div>
+                                            <p style="font-weight: bold;">To set up CloudTrail with a new SNS topic:</p>
+                                            <ol>
+                                                <li value="1">Log into the <span class="mc-variable ALVariables.AWS variable">AWS</span> protected account.</li>
+                                                <li value="2">Select the <b>CloudTrail</b> service.</li>
+                                                <li value="3">Click <b>Create a trail</b>, and then click <b>Create trail</b> to open the full workflow.</li>
+                                                <li value="4">In <b>Trail name</b>, type a name for your trail.</li>
+                                                <li value="5">Click <b>Create a new S3 bucket</b>.</li>
+                                                <li value="6">In <b>Trail log bucket and folder</b>, type the name of the S3 bucket in which to store your CloudTrail logs in your account.<br /></li>
+                                                <li value="7">In <b>AWS KMS alias</b>, type a KMS alias to enable log file encryption.</li>
+                                                <li value="8">For <b>SNS notification delivery</b>, select <b>Enabled</b>.</li>
+                                                <li value="9">For <b>Create a new SNS topic</b>, select <b>New</b>. <br /></li>
+                                                <li value="10">Click <b>Next</b>, click <b>Next</b>, and then click <b>Create trail</b>.</li>
+                                            </ol>
+                                        </div>
+                                        <h4><a name="configure-existing-cloudtrail" style="font-weight: bold;"></a><b>Use an existing CloudTrail and SNS topic</b>
+                                        </h4>
+                                        <p>If you already enabled <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail for your account, the trail likely has the "multi-region" flag enabled. If you set up more than one trail with this flag enabled, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> selects the trail that appears first in alphabetical order. The existing trail you use must be configured with SNS delivery enabled, as described in the steps below. </p>
+                                        <p style="font-weight: bold;">To configure an existing SNS Topic:</p>
+                                        <ol>
+                                            <li value="1">From the <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail console, click <b>Trails</b>, and then select your existing trail.</li>
+                                            <li value="2"> For <b>SNS notification delivery</b>, select <b>Enabled</b>.</li>
+                                            <li value="3">For <b>Create a new SNS topic</b>, select <b>New</b> . Note the ARN of the SNS topic; you will need it when defining the IAM policy.</li>
+                                            <li value="4">Click <b>Save changes</b>.</li>
+                                        </ol>
+                                        <h3><a name="create-iam-policy-role"></a>Create an IAM policy and role for minimal permission deployment</h3>
+                                        <li>Click this link to download <a href="../pdf-files/manual-min.json" target="_blank" title="JSON file of policy document" alt="JSON file of policy document">the policy document for the minimal permission deployment (JSON file)</a>. Keep the link open so you can copy and paste the information during IAM role creation. To create a cross-account access role, see <a href="iam-role-creation.htm" class="MCXref xref">Configure  IAM Role for Amazon Web Services (AWS) </a>.</li>
+                                        <h3><a name="configure-s3-bucket-policies"></a>Configure Amazon S3 bucket policies for CloudTrail log collection</h3>
+                                        <p>For <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to collect CloudTrail logs from your S3 buckets, you must allow permission for the IAM role you created above to access the ListObjects and GetObject APIs for the bucket and prefix where you store the logs.</p>
+                                        <p>The process to configure the S3 bucket policy depends on your current configuration. Use one of the following procedures:</p>
+                                        <h4><a name="create-S3-bucket-policy" style="font-weight: bold;"></a>Create an Amazon S3 bucket policy</h4>
+                                        <p>You must create an S3 bucket policy if your CloudTrail does not have that policy set up.</p>
+                                        <p style="font-weight: bold;">To create an Amazon S3 bucket policy:</p>
+                                        <ol>
+                                            <li value="1">From the IAM Console click <b>Roles</b>, select the role you created above, and then note the IAM <b>Role ARN</b> value to ensure that the correct policy is applied to your bucket. </li>
+                                            <li value="2">From the Amazon S3 console, find the bucket that stores the logs to be collected.<div class="note"><p>If the logs are stored under one or more prefixes (which appear as folders in the console), note the prefix but stop at the top-level bucket, because bucket policies can only be edited from this level.</p></div></li>
+                                            <li value="3">Click <b>Properties</b>, and then expand the Permissions section and click <b>Add Bucket Policy</b>.</li>
+                                            <li value="4">Define the policy as follows:<ol style="list-style-type: lower-alpha;"><li value="1">Download and open <a href="../pdf-files/bucket_policy_new.txt">this policy document</a>, copy the contents, and then paste them into the bucket policy window.</li><li value="2">Where indicated, replace <kbd>BUCKET_NAME/PREFIX</kbd> with the name of your bucket.</li><li value="3">Where indicated, replace <kbd>YOUR_IAM_ROLE_ARN</kbd> with the account number of the protected account.</li></ol></li>
+                                            <li value="5">Click <b>Save</b>.</li>
+                                        </ol>
+                                        <h4><a name="update-S3-bucket-policy" style="font-weight: bold;"></a>Edit an existing Amazon S3 bucket policy</h4>
+                                        <p>If the Amazon S3 bucket where you store logs has an existing bucket policy, you must make the following changes to your policy to allow the IAM role created for<span class="mc-variable ALVariables.Company variable">Alert Logic</span> to collect logs.</p>
+                                        <p style="font-weight: bold;">To update an existing Amazon S3 bucket policy:</p>
+                                        <ol data-mc-continue="true">
+                                            <li value="1">
+                                                <p>From the Amazon S3 console, find the bucket that stores collected logs.<div class="note"><p>If the logs are stored under one or more prefixes (which appear as folders in the console), note the prefix but stop at the top-level bucket, because bucket policies can only be edited from this level.</p></div></p>
+                                            </li>
+                                            <li value="2">Click <b>Properties</b>, expand the <b>Permissions</b> section, and then click <b>Edit Bucket Policy</b>.</li>
+                                            <li value="3">Make the following changes to your policy:<ol><li value="1"><a href="../pdf-files/bucket_policy_update.txt" target="_blank" title="Download the policy block in a .txt file" alt="Download the policy block in a .txt file">Download the bucket policy block (.txt)</a> and copy the contents. </li><li value="2">Where indicated, replace <kbd>BUCKET_NAME/PREFIX</kbd> with the name of your bucket.</li><li value="3">Where indicated, replace <kbd>YOUR_IAM_ROLE_ARN</kbd> with the account number of the protected account.</li><li value="4">After the last permissions statement in the bucket policy window, paste the bucket policy block contents. <br /></li></ol></li>
+                                            <li value="4">Click <b>Save</b>.</li>
+                                        </ol>
+                                        <h3>Complete minimal permission deployment configuration</h3>
+                                        <p>To complete configuration of a minimal permission deployment, you must log into the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, and then enter the <span class="mc-variable ALVariables.AWS variable">AWS</span> role information created above.</p>
+                                        <p style="font-weight: bold;">To configure this deployment in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>:</p>
+                                        <ol>
+                                            <li value="1">Browse to the Deployments page.</li>
+                                            <li value="2">Click the tile for the <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment you want to configure. </li>
+                                            <li value="3">Enter the Role ARN and External ID you created above. </li>
+                                            <li value="4">Click <b>CREATE</b>.</li>
+                                        </ol>
+                                        <h2><a name="configure-min-permissions-ct" style="font-weight: bold;"></a>Configure minimal 
+                       permission
+                    deployment with centralized log collection
+                    </h2>
+                                        <p>Minimal permission deployment with centralized log collection requires you to log into the <span class="mc-variable ALVariables.AWS variable">AWS</span> console to set up and configure both S3 and SNS in the receiving account (the <span class="mc-variable ALVariables.AWS variable">AWS</span> account in which you want to centralize log collection), and then log into the protected account (the <span class="mc-variable ALVariables.AWS variable">AWS</span> account you want  to protect) to set up CloudTrail and an IAM role. </p>
+                                        <p><b>To deploy minimal permission deployment with centralized log collection:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1"><b>In the receiving account:</b>
+                                                <ol>
+                                                    <li value="1"><a href="#set-up-s3-receiving" class="Bookmark MCXref xref xrefBookmark">Configure Amazon S3 bucket policies for CloudTrail log collection for the receiving account</a>. Choose to:
+                                	<ul><li><a href="#enable-sns-receiving" class="MCXref xref">Create a new SNS topic for the receiving account</a>, or</li><li><a href="#edit-s3-receiving" class="header MCXref xref xrefheader">Edit an existing S3 bucket policy in the receiving account</a>.</li></ul></li>
+                                                    <li value="2"><a href="#set-up-sns-receiving" class="Bookmark MCXref xref xrefBookmark">Configure SNS&#160;topic for the receiving account</a>. Choose to:
+									<ul start="2"><li><a href="#enable-sns-receiving" class="Bookmark MCXref xref xrefBookmark">Create a new SNS topic for the receiving account</a>, or</li><li><a href="#Edit" class="MCXref xref">Edit an existing SNS topic for the receiving account</a>.</li></ul></li>
+                                                    <li value="3"><a href="#set-up-iam-policy-min-receiving" class="Bookmark MCXref xref xrefBookmark">Create a minimal permissions IAM policy and role for the receiving account</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li value="2"><b>In the protected account:</b>
+                                                <ol>
+                                                    <li value="1"><a href="#set-up-ct-protected" class="Bookmark MCXref xref xrefBookmark">Set up CloudTrail in the protected account</a>
+                                                    </li>
+                                                    <li value="2"><a href="#set-up-iam-policy-min-protected" class="Bookmark MCXref xref xrefBookmark">Create a minimal permission IAM policy and role for the protected account</a>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li value="3"><b>In the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>:</b>
+                                                <ul>
+                                                    <li><a href="#configure-min-permission-cd" class="Bookmark MCXref xref xrefBookmark">Complete minimal permission deployment configuration with centralized log collection </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <h3><a name="set-up-s3-receiving"></a>Configure Amazon S3 bucket policies for CloudTrail log collection for the receiving account</h3>
+                                        <p>For <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to collect CloudTrail logs from your S3 buckets, you must allow permission for the IAM role you create to access the ListObjects and GetObject APIs for the bucket and prefix where you store the logs. <br /></p>
+                                        <p>The process to configure the S3 bucket policy depends on your current configuration. Use one of the following procedures:</p>
+                                        <h4><a name="enable-s3-receiving"></a>Enable a new S3 bucket policy in the receiving account</h4>
+                                        <p>If S3 is not enabled for the receiving account, you must enable it, and then configure it for use with <span class="mc-variable ALVariables.Company variable">Alert Logic</span>. </p>
+                                        <p style="font-weight: bold;">To create an Amazon S3 bucket policy:</p>
+                                        <ol>
+                                            <li value="1">Log into the receiving account. </li>
+                                            <li value="2">From the <span class="mc-variable ALVariables.AWS variable">AWS</span> console, click <b>S3</b>, and then click <b>Create bucket</b>.</li>
+                                            <li value="3">Complete the appropriate fields in the <b>Create bucket</b> window.</li>
+                                            <li value="4">Click <b>Next </b> to accept the default settings for properties and permissions.</li>
+                                            <li value="5">Click <b>Create</b>.</li>
+                                            <li value="6">From the <span class="mc-variable ALVariables.AWS variable">AWS</span> S3 console, select the bucket you just created. </li>
+                                            <li value="7">Click the <b>Permissions</b> tab, and then click <b>Bucket Policy</b>.</li>
+                                            <li value="8">Create the bucket policy as follows:<ol style="list-style-type: lower-alpha;"><li value="1">Download the <a href="../pdf-files/defender-collection_account-full.txt"><a href="../pdf-files/defender-s3-bucket-policy-new.txt">bucket policy (.txt)</a></a> and paste the contents into the bucket policy window. <br /></li><li value="2">Where indicated, replace <kbd>ReceivingAccountBucketName</kbd> with the name of your bucket. </li><li value="3">Where indicated, replace <kbd>ProtectedAccountID</kbd> with the account number of the protected account. </li></ol></li>
+                                            <li value="9">Click <b>Save</b>.</li>
+                                        </ol>
+                                        <h4><a name="edit-s3-receiving" style="font-weight: bold;"></a>Edit an existing S3 bucket policy in the receiving account</h4>
+                                        <p>If you enabled S3 for the receiving account, you must configure S3 for use with <span class="mc-variable ALVariables.Company variable">Alert Logic</span>. </p>
+                                        <ol>
+                                            <li value="1">Log into the receiving account.</li>
+                                            <li value="2">From the IAM Console, click <b>S3</b>, and then find the bucket that stores collected logs.</li>
+                                            <li value="3">Click <b>Properties</b>, expand the <b>Permissions</b> section, and then click <b>Edit Bucket Policy</b>.</li>
+                                            <li value="4">Perform the following actions:<ol style="list-style-type: lower-alpha;"><li value="1"><a href="../pdf-files/defender-s3-bucket-policy-update.txt" target="_blank" title="Download the policy block in a .txt file" alt="Download the policy block in a .txt file">Download the bucket policy block (.txt)</a> and copy the contents. </li><li value="2">After the last permissions statement in the bucket policy window, paste the bucket policy block contents. <br /></li><li value="3">Where indicated, replace <kbd>ReceivingAccountBucketName</kbd> with the name of your bucket.</li><li value="4">Where indicated, replace <kbd>ProtectedAccountID</kbd> with the account number of the protected account.</li></ol></li>
+                                            <li value="5">Click <b>Save</b>.</li>
+                                        </ol>
+                                        <h3><a name="set-up-sns-receiving"></a>Configure SNS&#160;topic for the receiving account</h3>
+                                        <p>For minimal permission deployment to work properly, you must set up your <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail manually in the receiving account. The process to set up <span class="mc-variable ALVariables.AWS variable">AWS</span> CloudTrail depends on whether you need to create an SNS topic or edit an existing SNS topic for CloudTrail.</p>
+                                        <h4><a name="enable-sns-receiving" style="font-weight: bold;"></a>Create a new SNS topic for the receiving account</h4>
+                                        <p>You must create an Simple Notification Service (SNS) topic in the receiving account and configure it for use with <span class="mc-variable ALVariables.Company variable">Alert Logic</span>. </p>
+                                        <p style="font-weight: bold;">To create an SNS topic:</p>
+                                        <ol>
+                                            <li value="1">Log into the receiving account. </li>
+                                            <li value="2">From the <span class="mc-variable ALVariables.AWS variable">AWS</span> console, click <b>Simple Notification Service</b>.</li>
+                                            <li value="3">From the SNS&#160;dashboard, click <b>Create topic</b>, and then provide a topic name. <br /><div class="note">The <b>Display name</b> is optional in this case. </div></li>
+                                            <li value="4">Click <b>Create topic</b>.</li>
+                                            <li value="5">On the Topics page, make note of the ARN for the new SNS topic.</li>
+                                            <li value="6">Select <b>Other topic actions</b> &gt; <b>Edit topic policy</b>.</li>
+                                            <li value="7">Click <b>Advanced view</b>. </li>
+                                            <li value="8">Make the following changes to your topic policy: <ol><li value="1">  After the last permissions statement, add a comma (,).</li><li value="2">Download the <a href="../pdf-files/defender-sns-policy-new.txt">SNS topic policy text block (.txt)</a> and paste it into the policy after the comma.<br style="color: #ff4500;" /></li><li value="3">Replace <kbd>SNS_TOPIC_ARN</kbd> with the Topic ARN.</li></ol></li>
+                                            <li value="9">Click <b>Update policy</b>.</li>
+                                        </ol>
+                                        <h4><a name="Edit"></a>Edit an existing SNS topic for the receiving account</h4>
+                                        <p>If you have an existing Simple Notification Service (SNS) topic enabled in the receiving account, you must edit the existing topic policy. </p>
+                                        <p style="font-weight: bold;">To edit an existing SNS topic:</p>
+                                        <ol>
+                                            <li value="1">Log into the receiving account.</li>
+                                            <li value="2">From the <span class="mc-variable ALVariables.AWS variable">AWS</span> console, click <b>Simple Notification Service</b>.</li>
+                                            <li value="3">From the SNS&#160;dashboard, click <b>Topics</b>, and then select the topic you want to edit. </li>
+                                            <li value="4">Select <b>Other topic actions</b> &gt; <b>Edit topic policy</b>.</li>
+                                            <li value="5">Click <b>Advanced view</b>. </li>
+                                            <li value="6">Make the following changes to your topic policy: <ol style="list-style-type: lower-alpha;"><li value="1">  After the last permissions statement, add a comma (,).</li><li value="2">Download the <a href="../pdf-files/defender-sns-policy-new.txt">SNS topic policy text block (.txt)</a> and paste it into the policy after the comma.<br /></li><li value="3">Replace <kbd>SNS_TOPIC_ARN</kbd> with the Topic ARN.</li></ol></li>
+                                            <li value="7">Click <b>Update policy</b>.</li>
+                                        </ol>
+                                        <h3><a name="set-up-iam-policy-min-receiving"></a>Create a minimal permissions IAM policy and role for the receiving account</h3>
+                                        <p>To perform cross-account role configuration with centralized log collection, you must log into your <span class="mc-variable ALVariables.AWS variable">AWS</span> account and create an IAM role for the account you want to use for centralized log collection. </p>
+                                        <p><span class="mc-variable ALVariables.AWS variable">AWS</span> role creation requires that you provide an <span class="mc-variable ALVariables.AWS variable">AWS</span> policy, a document that specifies the permissions assigned to the <span class="mc-variable ALVariables.AWS variable">AWS</span> role you create for <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to access your <span class="mc-variable ALVariables.AWS variable">AWS</span> account.  The policy document for the receiving account grants only read-only access.</p>
+                                        <p>
+					Download and open <a href="../pdf-files/defender-collection_account-full.txt">this policy document for the receiving account (.txt)</a>. Keep the document open so you can copy and paste the information during IAM role creation for centralized log collection. To create a cross-account access role, see <a href="iam-role-creation.htm#top" class="MCXref xref">Create a cross-account access role</a>.</p>
+                                        <h3><a name="set-up-ct-protected"></a>Set up CloudTrail in the protected account</h3>
+                                        <ol>
+                                            <li value="1">Log into the <span class="mc-variable ALVariables.AWS variable">AWS</span> protected account.</li>
+                                            <li value="2">Click <b>CloudTrail</b> &gt;<b>Trails</b>. </li>
+                                            <li value="3">Click <b>Create trail</b>. </li>
+                                            <li value="4">In <b>Trail name</b>, type a name for your trail.</li>
+                                            <li value="5">For <b>Apply trail to all regions</b>, click <b>Yes</b>. </li>
+                                            <li value="6">For <b>Create a new S3 bucket</b>, select <b>No</b> .</li>
+                                            <li value="7">In <b>S3 bucket</b>, type the name of the S3 bucket you created in the receiving account to store your CloudTrail logs.<br /></li>
+                                            <li value="8">Click <b>Advanced</b>.</li>
+                                            <li value="9">For <b>Send SNS notification for every log file delivery</b>, select <b>Yes</b>.</li>
+                                            <li value="10">For <b>Create a new SNS topic</b>, select <b>No</b>, and then enter the topic ARN for the SNS topic you created in the receiving account. <br /></li>
+                                            <li value="11">Click <b>Save</b>.</li>
+                                            <li value="12">Click <b>Create</b>.</li>
+                                        </ol>
+                                        <h3><a name="set-up-iam-policy-min-protected"></a>Create a minimal permission IAM policy and role for the protected account</h3>
+                                        <p>To perform cross-account role configuration with centralized log collection, you must log into your <span class="mc-variable ALVariables.AWS variable">AWS</span> account and create an IAM role for the account you want to protect. The policy document for the protected account grants only the permissions required to monitor your environments.</p>
+                                        <p>
+                       Download and open this <a href="../pdf-files/manual-min.json" title="JSON file of policy document" alt="JSON file of policy document">policy document for the protected account (JSON file)</a>. Keep the document open so you can copy and paste the information during IAM role creation for the protected account. To create a cross-account access role, see <a href="iam-role-creation.htm" class="MCXref xref">Configure  IAM Role for Amazon Web Services (AWS) </a></p>
+                                        <h3><a name="configure-min-permission-cd"></a>Complete minimal permission deployment configuration with centralized log collection </h3>
+                                        <p>To complete configuration of a minimal permission deployment with centralized log collection, you must log into the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, and then enter the <span class="mc-variable ALVariables.AWS variable">AWS</span> role information created above. To learn more about <span class="mc-variable ALVariables.AWS variable">AWS</span> deployments, see <a href="../get-started/about-deployment-types.htm#aws-deployments" class="MCXref xref">AWS Deployments</a>. </p>
+                                        <p style="font-weight: bold;">To configure this deployment in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>:</p>
+                                        <ol>
+                                            <li value="1">Browse to the Deployments page.</li>
+                                            <li value="2">Click the tile for the <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment you want to configure. </li>
+                                            <li value="3">Enter the Role ARN and External ID for the protected account. </li>
+                                            <li value="4">Select <b>I want this environment to use cross-account CloudTrail to centralize CloudTrail log collection</b>.</li>
+                                            <li value="5">Enter the Role ARN and External ID for the receiving account. </li>
+                                            <li value="6">Click <b>CREATE</b>.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

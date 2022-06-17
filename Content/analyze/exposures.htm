@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Analyze" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn to use Exposures to view and address exposures in your deployments and resolve exposures, or a set of exposures, with the recommended remediations listed." />
+        <meta name="keywords" content="remediations, exposures, vulnerabilities" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Exposures</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Exposures</h1>
+                                        <div class="note">
+                                            <p>Exposures has replaced the Remediations page as part of Dashboards. Exposures has the same functionality as Remediations, but with improvements. </p>
+                                            <p>&#160;</p>
+                                            <p>The Health page lists exposures related to configuration or connection problems that disrupt access to <span class="mc-variable ALVariables.Company variable">Alert Logic</span> product capabilities. For more information, see <a href="health.htm" class="MCXref xref">Health</a>.</p>
+                                        </div>
+                                        <p>The Exposures page, listed under <img src="../Resources/Images/dashboard/respond-icon.png" alt="" /><b>Respond</b> in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, provides you with the information you need to analyze and address exposures in your environment. The page lists exposures found in your deployments and provides details about the exposure, evidence, and affected assets. The page also lists remediations to resolve an exposure or a group of exposures.</p>
+                                        <p>You can access a filtered Exposures page that shows you relevant issues in your deployments from links in visuals in the <a href="dashboard/vulnerability-summary.htm" class="MCXref xref">Vulnerability Summary Dashboard</a>. </p>
+                                        <p>To help you investigate security exposures in your environment, the Exposures page organizes information in the following lists:</p>
+                                        <ul>
+                                            <li><a href="#Openlist" class="MCXref xref">Open list</a>—Lists security exposures and suggested remediation details</li>
+                                            <li><a href="#Disposedlist" class="MCXref xref">Disposed list</a>—Lists disposed security exposures</li>
+                                            <li><a href="#Concludedlist" class="MCXref xref">Concluded list</a>—Lists concluded security exposures</li>
+                                        </ul>
+                                        <p>After you investigate one or more exposures and suggested remediations, you can dispose or conclude the exposure.</p>
+                                        <h2>Exposure severity</h2>
+                                        <p>The Exposures page uses colors and icons to help you easily identify the severity of the exposures. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> categorizes severity of exposures with the following icons and colors:</p>
+                                        <ul>
+                                            <li>
+                                                <img src="../Resources/Images/Icons/threat_critical_icon.png" style="padding-right: 5px;" /> High</li>
+                                            <li>
+                                                <img src="../Resources/Images/Icons/threat_high_icon.png" style="padding-right: 5px;" /> Medium</li>
+                                            <li>
+                                                <img src="../Resources/Images/Icons/threat_medium_icon.png" style="padding-right: 5px;" /> Low</li>
+                                            <li>
+                                                <img src="../Resources/Images/Icons/threat_info_icon.png" style="padding-right: 5px;" /> Info </li>
+                                        </ul>
+                                        <h2>Exposure categories</h2>
+                                        <p>The Exposures page provides a list of security vulnerabilities detected by scanning your assets. </p>
+                                        <div class="note">For more information on underlying configuration issues that prevent <span class="mc-variable ALVariables.Company variable">Alert Logic</span> from collecting and detecting security vulnerabilities and threats in your environment, see <a href="health.htm" class="MCXref xref">Health</a>.</div>
+                                        <table style="width: 100%;">
+                                            <col data-mc-conditions="" />
+                                            <col data-mc-conditions="" />
+                                            <col data-mc-conditions="" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Description</th>
+                                                    <th>Exposure Example</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Security</td>
+                                                    <td>All vulnerabilities detected in your environment.</td>
+                                                    <td>All vulnerabilities in the Exposures page.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Network</td>
+                                                    <td>Security vulnerabilities detected by unauthenticated internal network scans (on hosts without <a href="manage-scans-and-results/agent-based-scan.htm" class="MCXref xref">Agent-Based Scanning</a>).</td>
+                                                    <td>Unrestricted Outbound Access on All Ports.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>External</td>
+                                                    <td>Security vulnerabilities detected by external network scans.</td>
+                                                    <td>Missing Content Security Policy (CSP) Issue.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cloud Configuration</td>
+                                                    <td>Security vulnerabilities detected by cloud/CIS compliance checks.</td>
+                                                    <td>Dangerous User Privileged Access to S3.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Credentials</td>
+                                                    <td>Security vulnerabilities detected by credentialed internal network scans (on hosts without <a href="manage-scans-and-results/agent-based-scan.htm" class="MCXref xref">Agent-Based Scanning</a>).</td>
+                                                    <td>CVE-2010-0480 - MS10-026 - Microsoft - Windows - Buffer Overflow Issue.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Agent</td>
+                                                    <td>Security vulnerability results from consolidated agent-based and internal network scans (on hosts with <a href="manage-scans-and-results/agent-based-scan.htm" class="MCXref xref">Agent-Based Scanning</a>).</td>
+                                                    <td>CVE-2016-9555 - Linux - Kernel - Out-of-Bounds Slab Access Issue</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content">Security</li>
+                                            <li data-mc-conditions="Primary.Draft Content">External</li>
+                                            <li data-mc-conditions="Primary.Draft Content">IAM Access Analyzer</li>
+                                        </ul>
+                                        <div class="note" data-mc-conditions="Primary.Draft Content">The Health page lists exposures related to configuration or connection problems that disrupt access to <span class="mc-variable ALVariables.Company variable">Alert Logic</span> product capabilities. For more information, see <a href="health.htm" class="MCXref xref">Health</a>.</div>
+                                        <h3 data-mc-conditions="Primary.Draft Content">Security exposures</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">Security exposures are issues related to vulnerabilities identified in an internal scan, such as misconfigured cloud configurations or known Common Vulnerabilities and Exposures (CVE) vulnerabilities that can lead to a breach if not addressed. The following are examples of security exposures:</p>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content">Unrestricted Inbound Access</li>
+                                            <li data-mc-conditions="Primary.Draft Content">Root account not using Virtual MFA</li>
+                                            <li data-mc-conditions="Primary.Draft Content">CVE-2020-9490 - Apache HTTP Server - Denial of Service Issue</li>
+                                        </ul>
+                                        <h3 data-mc-conditions="Primary.Draft Content">External exposures</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">External exposures are issues related to  vulnerabilities on your Internet-facing devices during an external scan, such as a vulnerability that can be exploited from the Internet and lead to a breach if not addressed. The following are examples of external exposures:</p>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content">SSL certificate chain of authority cannot be verified</li>
+                                            <li data-mc-conditions="Primary.Draft Content">SSL does not use strong cryptography</li>
+                                            <li data-mc-conditions="Primary.Draft Content">HTTP Strict Transport Security (HSTS) is missing</li>
+                                        </ul>
+                                        <h3 data-mc-conditions="Primary.Draft Content">IAM Access Analyzer exposures</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">IAM Access Analyzer is an <span class="mc-variable ALVariables.AWS variable">AWS</span> feature that identifies potential security risks by analyzing any trust policies applied to an IAM role. If that role is accessible by another AWS account or by a user that is not in your <span class="mc-variable ALVariables.AWS variable">AWS</span> account, the analyzer generates a finding. The following are examples of IAM Access Analyzer exposures:</p>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content">IAM Access Analyzer S3 Bucket Finding</li>
+                                            <li data-mc-conditions="Primary.Draft Content">IAM Access Analyzer KMS Bucket Finding</li>
+                                            <li data-mc-conditions="Primary.Draft Content">IAM Access Analyzer Full Administrative Access</li>
+                                        </ul>
+                                        <h2>Filters</h2>
+                                        <p>On the Exposures page, you can select a status filter  in the left navigation to narrow the list of items:</p>
+                                        <ul>
+                                            <li><b>Open</b>—Click <b>Open</b> to view a list of open exposures or remediations in your deployments. The number indicates the total amount of open exposure instances  that match selected filters.</li>
+                                            <li><b>Disposed</b>—Click <b>Disposed</b> to view items for each deployment that were disposed and removed from the Open list. Disposed means that a user in your organization assessed an item and indicated that it does not need to be resolved for a specified time period.</li>
+                                            <li><b>Concluded</b>—Click <b>Concluded</b> to view items for each deployment that are considered resolved.</li>
+                                        </ul>
+                                        <p>You can also select one or more additional filters such as Category, Severity, or Platform to further narrow your list of items. Filter by Deployment to see additional asset filters such as Network, Subnet, Host, Application, and Tag. </p>
+                                        <p>The number of exposure instances associated with a filter appears next to the name. The active filter is in bold format. Select one or more of the active filters to remove them. You can also select <b>CLEAR ALL FILTERS</b> to remove all the active filters.</p>
+                                        <h2>Sort by</h2>
+                                        <p> Sort options vary according to the selected list and view. To change how a list is sorted, click <b>Sort by</b> and then choose another option. To switch between descending or ascending order, click the order icon (<img src="../Resources/Images/Icons/order-icon.png" style="vertical-align: bottom;" /> ).</p>
+                                        <h2>Search</h2>
+                                        <p>You can use the search bar to filter the list to include only items that contain specific words in the name of the exposure or  the description of the remediation.</p>
+                                        <div class="example">You want to know if  the PHP vulnerability with a CVE ID of CVE-2015-4603 occurs on any of your hosts. To search for this vulnerability,  switch the list view to Exposures and then type "CVE-2015-4603" in the search bar. The vulnerability appears if present. To see all vulnerabilities related to PHP, you can type "PHP" instead. A list of exposures with "PHP" in the name appears.</div>
+                                        <h2>Open list<a name="Openlist"></a></h2>
+                                        <p>The Exposures page opens to the list of Open remediations by default. The Remediations view lists open remediations for the filters you select. Remediations provide a recommended action to resolve one or multiple exposures. You can also  view exposures, which list the individual, open exposures found in your environment. From the list, you can view more details about an item, perform immediate actions to remediate the exposure, and export listed details.</p>
+                                        <p>
+                                            <img src="../Resources/Images/exposures/exposures-page-r2.png" />
+                                        </p>
+                                        <h3>Remediations view<a name="Remediationsview"></a></h3>
+                                        <p>To view the list of remediations, click <b>Remediation</b> in the <b>View</b> list. Remediations provide recommended actions to resolve one exposure or a group of exposures. Addressing a remediation can usually resolve multiple exposures. </p>
+                                        <p>Remediations are sorted by <a href="TRI-score-factors.htm">TRI score</a> in descending order. You can also  sort  by number of exposure instances, number of affected assets, or name and change to ascending or descending order. Each listed item includes the following information:</p>
+                                        <ul>
+                                            <li>Exposure category</li>
+                                            <li>Severity counts for the exposures affected by the remediation</li>
+                                            <li>TRI score</li>
+                                            <li>Number of affected assets</li>
+                                            <li>Number of exposure instances affected by the remediation</li>
+                                        </ul>
+                                        <div class="note">The numbers of affected assets and exposure instances often match. The number of exposure instances is greater in some cases, such as when an exposure is detected on more than one port on an affected asset.</div>
+                                        <h4>View more information</h4>
+                                        <p>In the list of remediations, you can click <b>View</b> to see additional summary information about the remediation, including the list of exposures and their severity and Common Vulnerability Scoring System (CVSS) score,  account, and affected deployments. If more than four exposures are affected by the remediation, open the remediation to see the full exposure list.</p>
+                                        <h4>Open the remediation detail page</h4>
+                                        <p>In the list of remediations, you can click <b>Open</b> to open the detail page for the remediation. To open the remediation detail page in a separate browser tab, hold down <b>Ctrl</b> or <b>Command</b>, and then click <b>Open</b>. </p>
+                                        <p>The page includes details about the recommended remediation action, a list of exposures, affected assets, and evidence  for each exposure instance. You can dispose of the remediation or mark it as concluded from the detail page.</p>
+                                        <h3>Exposures view<a name="Exposuresview"></a></h3>
+                                        <p>To view the list of exposures, click <b>Exposures</b> in the <b>View</b> list. One exposure can affect multiple assets, and multiple exposures can be associated with one remediation. You can resolve an exposure by addressing the recommended remediation action and  also resolve all of the exposures associated with that remediation. </p>
+                                        <p>Exposures are sorted by severity in descending order. You can also  sort  by number of exposure instances, number of affected assets, or name and change to ascending or descending order. </p>
+                                        <p>Each listed item includes the following information:</p>
+                                        <ul>
+                                            <li>Exposure category</li>
+                                            <li>Severity rating, icon, and CVSS  score</li>
+                                            <li>Number of affected assets</li>
+                                            <li>Number of exposure instances</li>
+                                        </ul>
+                                        <div class="note">The numbers of affected assets and exposure instances often match. The number of exposure instances is greater in some cases, such as when an exposure is detected on more than one port on an affected asset.</div>
+                                        <h4>View more information</h4>
+                                        <p>In the list of exposures, you can click <b>View</b> to see additional summary information about the exposure, including the account, affected deployments, CVE ID, and CVSS score. </p>
+                                        <h4>Open the exposure detail page</h4>
+                                        <p>In the list of exposures, you can click <b>Open</b> to open the detail page for the exposure.  To open the exposure detail page in a separate browser tab, hold down <b>Ctrl</b> or <b>Command</b>, and then click <b>Open</b>. </p>
+                                        <p>The page includes the following information:</p>
+                                        <ul>
+                                            <li>CVE ID</li>
+                                            <li>Description of the exposure</li>
+                                            <li>Severity, CVSS score, and metrics</li>
+                                            <li>Common Weakness Enumeration (CWE)</li>
+                                            <li>Impact of the exposure</li>
+                                            <li>Resolution details with recommendations</li>
+                                            <li>Affected assets</li>
+                                            <li>Evidence  for each exposure instance</li>
+                                        </ul>
+                                        <p>You can dispose of the exposure or mark it as concluded from this page. You can also go to the remediation from this page to resolve the exposure and other similar exposures.</p>
+                                        <h3>Dispose<a name="Dispose"></a></h3>
+                                        <p>If you want to defer resolving an exposure or remediation for a certain period or forever, you can mark an item as disposed. Disposing an item moves it from the Open list to the Disposed list, and it suppresses instances of the exposure from appearing in reports during the next data refresh interval. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> excludes the calculated risk of disposed item vulnerabilities from the overall risk of your deployment.</p>
+                                        <p>You can specify which affected assets to dispose for the exposure or remediation. After a disposal period expires, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> no longer hides the item, which appears again in the Open list and reports if you have not resolved the exposure on the selected assets.</p>
+                                        <p>You can click the restore icon (<img src="../Resources/Images/General/Icons/Remediations/restore.png" style="vertical-align: bottom;" />) on a disposed item to review items and restore them to the Open list. You can specify which affected assets to restore.</p>
+                                        <p style="font-weight: bold;">To dispose a remediation or exposure:</p>
+                                        <ol>
+                                            <li style="font-weight: normal;" value="1"> In the Open list, click <b>Open</b> next to the item you want to dispose to open the exposure or remediation detail page.</li>
+                                            <div class="tip">To open the exposure or remediation detail page in a separate browser tab, hold down <b>Ctrl</b> or <b>Command</b>, and then click <b>Open</b>.</div>
+                                            <li style="font-weight: normal;" value="2">(Optional) On the exposure or remediation detail page, select or clear filters on the left to include more assets or narrow the list to a single asset. </li>
+                                            <li style="font-weight: normal;" value="3">In the Affected Assets area, select one or more assets for which you want to dispose an exposure or remediation. You can click the selection box (<img src="../Resources/Images/incident_selector.png" style="vertical-align: bottom;" />) above the list to select all listed items.</li>
+                                            <div class="note">You can dispose an exposure or remediation for up to 1,500 assets at a time. A message appears if your selection exceeds the limit. Select the <b>All Future Assets</b> check box (described next), select fewer assets, or update filters to narrow the list of affected assets. For example, break up your request into smaller ones by filtering by deployment.</div>
+                                            <li style="font-weight: normal;" value="4">(Optional) If you selected all assets and also want to include all assets added later that match the selected filters, select the <b>All Future Assets</b> check box.  If you leave the check box cleared, only the current assets listed are selected for the dispose action.</li>
+                                            <li style="font-weight: normal;" value="5">Click the dispose icon (<img src="../Resources/Images/General/Icons/Remediations/disposed.png" style="vertical-align: bottom;" />).</li>
+                                            <li style="font-weight: normal;" value="6">In the Dispose Remediation or Dispose Exposure slideout panel, choose an assessment type:<ul><li style="font-weight: normal;">Acceptable Risk</li><li style="font-weight: normal;">False Positive</li><li style="font-weight: normal;">Compensating Control—A compensating control is in place</li></ul></li>
+                                            <li style="font-weight: normal;" value="7">Select how long you want to dispose the remediation or exposure:<ul><li style="font-weight: normal;">A Day</li><li style="font-weight: normal;">1 Week</li><li style="font-weight: normal;">1 Month</li><li style="font-weight: normal;">3 Months</li><li style="font-weight: normal;">6 Months</li><li style="font-weight: normal;">1 Year</li><li style="font-weight: normal;">Forever</li></ul></li>
+                                            <li style="font-weight: normal;" value="8">(Optional) Add notes about your assessment.</li>
+                                            <li style="font-weight: normal;" value="9">Click <b>DISPOSE</b>.</li>
+                                        </ol>
+                                        <p style="font-weight: bold;">To dispose exposures or remediations in bulk:</p>
+                                        <p> You can dispose one or more exposures directly from the Open list. This method disposes exposure instances for all assets currently affected by selected items. If you want to select specific assets or if you want to select future assets that match selected filters, see the previous steps instead.</p>
+                                        <ol>
+                                            <li style="font-weight: normal;" value="1">(Optional) Filter the Open list to select exposures or remediations you want to dispose.</li>
+                                            <li style="font-weight: normal;" value="2">In the Open list, select one or more items or click the selection box (<img src="../Resources/Images/incident_selector.png" style="vertical-align: bottom;" />) above the list to select all listed items. </li>
+                                            <li style="font-weight: normal;" value="3">Click the dispose icon (<img src="../Resources/Images/General/Icons/Remediations/disposed.png" style="vertical-align: bottom;" />), and then complete the Dispose Remediation or Dispose Exposure slideout panel as described in the previous procedure.</li>
+                                        </ol>
+                                        <h3>Conclude<a name="Conclude"></a></h3>
+                                        <p>After you remediate an exposure, you can mark the item as concluded. Concluding an exposure or remediation means that you consider it resolved. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> moves the item from the Open list to the Concluded list and removes it from reports during the next data refresh interval. </p>
+                                        <p>You can specify which affected assets to conclude for the remediation or exposure. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> verifies that the exposure no longer exists on selected assets during the next scan. If the next scan detects the vulnerability, the item reappears in the Open list and reports. You must retry your remediation and mark it concluded again.</p>
+                                        <p>You can click the restore icon (<img src="../Resources/Images/General/Icons/Remediations/restore.png" style="vertical-align: bottom;" />) on a concluded item to review items and restore them to the Open list. You can specify which affected assets to restore.</p>
+                                        <p style="font-weight: bold;">To conclude a remediation or exposure:</p>
+                                        <ol>
+                                            <li style="font-weight: normal;" value="1"> In the Open list, click <b>Open</b> next to the item you want to dispose to open the exposure or remediation detail page.</li>
+                                            <div class="tip">To open the exposure or remediation detail page in a separate browser tab, hold down <b>Ctrl</b> or <b>Command</b>, and then click <b>Open</b>.</div>
+                                            <li style="font-weight: normal;" value="2">(Optional) In the exposure or remediation detail page, select or clear filters on the left to include more assets or narrow the list to a single asset. </li>
+                                            <li style="font-weight: normal;" value="3">In the Affected Assets area, select one or more assets for which you want to conclude an exposure or remediation. You can click the selection box (<img src="../Resources/Images/incident_selector.png" style="vertical-align: bottom;" />) above the list to select all listed items.</li>
+                                            <div class="note">You can conclude an exposure or remediation for up to 1,500 assets at a time. A message appears if your selection exceeds the limit. Select fewer assets or update filters to narrow the list of affected assets. For example, break up your request into smaller ones by filtering by deployment.</div>
+                                            <li style="font-weight: normal;" value="4">Leave <b>All Future Assets</b> cleared. This setting applies only to the dispose action.</li>
+                                            <li style="font-weight: normal;" value="5" data-mc-conditions="Primary.Draft Content">(Optional) If you selected all current assets and also want to include all assets added later that match the selected filters, select the <b>All Future Assets</b> check box.  If you leave the check box cleared, only the current assets listed are selected for the conclude action.</li>
+                                            <li style="font-weight: normal;" value="6">Click the conclude icon (<img src="../Resources/Images/General/Icons/Remediations/complete.png" style="vertical-align: bottom;" />).</li>
+                                            <li style="font-weight: normal;" value="7">Click <b>CONCLUDE</b> to confirm.</li>
+                                        </ol>
+                                        <p style="font-weight: bold;">To conclude exposures or remediations in bulk:</p>
+                                        <p>You can conclude one or more exposures directly from the Open list. This method disposes exposure instances for all assets currently affected by selected items. If you want to select specific assets<MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> or if you want to select future assets that match selected filters</MadCap:conditionalText>, see the previous steps instead.</p>
+                                        <ol>
+                                            <li style="font-weight: normal;" value="1">(Optional) Filter the Open list to select exposures or remediations you want to dispose.</li>
+                                            <li style="font-weight: normal;" value="2">In the Open list, select one or more items or click the selection box (<img src="../Resources/Images/incident_selector.png" style="vertical-align: bottom;" />) above the list to select all listed items. </li>
+                                            <li style="font-weight: normal;" value="3">Click the conclude icon (<img src="../Resources/Images/General/Icons/Remediations/complete.png" style="vertical-align: bottom;" />).</li>
+                                            <li style="font-weight: normal;" value="4">Click <b>CONCLUDE</b> to confirm.</li>
+                                        </ol>
+                                        <h2>Disposed list<a name="Disposedlist"></a></h2>
+                                        <p>The Disposed list includes items removed from the Open list after a user from your organization assessed the exposure and indicated it does not need to be resolved for a certain time period or forever. You can view disposed items by remediations or exposures. </p>
+                                        <p>Disposed items are sorted by the date the dispose action expires in ascending order. You can also  sort  by other criteria and change to ascending or descending order. In addition to exposure or remediation details, each listed item includes information about when the item was disposed, who disposed it, and when the dispose action expires. For more information, see <a href="#Dispose" class="MCXref xref">Dispose</a>, <a href="#Remediationsview" class="MCXref xref">Remediations view</a>, or <a href="#Exposuresview" class="MCXref xref">Exposures view</a>. </p>
+                                        <h2>Concluded list<a name="Concludedlist"></a></h2>
+                                        <p>The Concluded list includes exposures that are considered resolved. You can view concluded items by remediations or exposures. In addition to exposure or remediation details, each listed item includes information about when the item was concluded and who concluded it. For more information, see <a href="#Conclude" class="MCXref xref">Conclude</a>, <a href="#Remediationsview" class="MCXref xref">Remediations view</a>, or <a href="#Exposuresview" class="MCXref xref">Exposures view</a>.</p>
+                                        <h2>Export details</h2>
+                                        <p>You can export one or more items on the <span class="mc-variable ALVariables.Page variable">Exposures</span> page to a CSV file to view later or to share with others in your organization. From any list, you can click the selection box (<img src="../Resources/Images/incident_selector.png" style="vertical-align: bottom;" />) above the list to select all listed items. If you hover over or click the icon or selection box next to an item, you can select it for a single export. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

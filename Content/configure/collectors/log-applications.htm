@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Find the configuration document to integrate your third-party application with Alert Logic in the Application Registry page to start collecting log data that can generate logs and incidents." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Log Collectors Configuration Guide</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Log Collectors Configuration Guide</h1>
+                                        <div data-mc-conditions="Primary.excludeDevInBhoof">
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> offers integration with applications, including API-based integration with SaaS applications and passive log collecting through syslog forwarding  with most firewall platforms. Available applications include products for authentication, productivity, management, and more. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> serves as a remote collector to receive log data from SaaS and firewall applications related to different incident types, depending on the product type. </p>
+                                            <p>The Application Registry provides an intuitive and efficient way to integrate multiple third-party applications that can generate logs. Application Registry is a repository of platform integrations in your Configuration group in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. Integration with third-party applications adds administrative and security value to your organization.  Application Registry is only available for <span class="mc-variable ALVariables.Professional variable">Professional</span> and <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> customers. </p>
+                                        </div>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> offers integration with third-party applications and products like <span class="mc-variable ALVariables.AWS variable">AWS</span>, <span class="mc-variable ALVariables.Azure variable">Azure</span>, firewall, authentication, endpoint, productivity, and customer relationship management (CRM) through the <a href="../application-registry.htm">Application Registry</a> feature. You can integrate multiple third-party applications that can generate logs for added administrative and security value to your organization. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> serves as a remote collector to receive log data from applications and products related to different incident types, depending on what you integrate.</p>
+                                            <p>SaaS applications include products for authentication, productivity, management and more. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> serves as a remote collector to receive log data from the SaaS application related to different incident types, depending on the product type. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> collects logs related to administrative actions, anomaly detection for user logins, user behavior, resource access, system compromise, attack outbreak, and others. SaaS&#160;applications available include the following:</p>
+                                            <ul>
+                                                <li><span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span>
+                                                </li>
+                                                <li>Auth0</li>
+                                                <li>Carbon Black</li>
+                                                <li>Cisco Duo</li>
+                                                <li>Google Cloud Platform</li>
+                                                <li>G Suite</li>
+                                                <li><span class="mc-variable ALVariables.Office_365_1 variable">Microsoft Office 365</span>
+                                                </li>
+                                                <li>Okta</li>
+                                                <li>Salesforce</li>
+                                            </ul>
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> generates security incidents for some of the authentication applications listed above based on log data. Incidents generated relate to administrative actions, user login, and user behavior. To learn more about the security incidents <span class="mc-variable ALVariables.Company variable">Alert Logic</span> generates from log data collected from the authentication applications, see <a href="../../analyze/security-incidents.htm" class="MCXref xref">Authentication Application Security Incidents</a>. </p>
+                                        </div>
+                                        <p data-mc-conditions="Primary.Draft Content">Applications include API-based integration with SaaS applications and passive log collecting through syslog forwarding  with most firewall platforms. Available applications include products for authentication, productivity, management, and more. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> serves as a remote collector to receive log data from SaaS and firewall applications related to different incident types, depending on the product type. </p>
+                                        <p>The Application Registry  page allows you to configure multiple third-party applications to collect and generate logs. Application Registry is a repository of platform integrations in your Configuration page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. Integration with third-party applications adds administrative and security value to your organization. To learn more about Application Registry, see <a href="../application-registry.htm" class="MCXref xref">Application Registry</a>. </p>
+                                        <p>You must have a <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span>&#160;<span class="mc-variable ALVariables.Professional variable">Professional</span> or <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span>&#160;<span class="mc-variable ALVariables.SIEMless variable" data-mc-_temp="true">Managed Detection and Response</span> subscription to configure your third-party applications. </p>
+                                        <p>The following guides for integrating applications with <span class="mc-variable ALVariables.Company variable">Alert Logic</span> are available:</p>
+                                        <ul>
+                                            <li><a href="amazon-s3.htm" class="MCXref xref">Configure Amazon S3 Log Collector</a>
+                                            </li>
+                                            <li><a href="auth0.htm" class="MCXref xref">Configure Auth0 Log Collector </a>
+                                            </li>
+                                            <li><a href="aws_network_firewall.htm" class="MCXref xref">Configure AWS Network Firewall Log Collector</a>
+                                            </li>
+                                            <li><a href="aws-workspaces.htm" class="MCXref xref">Configure Amazon WorkSpaces Collector</a>
+                                            </li>
+                                            <li><a href="carbonblack.htm" class="MCXref xref">Configure Carbon Black Log Collector </a>
+                                            </li>
+                                            <li><a href="ciscoamp.htm" class="MCXref xref">Configure Cisco AMP Log Collector </a>
+                                            </li>
+                                            <li><a href="ciscoduo.htm" class="MCXref xref">Configure Cisco Duo Log Collector </a>
+                                            </li>
+                                            <li><a href="crowdstrike.htm" class="MCXref xref">Configure CrowdStrike Log Collector</a>
+                                            </li>
+                                            <li><a href="googlestackdriver.htm" class="MCXref xref">Configure Google Cloud Platform Log Collector </a>
+                                            </li>
+                                            <li><a href="eventbridge.htm" class="MCXref xref">Configure EventBridge Integration</a>
+                                            </li>
+                                            <li><a href="gsuite.htm" class="MCXref xref">Configure G Suite Log Collector</a>
+                                            </li>
+                                            <li><a href="mimecast.htm" class="MCXref xref">Configure Mimecast Log Collector</a>
+                                            </li>
+                                            <li><a href="o365.htm" class="MCXref xref">Configure Microsoft Office 365 Log Collector</a>
+                                            </li>
+                                            <li><a href="okta.htm" class="MCXref xref">Configure Okta Log Collector </a>
+                                            </li>
+                                            <li><a href="salesforce.htm" class="MCXref xref">Configure Salesforce Log Collector</a>
+                                            </li>
+                                            <li><a href="sentinelone.htm" class="MCXref xref">Configure SentinelOne Log Collector </a>
+                                            </li>
+                                            <li><a href="sophos.htm" class="MCXref xref">Configure Sophos Log Collector </a>
+                                            </li>
+                                        </ul>
+                                        <h2 data-mc-conditions="Primary.Draft Content"><span class="mc-variable ALVariables.AWS variable">AWS</span> Integrations</h2>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

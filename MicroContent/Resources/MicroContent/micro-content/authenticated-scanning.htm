@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>authenticated scanning</title>
+        <meta name="description" content="Use Windows or SSH credentials to perform host-level authenticated scanning for more accurate vulnerability scans and fewer false positive results." />
+        <meta name="phrase" value="authenticated scanning" />
+        <meta name="phrase" value="credentialed scanning" />
+        <meta name="phrase" value="credential scanning" />
+        <meta name="phrase" value="credential scan" />
+        <meta name="phrase" value="authenticated scan" />
+        <meta name="phrase" value="auth scan" />
+        <meta name="phrase" value="auth scanning" />
+        <meta name="feedback" value="true" />
+        <meta name="source-type" value="micro-content" />
+        <meta name="truncated" value="false" />
+        <meta name="linked" value="True" />
+        <meta name="linkto" value="../../../../Content/prepare/authenticated-scanning.htm" />
+        <link href="../../../../Content/Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <h1><a name="authScanning"></a>Authenticated Scanning</h1>
+        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> allows you to use credentials to perform host-level authenticated scanning. Using Windows or Secure Shell (SSH) credentials as part of your scans allows for more accurate vulnerability scans and lowers the number of false positive results.</p>
+        <h2><a name="windowsAuthScan"></a>Windows authenticated scanning</h2>
+        <p>Windows authenticated scanning is an authenticated network-based method for interrogating the target machine for missing security-related patches and updates.</p>
+        <p>To run Windows authenticated scanning, you must set up the following parameters:</p>
+        <ul>
+            <li style="font-weight: normal;"><b>Credentials</b>—<span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning needs a local or domain administrator account to accurately assess the patch level of your computers.</li>
+            <li style="font-weight: normal;"><b>Network access to RPC/WMI, NetBIOS, or SMB/CIFS ports</b>—<span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning requires access to RPC/WMI (135/tcp, 49152-65535/tcp), NetBIOS (139/tcp, 137/udp, 138/udp), or SMB/CIFS (445/tcp adn445/udp). Network or personal firewalls blocking access to any of these protocols will prevent access to Windows patch scanning.</li>
+            <li style="font-weight: normal;"><b>Enable Remote Registry services</b>—The Remote Registry service must be enabled and started. Verify this from the Administrative Control Panel under Services.</li>
+        </ul>
+        <div class="note">
+            <p>If the authentication failed, the scan report will list Exposure ID: 16205 - Local Checks Error.</p>
+        </div>
+        <p><b>To set up a dedicated user for scanning:</b>
+        </p>
+        <p>Use the following procedure to set up a dedicated user that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> can use for authenticated scanning.</p>
+        <ol>
+            <li value="1">Click <b>Start</b>, type <kbd>lusrmgr.msc</kbd>, and then press <b>Enter</b>.</li>
+            <li value="2">Right-click the <b>Users</b> folder, and then click <b>New User</b>.<br /></li>
+            <li value="3">On the <b>New User</b> window:<ol style="list-style-type: lower-alpha;"><li value="1">In <b>User Name</b>, type a new user name (for example, <kbd>Alert Logic Dedicated Scanning User</kbd>).</li><li value="2">In <b>Password</b>, type a password.</li><li value="3">In <b>Confirm Password</b>, type the password again.</li><li value="4">Click <b>Create</b>.<br /></li></ol></li>
+            <li value="4">After the window refreshes, indicating successful user creation, click <b>Close</b>.</li>
+            <li value="5">Click the <b>Groups</b> folder, right-click <b>Administrators</b>, and then click <b>Add to Group</b>.<br /></li>
+            <li value="6">On the <b>Administrators Properties</b> window, click <b>Add</b>.<br /></li>
+            <li value="7">On the <b>Select Users</b> window, in <b>Enter the object names to select</b>, type the newly created user (for example, <kbd>Alert Logic</kbd>), and then click <b>Check Names</b>.<br /></li>
+            <li value="8">After the window refreshes, reflecting any changes and user confirmation, click <b>OK</b>.<br /></li>
+            <li value="9">On the <b>Administrators Properties</b> window, confirm that the user appears under <b>Members</b>, and then click <b>OK</b>.<br /></li>
+            <li value="10">Close <b>lusrmgr</b>.</li>
+        </ol>
+        <p><b>To set up WMI:</b>
+        </p>
+        <p>The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanner needs to connect to Windows Management Instrumentation (WMI) on the machine, in addition to remote registry, to pull version information from .dll and .exe files, as well as information stored within Windows Management services and settings. Unlike UNIX and Linux, which come with SSH secure remote access where the system can log on and interrogate things as a user, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning requires the administrative privileges due to the limitations of methods available to remotely access Windows machines. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning does not make registry changes and does not write to the machine. To learn more about registry keys, refer to the Microsoft documentation <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724878%28v=vs.85%29.aspx">here</a>.</p>
+        <p>The Open Vulnerability and Assessment Language (OVAL®) method is the preferred method of network-based patch scanning. The scanner uses the OVAL method for assessing Windows-based machines for a variety of Microsoft-specific and third-party application security patches.</p>
+        <p>WMI comes installed on all Microsoft operating systems. The following procedure describes how to enable remote access to WMI. </p>
+        <p style="font-weight: bold;">To enable remote WMI requests:</p>
+        <ol>
+            <li value="1">On the target server, go to <b>Administrative Tools</b>, <b>Computer Management</b>.</li>
+            <li value="2">Expand <b>Services and Applications</b>.</li>
+            <li value="3">Right-click <b>WMI Control</b>, and then select <b>Properties</b>.<br /></li>
+            <li value="4">Select the <b>Security</b> tab.</li>
+            <li value="5">Click <b>Security</b>.<br /></li>
+            <li value="6">Add the scan user (if needed), and then be sure to select <b>Remote Enable</b> for the user/group that will be requesting WMI data.<br /></li>
+        </ol>
+        <h3>Further Investigation</h3>
+        <p>If the above steps did not help, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends installing the WMI Administrative Tools from Microsoft. This includes a WMI browser that will let you connect to a remote machine and browse through the WMI information. That will help to isolate any issues in a more direct and simple environment. When the WMI browser can access a remote machine, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> should have access as well.</p>
+        <h2><a name="unixLinuxAuthScan"></a>UNIX/Linux authenticated scanning
+		</h2>
+        <p>All UNIX and Linux authenticated scanning (security patch scanning) is performed with SSH access using a standard user account.<br /></p>
+        <p><b>UNIX/Linux operating system types</b>
+        </p>
+        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning supports the following operating systems for authenticated scanning:</p>
+        <ul>
+            <li>Amazon Linux AMI</li>
+            <li>CentOS</li>
+            <li>Debian</li>
+            <li>Fedora</li>
+            <li>RedHat</li>
+            <li>SuSe</li>
+            <li>Ubuntu</li>
+        </ul>
+        <p style="font-weight: bold;">
+            Commands used by the UNIX/Linux authenticated scan
+        </p>
+        <ul>
+            <li style="font-weight: normal;">cat</li>
+            <li style="font-weight: normal;">ls</li>
+            <li style="font-weight: normal;">pwd</li>
+            <li style="font-weight: normal;">awk</li>
+            <li style="font-weight: normal;">sed</li>
+            <li style="font-weight: normal;">ps</li>
+            <li style="font-weight: normal;">cd</li>
+            <li style="font-weight: normal;">echo</li>
+            <li style="font-weight: normal;">grep</li>
+            <li style="font-weight: normal;">tail</li>
+            <li style="font-weight: normal;">head</li>
+            <li style="font-weight: normal;">uname</li>
+            <li style="font-weight: normal;">hostname</li>
+            <li style="font-weight: normal;">exit</li>
+            <li style="font-weight: normal;">dpkg (debian)</li>
+            <li style="font-weight: normal;">dpkg-query (debian)</li>
+            <li style="font-weight: normal;">rpm (linux)</li>
+        </ul>
+        <div class="note">
+            <p>If the authentication failed, the scan report will list Exposure ID: 16205 - Local Checks Error.</p>
+        </div>
+        <h2><a name="authAWSEnv"></a>Authenticated scanning in an <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span> environment</h2>
+        <p>For authenticated scans to work properly in your environment, you must set your <span class="mc-variable ALVariables.AWS variable">AWS</span> security groups to allow full access by the scanning appliance. Doing so allows an appliance to communicate with client instances, so the authenticated scan can detect all possible vulnerabilities and configuration issues. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> installs appliances alongside the instances inside each Amazon VPC.</p>
+        <p>By default, security groups are set up to allow full communication among group members. If you modify the default settings, authenticated scans may not reflect a full picture of your instance.</p>
+        <h3><a name="credStorage"></a>Credential storage</h3>
+        <table>
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Encryption type</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Front end web traffic</td>
+                    <td>TLS 1.2 and AES 256 bit encryption, via HTTPS</td>
+                    <td>User credentials are encrypted using the public key from the  FusionVM server, and only the FusionVM server can decrypt the information.</td>
+                </tr>
+                <tr>
+                    <td>FusionVM back end</td>
+                    <td>RSA and Api call EncryptByAsymKey, 2048 bit key length</td>
+                    <td>Encryption of user passwords and authentication credentials for scanned systems is handled by MS-SQL server.</td>
+                </tr>
+                <tr>
+                    <td>Scanning appliances</td>
+                    <td>RSA and DSA, 2048 bit key length</td>
+                    <td>
+                        <p>Encryption by OpenSSH in SSH connections between the Appliance and the FusionVM server.</p>
+                        <p>Scanning appliances do not have anything encrypted on the appliances except the password file for appliance login authentication.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

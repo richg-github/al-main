@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Get Started|Upgrade to Managed Detection and Response" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="For customers who upgraded to Managed Detection and Response, learn how to find similar information from Cloud Defender Scheduled Reports in the MDR Alert Logic console." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Managed Detection and Response Reports Upgrade</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Reports Upgrade</h1>
+                                        <p>The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> platform offers an enhanced and improved experience  for customers  upgrading from <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span>, which includes upgrades to the Reports feature. This document is intended to help you find similar information from <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> Scheduled reports in the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. </p>
+                                        <p>The Reports feature is available to all <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> product subscriptions. The <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span> shows only the tabs and pages associated with your product subscription. This document describes all possible tabs and pages, but specifies the subscriptions that generate the tabs and pages.  For more information about <span class="mc-variable ALVariables.Company variable">Alert Logic</span> subscriptions and other features included with each subscription, see <a href="subscriptions-addons.htm" class="MCXref xref">Get Started with Alert Logic   Subscriptions and Add-ons</a>.</p>
+                                        <h2>Changes to your Reports experience</h2>
+                                        <p>Your Report experience includes most of the information that was available to you in the <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> reports. Some reports have been moved to other report groups or are under other report categories in the same report group. Other <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> reports have been deprecated from the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span>.  You can find similar information that was contained in <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> reports&#160;in other parts of the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. </p>
+                                        <div class="note">
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> will also release new reports to the Reports feature in the future, as indicated in the  reports mapping sections. </p>
+                                        </div>
+                                        <p>This document includes the following sections:</p>
+                                        <ul>
+                                            <li><a href="#About" class="MCXref xref">About the Reports page in the Alert Logic console</a>—Find the Reports page and learn about its content</li>
+                                            <li><a href="#Report" class="MCXref xref">Report mapping from Cloud Defender to Managed Detection and Response</a>—Find the new location of your reports<ul><li><a href="#Universa" class="MCXref xref">Universal reports mapping</a>&#160;<ul><li><a href="#Deprecat" class="MCXref xref">Deprecated reports</a></li><li><a href="#Future" class="MCXref xref">Future reports </a></li></ul></li><li><a href="#Incident" class="MCXref xref">Incident reports mapping</a><ul><li><a href="#Deprecat2" class="MCXref xref">Deprecated reports</a></li><li><a href="#Future2" class="MCXref xref">Future reports </a></li></ul></li><li><a href="#Event" class="MCXref xref">Event reports mapping</a><ul><li><a href="#Deprecat3" class="MCXref xref">Deprecated reports</a></li></ul></li><li><a href="#Vulnerab" class="MCXref xref">Vulnerability reports mapping</a></li><li><a href="#Log" class="MCXref xref">Log reports mapping</a><ul><li><a href="#Deprecat4" class="MCXref xref">Deprecated Log reports</a></li><li><a href="#Future3" class="MCXref xref">Future Log reports</a></li></ul></li><li><a href="#Complian" class="MCXref xref">Compliance reports mapping</a><ul><li><a href="#Future4" class="MCXref xref">Future reports</a></li></ul></li></ul></li>
+                                        </ul>
+                                        <h2><a name="About"></a>About the Reports page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></h2>
+                                        <p style="font-weight: normal;">To access the Reports page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/validate-icon.png" style="vertical-align: bottom;" /><b>Validate</b>. Click <b>Reports</b>. On the Reports page, the following report categories are available, which have reports associated with that report category: </p>
+                                        <ul>
+                                            <li><a href="../analyze/reports/risk/reports.htm#Risk">Risk Reports</a>—Provide convenient access to analysis, statistics, assessments, and trending data related to your security and health posture, threat risk index, and enterprise risks. All subscriptions see this content.</li>
+                                            <li><a href="../analyze/reports/threats/reports.htm#Threats">Threats Reports</a>—Provide convenient access to analysis, statistics, assessments, and trending data related to threats and incidents detected from your subscribed products and services. This content requires a <span class="mc-variable ALVariables.Professional variable">Professional</span> or <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span> subscription.</li>
+                                            <li><a href="../analyze/reports/Vulnerabilities/reports.htm#Vulnerabilities">Vulnerabilities Reports</a>—Provide convenient access to analysis, statistics, assessments, and trending data related to vulnerabilities discovered in your environment based on scanning outcomes.   All subscriptions see this content.</li>
+                                            <li><a href="../analyze/reports/remediations/reports.htm#Remediations">Remediations Reports</a>—Provide convenient access to analysis, statistics, assessments, and trending data related to configuration issues and security exposures from your subscribed products and services. All subscriptions see this content.</li>
+                                            <li><a href="../analyze/reports/compliance/reports.htm#Compliance">Compliance Reports</a>—Provide convenient access to analysis, statistics, and trending data related to compliance assessment status and audit preparedness from your subscribed products and services. All subscriptions see this content.</li>
+                                            <li><a href="../analyze/reports/service/reports.htm#Service">Service Reports</a>—Provide convenient access to data related to entitlements, capability usage, users and security content for your subscribed products and services. This content requires a <span class="mc-variable ALVariables.Professional variable">Professional</span> or <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span> subscription.</li>
+                                        </ul>
+                                        <p>Each report allows you to  download the report as an image, data, crosstab, PDF, or PowerPoint file. To learn how to download reports, see <a href="../analyze/reports/download-option.htm" class="MCXref xref">Report Download Option</a>. </p>
+                                        <p>You can also schedule a report to run periodically and subscribe users to receive a notification when the report is generated.   For more information, see <a href="../configure/notifications/report.htm" class="MCXref xref">Scheduled Reports and Notifications</a>.</p>
+                                        <p style="color: #000000;">For a complete guide to reports types, categories, descriptions, and features offered in the Reports page, see <a href="../analyze/reports/reports.htm" class="MCXref xref">Reports Guide</a>.</p>
+                                        <h2><a name="Report"></a>Report mapping from <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> to <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span></h2>
+                                        <p><span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span>  reports are separated into the following categories:</p>
+                                        <ul>
+                                            <li><a href="#Universa" class="MCXref xref">Universal reports mapping</a>
+                                            </li>
+                                            <li><a href="#Incident" class="MCXref xref">Incident reports mapping</a>
+                                            </li>
+                                            <li><a href="#Event" class="MCXref xref">Event reports mapping</a>
+                                            </li>
+                                            <li><a href="#Vulnerab" class="MCXref xref">Vulnerability reports mapping</a>
+                                            </li>
+                                            <li><a href="#Log" class="MCXref xref">Log reports mapping</a>
+                                            </li>
+                                            <li><a href="#Complian" class="MCXref xref">Compliance reports mapping</a>
+                                            </li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>Case reports are not applicable in the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> platform. </p>
+                                        </div>
+                                        <h3><a name="Universa"></a>Universal reports mapping</h3>
+                                        <p>Use the following table to find the information from the Universal reports. </p>
+                                        <table style="width: 834px;">
+                                            <col style="width: 194px;" />
+                                            <col style="width: 230px;" />
+                                            <col style="width: 410px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Universal Report</th>
+                                                    <th><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Report Replacement</th>
+                                                    <th>Location in the Reports page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Enterprise Report </td>
+                                                    <td rowspan="2">
+                                                        <p><a href="../analyze/reports/risk/enterprise-risk/monthly-enterprise.htm" class="MCXref xref">Monthly Enterprise Risk</a> and <a href="../analyze/reports/risk/enterprise-risk/weekly-enterprise.htm" class="MCXref xref">Weekly Enterprise Risk</a><![CDATA[            ]]></p>
+                                                    </td>
+                                                    <td rowspan="2">
+                                                        <p>Click   the <b>Risk</b> tab, and then click <b>Enterprise Risk</b>. Click <b>VIEW</b>. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CIO Threat Report</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CIO Threat Trend Report	</td>
+                                                    <td><a href="../analyze/reports/threats/incident-analysis/incident-daily-digest-trends.htm" class="MCXref xref">Incident Daily Digest Trends</a>
+                                                    </td>
+                                                    <td>Click  <b>Threats</b> tab, and then click <b>Incident Analysis</b>. Click <b>VIEW</b>, and then click <b>Incident Daily Digest Trends</b>. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Threat Security Report	</td>
+                                                    <td><a href="../analyze/reports/risk/monthly-security-posture.htm" class="MCXref xref">Monthly Security Posture Report</a>
+                                                    </td>
+                                                    <td>
+                                                        <p>Click   the <b>Risk</b> tab, and then click <b>Security Posture</b>. Click <b>VIEW</b>, and then click <b>Monthly Security Posture</b>. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Active Users Report</td>
+                                                    <td><a href="../analyze/reports/service/users/current-users.htm" class="MCXref xref">Current Users</a>
+                                                    </td>
+                                                    <td>Click   the <b>Service</b> tab, and then click Users. Click <b>VIEW</b>, and then click <b>Current Users</b>. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4><a name="Deprecat"></a>Deprecated reports</h4>
+                                        <p>You can find similar information from the deprecated Universal reports  in other parts of the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. The following Universal reports have been deprecated. </p>
+                                        <table style="width: 849px;">
+                                            <col style="width: 194px;" />
+                                            <col style="width: 220px;" />
+                                            <col style="width: 366px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Deprecated Report</th>
+                                                    <th><span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> location</th>
+                                                    <th>Location in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Blocked Hosts Report	</td>
+                                                    <td>Blocking hosts is not supported in <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span>. You can find other information for log sources, appliances, and hosts in the <a href="../analyze/health.htm" class="MCXref xref">Health</a> page. </td>
+                                                    <td> Click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/respond-icon.png" style="vertical-align: bottom;" /><b>Respond</b>. Click <b>Health</b>. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Active Sources Report</td>
+                                                    <td>You can find information for log sources, appliances, and hosts in the <a href="../analyze/health.htm" class="MCXref xref">Health</a> page. </td>
+                                                    <td>Click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/respond-icon.png" style="vertical-align: bottom;" /><b>Respond</b>. Click <b>Health</b>. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4><a name="Future"></a>Future reports </h4>
+                                        <p>For reports that will be available in the future, you can still find related information in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>.</p>
+                                        <p>For the User's Actions Log report, you can find the information related to a user's activity in  the User Login Trends report in the Reports page.  To learn more about this report, see <a href="../analyze/reports/service/users/login-trends.htm" title="User Login Trends" alt="User Login Trends" class="MCXref xref">User Login Trends</a>.</p>
+                                        <p>To access the User Logins Trends report, click   the <b>Service</b> tab, and then click Users. Click <b>VIEW</b>, and then click <b>User Login Trends</b>. </p>
+                                        <h3><a name="Incident"></a>Incident reports mapping</h3>
+                                        <p>Use the following table to find the information from the Incident reports. </p>
+                                        <table style="width: 878px;">
+                                            <col style="width: 218px;" />
+                                            <col style="width: 281px;" />
+                                            <col style="width: 363px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Incident Report</th>
+                                                    <th><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Report Replacement</th>
+                                                    <th>Location in the Reports page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Executive Summary
+</td>
+                                                    <td><a href="../analyze/reports/threats/incident-account-summary/monthly-incident-account.htm" class="MCXref xref">Monthly Incident Account Summary</a> and <a href="../analyze/reports/threats/incident-account-summary/weekly-incident-account.htm" class="MCXref xref">Weekly Incident Account Summary</a></td>
+                                                    <td>Click   the <b>Threats</b> tab, and then click <b>Incident Account Summary</b>. Click <b>VIEW</b>. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> Full Report
+</td>
+                                                    <td><a href="../analyze/reports/threats/incident-analysis/monthly-incident.htm" class="MCXref xref">Monthly Incident Analysis </a> and <a href="../analyze/reports/threats/incident-analysis/weekly-incident.htm" class="MCXref xref">Weekly Incident Analysis</a></td>
+                                                    <td>Click   the <b>Threats</b> tab, and then click <b>Incident Analysis</b>. Click <b>VIEW</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incidents By Status
+</td>
+                                                    <td rowspan="4"><a href="../analyze/reports/threats/incident-analysis/incident-daily-digest.htm" class="MCXref xref">Incident Daily Digest</a> and <a href="../analyze/reports/threats/incident-analysis/incident-dist-explorer.htm" class="MCXref xref">Incident Distribution Explorer</a><![CDATA[
+                    ]]></td>
+                                                    <td rowspan="4">Click   the <b>Threats</b> tab, and then click <b>Incident Analysis</b>. Click <b>VIEW</b>. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incidents by Classification
+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incidents by Threat Level</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incidents By Time
+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incidents by Summary
+</td>
+                                                    <td><a href="../analyze/reports/threats/incident-analysis/monthly-incident.htm" class="MCXref xref">Monthly Incident Analysis </a> and <a href="../analyze/reports/threats/incident-analysis/weekly-incident.htm" class="MCXref xref">Weekly Incident Analysis</a></td>
+                                                    <td>Click   the <b>Threats</b> tab, and then click <b>Incident Analysis</b>. Click <b>VIEW</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Top Hosts Triggering Incidents</td>
+                                                    <td><a href="../analyze/reports/threats/incident-analysis/incident-target-explorer.htm" class="MCXref xref">Incident Target Explorer Report</a>
+                                                    </td>
+                                                    <td>Click   the <b>Threats</b> tab, and then click <b>Incident Analysis</b>. Click <b>VIEW</b>, and then click <b>Incident Target Explorer</b>.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4><a name="Deprecat2"></a>Deprecated reports</h4>
+                                        <p>The information that was found in the deprecated Incident reports are no longer applicable to the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> platform. The following Incidents reports have been deprecated with no plan for replacement: </p>
+                                        <ul>
+                                            <li>Internal vs External
+</li>
+                                            <li>Incident/Block/Rollback Trends</li>
+                                        </ul>
+                                        <p>For incident information and other data, you can refer to the <a href="../analyze/incidents.htm" class="MCXref xref">Incidents</a> page, and also <a href="../analyze/reports/threats/reports.htm#incidentAnalysis" class="MCXref xref">Incident Analysis</a> reports. </p>
+                                        <h4><a name="Future2"></a>Future reports </h4>
+                                        <p>For reports that will be available in the future, you can still find related information in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. For the Incident Details report, you can also find information for incidents in the <a href="../analyze/incidents.htm" class="MCXref xref">Incidents</a> page. To access the Incidents page,  click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then <img src="../Resources/Images/dashboard/respond-icon.png" alt="" /><b>Respond</b>. Click <b>Incidents</b>.</p>
+                                        <h3><a name="Event"></a>Event reports mapping</h3>
+                                        <p>Use the following table to find the information from the Event reports. </p>
+                                        <table style="width: 827px;">
+                                            <col style="width: 192px;" />
+                                            <col style="width: 251px;" />
+                                            <col style="width: 326px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Event Report</th>
+                                                    <th><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Report Replacement</th>
+                                                    <th>Location in the Reports page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Executive Summary</p>
+                                                    </td>
+                                                    <td>
+                                                        <p><a href="../analyze/reports/threats/event-analysis/network-ids-events-explorer.htm#Incident3" class="MCXref xref">Network IDS Events Explorer</a><![CDATA[   ]]></p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Click   the <b>Threats</b> tab, and then click <b>Event Analysis</b>. Click <b>VIEW</b>, and then click <span style="font-weight: bold;" class="mc-variable ALVariables.NetworkIDS variable">Network IDS</span><b> Events Explorer</b>.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Full Report</p>
+                                                    </td>
+                                                    <td rowspan="2"><a href="../analyze/reports/threats/event-analysis/monthly-event-analysis.htm#Incident3" class="MCXref xref">Monthly Event Analysis</a> and <a href="../analyze/reports/threats/event-analysis/weekly-event-analysis.htm" class="MCXref xref">Weekly Event Analysis</a></td>
+                                                    <td rowspan="2">Click   the <b>Threats</b> tab, and then click <b>Event Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Event Analysis</b> or <b>Weekly Event Analysis</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Event By Time</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Events by Classification</p>
+                                                    </td>
+                                                    <td><a href="../analyze/reports/threats/event-analysis/network-ids-events-explorer.htm#Incident3" class="MCXref xref">Network IDS Events Explorer</a>
+                                                    </td>
+                                                    <td>Click   the <b>Threats</b> tab, and then click <b>Event Analysis</b>. Click <b>VIEW</b>, and then click <b><span class="mc-variable ALVariables.NetworkIDS variable">Network IDS</span> Events Explorer</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Top Signatures</p>
+                                                    </td>
+                                                    <td rowspan="6"><a href="../analyze/reports/threats/event-analysis/top-sources-destinations.htm" class="MCXref xref">Top Event Sources and Destinations</a>
+                                                    </td>
+                                                    <td rowspan="6">Click   the <b>Threats</b> tab, and then click <b>Event Analysis</b>. Click <b>VIEW</b>, and then click <b>Top Event Sources and Destinations</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Top Source Addresses</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Top Source Ports</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Top Destination Addresses</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Top Destination Ports</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Top Source/Destination Combinations</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Events Per Second By Customer</td>
+                                                    <td><a href="../analyze/reports/service/capability-usage/network-ids-traffic.htm" class="MCXref xref">IDS Traffic</a>
+                                                    </td>
+                                                    <td>Click   the <b>Service</b> tab, and then click <b>Capability Usage</b>. Click <b>VIEW</b>, and then click <b>IDS Traffic</b>.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4><a name="Deprecat3"></a>Deprecated reports</h4>
+                                        <p>The information that was found in the deprecated Incident reports are no longer applicable to the <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> platform. The following Event reports have been deprecated with no plan for replacement: </p>
+                                        <ul style="font-weight: normal;">
+                                            <li>Events by Threat Level</li>
+                                            <li>Internal vs. External Events</li>
+                                        </ul>
+                                        <p>The following Events reports have been deprecated and the information that was found in these reports exists in other part of the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. </p>
+                                        <table style="width: 827px;">
+                                            <col style="width: 192px;" />
+                                            <col style="width: 258px;" />
+                                            <col style="width: 317px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Event Report</th>
+                                                    <th><span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> location</th>
+                                                    <th>Location in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Events - Detail</td>
+                                                    <td>You can find information for events in the Events page. </td>
+                                                    <td>Click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/investigate-icon.png" style="vertical-align: bottom;" /><b>Investigate</b>. Click <b>Search</b>, and then click <b>Events</b>. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Event Export By Malware and SQL Injection</td>
+                                                    <td>You can find information for events in the Events page. </td>
+                                                    <td>Click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and  then click <img src="../Resources/Images/dashboard/investigate-icon.png" style="vertical-align: bottom;" /><b>Investigate</b>. Click <b>Search</b>, and then click <b>Events</b>. </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3><a name="Vulnerab"></a>Vulnerability reports mapping</h3>
+                                        <p>Use the following table to find the information from the Vulnerability reports. </p>
+                                        <table style="width: 847px;">
+                                            <col style="width: 199px;" />
+                                            <col style="width: 258px;" />
+                                            <col style="width: 338px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Vulnerability Report</th>
+                                                    <th><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Report Replacement</th>
+                                                    <th>Location in the Reports page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Executive Summary</p>
+                                                    </td>
+                                                    <td>
+                                                        <p><a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/vulnerability-summary.htm#Incident3" class="MCXref xref">Monthly Vulnerability Summary</a> and <a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/weekly-vulnerability-summary.htm" class="MCXref xref">Weekly Vulnerability Summary</a></p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Click   the <b>Vulnerabilities</b> tab, and then click <b>Vulnerability Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Vulnerability Summary</b> or <b>Weekly Vulnerability Summary</b>.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p> Full Report</p>
+                                                    </td>
+                                                    <td>
+                                                        <p><a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/monthly-vulnerability.htm" class="MCXref xref">Monthly Vulnerability Analysis </a> and <a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/weekly-vulnerability.htm" class="MCXref xref">Weekly Vulnerability Analysis</a></p>
+                                                    </td>
+                                                    <td>Click   the <b>Vulnerabilities</b> tab, and then click <b>Vulnerability Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Vulnerability Analysis</b> or <b>Weekly Vulnerability Analysis</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Historical View of Vulnerabilities</p>
+                                                    </td>
+                                                    <td><a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/vulnerability-summary.htm#Incident3" class="MCXref xref">Monthly Vulnerability Summary</a> and <a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/weekly-vulnerability-summary.htm" class="MCXref xref">Weekly Vulnerability Summary</a></td>
+                                                    <td>Click   the <b>Vulnerabilities</b> tab, and then click <b>Vulnerability Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Vulnerability Summary</b> or <b>Weekly Vulnerability Summary</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Top 10 Vulnerabilities</p>
+                                                    </td>
+                                                    <td>
+                                                        <p><a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/vulnerability-top-ten.htm" class="MCXref xref">Monthly Top 10 Vulnerability Lists</a> and <a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/weekly-vulnerability-top-ten.htm" class="MCXref xref">Weekly Top 10 Vulnerability Lists</a></p>
+                                                    </td>
+                                                    <td>Click   the <b>Vulnerabilities</b> tab, and then click <b>Vulnerability Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Top 10 Vulnerability Lists</b> or <b>Weekly Top 10 Vulnerability Lists</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Vulnerabilities by Age</p>
+                                                    </td>
+                                                    <td rowspan="2"><a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/vulnerability-summary.htm#Incident3" class="MCXref xref">Monthly Vulnerability Summary</a> and <a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/weekly-vulnerability-summary.htm" class="MCXref xref">Weekly Vulnerability Summary</a></td>
+                                                    <td rowspan="2">Click   the <b>Vulnerabilities</b> tab, and then click <b>Vulnerability Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Vulnerability Summary</b> or <b>Weekly Vulnerability Summary</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Vulnerabilities by Risk Level</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Most Vulnerable Zones</p>
+                                                    </td>
+                                                    <td rowspan="3"><a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/monthly-vulnerability.htm" class="MCXref xref">Monthly Vulnerability Analysis </a> and <a href="../analyze/reports/Vulnerabilities/vulnerability-analysis/weekly-vulnerability.htm" class="MCXref xref">Weekly Vulnerability Analysis</a></td>
+                                                    <td rowspan="3">Click   the <b>Vulnerabilities</b> tab, and then click <b>Vulnerability Analysis</b>. Click <b>VIEW</b>, and then click <b>Monthly Vulnerability Analysis</b> or <b>Weekly Vulnerability Analysis</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Most Vulnerable Host Groups</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Most Vulnerable Service Types</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Hosts By Vulnerabilities</p>
+                                                    </td>
+                                                    <td rowspan="2"><a href="../analyze/reports/Vulnerabilities/current-vulnerabilities-breakdown.htm" class="MCXref xref">Current Vulnerabilities Breakdown</a>
+                                                    </td>
+                                                    <td rowspan="2">
+                                                        <p>Click <b>Vulnerabilities</b> tab, and then click <b>Current Vulnerability Breakdown</b>. Click <b>VIEW</b>, and then click <b>Current Vulnerabilities Breakdown</b>.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Detailed Hosts By Vulnerabilities</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vulnerabilities by Hosts</td>
+                                                    <td rowspan="2"><a href="../analyze/reports/Vulnerabilities/current-vulnerable-hosts-breakdown.htm" class="MCXref xref">Current Vulnerable Hosts Breakdown</a>
+                                                    </td>
+                                                    <td rowspan="2">Click <b>Vulnerabilities</b> tab, and then click <b>Current Vulnerable Hosts Breakdown</b>. Click <b>VIEW</b>, and then click <b>Current Vulnerable Hosts Breakdown</b>.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Detailed Vulnerabilities by Host</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3><a name="Log"></a>Log reports mapping</h3>
+                                        <p>Use the following table to find the information from the Log reports. </p>
+                                        <table style="width: 100%;">
+                                            <col style="width: 199px;" />
+                                            <col style="width: 258px;" />
+                                            <col style="width: 387px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Log Report</th>
+                                                    <th><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Report Replacement</th>
+                                                    <th>Location in the Reports page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Executive Summary</p>
+                                                    </td>
+                                                    <td>
+                                                        <p><a href="../analyze/reports/service/capability-usage/top-ten-log-collectors.htm" class="MCXref xref">Top 10 Log Collectors</a><![CDATA[           ]]></p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Click   the <b>Service</b> tab, and then click <b>Capability Usage</b>. Click <b>VIEW</b>, and then click <b>Top 10 Log Collectors</b>.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p> Full Report</p>
+                                                    </td>
+                                                    <td><a href="../analyze/reports/service/capability-usage/log-collection.htm" class="MCXref xref">Log Collection</a>
+                                                    </td>
+                                                    <td>Click   the <b>Service</b> tab, and then click <b>Capability Usage</b>. Click <b>VIEW</b>, and then click <b>Log Collection</b>.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4><a name="Deprecat4"></a>Deprecated Log reports</h4>
+                                        <p>The Log reports have been deprecated and the information that was found in these reports exist in the <a href="search-a.htm" class="MCXref xref">Get Started with Search</a> page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. You can use the <a href="../analyze/search/expert-mode.htm" class="MCXref xref">Search Expert Mode </a> and <a href="../analyze/search/simple-mode.htm" class="MCXref xref">Search Simple Mode </a> to generate search results that were found in the following reports:</p>
+                                        <ul>
+                                            <li>Invalid Credential Report</li>
+                                            <li>No Hosts on Appliance</li>
+                                            <li>No Windows Logs</li>
+                                            <li>No Logs</li>
+                                            <li>Log Source Last Collected</li>
+                                            <li>Error Sources Status History</li>
+                                            <li>Log Collection Health</li>
+                                        </ul>
+                                        <p>To access the Log Search page,  click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/investigate-icon.png" style="vertical-align: bottom;" /><b>Investigate</b>. Click <b>Search</b>.</p>
+                                        <h4><a name="Future3"></a>Future Log reports</h4>
+                                        <p> For the Log Source
+ Activity report, you can use the <a href="../analyze/search/expert-mode.htm#Log" class="MCXref xref">Log message example</a> to generate search results from the <a href="search-a.htm" class="MCXref xref">Get Started with Search</a> page. To access the Log Search page,  click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/investigate-icon.png" style="vertical-align: bottom;" /><b>Investigate</b>. Click <b>Search</b>.</p>
+                                        <p>You can also find information for log collection statuses in the <a href="../analyze/health.htm" class="MCXref xref">Health</a> page. To access the Health page, click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../Resources/Images/dashboard/respond-icon.png" style="vertical-align: bottom;" /><b>Respond</b>. Click <b>Health</b>. </p>
+                                        <h3><a name="Complian"></a>Compliance reports mapping</h3>
+                                        <p>Use the following table to find the information from the Compliance reports. </p>
+                                        <table style="width: 100%;">
+                                            <col style="width: 199px;" />
+                                            <col style="width: 250px;" />
+                                            <col style="width: 267px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Compliance Report</th>
+                                                    <th><span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> Report Replacement</th>
+                                                    <th>Location in the Reports page</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>PCI Reports - Executive Summary</td>
+                                                    <td rowspan="2">
+                                                        <p><a href="../analyze/reports/compliance/reports.htm#PCI_DSS_Audit" class="MCXref xref">PCI&#160;DSS Audit</a><![CDATA[           ]]></p>
+                                                    </td>
+                                                    <td rowspan="2">
+                                                        <p>Click   the <b>Compliance</b> tab, and then click <b>PCI DSS Audit</b>. Click <b>VIEW</b>. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PCI Reports - Full Report</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HIPAA Reports - Executive Summary</td>
+                                                    <td rowspan="2"><a href="../analyze/reports/compliance/reports.htm#HIPAASecurityAudit" class="MCXref xref">HIPAA-HITECH Security Audit</a>
+                                                    </td>
+                                                    <td rowspan="2">Click   the <b>Compliance</b> tab, and then click <b>HIPAA-HITECH Security Audit</b>. Click <b>VIEW</b>. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HIPAA Compliance - Full Report</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4><a name="Future4"></a>Future reports</h4>
+                                        <p>The following Compliance reports will be replaced in the future: </p>
+                                        <ul>
+                                            <li>GLB Compliance - Executive Summary</li>
+                                            <li>GLB Compliance - Full Report</li>
+                                            <li>SOX Reports - Executive Summary</li>
+                                            <li>SOX Compliance - Full Report</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="bhoofNormal _Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Requirements" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Review the requirements for all the virtual appliance types and the physical appliances that Alert Logic supports." />
+        <meta name="flareArticleId" content="b13599c7-0e93-4f41-8a7b-6accecca340a" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Alert Logic Requirements for Virtual and Physical Appliances</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Requirements for Virtual and Physical Appliances</h1>
+                                        <h2 class="bhoofTop">Requirements for <span class="mc-variable ALVariables.Company variable">Alert Logic</span> IDS virtual appliances</h2>
+                                        <div class="note">
+                                            <p>Bandwidth volume directly impacts the ability of the appliance to inspect traffic. High-traffic environments may require a virtual machine with additional processor and memory resources.</p>
+                                        </div>
+                                        <p>The following table describes the basic system requirements to install a  virtual IDS appliance:</p>
+                                        <table style="width: 100%;margin-left: 0;margin-right: auto;" cellspacing="0">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Virtual CPU cores</th>
+                                                    <th>Components</th>
+                                                    <th>System Requirements</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="5">4 cores</td>
+                                                    <td>RAM</td>
+                                                    <td> 16 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Disk space</td>
+                                                    <td>40 GB minimum </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Supported virtual environment</td>
+                                                    <td>VMware and Hyper-V</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Encryption</td>
+                                                    <td>TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peak supported throughput</td>
+                                                    <td>500 Mbps</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="5">8 cores</td>
+                                                    <td>RAM</td>
+                                                    <td>32 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Disk space</td>
+                                                    <td>40 GB minimum </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Supported virtual environment</td>
+                                                    <td>VMware and Hyper-V</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Encryption</td>
+                                                    <td>TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peak supported throughput</td>
+                                                    <td>1 Gbps</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="5">16 cores</td>
+                                                    <td>RAM</td>
+                                                    <td> 64 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Disk space</td>
+                                                    <td>40 GB minimum </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Supported virtual environment</td>
+                                                    <td>VMware and Hyper-V</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Encryption</td>
+                                                    <td>TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peak supported throughput</td>
+                                                    <td>2 Gbps (1 Gbps per fiber interface)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2>Physical IDS appliance specifications</h2>
+                                        <div class="note">
+                                            <p>Bandwidth volume directly impacts the ability of the appliance to inspect traffic. High-traffic environments require physical appliances with additional power, processor, and memory resources.</p>
+                                        </div>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides three tiers of physical appliances to meet system requirements. The following table describes the components and specifications for each appliance:</p>
+                                        <table style="width: 100%;margin-left: 0;margin-right: auto;" cellspacing="0">
+                                            <col data-mc-conditions="" />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr data-mc-conditions="">
+                                                    <th>Appliances</th>
+                                                    <th>Components</th>
+                                                    <th>System Specifications</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr data-mc-conditions="">
+                                                    <td rowspan="7">
+                                                        <p rowspan="7">Tier 1 - R230XL</p>
+                                                    </td>
+                                                    <td>CPU</td>
+                                                    <td>4 cores</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>RAM</td>
+                                                    <td>16 GB</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Disk Space</td>
+                                                    <td>1 TB</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Chassis</td>
+                                                    <td>1U rack mounted</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Power</td>
+                                                    <td>250W</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Encryption</td>
+                                                    <td>TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Peak throughput</td>
+                                                    <td>500 Mbps</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td rowspan="7">Tier 2 - R640XL</td>
+                                                    <td>CPU</td>
+                                                    <td>8 cores</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>RAM</td>
+                                                    <td>32 GB</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Disk Space</td>
+                                                    <td>1 TB</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Chassis</td>
+                                                    <td>1U rack mounted</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Power</td>
+                                                    <td>750W</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Encryption</td>
+                                                    <td>TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Peak throughput</td>
+                                                    <td>1 Gbps</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td rowspan="7">Tier 3 - R640XL</td>
+                                                    <td>CPU</td>
+                                                    <td> 24 cores</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>RAM</td>
+                                                    <td>64 GB</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Disk Space</td>
+                                                    <td>1 TB</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Chassis</td>
+                                                    <td>1U rack mounted</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Power</td>
+                                                    <td>750W</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Encryption</td>
+                                                    <td>TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Peak throughput</td>
+                                                    <td>2 Gbps (1 Gbps per fiber interface)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2 class="bhoofTop"><a name="reqsForALLMApp"></a>Physical Log Manager appliance specifications</h2>
+                                        <p style="text-align: left;">The following table describes the basic specifications for the physical appliance:</p>
+                                        <table style="width: 100%;margin-left: 0;margin-right: auto;" cellspacing="0">
+                                            <col style="width: 50%;" />
+                                            <col style="width: 50%;" />
+                                            <thead>
+                                                <tr>
+                                                    <th>Components</th>
+                                                    <th>System Specifications</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: left;">CPU</td>
+                                                    <td style="text-align: left;">
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">4 cores</MadCap:conditionalText> Intel Xeon</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">RAM</td>
+                                                    <td style="text-align: left;">
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">16</MadCap:conditionalText>4 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Disk space</td>
+                                                    <td style="text-align: left;">
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">1 TB</MadCap:conditionalText> 500 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Chassis</td>
+                                                    <td style="text-align: left;">1U rack mounted</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Power</td>
+                                                    <td style="text-align: left;">250W</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Encryption</td>
+                                                    <td style="text-align: left;">TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2 class="bhoofTop"><a name="reqsForALWSMApp"></a>Requirements for <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> appliances</h2>
+                                        <h3><a name="wsmVirtualAppliance"></a> VMware <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> virtual appliance</h3>
+                                        <div class="note">
+                                            <p>If your CPU usage is above 80 percent for extended periods, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends adding processor resources.</p>
+                                        </div>
+                                        <p>The following table describes the basic system requirements to install a VMware virtual appliance:</p>
+                                        <table>
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" style="width: 177px;" />
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                            <thead>
+                                                <tr class="TableStyle-al_tablestyle-Head-Header1">
+                                                    <th class="TableStyle-al_tablestyle-HeadE-Column1-Header1">Components</th>
+                                                    <th class="TableStyle-al_tablestyle-HeadD-Column1-Header1">System Requirements</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1" data-mc-conditions="">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Guest operating system</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">CentOS 64-bit</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">CPU</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">2 CPUs 64 bit</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">RAM</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">4 GB</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Disk space</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">250 GB</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Virtual network interface(s)</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1"> An interface with an external IP address for management<br />An interface with access to the web servers to be protected</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1" data-mc-conditions="">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">NIC type</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">em1000</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Encryption/decryption for SSL&#160;traffic</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">AES-NI CPU instruction set for encryption/decryption of SSL traffic on VMs and host OS is recommended
+</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyB-Column1-Body1">Clustering</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyA-Column1-Body1">For clustering to work, ensure promiscuous mode, forged transmits, and MAC address changes are allowed on the VMware virtual switch (vSwitch) or the port group in the VMware ESX network configuration
+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3> Physical <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> appliance capacity<a name="processing-capacity"></a></h3>
+                                        <div class="note">
+                                            <p>Bandwidth volume directly impacts the ability of the appliance to manage traffic. High-traffic environments may require appliances with additional power, processor, and memory resources.</p>
+                                        </div>
+                                        <p>The following table describes the basic bandwidth limits for the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> physical appliances:</p>
+                                        <table>
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                            <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                            <thead>
+                                                <tr class="TableStyle-al_tablestyle-Head-Header1">
+                                                    <th style="text-align: left;" class="TableStyle-al_tablestyle-HeadE-Column1-Header1">Appliances</th>
+                                                    <th style="text-align: left;" class="TableStyle-al_tablestyle-HeadE-Column1-Header1">Throughput</th>
+                                                    <th class="TableStyle-al_tablestyle-HeadE-Column1-Header1">Number of Virtual Hosts</th>
+                                                    <th class="TableStyle-al_tablestyle-HeadE-Column1-Header1">Number of SSL Certificates</th>
+                                                    <th class="TableStyle-al_tablestyle-HeadD-Column1-Header1">Number of Proxies</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Tier 1 - R220, R230<p data-mc-conditions="Primary.Draft Content">Tier 1 - R230XL</p></td>
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">0-250 <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">500 </MadCap:conditionalText>Mbps</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">1000</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">100</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">100</td>
+                                                </tr>
+                                                <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                    <td class="TableStyle-al_tablestyle-BodyB-Column1-Body1">Tier 2 - R630<p data-mc-conditions="Primary.Draft Content"> Tier 2 - R640XL</p></td>
+                                                    <td class="TableStyle-al_tablestyle-BodyB-Column1-Body1">250<MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> 500</MadCap:conditionalText>-1000 Mbps</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyB-Column1-Body1">1000</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyB-Column1-Body1">100</td>
+                                                    <td class="TableStyle-al_tablestyle-BodyA-Column1-Body1">100</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3> Physical <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> appliance specifications<a name="web-security-manager-physical"></a></h3>
+                                        <p style="text-align: left;">The following table describes the basic specifications for the physical appliance:</p>
+                                        <table style="width: 100%;margin-left: 0;margin-right: auto;" cellspacing="0">
+                                            <col style="width: 50%;" />
+                                            <col style="width: 50%;" />
+                                            <thead>
+                                                <tr>
+                                                    <th>Components</th>
+                                                    <th>System Specifications</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: left;">CPU</td>
+                                                    <td style="text-align: left;">
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">4 cores</MadCap:conditionalText> Intel Xeon</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">RAM</td>
+                                                    <td style="text-align: left;">
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">16</MadCap:conditionalText>4 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Disk space</td>
+                                                    <td style="text-align: left;">
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">1 TB</MadCap:conditionalText> 500 GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Chassis</td>
+                                                    <td style="text-align: left;">1U rack mounted</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Power</td>
+                                                    <td style="text-align: left;">250W</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">Encryption</td>
+                                                    <td style="text-align: left;">TLS Standard (SSL): 2048-bit key encryption, 256-bit AES bulk encryption</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> requirements for <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span></h3>
+                                        <p>Before you deploy <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> for one of your production web applications, consider the availability zones and <span class="mc-variable ALVariables.AWS variable">AWS</span> instance types that work best in your environment.</p>
+                                        <h4>Availability zones</h4>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> supports any number of availability zones within a single <span class="mc-variable ALVariables.AWS variable">AWS</span> region.  For a list of regions that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> supports, see <a href="amazon-web-services.htm#awsRegions" class="MCXref xref">Supported AWS regions</a>. The CloudFormation template configures an even distribution of worker nodes across availability zones. The CloudFormation template maintains the number of worker nodes equal to the number of availability zones. For example, two availability zones always have at least two <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> workers.</p>
+                                        <p>If you need to modify the CloudFormation template to support more than the default two availability zones, create a ticket with <a href="https://support.alertlogic.com/hc/en-us/requests/new"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Support</a>.</p>
+                                        <h4><span class="mc-variable ALVariables.AWS variable">AWS</span> supported instance types for  autoscaling</h4>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> workers and master appliances are bound to specific <span class="mc-variable ALVariables.AWS variable">AWS</span> instance types. Master appliances run on General Purpose Medium and Large instance types. Worker appliances run on General Purpose Small and Compute Optimized Medium and Xlarge instance types. The default instance types are t3.medium or c5.large for workers and t3.medium or m5.large for the master. The CloudFormation template allows for selecting instance types when run.</p>
+                                        <h5 data-mc-conditions="">Master instance processing capacity</h5>
+                                        <p data-mc-conditions="">The m5.large instance suffices for most installations. An Amazon Elastic Block Store (EBS)&#160;volume outside the master persists the log and configuration data. You can use the CloudFormation template to specify a new master instance type to upgrade the master appliance. The Autoscaling CloudFormation template for <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is available on request for <span class="mc-variable ALVariables.AWS variable">AWS</span> Auto Scaling deployments.</p>
+                                        <p data-mc-conditions="">Master instance processing capacity is approximately: </p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Instance Type</th>
+                                                    <th>vCPU</th>
+                                                    <th>Workers Capacity</th>
+                                                    <th>Traffic Capacity</th>
+                                                    <th>EBS Volume Size</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>t3a.medium</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>1 Worker</td>
+                                                    <td>5 Gbps</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>t3.medium</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>1 Worker</td>
+                                                    <td>5 Gbps</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>m5a.large</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>25 Workers</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>m5.large</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>25 Workers</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>m5a.xlarge</td>
+                                                    <td>4 vCPU</td>
+                                                    <td>50 Workers</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>300 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>m5.xlarge</td>
+                                                    <td>4 vCPU</td>
+                                                    <td>50 Workers</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>300 GB, SSD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p data-mc-conditions="">Master instances are not processing traffic inline. Traffic capacity is the master's ability to process data from the Learner and deny logs at near real time as workers deliver the data. Average performance is measured using a representative sample of e-commerce web traffic. Actual performance may vary and depends on factors such as ratio of inbound to outbound traffic, request complexity, variability in input, and concurrency.</p>
+                                        <p data-mc-conditions="">The EBS volume size is the minimum recommended. The EBS volume is used to store log data in transit to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> backend and Deny Log data used for tuning. If the EBS volume disk space runs out, the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> instance stops logging and issues an alert to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> monitoring system. This condition does not affect availability of the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> autoscaling stack.</p>
+                                        <h5 data-mc-conditions="">Worker instance processing capacity</h5>
+                                        <p data-mc-conditions=""><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> scales up or down to accommodate changes in traffic load. You can optimize  the size and initial number of worker instances to serve expected daily traffic rather than optimizing for peak traffic load as is required where processing capacity is static.</p>
+                                        <p data-mc-conditions="">Worker instance processing capacity: </p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col style="width: 120px;" />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Instance Type</th>
+                                                    <th>vCPU</th>
+                                                    <th>Traffic Capacity</th>
+                                                    <th>EBS Volume Size</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>t3a.medium</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>t3.medium</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.large</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.large</td>
+                                                    <td>2 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.xlarge</td>
+                                                    <td>4 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.xlarge</td>
+                                                    <td>4 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.2xlarge</td>
+                                                    <td>8 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.2xlarge	  </td>
+                                                    <td>8 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.4xlarge	  </td>
+                                                    <td>16 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.4xlarge</td>
+                                                    <td>16 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.8xlarge</td>
+                                                    <td>32 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.8xlarge</td>
+                                                    <td>32 vCPU</td>
+                                                    <td>10 Gbps</td>
+                                                    <td>10 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.12xlarge</td>
+                                                    <td>48 vCPU</td>
+                                                    <td>12 Gbps</td>
+                                                    <td>12 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.12xlarge</td>
+                                                    <td>48 vCPU</td>
+                                                    <td>12 Gbps</td>
+                                                    <td>12 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.16xlarge   </td>
+                                                    <td>64 vCPU</td>
+                                                    <td>20 Gbps</td>
+                                                    <td>25 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.16xlarge</td>
+                                                    <td>64 vCPU</td>
+                                                    <td>20 Gbps</td>
+                                                    <td>20 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5.24xlarge</td>
+                                                    <td>96 vCPU</td>
+                                                    <td>20 Gbps</td>
+                                                    <td>25 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>c5a.24xlarge</td>
+                                                    <td>96 vCPU</td>
+                                                    <td>20 Gbps</td>
+                                                    <td>20 GB, SSD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>Traffic capacity is an average performance measured using a representative sample of e-commerce web traffic. Actual performance may vary and depends on factors such as ratio of inbound to outbound traffic, request complexity, variability in input, and concurrency.</p>
+                                        <p>The EBS volume size is the minimum recommended. The EBS volume is used for caching and as a temporary store for log data in transit to the master instance. If traffic caching is not enabled, it is possible to run with smaller volume sizes. Cache directory sizing is configured dynamically relative to the available disk space; a smaller volume size means the cache will be smaller. If the EBS volume disk space runs out, the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> instance stops logging and issues an alert to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> monitoring system.</p>
+                                        <h4><span class="mc-variable ALVariables.AWS variable">AWS</span> supported instance types for <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> pair high availability</h4>
+                                        <p>Prior to deploying <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> for one or more production web applications, some items must be considered to meet requirements for availability, performance, and traffic (SSL) encryption.</p>
+                                        <h5>Traffic encryption</h5>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> supports Secure Sockets Layer (SSL) end-to-end encryption, as required in <span class="mc-variable ALVariables.AWS variable">AWS</span> (by HIPAA, for example) both for standalone and for autoscaling deployments. If SSL encryption is required all the way to the backend server, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> must  be configured to re-encrypt traffic before forwarding it to the server. To re-encrypt traffic, select SSL for both inbound and outbound traffic  when configuring the website in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. To comply with HIPAA requirements for high availability configurations, Elastic Load Balancing must be configured as a TCP load balancer so the initial SSL request from the client is not terminated until it reaches <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</p>
+                                        <h5>Performance</h5>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> runs on select instance types in the <span class="mc-variable ALVariables.AWS variable">AWS</span> Marketplace ranging from a c5.large to c5a.4xlarge. The actual performance for a specific application depends on factors such as request size, complexity, and the ratio of inbound to outbound traffic as a rough estimate. The peak performance for a typical web application measured in Gbps total, inbound plus outbound traffic, is the number of Elastic Compute Units multiplied by 10.</p>
+                                        <h5>Supported EC2 instances</h5>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> runs on the following EC2 instances:</p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col style="width: 178px;" />
+                                            <col style="width: 123px;" />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Instance Family</th>
+                                                    <th>Instance Type</th>
+                                                    <th>Processor Architecture</th>
+                                                    <th>vCPU</th>
+                                                    <th>Network Performance</th>
+                                                    <th>Network Bandwidth</th>
+                                                    <th>EBS Volume Size (Root)</th>
+                                                    <th>EBS Volume Size (Log)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5.large</td>
+                                                    <td>64-bit</td>
+                                                    <td>2</td>
+                                                    <td>Moderate	                   </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5.xlarge</td>
+                                                    <td>64-bit</td>
+                                                    <td>4</td>
+                                                    <td>High	                           </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5.2xlarge</td>
+                                                    <td>64-bit</td>
+                                                    <td>8</td>
+                                                    <td>High                           </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5.4xlarge</td>
+                                                    <td>64-bit</td>
+                                                    <td>16</td>
+                                                    <td>High                           </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5a.large</td>
+                                                    <td>64-bit</td>
+                                                    <td>8</td>
+                                                    <td>Moderate</td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5a.xlarge</td>
+                                                    <td>64-bit</td>
+                                                    <td>16</td>
+                                                    <td>High                           </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5a.2xlarge</td>
+                                                    <td>64-bit</td>
+                                                    <td>31</td>
+                                                    <td>High                           </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Compute optimized</td>
+                                                    <td>c5a.4xlarge</td>
+                                                    <td>64-bit</td>
+                                                    <td>62</td>
+                                                    <td>High                         </td>
+                                                    <td>10 GB</td>
+                                                    <td>100 GB, SSD</td>
+                                                    <td>100 GB, SSD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="8">* Estimated total network bandwidth peak processing capacity. Actual performance depends on application.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>The EBS volume size is the minimum recommended. If traffic caching is not enabled, you can run <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> with smaller volume sizes. Cache directory sizing is configured dynamically relative to the available disk space; a smaller volume size means the cache will be smaller. Total cache directory size is roughly 20 percent of available disk space. If the EBS volume disk space runs out, the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> instance stops logging and issues an alert to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> monitoring system. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends you create separate partitions for root (/) and log data (/wsm/log) to prevent log data partition disk space issues from causing further failures in processing traffic.</p>
+                                        <h5>High availability</h5>
+                                        <p>You can deploy <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> in autoscaling configurations to provide high availability and performance adaptation to web applications with high and fluctuating traffic loads. An alternative configuration is  a fixed capacity active/active deployment with two or more <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> nodes running parallel behind Elastic Load Balancing. In such a deployment, deploy the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> instances in different Availability Zones.</p>
+                                        <p>You can extend a single node  <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> deployment to a high availability configuration by deploying an additional <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> node and configuring Elastic Load Balancing for the nodes.</p>
+                                        <div class="note">To learn how to install a virtual or physical appliance, see <a href="../prepare/virtual-appliance.htm" class="MCXref xref">Install and Configure the  Virtual Appliances</a> or <a href="../prepare/alert-logic-physical-appliance.htm" class="MCXref xref">Install and Configure the  Physical Appliance</a>.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

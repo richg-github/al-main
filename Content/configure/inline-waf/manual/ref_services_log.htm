@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Inline WAF|Web Application Firewall&#160;Manual|Web Application Firewall" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Log</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1 id="Log" data-magellan-target="Log">Log<a name="ref_services_log.htm"></a></h1>
+                                        <div>
+                                            <p>The <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> Log page includes the following sections. Click on the link to go to the corresponding section to learn more: </p>
+                                            <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menuInBody mc-component">
+                                                <li><a href="#Log">Log</a>
+                                                </li>
+                                                <ul>
+                                                    <li><a href="#Denylog">Deny log
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Specifyingfiltercriteria">Specifying filter criteria</a>
+                                                        </li>
+                                                        <li><a href="#Response">Response</a>
+                                                        </li>
+                                                        <li><a href="#Attackclassification">Attack classification</a>
+                                                        </li>
+                                                        <li><a href="#Policyviolations">Policy violations</a>
+                                                        </li>
+                                                        <li><a href="#Country">Country</a>
+                                                        </li>
+                                                        <li><a href="#Lowerbuttonbarforfiltercriteria">Lower button bar for filter criteria </a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Blockedandfailedrequests">Blocked and failed requests
+</a>
+                                                            </li>
+                                                        </ul>
+                                                        <li><a href="#Lowerbuttonbar">Lower button bar
+</a>
+                                                        </li>
+                                                        <li><a href="#Accesslog">Access log</a>
+                                                        </li>
+                                                        <li><a href="#Accesslogfiles">Access log files
+</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </ul>
+                                            <p>To go to the documentation for the previous section of <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span>, see <a href="ref_services_learning_settings.htm" class="MCXref xref">Learning Settings</a>. To go to  the documentation for next subsection in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> section, see <a href="ref_services_reports.htm" class="MCXref xref">Reports</a>.</p>
+                                            <p><b>To access the Log page in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> management interface</b>:</p>
+                                            <ol>
+                                                <li value="1">On the left panel, under Services, click <b>Websites</b>. </li>
+                                                <li value="2">On the Websites page, click the website you want to manage. </li>
+                                                <li value="3">Under Log, click <b>Deny log</b> to access the first section. </li>
+                                            </ol>
+                                        </div>
+                                        <p>To save configuration changes or edits you make to any features and options, you must click <b>Save</b> on the lower-right of the section or page where you are making changes. Click <b>apply changes</b> on the upper-left corner of the page, and then click <b>OK</b>. Your changes will not be stored if you do not properly save your changes. </p>
+                                        <div class="titlepage">
+                                            <div>
+                                                <h2 id="Denylog" data-magellan-target="Denylog">Deny log
+<a name="ref_services_deny_log.htm"></a></h2>
+                                            </div>
+                                        </div>
+                                        <p>The Deny log window provides access to all denied request to the proxy. Filtering functions allows for specification of fine
+ grained filtering of log information.
+         </p>
+                                        <div class="sect3" title="4.1.1.&#160;Specifying filter criteria">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 id="Specifyingfiltercriteria" data-magellan-target="Specifyingfiltercriteria">Specifying filter criteria<a name="ref_services_deny_log.htm#ref_services_log_deny_log_filter_criteria"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The filter function allows you to specify conditions for showing a subset of the log entries. Until reset the filter conditions
+ also apply to the log report.
+            </p>
+                                            <p>When the log filter section is not expanded, a <b><span class="guibutton">Filter button</span></b> and current filter criteria is shown on a general level. When filter criteria are defined, a <b>RESET</b> button will be available at the left of the filter button. When the reset button is pressed, the filter criteria will be reset.
+            </p>
+                                            <p>When the Filter button is clicked, the filter section expands and filter criteria can be specified. Following filter criteria
+ are available:
+            </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left">
+                                                        </col>
+                                                        <col width="75%" align="left">
+                                                        </col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">ID</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Number identifying a log entry.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>Number of type integer.</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">20567</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal"><code class="literal">&lt;none&gt;</code></code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Ref ID</b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Path</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Pattern or string specifying filter based on the URL path.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>A string or a simple wildcard.</p>
+                                                                            <p>Use the following characters to specify wildcards:</p>
+                                                                            <p><code class="literal">* =</code> any string any length.
+                                    </p>
+                                                                            <p><code class="literal">? =</code> one occurrence of any character.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <div class="itemizedlist">
+                                                                                <ul class="itemizedlist" type="disc">
+                                                                                    <li class="listitem">
+                                                                                        <p><code class="literal">/store/*</code> - matches all URL paths beginning with string /store/ including the string itself.
+                                             </p>
+                                                                                    </li>
+                                                                                    <li class="listitem">
+                                                                                        <p><code class="literal">*.php</code> - matches all url paths in all sub directories with the extension .php .
+                                             </p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">IP</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Source IP address of the originating client</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>An IP address in the format xxx.xxx.xxx.xxx</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">192.168.45.17</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Host</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Host information from the request blocked.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>A string or a simple wildcard.</p>
+                                                                            <p>Use the following characters to specify wildcards:</p>
+                                                                            <p><code class="literal">* =</code> any string any length.
+                                    </p>
+                                                                            <p><code class="literal">? =</code> one ocurrence of any character.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">www.mycompany.com</code>
+                                                                            </p>
+                                                                            <p><code class="literal">*.mycompany.com</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Date from</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Filter based on request timestamp. Date from specifies the date of the oldest log records that should be included.</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>A date string in the format: mm/dd/yyyy</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal"><code class="literal">04/27/2021</code></code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Date to</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Filter based on request timestamp. Date to specifies the date of the newest log records that should be included.</p>
+                                                                <p>Use <span class="emphasis"><em style="font-style: normal; font-weight: bold;">Date from</em></span> and <span class="emphasis"><em style="font-style: normal; font-weight: bold;">Date to</em></span> to specify a time interval.
+                           </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>A date string in the format: mm/dd/yyyy</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal"><code class="literal">04/29/2021</code></code>
+                                                                            </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Risk</b>
+                                                                <p>Drop down menu</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Risk classification of the log entry. Options are:</p>
+                                                                <div class="itemizedlist">
+                                                                    <ul class="itemizedlist" type="disc">
+                                                                        <li class="listitem">Critical                                        </li>
+                                                                        <li class="listitem">High</li>
+                                                                        <li class="listitem">Medium</li>
+                                                                        <li class="listitem">Low</li>
+                                                                        <li class="listitem">None</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">
+                                                                <p align="left"><b>Deny action</b>
+                                                                </p>
+                                                                <p align="left">Multiple check boxes</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Deny action taken on the request. Options are:</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Allow</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The request was allowed, either because the current mode and white list configuration or because the requests was allowed
+ according to policy. If the request was allowed by policy the reason for the request being logged in the deny log is typically
+ that the backend server responded with an error. Expand the request to see details.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Block</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The request was blocked by <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Block-IP</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The request was blocked by <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> and the source IP was blacklisted resulting in further requests from that
+ source being blocked at the network level.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Strip</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The offending part of the request was stripped before allowing the request. Used for instance to remove session cookies for
+ expired sessions.
+</p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div data-mc-conditions="Primary.Draft Content">
+                                                <h3 id="Response" data-magellan-target="Response">Response<a name="ref_services_deny_log.htm#ref_services_log_deny_response"></a></h3>
+                                                <table style="width: 100%;">
+                                                    <col style="width: 197px;" />
+                                                    <col />
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <p><b>Compromise Risk</b>
+                                                                </p>
+                                                                <p>Check box</p>
+                                                            </td>
+                                                            <td>&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p><b>Unlikely </b>
+                                                                </p>
+                                                                <p>Check box</p>
+                                                            </td>
+                                                            <td>&#160;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h3 id="Attackclassification" data-magellan-target="Attackclassification">Attack classification<a name="ref_services_deny_log.htm#ref_services_log_deny_attack_classification"></a></h3>
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left">
+                                                    </col>
+                                                    <col width="301px" align="left">
+                                                    </col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Attack classification</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p> Options are:</p>
+                                                            <div class="itemizedlist">
+                                                                <ul>
+                                                                    <li>Unclassified </li>
+                                                                    <li>SQL injection</li>
+                                                                    <li>XPath injection</li>
+                                                                    <li>SSI injection</li>
+                                                                    <li>OS commanding</li>
+                                                                    <li>XSS (Cross Site Scripting)</li>
+                                                                    <li>Path traversal</li>
+                                                                    <li>Enumeration</li>
+                                                                    <li>Format string</li>
+                                                                    <li>Buffer overflow</li>
+                                                                    <li>DoS attempt</li>
+                                                                    <li>Worm probe</li>
+                                                                    <li>Access violation</li>
+                                                                    <li>Malformed request</li>
+                                                                    <li>HTML tags</li>
+                                                                    <li>Session invalid</li>
+                                                                    <li>XSRF (Cross Site Request Forgery)</li>
+                                                                    <li>Session expired</li>
+                                                                    <li>Detection evasion</li>
+                                                                    <li>File inclusion</li>
+                                                                    <li>CRLF injection</li>
+                                                                    <li>HTTP request smuggling</li>
+                                                                    <li>XQuery injection</li>
+                                                                    <li>LDAP injection</li>
+                                                                    <li>XML injection</li>
+                                                                    <li>Null byte injection</li>
+                                                                    <li>Information leak</li>
+                                                                    <li>Backend error</li>
+                                                                    <li>Broken robot</li>
+                                                                    <li>Broken int. link</li>
+                                                                    <li>Broken ext. link</li>
+                                                                    <li>Other</li>
+                                                                    <li>None</li>
+                                                                    <li>False positive</li>
+                                                                    <li>Friendly</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Add</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Remove</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Add All</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Rem. All</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3 id="Policyviolations" data-magellan-target="Policyviolations">Policy violations<a name="ref_services_deny_log.htm#ref_services_log_deny_policy_violations"></a></h3>
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left">
+                                                    </col>
+                                                    <col width="75%" align="left">
+                                                    </col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Path unknown</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">No policy rules allow the path segment of the URL, either because it does not match a positive policy rule or because it matches
+ a negative policy rule - a signature.
+                              </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Path denied</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">The path is explicitly denied by an URL blocking policy rule.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Query unknown</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">No positive policy rules match the name of the request parameter.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Query illegal</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">No policy rules allow the value of the request parameter, either because it does not match a positive policy rule or because
+ it matches a negative policy rule - a signature.
+                              </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Session validation failed</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">The request session ID is not valid, either because the session token has been tampered with or hijacked.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Form validation failed</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">The form submitted cannot be verified as having been issued by the web application in a response to a request from the current
+ user session. This is an indication of a CSRF attack.
+                              </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Session expired</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">The request session has exceeded the idle expiration threshold configured in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> for the web application.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Malformed XML</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Submitted XML request is malformed and hence cannot be parsed and validated.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Multiple or %u encoded request</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">The request contains elements that are encoded more than twice or it contains elements that are encoded using %u-encoding.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">
+                                                            <p align="left" style="font-weight: bold;">Illegal or malformed Unicode</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;font-weight: bold;" align="left">Illegal or malformed %u encoding</td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Authorization failed</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">User is not authorized to access requested resource.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Header unknown</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Request header not RFC 2616 compliant.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Header illegal</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Header value failed strict validation.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Header validation failed</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Header value failed pragmatic validation.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Output illegal</span></b>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p align="left">Server response contains illegal string.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">HTTP Protocol version</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">HTTP protocol version not allowed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Method illegal</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">HTTP method not allowed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Missing hostname</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Request does not specify host name.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Invalid hostname</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Not website proxy is configured for the requested host name.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Request line maximum length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Entire request line (URI?query) exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Request path maximum length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Request path exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Query string maximum length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Request query exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Content type not enabled</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Request content type is supported but not enabled.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Header name length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Header name exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Header value length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Header value exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum number of headers</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Header number exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Upload attempt</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Upload attempted but upload not allowed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Payload length exceeded</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">POST payload exceeds allowed maximum size.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum number of upload files</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Number of files to upload in a request exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Total upload size</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Total size of upload files in request exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum file size</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Size of a single upload file exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Cookie version not allowed</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Request cookie version not allowed.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum number of cookies</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Number of cookies in request exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Cookie name length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Name of a cookie exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Cookie value length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Value of a cookie exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum number of GET parameters</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">GET parameter number exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">GET parameter name length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">GET parameter name exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">GET parameter value length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">GET parameter value exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">GET parameter combined length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Combined length of GET parameter name and value exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum number of POST parameters</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">POST parameter number exceeds allowed maximum.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">POST parameter name length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">POST parameter name exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">POST parameter value length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">POST parameter value exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">POST parameter combined length</span></b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">Combined length of POST parameter name and value exceeds allowed maximum length.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b>General protocol violation</b>
+                                                        </td>
+                                                        <td align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b>Backend server error</b>
+                                                        </td>
+                                                        <td align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b>XML payload illegal</b>
+                                                        </td>
+                                                        <td align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">General request violation</span></b>
+                                                        </td>
+                                                        <td align="left">Other generic violations.</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Add</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Remove</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Add All</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.Draft Content">
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Rem. All</b>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div data-mc-conditions="Primary.Draft Content">
+                                                <h3 id="Country" data-magellan-target="Country">Country</h3>
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Add</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Remove</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Add All</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Rem. All</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h3 id="Lowerbuttonbarforfiltercriteria" data-magellan-target="Lowerbuttonbarforfiltercriteria">Lower button bar for filter criteria </h3>
+                                        </div>
+                                        <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                            <colgroup>
+                                                <col width="25%" align="left" data-mc-conditions="">
+                                                </col>
+                                                <col width="75%" align="left" data-mc-conditions="">
+                                                </col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr data-mc-conditions="">
+                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Reset</span></b>
+                                                        <p>Button</p>
+                                                    </td>
+                                                    <td style="border-bottom: 0.5pt solid;" align="left">
+                                                        <p>Resets the filter criteria to default values.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Apply</span></b>
+                                                        <p>Button</p>
+                                                    </td>
+                                                    <td style="border-bottom: 0.5pt solid;" align="left">
+                                                        <p>Applies defined filter to deny log database.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Close</span></b>
+                                                        <p>Button</p>
+                                                    </td>
+                                                    <td align="left">
+                                                        <p>Closes the filter section.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="sect3" title="4.1.2.&#160;Blocked and failed requests">
+                                            <div>
+                                                <h4 class="title" id="Blockedandfailedrequests" data-magellan-target="Blockedandfailedrequests">Blocked and failed requests
+<a name="ref_services_log_deny_log_blocked_requests"></a></h4>
+                                            </div>
+                                            <p>Displays requests for resources for the selected proxy that were blocked by <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</p>
+                                            <p>HTTP headers, URL, parameters and values (if any) that were blocked in the request are highlighted in red color.</p>
+                                            <p>Also failed requests are shown in the deny log allowing for identifying broken internal and external links and broken robots
+ not abiding the 404 not found message.
+            </p>
+                                            <p>Total number of log entries matching the current filter criteria (if specified) is displayed as <b><span class="guibutton">Query returned #number records</span></b>. If the total number of records is larger then the <b><span class="guibutton">Entries per page</span></b> selection, use navigation arrows to navigate the log record back and forth.
+            </p>
+                                            <p>Details are expandable: Click <b><span class="guiicon">details icon</span></b> in the rightmost column to expand.
+            </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left">
+                                                        </col>
+                                                        <col width="75%" align="left">
+                                                        </col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left">Checkbox</td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Mark log entry for adding to the access policy. </p>
+                                                                <p>To allow further requests based on the information in the selected log entry/entries, select them and click on the <b><span class="guibutton">Add selected to ACL</span></b> button.
+                           </p>
+                                                                <p>Note: parameters that are defined as <code class="literal">regexp</code> in web applications and global policy are not automatically updated to allow new values based on the input from the logged
+ requests. In this case, values need to be updated manually.
+                           </p>
+                                                                <p>If adding is not possible the check box is inactive.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Time</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Date and time the request was logged.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Source IP</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Source IP the request originated from.</p>
+                                                                <p>Click on IP-address to get <span class="emphasis"><em>whois information</em></span>.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Host</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Hostname from the original request or none if none was present.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Risk</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Risk classification of the log entry. Options are:</p>
+                                                                <div class="itemizedlist">
+                                                                    <ul class="itemizedlist" type="disc">
+                                                                        <li class="listitem">
+                                                                            <p>Critical</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>High</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Medium</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Low</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>None</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Class</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Attack classification of the log entry. Options are:</p>
+                                                                <div class="itemizedlist">
+                                                                    <ul class="itemizedlist" type="disc">
+                                                                        <li class="listitem">
+                                                                            <p>SQL injection</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>XPath injection</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>SSI injection</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>OS commanding</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>XSS (Cross Site Scripting)</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Path traversal</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Enumeration</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Format string</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Buffer overflow</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>DoS attempt</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Worm probe</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Access violation</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Malformed request</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>HTML tags</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Session invalid</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>XSRF (Cross Site Request Forgery)</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Session expired</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Detection evasion</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Remote file inclusion</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Information leak</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Backend error</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Broken robot</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Broken int. link</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Broken ext. link</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Other</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>None</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>False positive</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Friendly</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Action</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Block action taken on the request. Options are:</p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Allow</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The request was allowed, either because the current mode and white list configuration or because the requests was allowed
+ according to policy. If the request was allowed by policy the reason for the request being logged in the deny log is typically
+ that the backend server responded with an error. Expand the request to see details.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Block</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The request was blocked by <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Block-IP</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The request was blocked by <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> and the source IP was blacklisted resulting in further requests from that
+ source being blocked at the network level.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Strip</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>The offending part of the request was stripped before allowing the request. Used for instance to remove session cookies for
+ expired sessions.
+                                    </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b>Response</b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">&#160;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">URL Path</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The URL path requested.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p>To view all entries in the list expanded click the <b><span class="guibutton">Report</span></b> button in the lower button bar.
+            </p>
+                                            <div class="note">
+                                                <p>In order not to lock the management interface by returning huge amounts of data a maximum of 500 log entries at a time will
+ be displayed in the interactive log interface.
+                        </p>
+                                                <p>Use the <b><span class="guibutton">XML export </span></b>function to download larger lists (or the complete log) for off line analysis and archival purposes.
+</p>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="4.1.3.&#160;Lower button bar">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 id="Lowerbuttonbar" data-magellan-target="Lowerbuttonbar">Lower button bar
+<a name="ref_services_log_deny_log_lbb"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The lower button bar contains the following buttons.</p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Flush log</span></b>
+                                                                <p>Button</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Use with caution!</p>
+                                                                <p>When clicking this button and accepting the confirm pop-up window, all log data for that proxy is deleted.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Log report</span></b>
+                                                                <p>Button</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">Generate a printable report based on defined filter criteria (if any).</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Add selected to ACL</span></b>
+                                                                <p>Button</p>
+                                                            </td>
+                                                            <td align="left">Adds selected log records to access policy.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <h3 id="Accesslog" data-magellan-target="Accesslog">Access log<a name="ref_services_access_log.htm"></a></h3>
+                                        <p>Under Log, click <b>Access log</b> to access this page.</p>
+                                        <p>When <span class="emphasis"><em style="font-style: normal; font-weight: bold;">access logging</em></span> is enabled, all requests to the website are logged.
+         </p>
+                                        <p>The access log is generated on a per day basis. The current log can be monitored and viewed and closed logs are made available
+ for download.
+         </p>
+                                        <p>The fields displayed depends on the selected access log format.</p>
+                                        <div class="titlepage">
+                                            <div>
+                                                <h3 id="Accesslogfiles" data-magellan-target="Accesslogfiles">Access log files
+<a name="ref_services_access_log_files.htm"></a></h3>
+                                                <p>Under Log, click <b>Access log files</b> to access this page.</p>
+                                            </div>
+                                        </div>
+                                        <p>When log files are available for download the file name is an active link. To download an access log file click on the file name.</p>
+                                        <p>When remote backup is enabled, the latest access log file made available for download will be compressed (using gzip) and
+ copied to the remote backup destination along with the backup of the system configuration.
+         </p>
+                                        <p>Several log file formats are available. A condensed <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> specific and some standardized formats, like NCSA
+ Combined (Apache Combined), suitable for importing into log analysis and report generation tools.
+         </p>
+                                        <p>See <a href="ref_services_policy.htm#ref_access_log_formats">Access Log Formats</a> for log format definitions.
+         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

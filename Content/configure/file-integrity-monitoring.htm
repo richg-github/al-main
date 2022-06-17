@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="bhoofNormal _Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Configure" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn about the File Integrity Monitoring feature, which allows you to monitor changes to files and directories of assets associated with your Alert Logic deployments in the Alert Logic console." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>File Integrity Monitoring </title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>File Integrity Monitoring </h1>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> offers <span class="mc-variable ALVariables.FIM_1 variable">File Integrity Monitoring (FIM)</span>, which allows you to monitor changes to files and directories of assets associated with your <span class="mc-variable ALVariables.Company variable">Alert Logic</span> deployments in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. You can configure monitoring or exclusions for specific file paths or entire directories  in your Windows and Linux systems.</p>
+                                        <div class="note">
+                                            <p>The File Integrity Monitoring Dashboard is only offered to <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span>&#160;<span class="mc-variable ALVariables.Professional variable">Professional</span> customers. To learn more about <span class="mc-variable ALVariables.Company variable">Alert Logic</span> subscriptions, see <a href="../get-started/subscriptions-addons.htm" class="MCXref xref">Get Started with Alert Logic   Subscriptions and Add-ons</a>.</p>
+                                        </div>
+                                        <p><span class="mc-variable ALVariables.FIM_2 variable">FIM</span> allows you to be aware of file changes and related details in your deployment. The following are examples of what you can monitor:</p>
+                                        <ul>
+                                            <li>When a file was created and last modified</li>
+                                            <li>Unauthorized access to specific files</li>
+                                            <li>Security permission changes, such as newly added permissions, deleted permissions and changes to existing permissions</li>
+                                            <li>Registry changes, such as changed registry values, removed registry keys and sub keys</li>
+                                            <li>Changes in system binaries and configuration files, and new processes</li>
+                                        </ul>
+                                        <p>After you set up <span class="mc-variable ALVariables.FIM_2 variable">FIM</span>, you can schedule a weekly or monthly search of changes to your <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setups, and be notified when the search is complete. Scheduled searches  can help you keep records of changes to your systems for compliance requirements. For more information about how to schedule a search and access its notifications, see <a href="notifications/fim-search.htm" class="MCXref xref">File Integrity Monitoring Search Notification</a>.</p>
+                                        <p>The <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> features also help you demonstrate compliance with PCI Requirement  10.5.5 and PCI Requirement 11.5. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides guidance on how to use and access <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> features to demonstrate compliance in the  <a href="../analyze/reports/compliance/PCI-requirement-10.5.5.htm" class="MCXref xref">PCI Requirement 10.5.5</a>  and <a href="../analyze/reports/compliance/PCI-requirement-11.5.htm" class="MCXref xref">PCI Requirement 11.5</a>.</p>
+                                        <div class="note">
+                                            <p>You can  view the File Integrity Monitoring dashboard for a summary of your file monitoring activity. For more information see, <a href="../analyze/dashboard/file-integrity-monitoring.htm" class="MCXref xref">File Integrity Monitoring Dashboard </a>.</p>
+                                        </div>
+                                        <p>To access the File Integrity Monitoring page, click the menu icon (<img src="../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />) from the Dashboards page. Click <b>Configure</b>, and then click the deployment for which you want to configure file monitoring. On the left navigation panel, click <b>File Integrity Monitoring</b>. </p>
+                                        <p>The File Integrity Monitoring page is composed of two subsections: Monitoring and Exclusions. On the <b>Monitoring</b> page, you can setup files and directories for monitoring from the default file types listed on the page. In the <b>Exclusions</b> page, you can exclude files and directories  from monitoring, which will override a previously configured file monitoring setup. </p>
+                                        <h2>Monitoring page</h2>
+                                        <p>On the <b>Monitoring</b> page, you can configure monitoring for default files and directories. You must scope assets that you want monitored for that file or directory path. You do not need to edit or remove the default file paths. After you have applied the asset scoping to the file path, you must enable each file individually to start monitoring.</p>
+                                        <h3>Default directories and files</h3>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> can monitor all default directories and files listed below for GNU/Linux files, Windows files, and Windows Registry. Click the <b>All File Types</b> drop-down menu to select a file type for the default directories and files you want to view. </p>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />GNU/Linux Files</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <ul>
+                                                    <li>/bin</li>
+                                                    <li>/boot</li>
+                                                    <li>/etc</li>
+                                                    <li>/sbin</li>
+                                                    <li>/usr/bin</li>
+                                                    <li>/usr/local/bin</li>
+                                                    <li>/usr/local/sbin</li>
+                                                    <li>/usr/sbin</li>
+                                                    <li>/usr/my_custom_filepath</li>
+                                                    <li>/usr/share/keyrings</li>
+                                                    <li>/var/spool/cron</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Windows Files</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <ul>
+                                                    <li>C:\autoexec.bat</li>
+                                                    <li>C:\boot.ini</li>
+                                                    <li>C:\config.sys</li>
+                                                    <li>C:\Program Files\Microsoft Security Client\msseces.exe</li>
+                                                    <li>C:\Program Files\My Custom App\customapp.exe</li>
+                                                    <li>C:\Windows\explorer.exe</li>
+                                                    <li>C:\Windows\regedit.exe</li>
+                                                    <li>C:\Windows\system.ini</li>
+                                                    <li>C:\Windows\System32</li>
+                                                    <li>C:\Windows\win.ini</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Windows Registry</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <ul>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\batfile&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\cmdfile&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\comfile&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\exefile&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\piffile&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\AllFilesystemObjects&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\Directory&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\Folder&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Classes\Protocols&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Policies&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Policies\Custom&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Security&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\KnownDLLs&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurePipeServers\winreg&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnceEx&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\URL&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon&lt;/windows_registry&gt;</li>
+                                                    <li>&lt;windows_registry&gt;HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components&lt;/windows_registry&gt;</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h3>Add a  <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup</h3>
+                                        <p>There are two different ways to add a <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup. You can click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;" />), or find the default file or directory from the list for which you want to monitor. After you have filled out all required fields and scoped your assets, you must turn on <b>Monitor</b>.</p>
+                                        <p><b>To add a <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup from the add icon</b>:</p>
+                                        <ol>
+                                            <li value="1">Click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;"></img>)</li>
+                                            <li value="2">In the <b>Select File Type</b> drop-down list, select a file type. </li>
+                                            <li value="3">In the  <b>Base Directory Path</b> field, enter the file path that you want to monitor.</li>
+                                            <li value="4">In the <b>File Name or Pattern</b> field, enter the pattern of the files that you want to monitor. </li>
+                                            <li value="5">Select <b>Monitor</b> to enable monitoring for this file or directory. </li>
+                                            <li value="6">(Optional) In the <b>Description</b> field, you can enter more detail for this setup. </li>
+                                            <li value="7">In the <b>Asset Scoping</b> section, click <b>Search assets</b> bar to enter the names of the asset you want to monitor, and then select assets to add from the populated options.
+				<div class="note"><p>Monitoring is automatically applied to all assets in your deployment. Scoping individual assets for monitoring in this file path will override monitoring for all assets in this deployment.</p></div></li>
+                                            <li value="8">Click <b>SAVE</b>.</li>
+                                            <li value="9">Ensure <b>Monitor</b> is turned on for the file you just scoped.</li>
+                                        </ol>
+                                        <p><b>To add a <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup from the list</b>:</p>
+                                        <ol>
+                                            <li value="1">Click the <b>All File Types</b> drop-down list, and then select a file type to filter the list to its default files and directories.</li>
+                                            <li value="2">Find the file path you want to scope assets for monitoring.</li>
+                                            <li value="3">Click <b>View</b>, and then click the <b>Edit</b>.</li>
+                                            <li value="4">Ensure <b>Monitor</b> is selected to enable monitoring for this file or directory. </li>
+                                            <li value="5">(Optional) In the <b>Description</b> field, you can enter more detail for this setup. </li>
+                                            <li value="6">In the <b>Asset Scoping</b> section, click the <b>Search assets</b> bar to enter the names of the asset you want to monitor, and then select assets to add from the populated options.
+                <div class="note"><p>Monitoring is automatically applied to all assets in your deployment. Scoping individual assets for monitoring in this file path will override existing monitoring rules for all assets in this deployment.</p></div></li>
+                                            <li value="7">Click <b>SAVE</b>.</li>
+                                            <li value="8">Ensure <b>Monitor</b> is turned on for the file you just scoped.</li>
+                                        </ol>
+                                        <h3>Duplicate an existing <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup</h3>
+                                        <p> You can use the duplicate feature if you want to copy an existing <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup within the same base directory path. You can change the file name or pattern and the asset scoping, but the base directory path must be the same.</p>
+                                        <div class="caution">
+                                            <p>The file name or pattern that you want to create a setup for must be under the same base path from the <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup that you want to duplicate. </p>
+                                        </div>
+                                        <p><b>To duplicate an existing <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Click <b>View</b>, and then click the duplicate icon (<img src="../Resources/Images/Icons/duplicate.png" style="vertical-align: bottom;" />) for the file path or directory you want to copy.</li>
+                                            <li value="2">Make the necessary changes to the <b>File Naming or Pattern</b> field.</li>
+                                            <li value="3">Ensure <b>Monitor</b> is selected to enable monitoring for this file or directory. </li>
+                                            <li value="4">Make the necessary changes to the description and asset scoping. </li>
+                                            <li value="5">Click <b>SAVE</b>.</li>
+                                            <li value="6">Ensure <b>Monitor</b> is turned on for the file you just scoped.</li>
+                                        </ol>
+                                        <h3>Edit an existing <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup</h3>
+                                        <p style="font-weight: bold;">To edit an existing <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setup:</p>
+                                        <ol>
+                                            <li value="1">Click <b>View</b>, and then click the edit icon (<img src="../Resources/Images/pencil_icon.png" style="vertical-align: bottom;" />) for the file path you want to edit.
+</li>
+                                            <li value="2">Ensure <b>Monitor</b> is selected to enable monitoring for this file or directory.             </li>
+                                            <li value="3">Make any necessary changes. 
+                <div class="note"><p>Monitoring is automatically applied to all assets in your deployment unless you have further scoped individual assets for monitoring.</p></div></li>
+                                            <li value="4">Click <b>SAVE</b>.</li>
+                                            <li value="5">Ensure <b>Monitor</b> is turned on for the file you just scoped.</li>
+                                        </ol>
+                                        <h3>Bulk edit multiple file paths</h3>
+                                        <p>You can bulk edit multiple file paths at once to scope assets, or replace assets in scope with other assets. </p>
+                                        <p><b>To bulk edit multiple file paths</b>:</p>
+                                        <ol>
+                                            <li value="1">Click the <b>All File Types</b> drop-down list, and then select a file type to filter the list to its default files and directories.</li>
+                                            <li value="2">Select the check box to bulk select all the files in that file type. </li>
+                                            <li value="3">At the bottom of the page, click the scope icon (<img src="../Resources/Images/pencil_icon.png" style="vertical-align: bottom;" />).</li>
+                                            <li value="4">Under <b>Selected File Paths</b>, you can remove file paths that you do not want to edit. You can use the search bar to find assets you want to remove, and then click the remove icon (<img src="../Resources/Images/Icons/remove.png" />). </li>
+                                            <li value="5">In the <b>Asset Scoping</b> section, select <b>Apply additional assets to the selected file paths</b> to add more assets to monitor, or select <b>Replace existing assets with a new asset scope</b> to remove your existing assets in scope and replace with other assets.
+					<div class="note"><p>Monitoring is automatically applied to all assets in your deployment unless you have further scoped individual assets for monitoring.</p></div></li>
+                                            <li value="6">Click the <b>Search assets</b> bar to enter the names of the asset you want to monitor, and then select assets to add from the populated options.</li>
+                                            <li value="7">Click <b>SAVE</b>.</li>
+                                            <li value="8">Ensure <b>Monitor</b> is turned on.</li>
+                                        </ol>
+                                        <h2>Exclusions page</h2>
+                                        <p>On the <b>Exclusions</b> page, you can add entire directories or specific file paths you want to exclude from monitoring. Your file path or directories exclusions will be listed on this page. </p>
+                                        <h3>Default directories and files</h3>
+                                        <p>The default directories and files are listed below for Windows files. Click the <b>All File Types</b> drop-down menu to select a file type for the default directories and files you want to view. </p>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Windows Files</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <ul>
+                                                    <li>C:\Windows\System32\*.txt</li>
+                                                    <li>C:\Windows\System32\*.log</li>
+                                                    <li>C:\Windows\System32\*.log.*</li>
+                                                    <li>C:\Windows\System32\*.sol</li>
+                                                    <li>C:\Windows\System32\*.etl</li>
+                                                    <li>C:\Windows\System32\*.etl.*</li>
+                                                    <li>C:\Windows\System32\*.evt</li>
+                                                    <li>C:\Windows\System32\*.evtx</li>
+                                                    <li>C:\Windows\System32\*.dat</li>
+                                                    <li>C:\Windows\System32\*.jfm</li>
+                                                    <li>C:\Windows\System32\*.jrs</li>
+                                                    <li>C:\Windows\System32\*.chk</li>
+                                                    <li>C:\Windows\System32\config\</li>
+                                                    <li>C:\Windows\System32\logfiles\</li>
+                                                    <li>C:\Windows\System32\msdtc\</li>
+                                                    <li>C:\Windows\System32\sleepstudy\</li>
+                                                    <li>C:\Windows\System32\smi\store\</li>
+                                                    <li>C:\Windows\System32\spool\printers\</li>
+                                                    <li>C:\Windows\System32\spp\store\</li>
+                                                    <li>C:\Windows\System32\wbem\logs\</li>
+                                                    <li>C:\Windows\System32\wbem\repository\</li>
+                                                    <li>C:\Windows\System32\wdi\</li>
+                                                    <li>C:\Windows\System32\winevt\</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p>The exclusions you configure override files that are currently being monitored. This allows you to exclude specific files or  sub-directories from an entire directory that you previously configured for monitoring.</p>
+                                        <p>To access the  Exclusions page, you can click <b>NEXT</b> from the&#160;<b>Monitoring</b> page, or click <b>Exclusions</b> on the left navigation panel. </p>
+                                        <p><b>To add an exclusion</b>:</p>
+                                        <ol>
+                                            <li value="1">Click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;"></img>)</li>
+                                            <li value="2">In the <b>Select File Type</b> drop-down list, select a file type. </li>
+                                            <li value="3">In the  <b>Base Directory Path</b> field, enter the file path that you want to monitor.</li>
+                                            <li value="4">In the <b>File Name or Pattern</b> field, enter the pattern of the files that you want to monitor. </li>
+                                            <li value="5">(Optional) In the <b>Description</b> field, you can enter more detail for this setup. </li>
+                                            <li value="6">In the <b>Asset Exclusions</b> section, click the <b>Search assets</b> bar to enter the names of the asset you want to exclude, and then select assets to exclude from the populated options.
+                <div class="note"><p>Monitoring is automatically applied to all assets in your deployment unless you have further scoped individual assets for monitoring. Excluding assets from this file path will override existing exclusion rules for all assets in this deployment.</p></div></li>
+                                            <li value="7">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h3>Duplicate an existing File Integrity Exclusion setup</h3>
+                                        <p> You can use the duplicate feature if you want to copy an existing File Integrity Exclusion setup within the same base directory path. You can change the file name or pattern and the asset exclusions, but the base directory path must be the same.</p>
+                                        <div class="caution">
+                                            <p>The file name or pattern that you want to create a setup for must be under the same base path from the File Integrity Exclusion setup that you want to duplicate. </p>
+                                        </div>
+                                        <p><b>To duplicate an existing File Integrity Exclusion setup:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Click <b>View</b>, and then click the duplicate icon (<img src="../Resources/Images/Icons/duplicate.png" style="vertical-align: bottom;" />) for the file path or directory you want to copy.</li>
+                                            <li value="2">Make the necessary changes to the <b>File Naming or Pattern</b> field.</li>
+                                            <li value="3">Ensure <b>Monitor</b> is selected to enable monitoring for this file or directory. </li>
+                                            <li value="4">Make the necessary changes to the description and asset exclusion. </li>
+                                            <li value="5">Click <b>SAVE</b>.</li>
+                                            <li value="6">Ensure <b>Monitor</b> is turned on for the file you just scoped.</li>
+                                        </ol>
+                                        <h3>Edit an existing File Integrity Exclusion setup</h3>
+                                        <p style="font-weight: bold;">To edit an existing File Integrity Exclusion setup:</p>
+                                        <ol>
+                                            <li value="1">Click <b>View</b>, and then click the edit icon (<img src="../Resources/Images/pencil_icon.png" style="vertical-align: bottom;" />) for the file path you want to edit.
+</li>
+                                            <li value="2">Make any necessary changes. 
+                <div class="note"><p>Monitoring is automatically applied to all assets in your deployment unless you have further scoped individual assets for monitoring. Excluding assets to this file path will override existing exclusion rules for all assets in this deployment.</p></div></li>
+                                            <li value="3">Click <b>SAVE</b>.</li>
+                                            <li value="4">Ensure <b>Monitor</b> is turned on for the file you just scoped.</li>
+                                        </ol>
+                                        <h3>Bulk edit multiple file paths</h3>
+                                        <p>You can bulk edit multiple file paths at once to scope assets, or replace assets in scope with other assets. </p>
+                                        <p><b>To bulk edit multiple file paths</b>:</p>
+                                        <ol>
+                                            <li value="1">Click the <b>All File Types</b> drop-down list, and then select a file type to filter the list to its default files and directories.</li>
+                                            <li value="2">Select the check box to bulk select all the files in that file type. </li>
+                                            <li value="3">At the bottom of the page, click the scope icon (<img src="../Resources/Images/pencil_icon.png" style="vertical-align: bottom;" />).</li>
+                                            <li value="4">Under <b>Selected File Paths</b>, you can remove file paths that you do not want to edit. You can use the search bar to find assets you want to remove, and then click the remove icon (<img src="../Resources/Images/Icons/remove.png" />). </li>
+                                            <li value="5">In the <b>Asset Scoping</b> section, select <b>Apply additional assets to the selected file paths</b> to add more assets to monitor, or select <b>Replace existing assets with a new asset scope</b> to remove your existing assets in scope and replace with other assets.
+					<div class="note"><p>Monitoring is automatically applied to all assets in your deployment unless you have further scoped individual assets for monitoring.</p></div></li>
+                                            <li value="6">Click the <b>Search assets</b> bar to enter the names of the asset you want to monitor, and then select assets to add from the populated options.</li>
+                                            <li value="7">Click <b>SAVE</b>.</li>
+                                            <li value="8">Ensure <b>Monitor</b> is turned on.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

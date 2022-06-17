@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Configure|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to create and manage alert-based notifications and notifications for the completion of scheduled actions for your account and accounts you manage." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Manage Notifications</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Manage Notifications</h1>
+                                        <p>The Notifications page, listed under <img src="../../Resources/Images/dashboard/manage-icon.png" style="vertical-align: bottom;" /> <b>Manage</b> in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, offers a consolidated view of your notifications. The list includes all notifications created in your account. You can create, view, and manage notifications of all types from this page. </p>
+                                        <p>The main panel on the right  summarizes your notifications and organizes them in these tabs:</p>
+                                        <ul>
+                                            <li><b>Alert Notifications</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Lists alert-based notifications such as incidents and log correlation observations. You can create  a notification, and you can filter and search the list.</li>
+                                            <li><b>Schedules</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Lists notifications for scheduled activities, such as scheduled reports. You can create a schedule, and you can filter and search the list.</li>
+                                        </ul>
+                                        <p data-mc-conditions="Primary.Draft Content">To access the Notifications page, click the Settings icon (<img src="../../Resources/Images/supportThreeDots.png" />), and then click <b>Notifications</b>. </p>
+                                        <h2>Create any type of notification</h2>
+                                        <p>One way to create a notification of any type is directly from the Notifications page. You can create notifications from other pages according to notification type:</p>
+                                        <ul>
+                                            <li>For incidents, you can also create a notification from the Incidents page. For more information, see <a href="incident.htm" class="MCXref xref">Incident Notifications</a>.</li>
+                                            <li>For observations, you can also create a notification   from the Search page (Log Search tab or Correlations tab) during the process of creating the correlation or by editing an existing correlation listed on the Correlations tab. For more information, see <a href="log-correlation.htm" class="MCXref xref">Correlations and Notifications</a> and <a href="observation.htm" class="MCXref xref">Observation Notifications</a>.</li>
+                                            <li>For health exposures, you can also create a notification from the Health page. For more information, see <a href="health.htm" class="MCXref xref"> Health Notifications</a>.</li>
+                                            <li>For scheduled reports, you can also schedule the report and subscribe notification recipients from the Reports page. For more information, see <a href="report.htm" class="MCXref xref">Scheduled Reports and Notifications</a>.</li>
+                                            <li data-mc-conditions="Primary.Draft Content">For scheduled <span class="mc-variable ALVariables.FIM_1 variable">File Integrity Monitoring (FIM)</span> searches, you can schedule a search and subscribe notification recipients from the Notifications page. For more information, see <a href="fim-search.htm" class="MCXref xref">File Integrity Monitoring Search Notification</a>.</li>
+                                        </ul>
+                                        <h3>Alert Notifications</h3>
+                                        <p>From the Alert Notifications tab on the Notifications page, you can click the add icon (<img src="../../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;" />)  to create these types of notifications:</p>
+                                        <ul>
+                                            <li><b>Observation</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Select this type to create a notification for observations generated by a log correlation rule.   An observation  means that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> observed an occurrence of your log correlation. For more information about setting up the notification, see <a href="log-correlation.htm#Create" class="MCXref xref">Start creating a correlation</a>.<div class="note">The <b>Observation</b> option redirects you from the Notifications page to the Correlations tab on the Search page. From there you can add the notification to an existing correlation or create the correlation for which  to be notified.</div></li>
+                                            <li><b>Incident</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Select this type to create a notification for incidents that meet specific criteria, such as threat level. For more information about setting up the notification, see <a href="incident.htm#create" class="MCXref xref">Create an incident notification</a>. </li>
+                                            <li><b>Health</b> — Select this type to create a notification for health exposures that meet specific criteria, such as a collection asset going offline. For more information about setting up the notification, see <a href="health.htm#CreateaHealthNotification" class="MCXref xref">Create a Health Notification</a>.</li>
+                                        </ul>
+                                        <h3>Schedules</h3>
+                                        <p>From the Schedules tab on the Notifications page, you can click the add icon (<img src="../../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;" />) to create these types of schedules:</p>
+                                        <ul>
+                                            <li><b>Schedule Report</b><span style="font-family: 'Microsoft Sans Serif'">—</span> Select this type to schedule a report to run periodically. When the report is generated, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sends a notification to subscribed recipients. For more information about setting up the scheduled report notification, see <a href="report.htm#Create" class="MCXref xref">Create a report schedule and notification</a>.
+					<div class="note"><p>The <b>Schedule Report</b> option redirects you from the Notifications page to the Reports page to set up the report you want to schedule.</p></div></li>
+                                            <li><b>Schedule a FIM Search</b>—Select this type to schedule a <span class="mc-variable ALVariables.FIM_1 variable">File Integrity Monitoring (FIM)</span> search to  run a weekly or monthly search of changes to your <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> setups. When the search is complete, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> sends a notification to subscribed recipients. For more information about setting up the scheduled search, see <a href="fim-search.htm" class="MCXref xref">File Integrity Monitoring Search Notification</a>.</li>
+                                        </ul>
+                                        <h2><a name="filter"></a>Filter the notifications list</h2>
+                                        <p>The Notifications page displays all notifications for your accounts and the accounts you manage. When you display active or inactive notifications, you can apply additional filters to those notifications.  </p>
+                                        <p>Filters vary according to the notification type. As you make selections, the list of available filters changes further.</p>
+                                        <p>Filters available for all notification types include:</p>
+                                        <ul>
+                                            <li>Type</li>
+                                            <li>Account</li>
+                                            <li>Subscribed User</li>
+                                            <li>Subscribed Connector</li>
+                                        </ul>
+                                        <p>If you select the  Alert Notifications tab, these filters are also available:</p>
+                                        <ul>
+                                            <li>Threat Level</li>
+                                            <li>Escalation Status</li>
+                                        </ul>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <p>If you select the Type filter, and then select Incidents, the following filters are also available:</p>
+                                            <ul>
+                                                <li>Threat Level</li>
+                                                <li>Classification</li>
+                                                <li>Detection Source</li>
+                                                <li>Deployment</li>
+                                            </ul>
+                                        </div>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <p>If you are viewing notifications on the Schedules tab, the following filters are also available:</p>
+                                            <ul>
+                                                <li>Report Group</li>
+                                                <li>Category</li>
+                                                <li>Subcategory</li>
+                                            </ul>
+                                        </div>
+                                        <p style="font-weight: bold;">To filter the notifications list:</p>
+                                        <ol>
+                                            <li value="1">In the left navigation, click the notification status of interest: <ul><li><b>Active</b></li><li><b>Inactive</b> (notification is saved but not turned on) </li><li><b data-mc-conditions="Primary.Draft Content">Deleted</b></li></ul></li>
+                                            <li value="2">Click any of the filters to further narrow the list. Available filters vary according to the notifications in your environment and filters you select.</li>
+                                            <li value="3">To search for a filter, type a filter value in <b>search filters</b>. </li>
+                                            <div class="example">For example, type "attack" to quickly find notifications about incidents classified as application attacks.</div>
+                                            <li value="4">To clear filters and start over, delete text typed in <b>search filters</b> (if applicable) or click <b>CLEAR ALL FILTERS</b>.</li>
+                                        </ol>
+                                        <h2><a name="organize"></a>Group and sort the notifications list</h2>
+                                        <p><span class="mc-variable ALVariables.PST_Product variable">Alert Logic</span> groups your alert notifications by type  and sorts them by name <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">date </MadCap:conditionalText>within each grouping. <span class="mc-variable ALVariables.PST_Product variable">Alert Logic</span> sorts your schedules  by name<MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> schedule type</MadCap:conditionalText>.</p>
+                                        <p>You can group and sort the notifications by other criteria. The options available vary according to the notification type and the filters applied.</p>
+                                        <p style="font-weight: bold;">To organize your notifications:</p>
+                                        <ol>
+                                            <li value="1">To change the grouping, click <b>Group by</b>, and then click the option you want. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">Available options match the filters listed in the left panel.</MadCap:conditionalText></li>
+                                            <li value="2">To change the way the list of alert notifications is sorted within each grouping, click <b>Sort by</b>, and then click the option you want. Available options include Name, Create Time, and Updated Time.<MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> Available options include Date and filters listed in the left panel.</MadCap:conditionalText></li>
+                                        </ol>
+                                        <h2><a name="search"></a>Search the notifications list</h2>
+                                        <p>You can use the search bar  to filter the list to include only notifications that contain specific words in important fields, like the notification name. </p>
+                                        <p data-mc-conditions="Primary.Draft Content">You can use the search bar  to filter the list to include only notifications that contain specific search words. You can search by notification name, recipients, and filter names.</p>
+                                        <h2><a name="Delete"></a>Delete notifications</h2>
+                                        <p>In the notifications list, click the icon next to each notification that you want to delete. On  the bottom of the page, click the <b>DELETE</b> icon. </p>
+                                        <p>If you want to delete all notifications currently listed, select the check box at the top of the list. On the bar that appears at the bottom of the page, click the <b>DELETE</b> icon. </p>
+                                        <h2><a name="Edit"></a>Edit a notification</h2>
+                                        <p>You can edit a notification from the notifications list. For example, you can:</p>
+                                        <ul>
+                                            <li>Make the notification active or inactive</li>
+                                            <li>Change notification filters</li>
+                                            <li>Subscribe or unsubscribe users or a <a href="../connectors.htm">connector</a></li>
+                                            <li>Change delivery options</li>
+                                        </ul>
+                                        <p style="font-weight: bold;">To edit a notification: </p>
+                                        <ol>
+                                            <li value="1">In the notifications list, click the icon next to the notification that you want to edit. </li>
+                                            <li value="2">On the bottom of the page, click the <b>EDIT</b> icon. </li>
+                                            <li value="3">In the Edit page, change any of the settings.</li>
+                                        </ol>
+                                        <h2><a name="view"></a>View and manage notifications from the detail view</h2>
+                                        <p>You can view the details about a specific notification. The detail view includes information such as:</p>
+                                        <ul>
+                                            <li>Date a notification that met the criteria was last sent</li>
+                                            <li>Name of the user who created and last modified the notification, and the dates</li>
+                                            <li>Notification criteria</li>
+                                            <li>Subscribed users and/or a connector</li>
+                                            <li>Delivery options</li>
+                                        </ul>
+                                        <p data-mc-conditions="Primary.Draft Content">You can also access the list of events (the Incident List, for example) for the specific notification type, with the list filtered the same as the notification criteria. </p>
+                                        <p><b>To view details about a notification:</b>
+                                        </p>
+                                        <p>In the Notifications page, click <b>View</b> next to the notification you want to see. When you are finished viewing notification details, click <b>Hide</b>.</p>
+                                        <p style="font-weight: bold;">To delete a notification:</p>
+                                        <p>In the Notifications page, to the right of the notification you want to delete, click <b>View</b>. Toward the bottom of the detail view, click the <b>DELETE</b> icon.</p>
+                                        <p style="font-weight: bold;">To edit a notification:</p>
+                                        <ol>
+                                            <li value="1">In the Notifications page, to the right of the notification you want to edit, click <b>View</b>.</li>
+                                            <li value="2">Toward the bottom of the detail view, click the <b>EDIT</b> icon.</li>
+                                            <li value="3">In the editing page, change any of the settings.</li>
+                                        </ol>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <p><b>To open a list of incidents corresponding to the notification criteria:</b>
+                                            </p>
+                                            <p>In the Notifications page, to the right of an incident notification, click <b>View</b>.Toward the bottom of the detail view, click the <b>View Incidents</b> icon.</p>
+                                        </div>
+                                        <h3>View additional report schedule details</h3>
+                                        <p>For a scheduled report notification, you can view the interactive report associated with the notification schedule. You can also view the list of reports previously generated by the schedule.</p>
+                                        <p><b>To view the interactive report related to a schedule:</b>
+                                        </p>
+                                        <p>In the Notifications page, to the right of the report schedule, click <b>View</b>. Toward the bottom of the detail view, click the <b>INTERACTIVE REPORT</b> icon. </p>
+                                        <p>The report from which the schedule was created opens with the report criteria selected.</p>
+                                        <p><b>To open a list of reports generated by a schedule:</b>
+                                        </p>
+                                        <p>In the Notifications page, to the right of the report schedule, click <b>View</b>. Toward the bottom of the detail view, click the <b>PAST REPORTS</b> icon.</p>
+                                        <p>The Downloads page opens with the list filtered to display the reports generated by the schedule.</p>
+                                        <h3>View additional search schedule details</h3>
+                                        <p>For scheduled searches, you can view the list of searches previously conducted by the schedule.</p>
+                                        <p><b>To open a list of <span class="mc-variable ALVariables.FIM_2 variable">FIM</span> searches completed by a schedule:</b>
+                                        </p>
+                                        <p>In the Notifications page, to the right of the scheduled <span class="mc-variable ALVariables.FIM_2 variable">FIM</span>&#160;search, click <b>View</b>. Toward the bottom of the detail view, click the <b>PAST SEARCHES</b> icon.</p>
+                                        <p>The Downloads page opens with the list filtered to display the searches conducted by the schedule.</p>
+                                        <h2><a name="aboutList"></a>Notifications listed</h2>
+                                        <p>The Notifications page lists all notifications created in your customer account. </p>
+                                        <p>For a managing (parent) account, the list includes notifications for:</p>
+                                        <ul>
+                                            <li>Managing account</li>
+                                            <li>Managed (child) accounts, if the notification was created in the parent account</li>
+                                        </ul>
+                                        <p>In a managed account, the notifications list:</p>
+                                        <ul>
+                                            <li>Includes only notifications created in that account</li>
+                                            <li>Does not include notifications created in a managing account</li>
+                                            <li>Does not include notifications created in another managed account </li>
+                                        </ul>
+                                        <h2><a name="manage-other-notifications"></a>Manage notifications and subscriptions of others</h2>
+                                        <p>You can manage the notification settings of others<span style="font-family: 'Microsoft Sans Serif'">—</span>including subscribing other users or a connector<span style="font-family: 'Microsoft Sans Serif'">—</span>only if your user account has one of the following <a href="../../prepare/users-roles.htm#user-roles">user roles</a>:</p>
+                                        <ul>
+                                            <li>Administrator</li>
+                                            <li>Owner</li>
+                                            <li>Power User</li>
+                                        </ul>
+                                        <p>Users maintain the ability to modify any changes you make to their notifications. </p>
+                                        <p>Notifications belong to the customer account where they are created. If you manage other accounts and want to subscribe users in a managed account, you need to switch to the users' account.</p>
+                                        <p>You can set up a user account and designate it as "Notification Target Only," which means it exists only for email notifications. You can use this notification target to receive and store notifications for later review, or you can use a distribution list as the contact email so multiple people get the emails. For more information see <a href="../../prepare/users-roles.htm#notification-target" target="_blank" class="MCXref xref">Create a user account as a notification target</a>.</p>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

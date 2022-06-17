@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="bhoofNormal _Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Get Started|Upgrade to Managed Detection and Response" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Alert Logic displays information about incidents, how to use that information to manage and close incidents, and how to secure your environments." />
+        <meta name="flareArticleId" content="3d649232-4f2d-4e7b-b786-de72cb7cfd5e" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Incidents</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="incidents"></a>Incidents Upgrade</h1>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> is upgrading customers to the new <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Incidents page with an enhanced and improved experience   to maximize your ability to manage incidents.  This upgrade enhances your experience, but still offers the same features and capabilities as the existing Incidents page. </p>
+                                        <p>The upgraded Incidents page continues to display information about incidents, how to use that information to manage and close incidents, and actionable steps to secure your environments.  If you want a reminder of the existing Incident features, see <a href="../analyze/incidents.htm" class="MCXref xref">Incidents</a>. </p>
+                                        <p> As you familiarize yourself with the new experience, you can switch between the updated Incidents page and the existing Incidents page by using the toggle icon (<img src="../Resources/Images/incidents/toggle.png" style="vertical-align: bottom;" />) on the upper-right side of the page. </p>
+                                        <h2>Changes to the Incidents page</h2>
+                                        <p>Your new experience includes all of the same capabilities as the existing Incidents page, including improved functionality and features. In the new Incidents experience, you can see relevant and important information immediately, at a glance, and with fewer clicks. You can also customize your page view to see information that is important to you and your organization. This flexibility allows you to get to the relevant investigation and security outcome faster and more efficiently. </p>
+                                        <p>Refer to the table below for changes and improvements to current features:</p>
+                                        <table style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;width: 473px;" class="TableStyle_Basic" cellspacing="0">
+                                            <col style="width: 120px;" />
+                                            <col style="width: 238px;" />
+                                            <tbody>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep" style="font-weight: bold;">Feature</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd" style="font-weight: bold;">Change</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#Incident" class="MCXref xref">Incident list</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Table-style list that allows you to add, remove, and rearrange columns of information</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">
+                                                        <p><a href="#Incident2" class="MCXref xref">Incident filters</a>
+                                                        </p>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Ability to select multiple filters in a filter set</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#Incident3" class="MCXref xref">Incident preview</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Options to automatically preview summary information when you hover over an incident or hide the preview </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#Incident4" class="MCXref xref">Incident download</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Ability to bulk download 100 incidents at a time to a CSV file </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#inciden" class="MCXref xref">Log Review incident upgrade</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Machine-learning enhanced log review incidents</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#investigationReport" class="MCXref xref">Investigation Report</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Combined investigation and recommendation view with a topology diagram</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#CreateSimpleResponse" class="MCXref xref">Create Simple Response</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Allows you to create a simple response from an incident, so <span class="mc-variable ALVariables.Company variable">Alert Logic</span> can respond automatically to future incidents triggered by the same analytic </td>
+                                                </tr>
+                                                <tr data-mc-conditions="Primary.Draft Content">
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Playbook</td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Allows you to run a playbook on an incident to respond to it automatically </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#Evidence" class="MCXref xref">Evidence and grouping </a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">A separate Evidence tab that includes groupings of related activity and  an evidence illustration</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep"><a href="#Activity" class="MCXref xref">Activity grouping</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">Activity, including observations, related to an incident is grouped for an improved view in the Evidence tab</td>
+                                                </tr>
+                                                <tr data-mc-conditions="Primary.includeDev">
+                                                    <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep"><a href="#AnalyticDetails" class="MCXref xref">Analytic Details</a>
+                                                    </td>
+                                                    <td class="TableStyle_Basic_Body_0_0_RowEnd_ColEnd">A tab that includes details for the underlying security content logic for defining the activity as an incident.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2><a name="Incident"></a>Incident list</h2>
+                                        <p>The incident list is now formatted as a table-style list that allows you to show several columns of relevant information. You can adjust the column size, remove and add columns, and drag and drop columns into the order you want.  You can also sort some columns by date or alphabetical order. Click the sort icon (<img src="../Resources/Images/incidents/sort.png" />) on the left of the column name. The default columns shown are the following: </p>
+                                        <ul>
+                                            <li>Attacker</li>
+                                            <li>Date</li>
+                                            <li>Deployment</li>
+                                            <li>Incident ID</li>
+                                            <li>Status</li>
+                                            <li>Summary</li>
+                                            <li>Target</li>
+                                            <li>Threat Level</li>
+                                        </ul>
+                                        <p>Other columns you can add to your incident list are the following:</p>
+                                        <ul>
+                                            <li>Account</li>
+                                            <li>Classification</li>
+                                            <li>Correlation Name</li>
+                                            <li>Detection Source</li>
+                                            <li>Incident Note Count</li>
+                                        </ul>
+                                        <p>You can remove and add columns to show only columns of information that are important to you. Click <b>Choose Columns</b> to see all of the available columns, and then select check boxes you want to include in or clear check boxes you want to exclude from your list. Click the reset icon (<img src="../Resources/Images/incidents/reset.png" style="vertical-align: bottom;" />) to revert to the default column view, including default columns, sorting, and size. </p>
+                                        <h3><a name="Incident2"></a>Incident filters</h3>
+                                        <p>You can select multiple filters at a time to create a specific combination to find results unique to your security needs at the time. Selecting multiple filters allows you to see more than one incident status, threat level, incident classification, deployment, and other available criteria. </p>
+                                        <p><b>To apply multiple filters to the incident list</b>:</p>
+                                        <ol>
+                                            <li value="1">Click on a filter group on the left panel. For example, click <b>Open</b>, under <b>Status</b>. </li>
+                                            <li value="2">Click <b>Show More</b> to see all of the available filters in this filter set.</li>
+                                            <li value="3">Select all of the filters you want to see, or clear filters you do not want to see. </li>
+                                        </ol>
+                                        <h3><a name="Incident3"></a>Incident preview</h3>
+                                        <p>You can preview summary information automatically when you hover over an incident or hide the preview for all. The preview panel displays the following information:</p>
+                                        <ul>
+                                            <li>Incident summary</li>
+                                            <li>Date</li>
+                                            <li>Account</li>
+                                            <li>
+        Attacker IP address</li>
+                                            <li>Classification</li>
+                                            <li>Detection source </li>
+                                            <li>Incident ID</li>
+                                            <li>Status</li>
+                                            <li>Target</li>
+                                            <li>Threat level</li>
+                                        </ul>
+                                        <p>To hide the preview, click the hide icon (<img src="../Resources/Images/incidents/arrow_24x28.png" style="vertical-align: bottom;width: 24;height: 28;" />) to collapse the preview panel. If you want to see the preview again, click the show icon (<img src="../Resources/Images/incidents/arrow-expand_23x27.png" style="vertical-align: bottom;width: 23;height: 27;" />).</p>
+                                        <h3><a name="Incident4"></a>Incident download</h3>
+                                        <p>You can download incident data to a CSV&#160;file. The CSV file contains all of the information in your current incident list view with the applied filters and date range. Multiple options are available to export data to best suit how you want to analyze your incidents. You can download incident data  for all incidents, for only incidents you select, or  for all the incidents mapped in the filters you applied and for the date range you selected.  These options allow you to control how many incidents you want to include and how you want to separate  the data. </p>
+                                        <p><b>To download data for all incidents that matches the filters you selected</b>:</p>
+                                        <ol>
+                                            <li value="1">Click the download icon (<img src="../Resources/Images/incidents/download-all.png" style="vertical-align: bottom;" />) at the top of the incident list.<div class="note"><p>Downloading data for all incidents in your applied filters and date range can return a large number of incident results. This can cause a longer downloading period and a larger CSV file. </p></div></li>
+                                            <li value="2">Click <b>DOWNLOAD</b>. </li>
+                                            <li value="3">Wait for the download to complete. </li>
+                                        </ol>
+                                        <p>Your results are downloaded to a compressed folder that contains the zip CSV file. </p>
+                                        <p><b>To download data for only certain incidents</b>: </p>
+                                        <ol>
+                                            <li value="1">Select the check boxes next to the incidents for the data you want to download. </li>
+                                            <li value="2">In the blue bar at the bottom of the page, click <img src="../Resources/Images/incidents/download-all.png" style="vertical-align: bottom;" /><b>EXPORT</b>.</li>
+                                        </ol>
+                                        <p>Your results are downloaded to a CSV file.
+					</p>
+                                        <p><b>To download data for 100 incidents</b>:</p>
+                                        <ol>
+                                            <li value="1">Select the check box at the top of the incident list to select all of the incidents visible on the page. </li>
+                                            <li value="2">To download 100 incidents, click <b>SELECT 100 INCIDENTS WITH THE APPLIED FILTERS AND DATE RANGE</b>.</li>
+                                            <li value="3">In the blue bar at the bottom of the page, click <img src="../Resources/Images/incidents/download-all.png" style="vertical-align: bottom;" /><b>EXPORT</b>.</li>
+                                            <li value="4">Your results are downloaded to a CSV file. </li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>As in the existing experience, the Incidents page continues to support  bulk actions  to update, snooze, or close multiple incidents, alongside exporting them. </p>
+                                        </div>
+                                        <h2><a name="inciden"></a><span class="mc-variable ALVariables.LogReview variable">Log Review</span> incident upgrade</h2>
+                                        <p>An upgrade to <span class="mc-variable ALVariables.LogReview variable">Log Review</span> incidents  delivers a higher level of security value to you with new machine learning algorithms, <span class="mc-variable ALVariables.Log_Review_feature variable">Machine Learning Log Review</span>. The algorithms can automatically detect many log-based anomaly types based on unique patterns and trends learned from your organization and then create an incident. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> also includes observations in the Evidence tab of the Investigation Report based on the algorithms. For more information, see <a href="../analyze/log-review-upgrade.htm" class="MCXref xref">Machine Learning Log Review Upgrade</a>. </p>
+                                        <h2><a name="investigationReport"></a>Investigation Report</h2>
+                                        <p>The Investigation Report consists of the sections Topology, Attack Summary,  and Recommended Course of Action in the <b>Investigation and Recommendation</b> tab. To access the <b>Investigation and Recommendation</b> tab, click on the incident you want to see from the <a href="#Incident" class="MCXref xref">Incident list</a>. The Evidence details are in a separate tab, the Evidence tab, which includes a table-style list view for evidence. The Audit Log and Notification History are also on this page as in the existing Incidents experience. </p>
+                                        <p>For <span class="mc-variable ALVariables.LogReview variable">Log Review</span> incidents, the <b>Investigation and Recommendation</b> tab also includes the Overview of Log Alerts and Anomalies section. The Overview of Log Alerts and Anomalies section is a briefing of the evidence.  You can review the evidence in more detail from the <b>Evidence</b> tab, which includes a table-style list view for evidence. </p>
+                                        <h3><a name="Evidence"></a>Evidence and grouping </h3>
+                                        <p>The Evidence tab groups related information, including events, correspondence, and activity that culminated into an incident, into one drop-down section that you can collapse and expand. Click the drop-down arrow (<img src="../Resources/Images/incidents/drop-down-arrow.png" />) to see all of the evidence listed under an event. </p>
+                                        <p>If there are more than 100 evidences for an activity related to an incident, the additional evidence will automatically load. After the additional evidence loads, click <b>REFRESH</b> to see the new evidence. This will refresh the page to show the following 100 (or remaining) evidence. </p>
+                                        <p>You can use the search bar to search for keywords to find specific information. Click <b>Download All</b> to download all the evidence for all information in this incident, including events, correspondence and activity. </p>
+                                        <h4><a name="Activity"></a>Activity grouping</h4>
+                                        <p>You can also find other relevant information nested under each activity, and these include log messages for <span class="mc-variable ALVariables.LogManagement variable">Log Management</span> detection sources and observations for <span class="mc-variable ALVariables.WLA_1 variable">Web Log Analytics (WLA)</span> and <span class="mc-variable ALVariables.LogReview variable">Log Review</span> detection sources. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> notes these anomalies as relevant security information that can demonstrate security value. Click the drop-down arrow (<img src="../Resources/Images/incidents/drop-down-arrow.png" />) next to an anomaly to see more details.</p>
+                                        <p>The table-style list that supports the activity under an event functions the same way as the new incident list. You can select which columns to see, adjust the column size, remove and add columns, and drag and drop columns into the order you want. This flexibility allows you to easily navigate through information to determine how to address incidents more quickly. </p>
+                                        <p>For <span class="mc-variable ALVariables.LogReview variable">Log Review</span> incidents associated with anomaly or rule-based findings, you can download a CSV file of the observations or facts for an event. The aggregator summary section groups observation findings and evidence for different message types which allows you to download evidence for specific aggregator types to a CSV file for compliance needs. The file contains information fields from observations or facts from all of the log messages associated with the anomaly findings.</p>
+                                        <p>To download observation findings, click the drop-down arrow (<img src="../Resources/Images/incidents/drop-down-arrow.png" />) next to the event grouping to expand details, and then click <b>Download Observations</b>. To download additional data associated with the observations, click <b>Download Observation Evidence</b>. The CSV file for observations contains the following fields:</p>
+                                        <ul>
+                                            <li>Summary </li>
+                                            <li>Date </li>
+                                            <li>Description</li>
+                                            <li>Severity</li>
+                                            <li>Customer name	</li>
+                                            <li>Caller user</li>
+                                            <li>Log source</li>
+                                            <li>Maximum time</li>
+                                            <li>Message type</li>
+                                            <li>Minimum time</li>
+                                            <li>Terminal time</li>
+                                            <li>Total messages</li>
+                                            <li>Aggregator	entity type</li>
+                                            <li>User</li>
+                                        </ul>
+                                        <p>You can investigate further and download the facts of an observation event under the <span class="mc-variable ALVariables.LogReview variable">Log Review</span> event grouping. To download facts of an observation event, click the drop-down arrow (<img src="../Resources/Images/incidents/drop-down-arrow.png" />) to expand the details of an observation, and then click <b>Download Facts</b>. The CSV file for the observation facts includes the following fields:</p>
+                                        <ul>
+                                            <li>Description </li>
+                                            <li>Date </li>
+                                            <li>Message </li>
+                                            <li>User </li>
+                                            <li>Facility and priority</li>
+                                            <li>Syslog fields PID</li>
+                                            <li>UID </li>
+                                            <li>User name</li>
+                                        </ul>
+                                        <div>
+                                            <h3>Create Simple Response<a name="CreateSimpleResponse"></a></h3>
+                                            <p>If you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to respond automatically to future incidents triggered by a selected incident's analytic, you can create a simple response from the incident detail view. For more information about simple responses, see <a href="../respond/automated-response/responses.htm" class="MCXref xref">Get Started with Simple Responses</a>.  </p>
+                                            <p><b>To create a simple response from an incident:</b>
+                                            </p>
+                                            <ol>
+                                                <li value="1">In the incident list, click the incident for which you want to create a simple response.</li>
+                                                <li value="2">Click <b>CREATE SIMPLE&#160;RESPONSE</b>.</li>
+                                                <li value="3">In the Create Simple Response page, find the relevant simple response, and then click <b>START</b>.<p>A message informs you if the analytic is not available for the selected simple response. An analytic may not be available because it does not produce a consistent response target,  would not be applicable to any simple response, or summarizes many independent security events.</p></li>
+                                                <li value="4">Configure the simple response. For instructions, see the relevant guide in the <a href="../respond/automated-response/responses/response-configuration-guide.htm" class="MCXref xref">Simple Response Configuration Guide</a>. </li>
+                                            </ol>
+                                        </div>
+                                        <h3 data-mc-conditions="Primary.includeDev"><a name="AnalyticDetails"></a>Analytic Details</h3>
+                                        <p data-mc-conditions="Primary.includeDev">The analytic details tab includes details for the underlying security content logic for defining the activity as an incident. To learn more about analytics, see <a href="../analyze/threat-intel-center/about-analytics-content.htm" class="MCXref xref">About Analytics in the Threat Intelligence Center</a>.</p>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <h3><a name="aboutIncidentEvolution"></a>About incident evolution</h3>
+                                            <p>Incident evolution occurs when <span class="mc-variable ALVariables.Company variable">Alert Logic</span> receives additional events associated with the incident, and then creates an incident of a higher threat rating. If an incident evolves, the <span class="mc-variable ALVariables.ALSOC_1 variable">Alert Logic Security Operations Center (SOC)</span> sends a new incident notification.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

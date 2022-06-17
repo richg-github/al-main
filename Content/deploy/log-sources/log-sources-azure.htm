@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="bhoofNormal _Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Deploy|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="After you create a deployment and provision and install the Alert Logic agent, you can configure collection sources for each log host in your system." />
+        <meta name="flareArticleId" content="2a75973d-570b-42a6-8c7b-75cbe6a6280b" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Configure Log Sources for Microsoft Azure</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Configure Log Sources for <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span></h1>
+                                        <p><a name="supportedSources"></a><span class="mc-variable ALVariables.Company variable">Alert Logic</span> supports the following log source types for <span class="mc-variable ALVariables.Azure variable">Azure</span>:</p>
+                                        <ul>
+                                            <li><b><a href="#azureActivityLogs"><span class="mc-variable ALVariables.Azure variable">Azure</span> Activity logs</a></b>—Logs that provide insight into the operations performed on resources in your subscription</li>
+                                            <li><b><a href="#azureAppServiceWebLogs"><span class="mc-variable ALVariables.Azure variable">Azure</span> App Service web server logs</a></b>—Logs that provide detailed error information for HTTP failure status codes, failed requests, or HTTP transactions using the W3C extended log file format</li>
+                                            <li style="font-weight: normal;"><a href="../../prepare/office365-log-collector.htm" title="Set up collection of Microsoft Office 365 Logs" alt="Set up collection of Microsoft Office 365 Logs" style="font-weight: bold;">Set up collection of Microsoft Office 365 Logs</a>—Activity logs that provide information including administrative, user, and policy actions</li>
+                                            <li data-mc-conditions="Primary.Draft Content">
+                                                <MadCap:conditionalText data-mc-conditions="Primary.Draft Content"><b><a href="#azureSQLLogs"><span class="mc-variable ALVariables.Azure variable">Azure</span> SQL auditing logs</a></b>—Logs that provide information on database events</MadCap:conditionalText>
+                                            </li>
+                                            <li><a href="../../prepare/azure-event-hubs-log-collector.htm" target="_blank" title="Alert Logic Collector for Azure Event Hubs" alt="Alert Logic Collector for Azure Event Hubs" style="font-weight: bold;" class="MCXref xref">Alert Logic Log Collector for Microsoft Azure Event Hubs</a>—Logs collected by <span class="mc-variable ALVariables.Azure variable">Azure</span> Event Hubs, which streams <span class="mc-variable ALVariables.Azure variable">Azure</span> Active Directory logs, Diagnostic Activity logs, Security Center logs, and SQL Audit logs to <span class="mc-variable ALVariables.Company variable">Alert Logic</span></li>
+                                        </ul>
+                                        <p>For more information about other log source types, see <a href="log-sources-all-deployments.htm" class="MCXref xref">Configure Log Sources for All Deployments</a> or <a href="log-sources-aws.htm" class="MCXref xref">Configure Log Sources for Amazon Web Services (AWS)</a>.</p>
+                                        <p>After you provision and install the Alert Logic agent on your target host, the agent automatically creates an associated log source in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span> and configures it with the default collection configuration policy for that log source type. You must create and configure new collection sources with existing collection policies to meet more specific requirements. For more information about <span class="mc-variable ALVariables.LogManagement variable">Log Management</span> policies, see <a href="../../configure/log-management-policies.htm" class="MCXref xref">Log Management Policies</a>.</p>
+                                        <h2><a name="azureActivityLogs"></a>Create and maintain <span class="mc-variable ALVariables.Azure variable">Azure</span> Activity log sources</h2>
+                                        <p><b>To create an <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Activity log source:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">From the Deployments page, click the  deployment for which you want to create an Activity log collection source.</li>
+                                            <li value="2">Click <b>CONFIGURE LOG SOURCES</b>.</li>
+                                            <li value="3">Click the <b>add</b> icon (<img src="../../Resources/Images/Icons/cdAddPlus.png" />).</li>
+                                            <li value="4">From <b>Source Log Type</b>, select <b><span class="mc-variable ALVariables.Azure variable">Azure</span> Activity Logs</b>.</li>
+                                            <li value="5">In the <b>Source Name</b> field, type a descriptive name.</li>
+                                            <li value="6">Select <b>Enable Collection</b>.</li>
+                                            <li value="7">Select one of the following:<ul><li>To use an existing audit account, select <b>Use an existing Audit Account</b> and select the <span class="mc-variable ALVariables.Azure variable">Azure</span> account you want to use.</li><li>To create a new audit account, select <b>Create new Audit Account</b> and select the settings you want. <span class="mc-variable ALVariables.Azure variable">Azure</span> will ask you to create a new user name and password.</li></ul><div class="note"><p>If you select <b>Create new Audit Account</b>, verify the account has the proper permissions to allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to read the <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Activity events.</p><p>To properly set up a role with the minimum permissions required, you must create a custom role in <span class="mc-variable ALVariables.Azure variable">Azure</span>. For more information, read <a href="https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-custom-roles/">Create custom roles for Azure Role-Based Access Control</a>.</p><p>The role below provides a minimum set of permissions required for Activity Log collection:</p><pre xml:space="preserve">{ <br />     "Name":  "&lt;name of your role&gt;",<br />     "Id": "&lt;auto-assigned&gt;",<br />     "IsCustom":  true,<br />     "Description":  "&lt;description of the role&gt;",<br />     "Actions":       [<br />                          "Microsoft.Authorization/*/read",<br />                          "Microsoft.Insights/eventtypes/*/read"<br />                      ],<br />     "NotActions":    [
+<br />                      ],<br />     "AssignableScopes":   [<br />                               "/subscriptions/&lt;add your Subscription ID&gt;"
+                           ]
+}
+</pre></div></li>
+                                            <li value="8">In <b>Collection Alerts</b>, select one or more alert options.</li>
+                                            <li value="9">In <b>Subscription ID</b>, type your <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Subscription ID.</li>
+                                            <li value="10">In <b>Resource Group Filter</b>, type a Resource Group name.</li>
+                                            <li value="11"> In the <b>Tags</b> field, type an easily filtered tag.</li>
+                                            <li value="12">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p><b>To update </b><span style="font-weight: bold;" class="mc-variable ALVariables.Azure variable">Azure</span><b>&#160;Activity logs sources:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">From the Deployments page, click the  deployment for which you want to update the log source. </li>
+                                            <li value="2">Click <b>CONFIGURE LOG SOURCES</b>.</li>
+                                            <li value="3">Place your cursor over the desired collection source  and click the pencil icon (<img src="../../Resources/Images/pencil_icon.png" />).</li>
+                                            <li value="4">Make the necessary updates.</li>
+                                            <li value="5">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h2><a name="azureAppServiceWebLogs"></a>Create and maintain <span class="mc-variable ALVariables.Azure variable">Azure</span> App Service web server logs</h2>
+                                        <p><b>To create an <span class="mc-variable ALVariables.Azure variable">Azure</span> App Service web server logs source:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">From the Deployments page, click the  deployment for which you want to create an Azure App service web server collection source. </li>
+                                            <li value="2">Click <b>CONFIGURE LOG SOURCES</b>.</li>
+                                            <li value="3">Click the <b>add</b> icon (<img src="../../Resources/Images/Icons/cdAddPlus.png" />).</li>
+                                            <li value="4">From <b>Source Log Type</b>, select <b>App Service Web Server Logging</b>.</li>
+                                            <li value="5">In the <b>Source Name</b> field, type a descriptive name.</li>
+                                            <li value="6">Select <b>Enable Collection</b>.</li>
+                                            <li value="7">Select one of the following:<ul><li>To use an existing storage account, select <b>Use an existing Storage Account</b> and select the storage account you want to use.</li><li>To create a new storage account, select <b>Create new Storage Account</b> and select the settings you want. <span class="mc-variable ALVariables.Azure variable">Azure</span> will ask you to create a new user name and password.</li></ul><div class="note"><p><span>In the <a href="https://portal.azure.com/">Azure Portal</a>, browse to the storage account in which you store your logs, click <b>Settings</b>, and then click <b>Access keys</b> to view, copy, and regenerate your account access keys.</span></p></div></li>
+                                            <li value="8">In <b>Collection Alerts</b>, click the field and select one or more alert options.</li>
+                                            <li value="9">In <b>App Service Name</b>, type the name of your App Service Web application.</li>
+                                            <li value="10">In <b>Storage Blob Container</b>, type the storage account container name where your web server logging is located.</li>
+                                            <li value="11">In the <b>Tags</b> field, type an easily filtered tag.</li>
+                                            <li value="12">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p><b>To update an <span class="mc-variable ALVariables.Azure variable">Azure</span> App Service web server logs source:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">From the Deployments page, click the  deployment for which you want to update the log source. </li>
+                                            <li value="2">Click <b>CONFIGURE LOG SOURCES</b>.</li>
+                                            <li value="3">Place your cursor over the desired collection source  and click the pencil icon (<img src="../../Resources/Images/pencil_icon.png" />).</li>
+                                            <li value="4">Make the necessary updates.</li>
+                                            <li value="5">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h2 data-mc-conditions="Primary.Draft Content"><a name="azureSQLLogs"></a><span class="mc-variable ALVariables.Azure variable">Azure</span> SQL auditing logs</h2>
+                                        <div class="note">
+                                            <p>Though this feature appears to all users, only those with an <span class="mc-variable ALVariables.CloudPartner variable">Azure</span> account can utilize it.</p>
+                                        </div>
+                                        <p data-mc-conditions="Primary.Draft Content"><b>To create an <span class="mc-variable ALVariables.Azure variable">Azure</span> SQL database auditing logs collection source:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1" data-mc-conditions="Primary.Draft Content">From the Deployments page, click the  deployment for which you want to create an <span class="mc-variable ALVariables.Azure variable">Azure</span> SQL auditing log collection source.</li>
+                                            <li value="2" data-mc-conditions="Primary.Draft Content">Click <b>Scope of Protection</b></li>
+                                            <li value="3" data-mc-conditions="Primary.Draft Content">Click <b>CONFIGURE LOG SOURCES</b>.</li>
+                                            <li value="4" data-mc-conditions="Primary.Draft Content">Click the <b>add</b> icon (<img src="../../Resources/Images/Icons/cdAddPlus.png" />).</li>
+                                            <li value="5" data-mc-conditions="Primary.Draft Content">From <b>Source Log Type</b>, select <b>Azure SQL Auditing</b>.</li>
+                                            <li value="6" data-mc-conditions="Primary.Draft Content">In the <b>Source Name</b> field, type a descriptive name.</li>
+                                            <li value="7" data-mc-conditions="Primary.Draft Content">Select <b>Enable Collection</b>.</li>
+                                            <li value="8" data-mc-conditions="Primary.Draft Content">Select one of the following:<ul><li data-mc-conditions="Primary.Draft Content">To use an existing storage account, select <b>Existing Storage Account</b> and select the storage account you want to use.</li><li data-mc-conditions="Primary.Draft Content">To create a new storage account, select <b>Add new Storage Account</b> and select the settings you want. <span class="mc-variable ALVariables.Azure variable">Azure</span> prompts you to provide your <b>Credential Name</b>, <b>Storage Account Name</b>, and <b>Access Key</b>.</li></ul><div class="note"><p data-mc-conditions="Primary.Draft Content"><span>In the <a href="https://portal.azure.com/">Azure Portal</a>, browse to your storage account where your logs are stored, click <b>Settings</b>, and then <b>click Access keys</b> to view, copy, and regenerate your account access keys.</span></p></div></li>
+                                            <li value="9" data-mc-conditions="Primary.Draft Content">In <b>Collection Alerts</b>, select one or more alert options.</li>
+                                            <li value="10" data-mc-conditions="Primary.Draft Content">In the <b>Azure SQL Table Name</b>, type your SQL Table Name between <b>SQLDBAuditLogs</b> and <b>YYYYMMDD</b>.</li>
+                                            <li value="11" data-mc-conditions="Primary.Draft Content">In the <b>Tags</b> field, type an easily filtered tag.</li>
+                                            <li value="12" data-mc-conditions="Primary.Draft Content">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p data-mc-conditions="Primary.Draft Content"><b>To update an <span class="mc-variable ALVariables.Azure variable">Azure</span> SQL database auditing logs collection source:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">From the Deployments page, click the  deployment for which you want to update the log source. </li>
+                                            <li value="2">Click <b>CONFIGURE LOG SOURCES</b>.</li>
+                                            <li value="3">Place your cursor over the desired collection source  and click the pencil icon (<img src="../../Resources/Images/pencil_icon.png" />).</li>
+                                            <li value="4">Make the necessary updates.</li>
+                                            <li value="5">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h2><span class="mc-variable ALVariables.Azure variable">Azure</span> Event Hubs log collection</h2>
+                                        <p><span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> <span class="mc-variable ALVariables.Event_Hubs variable">Event Hubs</span> is a data streaming platform and event ingestion service that can receive and process millions of events per second. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> allows you to configure <span class="mc-variable ALVariables.Event_Hubs variable">Event Hubs</span> to collect your <span class="mc-variable ALVariables.Azure variable">Azure</span> logs and forward them to <span class="mc-variable ALVariables.Company variable">Alert Logic</span>. For more information, see <a href="../../prepare/azure-event-hubs-log-collector.htm" class="MCXref xref">Alert Logic Log Collector for Microsoft Azure Event Hubs</a>.</p>
+                                        <h2>Additional Tasks</h2>
+                                        <p>To learn how to perform additional tasks, such as viewing source information, mass editing sources, and archiving and restoring collection sources, see <a href="../log-sources.htm#viewCollectionSourceInformation" class="MCXref xref">View log source information</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

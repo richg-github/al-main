@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Prepare" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="flareArticleId" content="a998a96d-7738-4479-a41e-a8e49b3f8c3d" />
+        <meta name="description" content="Configure your Azure resources to allow Alert Logic to monitor assets with an app registration, RBAC assigned role, grant permissions to comply with CIS benchmarks." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Configure App Registration and RBAC for Microsoft Azure Resources</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="top"></a>Configure App Registration and RBAC for <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> Resources</h1>
+                                        <div>
+                                            <p>For <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to protect your <span class="mc-variable ALVariables.Azure variable">Azure</span> deployments, you must configure <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> resources to allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to monitor your assets. All procedures require administrative permission in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal. </p>
+                                            <p>You  must create an app registration, and then use <span class="mc-variable ALVariables.Azure variable">Azure</span> role-based access control (RBAC) to create and assign a role to that app registration. </p>
+                                            <p>To comply with Center for Internet Security (CIS)  benchmarks for <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span>, an established best practices  baseline configuration guideline, you must grant certain permissions to access Microsoft Graph and <span class="mc-variable ALVariables.Azure variable">Azure</span> Key Vault. With these permissions,  <span class="mc-variable ALVariables.Company variable">Alert Logic</span> will perform CIS&#160;benchmark checks on your deployments to detect vulnerabilities. </p>
+                                            <div class="note">
+                                                <p>For more information about <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> CIS&#160;Benchmarks, see <a href="https://www.cisecurity.org/benchmark/azure/">cisecurity.org/benchmark/azure</a>.</p>
+                                            </div>
+                                            <p>These instructions do not apply in the following cases:</p>
+                                            <ul>
+                                                <li>If you have previously configured RBAC with an app registration. To learn how to update your <span class="mc-variable ALVariables.Azure variable">Azure</span> resources, see <a href="azure-benchmark-deployment-configuration.htm" class="MCXref xref">Update your Azure Deployment for CIS Foundation Benchmarks </a>. </li>
+                                                <li>If you have previously configured RBAC with user credentials, see <a href="azure-deployment-update-cis-foundation-benchmarks-user-credentials.htm" class="MCXref xref">Update your Azure Deployment with User Credentials for CIS&#160;Foundation Benchmarks</a>. </li>
+                                            </ul>
+                                            <p>A  remediation to update your <span class="mc-variable ALVariables.Azure variable">Azure</span> resources for <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> CIS benchmark  requirements will be listed in the Remediations page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. </p>
+                                            <div class="note">
+                                                <p>You  can also generate a CIS Foundations Benchmark report for <span class="mc-variable ALVariables.Azure variable">Azure</span> in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. For more information, see <a href="../analyze/reports/compliance/azure-foundation-benchmark.htm" class="MCXref xref">CIS Microsoft Azure Foundation Benchmark</a></p>
+                                            </div>
+                                            <p data-mc-conditions="Primary.Draft Content">To create an RBAC, ensure you have one of the following command line interfaces installed before you begin:</p>
+                                        </div>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content"><span class="mc-variable ALVariables.Azure variable">Azure</span><a href="https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/" title="Microsoft Azure: How to install and configure Azure PowerShell" alt="Microsoft Azure: How to install and configure Azure PowerShell"> PowerShell</a>
+                                            </li>
+                                            <li data-mc-conditions="Primary.Draft Content"><span class="mc-variable ALVariables.Azure variable">Azure</span> <a href="https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/" title="Microsoft Azure: Install the Azure CLI" alt="Microsoft Azure: Install the Azure CLI">Command Line Interface</a> (CLI) 2.0</li>
+                                        </ul>
+                                        <div class="note" data-mc-conditions="Primary.Draft Content">If you have <span class="mc-variable ALVariables.Azure variable">Azure</span> CLI 1.0 installed, Microsoft recommends you upgrade to CLI 2.0 and use the deprecated CLI 1.0 only for support with the <span class="mc-variable ALVariables.Azure variable">Azure</span> Service Management (ASM) model with "classic" resources. For more information, contact <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> support.</div>
+                                        <p style="font-weight: bold;">To configure your <span class="mc-variable ALVariables.Azure variable">Azure</span> resources, you must:</p>
+                                        <ol>
+                                            <li value="1"><a href="#Create-User" class="Bookmark MCXref xref xrefBookmark">Create an app registration in Azure</a>
+                                            </li>
+                                            <li value="2"><a href="#Create-Role" class="Bookmark MCXref xref xrefBookmark">Create a custom RBAC role</a>
+                                            </li>
+                                            <li value="3"><a href="#Grant-permission-Microsoft-graph" class="MCXref xref">Grant permissions to access Microsoft Graph</a>
+                                            </li>
+                                            <li value="4"><a href="#Grant-permission-key-vaults" class="MCXref xref">Grant permissions to access Azure Key Vault</a>
+                                            </li>
+                                            <li value="5"><a href="#Assign-Role" class="Bookmark MCXref xref xrefBookmark">Assign the role to the app registration</a>
+                                            </li>
+                                            <li value="6"><a href="#Create" class="MCXref xref">Create a deployment in the Alert Logic console</a>
+                                            </li>
+                                        </ol>
+                                        <h2><a name="Create-User"></a>Create an app registration in <span class="mc-variable ALVariables.Azure variable">Azure</span></h2>
+                                        <p>Create an app registration in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal. You will assign an RBAC&#160;role to this app registration. </p>
+                                        <div>
+                                            <p><b>To create an app registration</b>:</p>
+                                            <ol>
+                                                <li value="1"> Log into the <a href="https://portal.azure.com/">Azure portal</a>.</li>
+                                                <li value="2"> Click the search bar, and then click <b>Azure Active Directory</b>. If necessary, type "Azure Active Directory". </li>
+                                                <li value="3"> On the left panel, under Manage, click <b>App registrations</b>.</li>
+                                                <li value="4">Click <b>+ New registration</b>, and enter a name. </li>
+                                                <li value="5">Click <b>Register</b>.
+Copy the Application (client) ID, and the Directory (tenant) ID to a text editor for later.  </li>
+                                                <li value="6">On the left panel, under Manage, click <b>Certificates &amp; secrets</b>, and then click <b>+ New client secret</b>. </li>
+                                                <li value="7">Enter a description, and then on Expire, select <b>24 Months</b>. </li>
+                                                <li value="8">Click <b>Add</b>. Copy the Value to a text editor for later.
+            </li>
+                                            </ol>
+                                        </div>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <p><b>To create an app registration</b>:</p>
+                                            <ol>
+                                                <li value="1"> Log into the <a href="https://portal.azure.com/">Azure portal</a>.</li>
+                                                <li value="2"> In the left menu, click <b>Azure Active Directory</b>.</li>
+                                                <li value="3"> On the left panel, under Manage, click <b>App registrations</b>.</li>
+                                                <li value="4">Click <b>+ New registration</b>, and enter a name. </li>
+                                                <li value="5">Click <b>Register</b>.
+Note the Application (client) ID, and the Directory (tenant) ID, which you will need later.  </li>
+                                                <li value="6">On the left panel, under Manage, click <b>Certificates &amp; secrets</b>, and then click <b>+ New client secret</b>. </li>
+                                                <li value="7">Enter a description, and then on Expire, select <b>Never</b>. </li>
+                                                <li value="8">Click <b>Add</b>. Note the Value, which you will need later. 
+            </li>
+                                            </ol>
+                                        </div>
+                                        <h2><a name="Create-Role"></a>Create a custom RBAC role</h2>
+                                        <p>After you create an app registration, you must assign an RBAC role to that registration to grant <span class="mc-variable ALVariables.Company variable">Alert Logic</span> permission to monitor your environments. This allows limited and controlled access to your environments.
+</p>
+                                        <p>For more information about <span class="mc-variable ALVariables.Azure variable">Azure</span> RBAC or managing roles with command-line applications, see:</p>
+                                        <ul>
+                                            <li><a href="https://azure.microsoft-us/documentation/articles/role-based-access-control-custom-roles">Role based access control custom roles</a>
+                                            </li>
+                                            <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-azure-cli">Manage Role-Based Access Control with the Azure command-line interface</a>
+                                            </li>
+                                            <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-manage-access-powershell">Manage Role-Based Access Control with Azure PowerShell</a>
+                                            </li>
+                                        </ul>
+                                        <p data-mc-conditions="Primary.Draft Content">To create a custom RBAC role, you must first create a role document and then create a custom role in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal.</p>
+                                        <p style="font-weight: bold;" data-mc-conditions="Primary.Draft Content">To create a custom RBAC role, you must:</p>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content"><a href="#create-a-role-doc">Create a role document</a>.</li>
+                                            <li data-mc-conditions="Primary.Draft Content"><a href="#create-custom-role">Create a custom role in Azure</a>.</li>
+                                        </ul>
+                                        <h3 data-mc-conditions="Primary.Draft Content">Create a custom role </h3>
+                                        <p>You can create a custom RBAC role either in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal or through a command line interface (CLI), but not both. </p>
+                                        <h3>Create a custom role in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal</h3>
+                                        <p>To create a custom RBAC role, you must first create a role document and then create a custom role in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal.</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;portal, click the search bar and click <b>Subscriptions</b>.</li>
+                                            <li value="2">Select your subscription, and copy the Subscription ID to a text editor for later. </li>
+                                            <li value="3">Click <b>Access control (IAM)</b>.</li>
+                                            <li value="4">Click <b>+ Add</b>, and then click <b>Add custom role</b>. </li>
+                                            <li value="5">Click the <b>JSON</b> tab, and then click <b>Edit</b>. </li>
+                                            <li value="6">Delete everything in the window.</li>
+                                            <li value="7">Copy the text from <a href="https://azure-rbac-benchmark-role.s3.us-east-2.amazonaws.com/Azure-RBAC-Role-Benchmark.json">this link</a> and paste it into the JSON window.</li>
+                                            <li value="8">In the <kbd>"/subscriptions/&lt;subscription id&gt;"</kbd> line, change the <kbd>&lt;subscription id&gt;</kbd> value to the subscription ID found on your <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;portal Subscriptions blade. Example: <kbd>"/subscriptions/00xxx000-x-000-0x0x-0000-000xx000000x"</kbd></li>
+                                            <li value="9">(Optional) If you have more than one subscription ID, you can make a list of them in this custom role. Example:
+					<p><pre>"assignableScopes": [</pre></p><p><pre xml:space="preserve">   "/subscriptions/00xxx000-x-000-0x0x-0000-000xx000000x"</pre><pre xml:space="preserve">   "/subscriptions/00xxx000-x-000-0x0x-0000-000xx000000x"</pre><pre xml:space="preserve">   "/subscriptions/00xxx000-x-000-0x0x-0000-000xx000000x"</pre><pre xml:space="preserve">],</pre></p></li>
+                                            <li value="10">Click <b>Save</b>, click <b>Review + create</b>, and then click <b>Create</b>. </li>
+                                            <li value="11">Click <b>Roles</b> to verify that the RBAC role you created appears in the portal. </li>
+                                            <div class="note">
+                                                <p>If the role does not appear, refresh the list of roles.</p>
+                                            </div>
+                                        </ol>
+                                        <p>&#160;</p>
+                                        <h3><a name="create-custom-role"></a> Create a custom role  in the CLI</h3>
+                                        <p>You can create a custom role using a CLI if you do not want to create it in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal. Ensure you have one of the following  installed before you begin:</p>
+                                        <ul>
+                                            <li><span class="mc-variable ALVariables.Azure variable">Azure</span><a href="https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/" title="Microsoft Azure: How to install and configure Azure PowerShell" alt="Microsoft Azure: How to install and configure Azure PowerShell"> PowerShell</a>
+                                            </li>
+                                            <li><span class="mc-variable ALVariables.Azure variable">Azure</span> <a href="https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/" title="Microsoft Azure: Install the Azure CLI" alt="Microsoft Azure: Install the Azure CLI">Command Line Interface</a> (CLI) 2.0</li>
+                                        </ul>
+                                        <div class="note">If you have <span class="mc-variable ALVariables.Azure variable">Azure</span> CLI 1.0 installed, Microsoft recommends you upgrade to CLI 2.0 and use the deprecated CLI 1.0 only for support with the <span class="mc-variable ALVariables.Azure variable">Azure</span> Service Management (ASM) model with "classic" resources. For more information, contact <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> support.</div>
+                                        <p>You must make changes to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> template role document, and then create your role document in your command line interfaces. </p>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />To create a custom role in the CLI:</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <ol>
+                                                    <li value="1">In the <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;portal, click the search bar and click <b>Subscriptions</b>.</li>
+                                                    <li value="2">Select your subscription, and copy the Subscription ID to a text editor for later. </li>
+                                                    <li value="3">Create a new text file and copy the <a href="../pdf-files/Azure-RBAC-Role-Benchmark.txt"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> role</a>  into it. Note the directory where you save the file. You must know the path and file name for later in the procedure.</li>
+                                                    <li value="4">Make the following changes to the file:<ol style="list-style-type: lower-alpha;"><li value="1">In the <kbd>"Name": "&lt;Resource Explorer (Alert Logic)&gt;",</kbd> line, change the <kbd>&lt;Resource Explorer (Alert Logic)&gt;</kbd> to a descriptive name.</li><li value="2">In the <kbd>"/subscriptions/&lt;subscription id&gt;"</kbd> line, change the <kbd>&lt;subscription id&gt;</kbd> value to the subscription ID found on your <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;portal Subscriptions blade. Example: <kbd>"/subscriptions/00xxx000-x-000-0x0x-0000-000xx000000x"</kbd></li></ol></li>
+                                                    <li style="font-size: ;" value="5">Save the text file as a JSON file.</li>
+                                                    <li value="6">Open either <span class="mc-variable ALVariables.Azure variable">Azure</span> CLI 2.0 or <span class="mc-variable ALVariables.Azure variable">Azure</span> PowerShell, and log in to your <span class="mc-variable ALVariables.Azure variable">Azure</span> account, and then specify the default subscription. <br /><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /><span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Azure CLI 2.0 commands</a></span><div class="MCDropDownBody dropDownBody"><p><kbd>az login</kbd></p><p><kbd>az account set --subscription </kbd>&lt;your subscription id&gt;</p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /><span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Azure PowerShell commands</a></span><div class="MCDropDownBody dropDownBody"><p><kbd>Login-AzureRmAccount</kbd></p><p><kbd>Get-AzureRmSubscription –SubscriptionName </kbd>&lt;your subscription name&gt;<kbd> | Select-AzureRmSubscription</kbd></p></div></div></li>
+                                                    <li value="7">Create your custom role in <span class="mc-variable ALVariables.Azure variable">Azure</span>. <br /><div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /><span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Azure CLI 2.0 commands</a></span><div class="MCDropDownBody dropDownBody"><p><kbd>az role definition create --role-definition </kbd>[path to the role document]</p></div></div><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" /><span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;Azure PowerShell commands</a></span><div class="MCDropDownBody dropDownBody"><p><kbd>New-AzureRmRoleDefinition -InputFile </kbd>[path to the to the role document]</p></div></div></div></li>
+                                                    <li value="8"> In the <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;portal, under Subscriptions, select your subscription, and then click <b>Access control (IAM)</b>. </li>
+                                                    <li value="9">Click <b>Roles</b> to verify that the RBAC role you created appears in the portal. </li>
+                                                    <div class="note">
+                                                        <p>If the role does not appear, refresh the list of roles.</p>
+                                                    </div>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h2>Grant permissions to access Microsoft Graph<a name="Grant-permission-Microsoft-graph"></a></h2>
+                                            <p>You must grant permissions to access Microsoft Graph in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal, which allows <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to perform CIS&#160;benchmark checks.</p>
+                                            <p><b>To grant permissions to access Microsoft Graph</b>:</p>
+                                            <ol>
+                                                <li value="1">In the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal, click <b>Azure Active Directory</b>.</li>
+                                                <li value="2">On the left panel, click <b>App registrations</b>, and then select your app registration.</li>
+                                                <li value="3">On the left panel, click <b>API permissions</b>, and then click <b>+ Add a permission</b>.</li>
+                                                <li value="4">On the Request API permissions blade, click <b>Microsoft Graph</b>.</li>
+                                                <li value="5">Click <b>Application permissions</b>, and then in the list, select the following permissions:<ol style="list-style-type: lower-alpha;"><li value="1">Click <b>Application</b> to see permissions in this category, and then select <b>Application.Read.All</b>.</li><li value="2">Click <b>Group</b> to see permissions in this category, and then select <b>Group.Read.All</b>.</li><li value="3">Click <b>RoleManagement</b> to see permissions in this category, and then select <b>RoleManagement.Read.Directory</b>.</li><li value="4">Click <b>User</b>  to see permissions in this category, and then select <b>User.Read.All</b>.</li></ol></li>
+                                                <li value="6">Click <b>Add permissions</b>, and then on the API permissions pane, click <b>Grant admin consent for Default Directory</b>.</li>
+                                                <li value="7">In  the pop-up window, click <b>Yes</b> to allow the changes you made on the permissions.</li>
+                                            </ol>
+                                            <h2>Grant permissions to access <span class="mc-variable ALVariables.Azure variable">Azure</span> Key Vault<a name="Grant-permission-key-vaults"></a></h2>
+                                            <p>You must grant certain permissions to access your <span class="mc-variable ALVariables.Azure variable">Azure</span> Key Vault in the <span class="mc-variable ALVariables.Azure variable">Azure</span> portal, which allows <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to perform CIS&#160;benchmark checks. You must repeat these steps for each of your key vaults. </p>
+                                            <p><b>To grant permissions to access your key vault</b>:</p>
+                                            <ol>
+                                                <li value="1">In the Azure portal, click <b>Key vaults</b>.</li>
+                                                <li value="2">Select a key vault from the list, and then on the left panel, click <b>Access policies</b>.</li>
+                                                <li value="3">Click <b>+ Add Access Policy</b>.</li>
+                                                <li value="4">In the Key permissions field, select <b>Get</b> and <b>List</b>.</li>
+                                                <li value="5">In the Secret permissions field, select <b>Get</b> and <b>List</b>.</li>
+                                                <li value="6">Click <b>Select principal</b>, and then from the list, select the app registration you created.</li>
+                                                <li value="7">Click <b>Add</b>.
+                    <div class="note"><p>You must repeat these steps for each key vault in the list. </p></div></li>
+                                            </ol>
+                                        </div>
+                                        <h2><a name="Assign-Role"></a>Assign the role to the app registration</h2>
+                                        <p>You must assign the role you created to your registered app.  </p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.Azure variable">Azure</span>&#160;portal, click <b>Subscriptions</b>.</li>
+                                            <li value="2">In the Subscriptions blade, select the subscription you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to protect, and then click <b>Access control (IAM)</b>. Note the subscription ID, which you will need when you create an <span class="mc-variable ALVariables.Azure variable">Azure</span> deployment. <br /></li>
+                                            <li value="3">Click <b>+Add</b>, and then click <b>Add role assignment</b>.</li>
+                                            <li value="4">In the <b>Role</b> tab, search for the RBAC role you created, and then click <b>View</b>.</li>
+                                            <li value="5">Click the <b>Members</b> tab, and ensure the RBAC role you created is listed. If it is not listed, click <b>+ Select members</b> to find the role. </li>
+                                            <li value="6">Click <b>Review + assign</b>.</li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>If you have more than one subscription ID, you must repeat these steps to assign a role for each subscription.  </p>
+                                        </div>
+                                        <h2><a name="Create"></a>Create a deployment in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></h2>
+                                        <p>In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, fill out the required fields:</p>
+                                        <ul>
+                                            <li>Subscription ID<br /></li>
+                                            <li>Active Directory ID</li>
+                                            <li>Application ID</li>
+                                            <li>Key ID (the 24 month Value you copied earlier)</li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>If you have more than one subscription ID, you must repeat these steps to assign a role for each subscription.  </p>
+                                        </div>
+                                        <p>The steps you must take to create a deployment vary based on your subscription level.</p>
+                                        <p>For <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscriptions, see <a href="../deploy/azure-essentials.htm" class="MCXref xref">Microsoft Azure Deployment Configuration (Essentials Subscription)</a></p>
+                                        <p>For <span class="mc-variable ALVariables.Professional variable">Professional</span> subscriptions, see <a href="../deploy/azure-pro-ent.htm" class="MCXref xref">Microsoft Azure Deployment Configuration (Professional Subscription)</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

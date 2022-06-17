@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Inline WAF|Web Application Firewall&#160;Manual|Application Delivery Controller (ADC)" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Virtual Host
+</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1 id="VirtualHost" data-magellan-target="VirtualHost">Virtual Host
+<a name="ref_services_virtual_host.htm"></a></h1>
+                                        <p>The ADC Virtual Host page includes the following sections. Click on the link to go to the corresponding section to learn more: </p>
+                                        <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menuInBody mc-component">
+                                            <li><a href="#VirtualHost">Virtual Host
+</a>
+                                            </li>
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="#Deployment">Deployment
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Reverseproxy">Reverse proxy</a>
+                                                        </li>
+                                                        <li><a href="#Routingproxy">Routing proxy</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Virtualwebserver">Virtual web server
+</a>
+                                                    </li>
+                                                    <li><a href="#SSLcertificate">SSL certificate
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Exportingcertificatefromwebserver">Exporting certificate from web server
+</a>
+                                                        </li>
+                                                        <li><a href="#ImportingtheSSLcertificate">Importing the SSL certificate</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#SSLsettings">SSL&#160;settings</a>
+                                                    </li>
+                                                    <li><a href="#SSLciphers">SSL&#160;ciphers</a>
+                                                    </li>
+                                                    <li><a href="#Virtualhostaliases">Virtual host aliases
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Wildcards">Wildcards
+</a>
+                                                        </li>
+                                                        <li><a href="#Defaultproxy">Default proxy</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Timeouts">Timeouts</a>
+                                                    </li>
+                                                    <li><a href="#HTTPrequestandconnectionthrottling">HTTP request and connection throttling
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#HTTPrequestthrottling">&#160;HTTP request throttling
+</a>
+                                                        </li>
+                                                        <li><a href="#HTTPconnectionthrottling">HTTP connection throttling
+</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#ClientsourceIP">Client source IP
+                  </a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Transparentproxy">Transparent proxy
+</a>
+                                                        </li>
+                                                        <li><a href="#Proxyprotocol">Proxy protocol</a>
+                                                        </li>
+                                                        <li><a href="#Trustedproxy">Trusted proxy
+</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Redirects">Redirects</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Matchtypes">Match types
+</a>
+                                                        </li>
+                                                        <li><a href="#Prefixmatch">Prefix match
+</a>
+                                                        </li>
+                                                        <li><a href="#Regexmatch">Regex match
+</a>
+                                                        </li>
+                                                        <li><a href="#Vhostregexmatch">Vhost regex match
+</a>
+                                                        </li>
+                                                        <li><a href="#Examplessummary">Examples summary
+</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Options">Options</a>
+                                                    </li>
+                                                    <li><a href="#Trafficstatistics">Traffic statistics</a>
+                                                    </li>
+                                                    <li><a href="#Lowerbuttonbar">Lower button bar
+</a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                        <p>To go to the documentation for the previous section of the manual, see <a href="ref_services_deny_and_error_handling.htm" class="MCXref xref">Deny and Error Handling
+</a>. To go to  the documentation for next subsection in the ADC section, see <a href="ref_services_load_balancing.htm" class="MCXref xref">Load Balancing
+</a>.</p>
+                                        <p><b>To access the Virtual Host page in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> management interface</b>:</p>
+                                        <ol>
+                                            <li value="1">On the left panel, under Services, click <b>Websites</b>. </li>
+                                            <li value="2">On the Websites page, click the website you want to manage. </li>
+                                            <li value="3">Under ADC, click <b>Virtual Host</b>. </li>
+                                        </ol>
+                                        <p>To save configuration changes or edits you make to any features and options, you must click <b>Save</b> on the lower-right of the section or page where you are making changes. Click <b>apply changes</b> on the upper-left corner of the page, and then click <b>OK</b>. Your changes will not be stored if you do not properly save your changes. </p>
+                                        <p>The virtual host is the website proxy that is accepts requests for the web servers serving the website for which the ADC
+ is proxying requests.
+</p>
+                                        <div>
+                                            <h3 class="title" id="Deployment" data-magellan-target="Deployment">Deployment
+<a name="ref_services_virtual_host_deployment.htm"></a></h3>
+                                        </div>
+                                        <div class="highlights"><a name="ref_services_virtual_host_deployment_highlights"></a>
+                                            <p><span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> is designed to easily fit into complex data centers without sacrificing the inherent protection advantages
+ of the reverse proxy deployment mode. This is achieved through the deployment options reverse proxy and routing proxy. Both deployment options offer the full set of <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> features including inspection, rewriting, blocking of outgoing server
+ responses, accelerating, caching and compression.
+            </p>
+                                            <p>The two deployment options can be used in combination on the same appliance as the deployment option applies to single websites.
+ The same appliance can  serve websites deployed in routing proxy and reverse proxy mode at the same time.
+            </p>
+                                        </div>
+                                        <div class="sect3" title="1.1.1.&#160;Reverse Proxy">
+                                            <h4 class="title" id="Reverseproxy" data-magellan-target="Reverseproxy">Reverse proxy<a name="ref_services_virtual_host_deployment.htm#ref_services_virtual_host_deployment_reverse_proxy"></a></h4>
+                                            <p>In reverse proxy, the appliance terminates all traffic destined to the website it protects. For HTTP(S), traffic requests are
+ validated and forwarded to the backend web server on behalf of the client.
+            </p>
+                                            <p>A number of IP addresses are assigned to the appliance. The number of IP addresses required depends on the number of SSL websites, and the type of SSL certificates used. As a general rule, one unique IP address is required for each certificate
+ deployed on the appliance.
+            </p>
+                                            <p>To direct traffic through the reverse proxy, either NAT rules or DNS must be altered to point to the appliance. If it is
+ required that traffic to other (non-http) services reach the web server from the Internet, then you must create separate NAT rules  for the ports serving those services that bypass the appliance.
+            </p>
+                                            <p>Reverse proxy completely shields the web server infrastructure and allows for inspection of both client requests and server
+ responses. This also rewrites and inserts cryptographic tokens that allow protection against session hijacking, cross-site request forgery, and similar attacks.
+            </p>
+                                            <p>Reverse proxy is easy to implement, but a number of extra IP addresses are required. For more complex data centers, reverse proxy is not recommended because of the number of changes that are required for the network firewall NAT rules.
+            </p>
+                                        </div>
+                                        <h4 class="title" id="Routingproxy" data-magellan-target="Routingproxy">Routing proxy<a name="ref_services_virtual_host_deployment.htm#d0e3003"></a></h4>
+                                        <p>Routing proxy deployment has all the advantages of reverse proxy both in terms of protection, acceleration, caching and compression.
+ All features available for reverse proxy are also available in routing proxy deployment.
+            </p>
+                                        <p>The major difference is that routing proxy deployment does not require more than one IP address for each of the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> appliances network interfaces and the only change necessary on the network firewall (or router) is to configure it
+ to route traffic to the protected web servers through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. Web traffic to the protected servers are picked
+ up and validated while traffic to other protocols like SSH, SMTP and FTP are routed through to the backend web servers.
+            </p>
+                                        <p>The ability to route traffic to other services also means that only the HTTP services on the backend web servers  are protected by the appliance. Sine the IP addresses and network firewall policy rules leave a small footprint, this deployment option is the best one for complex data centers.
+</p>
+                                        <h3 id="Virtualwebserver" data-magellan-target="Virtualwebserver">Virtual web server
+<a name="ref_services_virtual_host_virtual_web_server.htm"></a></h3>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Web server</span></b>
+                                                            <p>Read only</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Protocol and fully qualified domain name (FQDN) for the website the proxy is configured for.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Website status</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Controls if <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> serves the website  by the  node.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Enabled</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>The <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> node serves requests to the website.</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Disabled</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Requests to the website are served with a default 404 not found error message.</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Proxy name</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The name of the website proxy when listed in overview tables and reports.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>An alphanumeric string</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>The first part of the virtual host address. If the host address is intranet.domain.tld, the proxy name defaults to "intranet."</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Deployment</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The proxy deployment mode.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Select deployment mode from list,</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Reverse Proxy</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                            <p>For a description of the deployment options, refer to <a class="link" href="#ref_services_virtual_host_deployment.htm" title="1.1.&#160;Deployment" alt="1.1.&#160;Deployment">Deployment</a>.
+                        </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Listen IP</span></b>
+                                                            <p>Select combo</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The IP address to which the virtual host is bound.</p>
+                                                            <p>Click <b><span class="guibutton">Edit list</span></b> to change the IP address configuration.
+                        </p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>One or more IP addresses in the select list to the left.</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>The IP address(es) configured when creating the website proxy.</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">HTTP listen port</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The port number the virtual HTTP host is listening to.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>A valid TCP/IP Port number</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Input example</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">80</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>The port number set for the server when created.</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">HTTPS listen port</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The port number the virtual HTTPS host is listening to.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>A valid TCP/IP Port number</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Input example</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">443</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>The port number set for the server when created.</p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="">
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Vhost test</span></b>
+                                                            <p>Button</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>Click <b>HEAD Request</b> to test the VHOST. </p>
+                                                            <!--Need information on what Vhost test HEAD Request does -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h3 class="title" id="SSLcertificate" data-magellan-target="SSLcertificate">SSL certificate
+<a name="ref_services_virtual_host_ssl_certificate.htm"></a></h3>
+                                        <p>In the SSL certificate section, the current SSL certificate in use is displayed. To upload a new certificate, click the <b><span class="guibutton">Manage certificates</span></b>.
+         </p>
+                                        <p>When you create an SSL website, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> gives this website a temporary SSL certificate. You are able to substitute the temporary certificate with a signed certificate. These actions are only intended for SSL enabled website proxies, and the SSL section is only shown for SSL enabled website proxies.</p>
+                                        <h4 class="title" id="Exportingcertificatefromwebserver" data-magellan-target="Exportingcertificatefromwebserver">Exporting certificate from web server
+<a name="ref_services_virtual_host_ssl_certificate.htm#ref_services_virtual_host_certificate_export"></a></h4>
+                                        <p>When you create a website proxy for an existing HTTPS web server, you need to export the SSL certificate from the web server, and import the certificate to<span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> supports the imports of  the following formats:</p>
+                                        <ul>
+                                            <li><b>PKCS12 (or PFX)</b>: The standard format that Microsoft IIS servers use. It stores public key, private key, and the key chain in one single encrypted file.</li>
+                                            <li><b>PEM</b>: Commonly used in *nix based web servers like Apache and Nginx. When ordering certificates, this format is often referred to as “Apache format.”</li>
+                                            <li><b>Intermediate</b>: A subordinate certificate where the chain begins at the trusted root, through the intermediate and ending with the SSL certificate issued to you.</li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>The links below open procedures that refer to third party products and guidelines, and may change at the vendors discretion.
+            </p>
+                                        </div>
+                                        <p>The following options show you how to export an SSL certificate from the most common servers. To export a certificate from the web server, refer to the vendors guidelines.</p>
+                                        <h5><span class="bold">Export an SSL&#160;certificate from a Microsoft IIS server</span>
+                                        </h5>
+                                        <p>When you export an SSL certificate from a Microsoft IIS server, the certificate is usually obtained in PKCS12 (<kbd>.pfx</kbd>) format. The instructions for exporting from IIS 7 below includes the SSL certificate chain. </p>
+                                        <p>Microsoft guidelines can be found on the links below:</p>
+                                        <div class="variablelist">
+                                            <ul>
+                                                <li><span class="term">IIS 5.0</span>:&#160;<a class="ulink" href="http://support.microsoft.com/default.aspx?scid=kb;en-us;232136&amp;sd=tech" target="_top">How to back up a server certificate in Internet Information Services 5.0</a></li>
+                                                <li><span class="term">IIS 6.0</span>: <a class="ulink" href="http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/6584a227-fc47-42f4-9e86-abcd7e72cca0.mspx" target="_top">Exporting a Client Certificate for One-to-One Mapping</a></li>
+                                            </ul>
+                                        </div>
+                                        <h6>Add the certificate
+</h6>
+                                        <p><b>To add a certificate</b>:                </p>
+                                        <ol>
+                                            <li value="1">Open the <b>Windows Start</b> menu. </li>
+                                            <li value="2">In the Search box, type MMC and then click <b>OK</b>.</li>
+                                            <li value="3">Click the <b>File</b> tab, and then select <b>Add/Remove Snap-in</b>.</li>
+                                            <li value="4">Click on <b>Certificates</b>, and then click <b>Add</b>.</li>
+                                            <li value="5">Select <b>Computer Account</b>, and then click <b>Next</b>. </li>
+                                            <li value="6">Select <b>Local Computer</b>, and click <b>Finish</b>. </li>
+                                            <li value="7">Click <b>OK</b> to close the Add/Remove snap-in window.</li>
+                                            <li value="8">In the center pane, double-click <b>Certificates (Local Computer)</b> in the center window.</li>
+                                        </ol>
+                                        <h6>Export the certificate
+                </h6>
+                                        <p><b>To export the certificate</b>:</p>
+                                        <ol>
+                                            <li value="1">Double-click on the <b>Personal</b> folder, and then click <b>Certificates</b>.</li>
+                                            <li value="2">Right-click the certificate you want would like to backup, and then select <b>ALL TASKS</b> and then <b>Export</b>.</li>
+                                            <li value="3">Follow the Certificate Export Wizard to backup your certificate to a .pfx file.</li>
+                                            <li value="4">Select <b>Yes, export the private key</b>.</li>
+                                            <li value="5">Select <b>Include all certificates in certificate path if possible</b>.<div class="note"><p>Do not select the <b>delete Private Key</b> option.</p></div></li>
+                                            <li value="6">Type a password you can remember, and then save the file.  </li>
+                                            <li value="7">Click <b>Finish</b>. You see the following message, "The export was successful." </li>
+                                            <li value="8">Click <b>OK</b>. </li>
+                                        </ol>
+                                        <h5>Export an SSL certificate from an Apache server</h5>
+                                        <p>For apache-based web and application servers with default PEM encoding,  the SSL certificate can be copied directly from the file system and imported as is when the default PEM encoding is used.</p>
+                                        <p>Obtain the SSL-certificate file from the web servers file system. By default, the file is PEM-encoded.</p>
+                                        <div class="example">
+                                            <p style="text-align: left;">The exact location may vary, but the Apache config file (<kbd>httpd.conf</kbd>) shows the exact location as in the example below:</p>
+                                            <p><kbd>&lt;VirtualHost 192.168.0.1:443&gt;</kbd>
+                                            </p>
+                                            <p><kbd>DocumentRoot /var/www/html2</kbd>
+                                            </p>
+                                            <p><kbd>ServerName www.yourdomain.com</kbd>
+                                            </p>
+                                            <p><kbd>SSLEngine on</kbd>
+                                            </p>
+                                            <p><kbd>SSLCertificateFile /path/to/your_domain_name.crt SSLCertificateKeyFile</kbd>
+                                            </p>
+                                            <p><kbd>&gt;/path/to/your_private.key</kbd>
+                                            </p>
+                                            <p><kbd>SSLCertificateChainFile /path/to/CA_chain.crt</kbd>
+                                            </p>
+                                            <p><kbd>&lt;/VirtualHost&gt;</kbd>
+                                            </p>
+                                            <p><b>Where:</b>
+                                            </p>
+                                            <p><kbd>SSLCertificateFile</kbd> is the server public key.</p>
+                                            <p><kbd>SSLCertificateKeyFile</kbd> is the server private key.</p>
+                                            <p><kbd>SSLCertificateChainFile</kbd> is the certificate chain.</p>
+                                        </div>
+                                        <p>Keep the contents of the files open. You will need it for the PEM (Apache) certificate upload section. </p>
+                                        <div>
+                                            <h4 class="title" id="ImportingtheSSLcertificate" data-magellan-target="ImportingtheSSLcertificate">Importing the SSL certificate<a name="ref_services_virtual_host_ssl_certificate.htm#ref_services_virtual_host_importing_ssl_certificate"></a></h4>
+                                        </div>
+                                        <p>When you create an SSL website, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> assigns the website a temporary SSL certificate. You are able to substitute the temporary certificate with a signed certificate.             </p>
+                                        <p>Depending on the format of the certificate, select the appropriate action in the bullet list.</p>
+                                        <h5 class="title">Importing the PKCS12 format
+<a name="d0e3241"></a></h5>
+                                        <p style="font-weight: bold;">To import a certificate in PKCS12 format:</p>
+                                        <ol>
+                                            <li value="1">Select <b>Import SSL certificate (PKCS12 format)</b>. </li>
+                                            <li value="2">Click <b>Choose File</b> to browse your system for the file location.</li>
+                                            <li value="3">In <b>Passphrase input</b>, type the passphrase.</li>
+                                            <li value="4">Leave <b>Validate certificate chain</b> selected.</li>
+                                            <div class="note">When selected, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> validates that the certificate chain is complete and ordered correctly. Do not clear this option unless the certificate import generates certificate chain errors that you must adjust manually after import.</div>
+                                            <li value="5">Click <b>Save settings</b> in the lower right corner of the page.  </li>
+                                            <li value="6">Click <b>apply settings</b> at the top of the page to apply the certificate to the run-time configuration.</li>
+                                        </ol>
+                                        <h5 class="title">Importing the PEM format
+<a name="d0e3265"></a></h5>
+                                        <p><b>To import a certificate in PEM format:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Select <b>Import SSL certificate (PEM format)</b>. </li>
+                                            <li value="2"> Open the .PEM file(s) in a text-editor. When obtained from the web server, the following extension convention is usually used:
+                    <div class="example"><p style="text-align: center;"><kbd>*.crt</kbd> – public keys, both server and CA chain</p><p style="text-align: center;"><kbd>*.key</kbd> – the private key</p></div></li>
+                                            <li value="3">Copy the public certificate section of the certificate into the <b>SSL public key/certificate</b> field.
+                    <div class="example"><p style="text-align: left;">The public certificate is the section of the certificate file between (and including) the certificate start and end tags.</p><p style="text-align: center;"><kbd>-----BEGIN CERTIFICATE-----</kbd></p><p style="text-align: center;"><kbd>Certificate characters</kbd></p><p style="text-align: center;"><kbd>-----END CERTIFICATE--</kbd></p></div></li>
+                                            <li value="4">Copy the (SSL) private key section of the certificate into the <b>SSL private key</b> field.                     <div class="example"><p style="text-align: left;">The (SSL) private key is the section of the certificate file between (and including) the private key start and end tags.</p><p style="text-align: center;"><kbd>-----BEGIN RSA PRIVATE KEY-----</kbd></p><p style="text-align: center;"><kbd>Private key characters</kbd></p><p style="text-align: center;"><kbd>-----END RSA PRIVATE KEY-----</kbd></p></div></li>
+                                            <li value="5">In the <b>Passphrase</b>, field type the passphrase for the private key  (if the original private key was encrypted).</li>
+                                            <li value="6">Leave <b>Validate certificate chain</b> selected.
+                    <div class="note">When selected, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> validates that the certificate chain is complete and ordered correctly. Do not clear this option unless the certificate import is generates certificate chain errors that you must adjust manually after import. </div></li>
+                                            <li value="7">Click <b>Save Settings</b> in the lower right corner of the page. </li>
+                                            <li value="8">Click <b>Apply Settings</b> at the top of the page to apply the certificate to the run-time configuration.</li>
+                                            <li value="9">(Optional) In <b>SSL authority certificate(s) chain</b>, if a certificate authority chain is provided with your certificate, enter the entire list of certificates (more than one certificate may be provided).</li>
+                                            <li value="10">
+                    Click <b>Save settings</b>. The imported certificate is displayed in the certificate table along with the certificate chain (if any). Verify that the certificate is imported correctly.
+                </li>
+                                            <li value="11">Click the <b>Apply settings</b>.
+</li>
+                                        </ol>
+                                        <h5>&#160;Importing the intermediate certificate</h5>
+                                        <p>To import an intermediate certificate:</p>
+                                        <ol>
+                                            <li value="1">Select <b>Edit Certificate Chain</b>. </li>
+                                            <li value="2">Open the intermediate certificate in a text-editor. When obtained from the web server, the following extension convention is usually used:
+                <div class="example"><p style="text-align: left;">The public key/certificate is the section of the certificate file between (and including) the certificate start and end tags.</p><p style="text-align: center;"><kbd>&lt;-----BEGIN CERTIFICATE---&gt;</kbd></p><p style="text-align: center;"><kbd>Certificate characters</kbd></p><p style="text-align: center;"><kbd>&lt;-----END CERTIFICATE---&gt;</kbd></p></div></li>
+                                            <li value="3">Click <b>Save settings</b> in the lower right corner of the page.</li>
+                                            <li value="4">Click <b>apply settings</b> at the top of the page to apply the certificate to the run-time configuration.</li>
+                                        </ol>
+                                        <h3 id="SSLsettings" data-magellan-target="SSLsettings">SSL&#160;settings<a name="ref_services_virtual_host_ssl_settings.htm"></a></h3>
+                                        <p>Minimum SSL protocol version.</p>
+                                        <!-- Need information for SSL Settings -->
+                                        <h3 data-mc-conditions="Primary.Draft Content" id="SSLciphers" data-magellan-target="SSLciphers">SSL&#160;ciphers<a name="ref_services_virtual_host_ssl_ciphers.htm"></a></h3>
+                                        <!-- Need information for SSL Ciphers -->
+                                        <div>
+                                            <h3 class="title" id="Virtualhostaliases" data-magellan-target="Virtualhostaliases">Virtual host aliases
+<a name="ref_services_virtual_host_aliases.htm"></a></h3>
+                                        </div>
+                                        <p>To configure <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to handle requests for host aliases to the main configured domain name (e.g. www.mydomain.com), add a list of aliases in this section.
+         </p>
+                                        <div class="example">
+                                            <p>If the web system that answers requests to <code class="literal">www.mydomain.com</code> also serves requests to <code class="literal">mydomain.com</code>, <code class="literal">www.mydomain.net</code> and <code class="literal">mydomain.net</code> and uses the same content as <code class="literal">www.mydomain.com</code>, then <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> handles and validates the alias domain names as aliases to
+ the main virtual host when added to this section. 
+</p>
+                                        </div>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Virtual host aliases</span></b>
+                                                            <p>Input area</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>A list of host names.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Host names separated by new-line.</p>
+                                                                        <p>Wildcard character * can be used to substitute the server name and sub domains.</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Input example</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal"><code class="literal">mydomain.com</code></code>
+                                                                        </p>
+                                                                        <p><code class="literal"><code class="literal">www.mydomain.net</code></code>
+                                                                        </p>
+                                                                        <p><code class="literal"><code class="literal">*.mydomain.net - matches www.mydomain.net, www.intra.mydomain.net, a.b.c.d.e.f.mydomain.net...</code></code>
+                                                                        </p>
+                                                                        <p><code class="literal">10.10.10.20</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">&lt;none&gt;</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>When <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is deployed as a proxy, requests for virtual host aliases are filtered and forwarded without modification to the host
+ header.
+         </p>
+                                        <h4 class="title" id="Wildcards" data-magellan-target="Wildcards">Wildcards<![CDATA[
+]]><a name="ref_services_virtual_host_aliases_wildcards"></a></h4>
+                                        <p>You can use the wildcard character <code class="literal">*</code> to match the server name part of the domain name (e.g. www). If for instance, the domain names <code class="literal">www. domain.net</code>, <code class="literal">www2.domain.net</code>, <code class="literal">www3.domain.net</code> and <code class="literal">webserver.domain.net</code> all point to the same server the wildcard expression <code class="literal">*.domain.net</code> is used to match all HTTP requests pointing to domain.net. This is provided that the DNS records of the respective
+ hosts all point to <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.
+            </p>
+                                        <h4 class="title" id="Defaultproxy" data-magellan-target="Defaultproxy">Default proxy<a name="ref_services_virtual_host_aliases_default_proxy.itydf"></a></h4>
+                                        <p>When enabled, the proxy is used as the default host for requests of the IP address to which the proxy is configured to listen. The default proxy responds to all requests for virtual hosts that are not configured as primary host name, or as a
+ virtual host for other proxies listening to the same IP address. This allows you to configure a single proxy that
+ serves requests for several host names that the same backend web server serves without adding all the virtual
+ host names in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.            </p>
+                                        <div>
+                                            <h3 class="title" id="Timeouts" data-magellan-target="Timeouts">Timeouts<a name="ref_services_virtual_host_timeouts.htm"></a></h3>
+                                        </div>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Client READ header timeout</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Max time to wait for the client request header.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Unit</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Seconds</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Number in range 2 - 7200</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">60</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Client READ body timeout</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Max time to wait for the client request body.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Unit</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Seconds</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Number in range 2 - 7200</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">60</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Client SEND timeout</span></b>
+                                                            <p>input field</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>Max time to wait for a client send to complete.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Unit</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Seconds</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Number in range 2 - 7200</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">60</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h3 id="HTTPrequestandconnectionthrottling" data-magellan-target="HTTPrequestandconnectionthrottling">HTTP request and connection throttling
+<a name="ref_services_virtual_host_throttling.htm"></a></h3>
+                                        <h4 class="title" id="HTTPrequestthrottling" data-magellan-target="HTTPrequestthrottling">&#160;HTTP request throttling
+<a name="ref_services_virtual_host_throttling.htm#ref_services_virtual_host_throttling_rate"></a></h4>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">HTTP request throttling status</span></b>
+                                                            <p>Info</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Displays the global HTTP throttling status. </p>
+                                                            <p>Click <b>configure</b> to be redirected to the <a href="ref_services_http_global.htm#ref_services_http_global.htm#d0e2024" class="MCXref xref">HTTP request throttling </a> section where you can change your settings. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Maximum burst rate</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The amount of requests the client is allowed to exceed the allowed request rate.</p>
+                                                            <p>For instance, if the maximum burst rate is set to 20 per second and the request rate is limited to five request, then the client
+ can issue 20 requests for one second. Then must wait four seconds until the rate is balanced.
+                           </p>
+                                                            <p>When a client  loads an html page, it typically results in a lot of sub-requests for graphic elements, style sheets,
+ javascript, etc. Setting a reasonable burst rate allows for fast page loads when the request rate is limited.
+                           </p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Unit</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>requests / second</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Number in the range 0 - 1000000</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">20</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Throttling action</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>How to handle exceeding limits of the client. </p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Delay</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Delay responses to slow down the client</p>
+                                                                        <p>Default selection</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Error 503</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>Return <code>HTTP error 503</code></p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Throttling zone</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>Client request rate is tracked across website proxies using four global databases, throttling zones. To account for different
+ usage patterns throttling limits are defined separately for each global throttling zone.
+                           </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h4 class="title" id="HTTPconnectionthrottling" data-magellan-target="HTTPconnectionthrottling">HTTP connection throttling
+<a name="ref_services_virtual_host_throttling.htm#ref_services_virtual_host_throttling_connections"></a></h4>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">HTTP connection throttling status</span></b>
+                                                            <p>Info</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Displays the global HTTP connection throttling status.</p>
+                                                            <p>Click <b>configure</b> to be redirected to the <a href="ref_services_http_global.htm#ref_services_http_global.htm#d0e2200" class="MCXref xref">HTTP connection limiting
+</a> section where you can change your settings. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">HTTP connection throttling zone</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>Client request rate is tracked across website proxies using four global databases, throttling zones. To account for different
+ usage patterns throttling limits are defined separately for each global throttling zone.
+                           </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <h3 class="title" id="ClientsourceIP" data-magellan-target="ClientsourceIP">Client source IP
+<a name="ref_services_client_source_ip.htm"></a><![CDATA[                  ]]></h3>
+                                        </div>
+                                        <p><a name="client_source_ip_intro_general.htm"></a>HTTP requests often pass through one or more proxy servers before reaching the endpoint web server. Examples include web gateways
+ in the client network, content delivery networks (CDN), caching servers, SSL accelerators, layer 7 load balancers and web
+ application firewalls. Each time the request passes through a proxy server, the source IP of the request changes to the
+ IP address of the proxy server. This meanst he source IP from the network connection
+ (socket) cannot be the IP address of the original request. To account for this, the standard is that proxy servers
+ insert the client source IP in a request header named X-Forwarded-For. This is the default behavior of <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span>.
+         </p>
+                                        <p lang="client_source_ip_intro_transparent_proxy">Another option is to configure <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> as a <span class="bold"><strong>Transparent Proxy</strong></span>, which reinserts the client source IP before it forwards the request to the backend web environment.
+</p>
+                                        <div>
+                                            <h4 class="title" id="Transparentproxy" data-magellan-target="Transparentproxy">Transparent proxy
+<a name="ref_services_client_source_ip.htm#ref_services_client_source_ip_transparent_p"></a></h4>
+                                        </div>
+                                        <p>Play tricks at the network level to inject the client IP as the source of the request to the backend server. This requires modification
+ of default gateway at the backend server to make the response go back through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.
+            </p>
+                                        <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                            <colgroup>
+                                                <col width="25%" align="left" />
+                                                <col width="75%" align="left" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Transparent Proxy</span></b>
+                                                    </td>
+                                                    <td align="left">
+                                                        <div class="itemizedlist">
+                                                            <ul class="itemizedlist" type="disc">
+                                                                <li class="listitem"><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> inserts the client source IP as the source IP of the request it forwards to the backend web server.</li>
+                                                                <li class="listitem">Backend web servers must be configured to use <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> as the default gateway to ensure inspection of return web traffic and
+ a response to the client request.
+                                </li>
+                                                                <li class="listitem">IP-Forwarding (routing) must be enabled in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</li>
+                                                                <li class="listitem">Performance drawbacks because connections from <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to backend web servers cannot be kept alive and because all traffic, including
+ non-HTTP, from web servers have to pass through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</li>
+                                                                <li class="listitem">Because <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> must be the default gateway, transparent proxy is only recommended for smaller deployments where <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is not
+ deployed in combination with a load balancer.
+                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>You must enable and configure transparent proxy.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>You can apply transparent proxy configuration to both routing proxy and reverse proxy deployment modes. When enabled, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> inserts  the client source IP in the request to the backend web server to preserve it. In practice, the transparent proxy spoofs the client source IP which is why this feature is sometimes also called client impersonation.
+            </p>
+                                        <p>While transparent proxy preserves the client source IP in the HTTP requests the backend web server
+ receives, it has a few drawbacks of performance and availability risk. Because the original client IP is inserted
+ as the source IP of the connection that is made to the backend, every request to not reuse connections from other client IPs requires a new connection. This negatively impacts the performance. <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> deployed as either reverse
+ or routing is easy to bypass if both nodes in a cluster fails, because only a change a NAT rule
+ or a static route is required. This is further complicated when it is proxying transparently because the backend web servers are
+ configured to use the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> cluster as a gateway. This means that each backend web server must be reconfigured to restore
+ availability in the unlikely event that both <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> nodes in a cluster fails.
+</p>
+                                        <div class="note">
+                                            <p>The original client source IP needs
+ <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> configured as the default gateway for the web server response to come back through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. This also means
+ that it is complicated and error prone  to implement use transparent proxy in high performance deployments where
+ <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is deployed in combination with a load balancer.
+                                    </p>
+                                        </div>
+                                        <div>
+                                            <h5 class="title">Configuring transparent proxy
+<a name="d0e3907"></a></h5>
+                                        </div>
+                                        <p>To minimize the availability impact on the web properties the configuration of transparent proxy must performed in the
+ following order:
+               </p>
+                                        <dl>
+                                            <ol>
+                                                <li value="1">If <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is deployed as a cluster, create a cluster interface with an VIP that the backend web servers can reach in <b>System</b>&gt; <b>Clustering</b>.
+                                 </li>
+                                                <li value="2">Enable IP Forwarding in <b>Services</b> &gt; <b>Network</b> &gt; <b>Network routing</b>.</li>
+                                                <li value="3">Edit the segmentation table to make sure that routing does not violate network segmentation settings in <b>Services</b> &gt; <b>Network</b>
+ &gt; <b>Network routing</b>. By default, routing cannot traverse network interfaces.
+                                 </li>
+                                                <li value="4">Configure backend web servers to use <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> as default gateway.</li>
+                                            </ol>
+                                        </dl>
+                                        <div>
+                                            <h4 id="Proxyprotocol" data-magellan-target="Proxyprotocol">Proxy protocol<a name="ref_services_client_source_ip.htm#ref_services_client_source_ip_proxy_protocol"></a></h4>
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> allows you to enable proxy protocol, which is designed to safely transport connection information without losing any information. Enabling proxy protocol allows <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to work with multiple layers of NAT or TCP proxy protocols, does not require infrastructure changes, has no impact on NAT firewalls, and is scalable. </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Enable proxy protocol</span></b>
+                                                                <p>Check box</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Safely transport connection information without losing any information</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p>Enabling proxy protocol on the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is not necessary unless you are configuring both communicating endpoints. If you have configured the other communicating endpoint to proxy protocol, you can enable proxy protocol in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. </p>
+                                            <div class="caution">
+                                                <p>You must configure proxy protocol on both endpoints of the connection. If one endpoint connection is not configured to use proxy protocol, the websites stop communicating, and <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> does not function properly. </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 class="title" id="Trustedproxy" data-magellan-target="Trustedproxy">Trusted proxy
+<a name="ref_services_client_source_ip.htm#ref_services_virtual_host_trusted_proxy"></a></h4>
+                                        </div>
+                                        <p>Since the X-headers are part of the client request <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> receives, and the client can manipulate it, they cannot be trusted. The information that the proxy insert can only be trusted if the client does not control that information. This is if the proxy that receives the request from the client, for instance a load balancer in front
+ of <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>, follows the standard of appending the source IP it receives the request from to the X-Forwarded-For header. In addition, it must overwrite values in X-Forwarded-Proto and X-Forwarded-Port headers with protocol and port information to be trusted. Such a proxies, defined by one or more IPs, are referred to
+ as <span class="bold"><strong>Trusted Proxies</strong></span>.
+            </p>
+                                        <div class="note">
+                                            <p>When <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> receives a request from a trusted proxy, IP based blocking extracts and uses the IP address of the client source IP from the X-Forwarded-For header in place of the actual request (socket) IP for both HTTP Throttling.
+ For the IP based blocking controls, the X-Forwarded-For IP transparently replaces the socket IP and the network blocking
+ controls works without other modification to the policy.</p>
+                                        </div>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Use trusted proxy - extract client source IP from X-Forwarded-For header</span></b>
+                                                            <p>Check box</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Enable Trusted Proxy functionality.</p>
+                                                            <p>When enabled, if a request is received from a proxy from the list of trusted proxies:</p>
+                                                            <div class="itemizedlist">
+                                                                <ul class="itemizedlist" type="disc">
+                                                                    <li class="listitem"><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> extracts the client source IP from the X-Forwarded-For header</li>
+                                                                    <li class="listitem">Enable this option to use the extracted client source IP for HTTP Throttling </li>
+                                                                    <li class="listitem">Use the extracted client source IP for IP whitelisting controls</li>
+                                                                    <li class="listitem">Transparently enforces the source IP based request blocking at layer 7 based on the extracted IP instead of at the network level</li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Default: <code class="literal">&lt;disabled&gt;</code></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Reset X-Forwarded-For header to last untrusted source in list</span></b>
+                                                            <p>Check box</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Following the proposed standard, the X-Forwarded-For header may contain a comma separated list of IP addresses. Depending
+ on the configuration options in the endpoint web server and application, it may be logged with a comma separated list, which you may not want.
+                           </p>
+                                                            <p>For <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to always forward the X-Forwarded-For a single IP address, enable this option. </p>
+                                                            <p>Default: <code class="literal">&lt;disabled&gt;</code></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Forward X-Forwarded-For and X-Forwarded-Proto headers from trusted proxy unaltered</span></b>
+                                                            <p>Check box</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>Leave X-Headers untouched from trusted proxy.</p>
+                                                            <p>If <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is deployed behind another reverse proxy, by default, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> inserts the source
+ IP from that proxy in the X-Forwarded-For header sent to the backend web server. If the X-Forwarded-For header is already
+ present, the source IP is appended to the header.
+                           </p>
+                                                            <p>While this behavior conforms to standards, you may not always want it. You can configure trusted proxies
+ to forwarded the X-Forwarded-For header as it is received from the trusted proxy
+ without modifying it.
+                           </p>
+                                                            <p>Default: <code class="literal">&lt;disabled&gt;</code></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel"> Trusted CIDR ranges</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>List of Trusted CIDR ranges from which X-Forwarded-For header is forwarded unmodified to the backend web server.</p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>IP addresses with net mask (IP/mask) in CIDR notation separated by newline</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Input example</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">192.168.0.8/32</code> - the IP address 192.168.0.8
+                                    </p>
+                                                                        <p><code class="literal">192.168.0.0/24</code> - IP addresses 192.168.0.0 - 255
+                                    </p>
+                                                                        <p><code class="literal">192.168.0.8/29</code> - IP addresses 192.168.0.8-15
+                                    </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">&lt;none&gt;</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <h5>X-Forwarded-For
+<a name="ref_services_client_source_ip.htm#ref_services_client_source_ip_xff"></a></h5>
+                                        </div>
+                                        <p>The standard for forwarding client source IP from layer 7 proxies. Header is always inserted.</p>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">X-Forwarded-For</span></b>
+                                                        </td>
+                                                        <td align="left">
+                                                            <div class="itemizedlist">
+                                                                <ul class="itemizedlist" type="disc">
+                                                                    <li class="listitem">Client source IP is inserted in X-Forwarded-For header</li>
+                                                                    <li class="listitem">Client source IP is present in the header even if the request passed through other proxy servers</li>
+                                                                    <li class="listitem">Standards compliant approach</li>
+                                                                    <li class="listitem">Better performance because connections to backend web servers can be kept alive</li>
+                                                                    <li class="listitem">May require modifications to backend applications to read the X-Forwarded-For header</li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>The X-Forwarded header is always inserted.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>The X-Forwarded-For (XFF) HTTP header field is a standard to identify the originating IP address of a client
+ connecting to a web server through an HTTP proxy or load balancer. This is an HTTP request header the
+ developers of Squid caching proxy server introduced. An effort has been started at IETF for standardizing the Forwarded HTTP header.
+            </p>
+                                        <p>When the request passes through multiple proxy servers, each server adds the respective source IP to the X-Forwarded-For
+ header. The X-Forwarded-For header then contains a list of IP addresses the request has passed through. The leftmost IP address
+ is the original client IP. The rightmost IP address is the last proxy in the chain, and the source IP of the request is the
+ address of the last proxy.
+            </p>
+                                        <p>This allows the endpoint web server to extract and log the original client IP address from the XFF header for applications
+ that need this data. The endpoint web server no longer needs to extract data for the IP address of the last proxy in the chain from which the request received.
+            </p>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is a proxy-based device that terminates requests from clients and makes requests to the backend web server
+ on behalf of the client. To make the original source IP available to the backend web application, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> forwards
+ the source IP address to the backend server in the X- Forwarded-For header.
+            </p>
+                                        <div class="sect3" title="1.7.2.&#160;Other X-headers">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h5>Other X-headers
+<a name="ref_services_client_source_ip.htm#d0e3719"></a></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>In addition to the X-Forwarded-For header Layer 7, proxies often insert X-headers with information about which protocol
+ and port from the request they received. The following headers are:             </p>
+                                            <div class="variablelist">
+                                                <ul>
+                                                    <li><span class="term" style="font-weight: bold;">X-Forwarded-Proto</span>: Contains the protocol the request was received on - HTTP or HTTPS</li>
+                                                    <li><span class="term" style="font-weight: bold;">X-Forwarded-Port</span>: Contains the port the request was received on</li>
+                                                </ul>
+                                            </div>
+                                            <div class="note">
+                                                <p>Contrary to the X-Forwarded-For header, these headers are not lists. This means that <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> overwrites their information   if it receives the request from a proxy that already inserted them.
+            </p>
+                                            </div>
+                                            <p>If requests through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> passes through further layer 7 proxies on their way to the backend servers,  you must copy the value of those headers into reserved custom headers like
+ X-WSM-Forwarded-Proto. <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> does this to keep the value of
+ these headers as received  intact. You can insert request heads to copy the value of those headers in <a href="ref_services_load_balancing.htm#ref_services_load_balancing_health_checking.htm">Health Checking section in Load Balancing</a>.             </p>
+                                        </div>
+                                        <h3 id="Redirects" data-magellan-target="Redirects">Redirects<a name="ref_services_virtual_host_redirects.htm"></a></h3>
+                                        <p>Redirects tells the client to get the requested resource elsewhere. The Redirect feature instructs clients to make a new request with a different URL. It often redirects
+ HTTP requests for resources requiring encryption to corresponding pages on an SSL encrypted connection - HTTPS.
+         </p>
+                                        <p>When redirecting, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> sends an <code class="literal">HTTP 301 - Permanently Moved</code> response code.
+         </p>
+                                        <div class="sect3" title="1.8.1.&#160;Match types">
+                                            <h4 class="title" id="Matchtypes" data-magellan-target="Matchtypes">Match types
+<a name="ref_services_virtual_host_redirects.htm#d0e3947"></a></h4>
+                                            <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> allows for either <code class="literal">prefix</code>, <code class="literal">regex</code> or <code class="literal">vhost regex</code> based matching of client requests.
+            </p>
+                                            <h5><span class="term">Prefix</span>
+                                            </h5>
+                                            <p>If prefix match is selected, the requested URL is matched left to right beginning with a slash (<code>/secret</code>).</p>
+                                            <h5>Regex </h5>
+                                            <p class="simpara">If Regex match is selected, the requested URL is matched using a regular expression. You can match asp files in a specific directory and instruct the client to request a php file in another directory on
+ another server using HTTPS instead of HTTP.
+                     </p>
+                                            <div class="note">
+                                                <p class="simpara">Do not select Regex match type unless you really need it. Prefix is cheaper CPU wise.</p>
+                                            </div>
+                                            <h5><span class="term">Vhost regex</span>
+                                            </h5>
+                                            <p>The vhost regex type allows for matching on elements in the virtual host name. The vhost regex redirects to a different virtual host
+ optionally with some of the matched elements in the target URL- like redirecting foo.alertlogic.com to http://www.alertlogic.com/foo
+ or foo.alertlogic.net to http://www.alertlogic.com/net/foo.
+                     </p>
+                                            <p>The syntax is dependent on the match type selected.</p>
+                                        </div>
+                                        <div class="titlepage">
+                                            <div>
+                                                <div>
+                                                    <h4 class="title" id="Prefixmatch" data-magellan-target="Prefixmatch">Prefix match
+<a name="ref_services_virtual_host_redirects.htm#ref_services_virtual_host_redirects_prefix"></a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="informaltable">
+                                            <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                <colgroup>
+                                                    <col width="25%" align="left" />
+                                                    <col width="75%" align="left" />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Enable external redirects</span></b>
+                                                            <p>Check box</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>When selected, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> redirects client requests based on redirect rules configured.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Proto</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>For website proxies serving both HTTP and HTTPS, select the protocol to match.</p>
+                                                            <p>If for instance, you only want to serve a specific page using the HTTPS protocol match the corresponding HTTP page and redirect
+ to HTTPS on the same site.
+                           </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Match type</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>See above.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Match</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td style="border-bottom: 0.5pt solid;" align="left">
+                                                            <p>The client request to match.</p>
+                                                            <p>If prefix match is selected, the requested URL is matched left to right beginning with a slash (<code>/secret</code>). Only complete path
+ segments are matched so prefix match type is basically matching on a "directory" basis.
+                           </p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>A case-sensitive (%-decoded) path beginning with a slash</p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Input example</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">/secret</code> - matches requests for<code> /secret</code>,<code> /secret/</code>,<code> /secret/secret_file1.php</code>, etc. Does not match <code>/secret_file.php</code>.
+                                    </p>
+                                                                        <p><code class="literal">/</code> - matches requests for any resource, useful for setting up an HTTP proxy which redirects all requests to the same "location"
+ on an HTTPS proxied website.
+                                    </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">&lt;none&gt;</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Redirect externally to</span></b>
+                                                            <p>Input field</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p>The new URL path to which the client is redirected.</p>
+                                                            <p>If prefix match is selected, the new URL path corresponds to the prefix matched. If /secret is entered in the match field (above)
+ then the part of the request following the prefix (/secret) is sent to the new URL path.
+                           </p>
+                                                            <div class="variablelist">
+                                                                <dl>
+                                                                    <dt><span class="term">Valid input</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p>An absolute URL beginning with a scheme and hostname. A URL-path beginning with a slash may also be used, in which case
+ the scheme and hostname of the current server is added.
+                                    </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Input example</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">https://ssl.somename.tld/moresecret</code> - In combination with the prefix match example above, <code> /secret</code> requests for <code>/secret</code> is redirected to <code>https://ssl.somenane.tld/moresecret,
+ /secret/secret_file1.php</code> is redirected to <code>https://ssl.somenane.tld/moresecret/secret_file1.php</code>, etc.
+                                    </p>
+                                                                        <p><code class="literal">https://ssl.somename.tld/</code> - In combination with the prefix match example / above is redirect any request to <code>https://ssl.somename.tld</code>.
+                                    </p>
+                                                                    </dd>
+                                                                    <dt><span class="term">Default value</span>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <p><code class="literal">&lt;none&gt;</code>
+                                                                        </p>
+                                                                    </dd>
+                                                                </dl>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-mc-conditions="Primary.beta">
+                                                        <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Code</span></b>
+                                                            <p>Drop-down list</p>
+                                                        </td>
+                                                        <td align="left">
+                                                            <p align="left">Select the error code you want displayed</p>
+                                                            <ul>
+                                                                <li align="left">301 Moved Permanently </li>
+                                                                <li align="left">302 Moved Temporarily</li>
+                                                                <li align="left">303 See Other</li>
+                                                                <li align="left">307 Temporary Redirect</li>
+                                                                <li align="left">308 Permanent Redirect</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="sect3" title="1.8.3.&#160;Regex match">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Regexmatch" data-magellan-target="Regexmatch">Regex match
+<a name="ref_services_virtual_host_redirects.htm#ref_services_virtual_host_redirects_regex"></a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Enable external redirects</span></b>
+                                                                <p>Check box</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>When select, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> redirects client requests based on redirect rules configured.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Proto</span></b>
+                                                                <p>Drop-down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>For website proxies serving both HTTP and HTTPS, select the protocol to match.</p>
+                                                                <p>If for instance you only want to serve a specific page using the HTTPS protocol match, the corresponding HTTP page redirects
+ to HTTPS on the same site.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Match type</span></b>
+                                                                <p>Drop-down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>See above.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Match</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The client request to match.</p>
+                                                                <p>If Regex match is selected, the requested URL is matched using a regular expression. The supplied regular expression is matched
+ against the requested URL-path. If it matches, the server substitutes any parenthesized matches into the redirect
+ URL path sent in the redirect response to the client.
+                           </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>A valid regular expression</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">(.+)\.jsp</code> - matches requests for any URL path ending in .jsp. The path and filename, but not the extension is the substitute
+ variable $1 (for instance a request for <code>/secret/secret_java1.jsp</code> which results in $1 containing /<code>secret/secret_java1</code> making
+ it possible to redirect to <code>https://ssl.somename.tld$1.php</code>. This results in the client being redirected to <code>https://ssl.somename.tld/secret/secret_java1.php</code>).
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Redirect externally to</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>The new URL path to which the client is redirected.</p>
+                                                                <p>If Regex match is selected, the parenthesized matches in $1, $2, etc. is substituted into the new URL path allowing fine grained
+ and complex redirect rules.
+                           </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>An absolute URL beginning with a scheme and hostname optionally with $1, $2, $3, etc. as placeholders to substitute matches.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">https://ssl.somename.tld$1.php</code> - In combination with the regex match example <code>(.+)\.jsp</code>, requests for any URL path ending in <code>.jsp</code> is redirected to <code>https://ssl.somename.tld/</code>, but the extension <code>jsp</code> is php. For example, <code>/secret/secret_java1.jsp</code> is redirected to <code>https://ssl.somename.tld/secret/secret_java1.php</code>.
+                                    </p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Code</span></b>
+                                                                <p>Drop-down list</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p align="left">Select the error code you want displayed</p>
+                                                                <ul>
+                                                                    <li align="left">301 Moved Permanently </li>
+                                                                    <li align="left">302 Moved Temporarily</li>
+                                                                    <li align="left">303 See Other</li>
+                                                                    <li align="left">307 Temporary Redirect</li>
+                                                                    <li align="left">308 Permanent Redirect</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="1.8.4.&#160;Vhost regex match">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Vhostregexmatch" data-magellan-target="Vhostregexmatch">Vhost regex match
+<a name="ref_services_virtual_host_redirects.htm#ref_services_virtual_host_redirects_vhost"></a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Enable external redirects</span></b>
+                                                                <p>Check box</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>When selected, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> redirects client requests based on redirect rules configured.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Proto</span></b>
+                                                                <p>Drop-down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>For website proxies serving both HTTP and HTTPS, select the protocol to match.</p>
+                                                                <p>If for instance, you only want to serve a specific page using the HTTPS protocol, match the corresponding HTTP page and redirect
+ to HTTPS on the same site.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Match type</span></b>
+                                                                <p>Drop-down list</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>See above.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Match</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The vhost part of client request to match.</p>
+                                                                <p>If vhost regex match is selected, the vhost part of the client request is matched using a regular expression. If it matches,
+ the server substitutes any parenthesized matches into the redirect URL path sent in the redirect response to the client.
+                           </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>A valid regular expression</p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd><pre>foo\.alertlogic\.com</pre><pre>www\.alertlogic\.(\w){1,5}</pre>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Redirect externally to</span></b>
+                                                                <p>Input field</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>The new URL path to which the client is redirected.</p>
+                                                                <p>If the match expression contains parentheses, the parenthesized matches are placed in the variables $c1, $c2, $c9. These variables
+ are used in the redirected URL to allow for fine grained and flexible redirects.
+                           </p>
+                                                                <div class="variablelist">
+                                                                    <dl>
+                                                                        <dt><span class="term">Valid input</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p>An absolute URL beginning with a scheme and hostname, optionally with $c1, $c2, $c9 as placeholders to substitute matches.</p>
+                                                                            <div class="note">
+                                                                                <p>The placeholder variable names are different from the regex type above.</p>
+                                                                            </div>
+                                                                        </dd>
+                                                                        <dt><span class="term">Input example</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">http://www.alertlogic.com/foo</code>
+                                                                            </p>
+                                                                            <p>In combination with the match example, <code>foo.alertlogic.com</code> redirects requests for the hostname <code>foo</code> to a corresponding <code>subdir</code>.</p>
+                                                                            <p><code class="literal">http://www.alertlogic.com/$c1</code>
+                                                                            </p>
+                                                                            <p>In combination with the match,<code> www\.alertlogic\.(\w{1,5}</code> redirects <code>www.alertlogic.net/somepath?somequery </code>to<code> www.alertlogic.com/dk/somepath?somequery</code></p>
+                                                                        </dd>
+                                                                        <dt><span class="term">Default value</span>
+                                                                        </dt>
+                                                                        <dd>
+                                                                            <p><code class="literal">&lt;none&gt;</code>
+                                                                            </p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Code</span></b>
+                                                                <p>Drop-down list</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p align="left">Select the error code you want displayed</p>
+                                                                <ul>
+                                                                    <li align="left">301 Moved Permanently </li>
+                                                                    <li align="left">302 Moved Temporarily</li>
+                                                                    <li align="left">303 See Other</li>
+                                                                    <li align="left">307 Temporary Redirect</li>
+                                                                    <li align="left">308 Permanent Redirect</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="1.8.5.&#160;Examples summary">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h4 class="title" id="Examplessummary" data-magellan-target="Examplessummary">Examples summary
+<a name="ref_services_virtual_host_redirects.htm#ref_services_virtual_host_redirects_examples"></a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The examples from the table above are summarized below. Substitute <code>ssl.somename.tld</code> with the correct address.</p>
+                                            <div class="variablelist">
+                                                <dl>
+                                                    <dt><span class="term">On an HTTP proxy, redirect all requests to the corresponding location on an HTTPS proxy</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <p><b><span class="guilabel">Match type</span></b>: prefix
+                     </p>
+                                                        <p><b><span class="guilabel">Match</span></b>: /
+                     </p>
+                                                        <p><b><span class="guilabel">Redirect externally to</span></b>: https://ssl.somename.tld/
+                     </p>
+                                                    </dd>
+                                                    <dt><span class="term">On an HTTP proxy, redirect all requests for resources in <code>/secret</code> to <code>/moresecret</code> on an HTTPS proxy</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <p><b><span class="guilabel">Match type</span></b>: prefix
+                     </p>
+                                                        <p><b><span class="guilabel">Match</span></b>: <code>/secret</code><![CDATA[
+                     ]]></p>
+                                                        <p><b><span class="guilabel">Redirect externally to</span></b>: https://ssl.somename.tld/moresecret
+                     </p>
+                                                    </dd>
+                                                    <dt><span class="term">On an HTTP proxy, redirect all requests for <code>.jsp</code> to a <code>.php</code> script with the same name and location on an HTTPS proxy</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <p><b><span class="guilabel">Match type</span></b>: regex
+                     </p>
+                                                        <p><b><span class="guilabel">Match</span></b>: <code>(.+)\.jsp</code><![CDATA[
+                     ]]></p>
+                                                        <p><b><span class="guilabel">Redirect externally to</span></b>: https://ssl.somename.tld$1.php
+                     </p>
+                                                    </dd>
+                                                    <dt><span class="term">Virtual host redirect - redirect requests to somehost.somename.cc to www.somename.tld/cc/somehost/</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <p><b><span class="guilabel">Match type</span></b>: vhost regex
+                     </p>
+                                                        <p><b><span class="guilabel">Match</span></b>: <code>(\w+)\.somename\.(\w){1,5}
+</code><![CDATA[                     ]]></p>
+                                                        <p><b><span class="guilabel">Redirect externally to</span></b>: http://www.somename.tld/$c2/$c1
+                     </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <!-- Options and Traffic statistics are new section. Please incorporate links -->
+                                            <h3 id="Options" data-magellan-target="Options">Options<a name="ref_services_virtual_host_redirects.htm#ref_services_virtual_host_options"></a></h3>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left" data-mc-conditions="Primary.Draft Content">
+                                                                <p align="left" data-mc-conditions="Primary.Draft Content"><b><span class="guilabel">Accept underscore characters in request headers</span></b>
+                                                                </p>
+                                                                <p align="left" data-mc-conditions="Primary.Draft Content">Check box</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left" data-mc-conditions="Primary.Draft Content">This option allows underscore characters to show up in request headers.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- Traffic statistics are new section. Please incorporate links -->
+                                            <h3 id="Trafficstatistics" data-magellan-target="Trafficstatistics">Traffic statistics<a name="ref_services_virtual_host_redirects.htm#ref_services_virtual_host_traffic_statistics"></a></h3>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left" data-mc-conditions="Primary.Draft Content">
+                                                                <p align="left" data-mc-conditions="Primary.Draft Content"><b><span class="guilabel">Enable traffic statistics</span></b>
+                                                                </p>
+                                                                <p align="left" data-mc-conditions="Primary.Draft Content">Check box</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left" data-mc-conditions="Primary.Draft Content">Allows traffic statistics to be logged in the Traffic statistics section.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 class="title" id="Lowerbuttonbar" data-magellan-target="Lowerbuttonbar">Lower button bar
+<a name="ref_services_virtual_host_lbb.htm"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Save settings</span></b>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Click <b><span class="guibutton">Save settings</span></b> to save settings.
+                        </p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

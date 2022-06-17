@@ -1,0 +1,66 @@
+#---------------------------------- Input --------------------------------------
+# Read in Internet Information Services (IIS) logs, ignoring directives.
+filebeat.inputs:
+  - type: log
+    enabled: true
+    exclude_lines:
+      - '^#'
+    paths:
+      - "C:/inetpub/logs/LogFiles/*/*.log"
+processors:
+  #--------------------------------- Dissect -------------------------------------
+  # Parse IIS log fields to variables. All fields must match in the tokenizer for log messages
+  # to be processed. If you wish to add, or remove fields written to logs by IIS, the tokenizer
+  # must be updated with the new values.
+  #
+  # https://www.elastic.co/guide/en/beats/filebeat/current/dissect.html
+  # https://docs.microsoft.com/en-us/windows/win32/http/w3c-logging
+  - dissect:
+      tokenizer: "%{DATE} %{TIME} %{ssitename} %{scomputername} %{sip} %{METHOD} %{URI_PATH} %{URI_QUERY} %{sport} %{csusername} %{CLIENT_IP} %{csversion} %{USER_AGENT} %{REFERRER} %{HOST} %{STATUS_CODE} %{scsubstatus} %{scwin32status} %{SENT_BYTES} %{RECEIVED_BYTES} %{timetaken} %{CONTENT_TYPE} %{X_FORWARDED_FOR}"
+      field: "message"
+      target_prefix: "iis"
+  #--------------------------------- Script --------------------------------------
+  # Script conditionally formats URI_QUERY to valid values, and unescapes X_FORWARDED_FOR,
+  # USER_AGENT, and CONTENT_TYPE.
+  - script:
+      lang: javascript
+      id: query
+      source: >
+        function process(event) {
+            if (event.Get("iis.URI_QUERY") === "-") {
+                event.Put("iis.URI_QUERY", "");
+            } else {
+                event.Put("iis.URI_QUERY", "?" + event.Get("iis.URI_QUERY"));
+            }
+            // Escape backslashes
+            event.Put("iis.HOST", event.Get("iis.HOST").replace(/\\/g, "\\\\"));
+            event.Put("iis.X_FORWARDED_FOR", event.Get("iis.X_FORWARDED_FOR").replace(/\\/g, "\\\\"));
+            event.Put("iis.CONTENT_TYPE", event.Get("iis.CONTENT_TYPE").replace(/\\/g, "\\\\"));
+            event.Put("iis.REFERRER", event.Get("iis.REFERRER").replace(/\\/g, "\\\\"));
+            event.Put("iis.USER_AGENT", event.Get("iis.USER_AGENT").replace(/\\/g, "\\\\"));
+            event.Put("iis.URI_PATH", event.Get("iis.URI_PATH").replace(/\\/g, "\\\\"));
+            event.Put("iis.URI_QUERY", event.Get("iis.URI_QUERY").replace(/\\/g, "\\\\"));
+            // Escape double quotes
+            event.Put("iis.HOST", event.Get("iis.HOST").replace(/"/g, "\\\""));
+            event.Put("iis.X_FORWARDED_FOR", event.Get("iis.X_FORWARDED_FOR").replace(/"/g, "\\\""));
+            event.Put("iis.CONTENT_TYPE", event.Get("iis.CONTENT_TYPE").replace(/"/g, "\\\""));
+            event.Put("iis.REFERRER", event.Get("iis.REFERRER").replace(/"/g, "\\\""));
+            event.Put("iis.USER_AGENT", event.Get("iis.USER_AGENT").replace(/"/g, "\\\""));
+            event.Put("iis.URI_PATH", event.Get("iis.URI_PATH").replace(/"/g, "\\\""));
+            event.Put("iis.URI_QUERY", event.Get("iis.URI_QUERY").replace(/"/g, "\\\""));
+            // Un-encode plus encoded white space
+            event.Put("iis.X_FORWARDED_FOR", event.Get("iis.X_FORWARDED_FOR").replace(/\+/g, " "));
+            event.Put("iis.USER_AGENT", event.Get("iis.USER_AGENT").replace(/\+/g, " "));
+            event.Put("iis.CONTENT_TYPE", event.Get("iis.CONTENT_TYPE").replace(/\+/g, " "));
+        }
+#------------------------------- File output -----------------------------------
+# Write out logs in WLALOG format to C:/inetpub/logs/wla. Defaults are to rotate at 10mb,
+# keeping a max of 7 files, and appending an incrementing integer.
+#
+# https://www.elastic.co/guide/en/beats/filebeat/current/file-output.html
+output.file:
+  enabled: true
+  path: "C:/inetpub/logs/wla"
+  filename: iis.log
+  codec.format:
+    string: '@WLALOG "%{[iis.DATE]} %{[iis.TIME]}", "%{[iis.HOST]}", "%{[iis.CLIENT_IP]}", "%{[iis.X_FORWARDED_FOR]}", "%{[iis.METHOD]}", "%{[iis.URI_PATH]}%{[iis.URI_QUERY]}", "%{[iis.STATUS_CODE]}", "%{[iis.SENT_BYTES]}", "%{[iis.RECEIVED_BYTES]}", "%{[iis.REFERRER]}", "%{[iis.USER_AGENT]}", "%{[iis.CONTENT_TYPE]}"'

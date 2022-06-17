@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Configure|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Refer to the scheduled report notification schema to customize the payload template for a webhook connector that sends report notifications in near real time." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Scheduled Report Notification Schema</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Scheduled Report Notification Schema</h1>
+                                        <p data-mc-conditions="Primary.excludeDevInBhoof">You can refer to this <span class="mc-variable ALVariables.Connector_Payload_Type variable">scheduled report notification</span> schema to configure the payload template for a third-party webhook connector.</p>
+                                        <p data-mc-conditions="Primary.beta">You can refer to this <span class="mc-variable ALVariables.Connector_Payload_Type variable">scheduled report notification</span> schema to configure the payload template for a third-party templated connection.</p>
+                                        <h2>Schema</h2>
+                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                            <div class="codeSnippetCaption">
+                                                <p>JSON</p>
+                                            </div>
+                                            <div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="True"><pre><span class="codeSnippetLineNumbers" style="border-right: #AAA 2px solid;" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+</span><code>{<br />&#160;&#160;"type": "string",<br />&#160;&#160;"status": "string",<br />&#160;&#160;"scheduled_time": number,<br />&#160;&#160;"schedule_id": "string",<br />&#160;&#160;"schedule": {<br />&#160;&#160;&#160;&#160;"daily": {<br />&#160;&#160;&#160;&#160;&#160;"hour": number,&#160;&#160;&#160;&#160;&#160;<br />&#160;&#160;&#160;&#160;&#160;"minute": number<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;},<br />&#160;&#160;"run_once": boolean,<br />&#160;&#160;"published": boolean,<br />&#160;&#160;"publish_result": {<br />&#160;&#160;&#160;&#160;"timestamp": number,<br />&#160;&#160;&#160;&#160;"status": "string"<br />&#160;&#160;},<br />&#160;&#160;"notify_behavior": "string",<br />&#160;&#160;"name": "string",<br />&#160;&#160;"modified": {<br />&#160;&#160;&#160;&#160;"by": string,<br />&#160;&#160;&#160;&#160;"at": number<br />&#160;&#160;},<br />&#160;&#160;"id": string,<br />&#160;&#160;"delete_empty_result": boolean,<br />&#160;&#160;},<br />&#160;&#160;"created": {<br />&#160;&#160;&#160;&#160;"by": "string",<br />&#160;&#160;&#160;&#160;"at": number<br />&#160;&#160;},<br />&#160;&#160;"artifact_data": {<br />&#160;&#160;&#160;&#160;"result_id": "string",<br />&#160;&#160;&#160;&#160;"result_count": number,<br />&#160;&#160;&#160;&#160;"metadata": {<br />&#160;&#160;&#160;&#160;&#160;&#160;"scheduled_report_name": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"schedule_id": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"result_count": number,<br />&#160;&#160;&#160;&#160;&#160;&#160;"report_type": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"report_id": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"report_description": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"customer_name": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"cadence": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;"artifact_create_date": "string"<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"create_time": number,<br />&#160;&#160;&#160;&#160;"attachments": [<br />&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url": "string",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "string"<br />&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;]<br />&#160;&#160;},<br />&#160;&#160;"account_id": "string",<br />&#160;&#160;"extra": {<br />&#160;&#160;&#160;&#160;"tld": "string",<br />&#160;&#160;&#160;&#160;"ui_url": "string",<br />&#160;&#160;&#160;&#160;"download_url": "string"&#160;&#160;&#160;&#160;<br />&#160;&#160;}<br />}</code></pre>
+                                            </div>
+                                        </div>
+                                        <h2>Definitions</h2>
+                                        <ul>
+                                            <li><b>type</b> (<i>string</i>) – Schedule type<p><i>Value for a report schedule:</i> <code>tableau</code></p></li>
+                                            <li><b>status</b> (<i>string</i>) – Current state of the scheduled report execution<p><i>Valid values:</i> <code>scheduled</code>, <code>running</code>, <code>completed</code>, <code>failed</code>, <code>canceled</code>, <code>deleted</code></p></li>
+                                            <li>
+                                                <p><b>scheduled_time</b> (<i>number</i>) – Epoch time when the report is or was scheduled to run</p>
+                                            </li>
+                                            <li>
+                                                <p><b>schedule_id</b> (<i>string</i>) – Schedule identifier</p>
+                                            </li>
+                                            <li><b>schedule</b> (<i>object</i>) – Schedule frequency and time when report is scheduled to run<p><i>Valid values:</i> <code>every_15_minutes</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code></p><ul><li><b>daily</b>	
+(<i>object</i>)<ul><li><p><b>minute</b> (<i>number</i>) - Minute portion of time when report is scheduled to run</p></li><li><p><b>hour</b> (<i>number</i>) - GMT hour when the report is scheduled to run in 24-hour clock format</p></li></ul></li><li><b>weekly</b>	
+(<i>object</i>)<ul><li><p><b>day</b> (<i>string</i>) - Day of the week when the report is scheduled to run</p><p><i>Valid values:&#160;</i> <code>sunday</code>, <code>monday</code>, <code>tuesday</code>, <code>wednesday</code>, <code>thursday</code>, <code>friday</code></p></li><li><p><b>hour</b> (<i>number</i>) - GMT hour when the report is scheduled to run in 24-hour clock format</p></li><li><p><b>minute</b> (<i>number</i>) - Minute portion of time when report is scheduled to run</p></li></ul></li><li><b>monthly</b>	
+(<i>object</i>)<ul><li><p><b>day</b> (<i>number</i>) - Day of the month (1-31) when the report is scheduled to run</p></li><li><p><b>hour</b> (<i>number</i>) - GMT hour when the report is scheduled to run in 24-hour clock format</p></li><li><p><b>minute</b> (<i>number</i>) - Minute portion of time when report is scheduled to run</p></li></ul></li></ul></li>
+                                            <li>
+                                                <p><b>run_once</b> (<i>Boolean</i>) - Whether the report was scheduled to be run only once. Schedule frequency is ignored if "true" is the value.</p>
+                                            </li>
+                                            <li>
+                                                <p><b>published</b> (<i>Boolean</i>)  - Whether a notification was sent</p>
+                                            </li>
+                                            <li><b>publish_result</b> (<i>object</i> or <i>string</i>)  - Result of sending the notification. A value of <code>null </code> means that the user does not  request sending a notification; see <b>notify_behavior</b>.<ul><li><p><b>timestamp</b> (<i>number</i>)  - Epoch time stamp indicating when the notification was sent</p></li><li><p><b>status</b> (<i>string</i>)  - Notification status</p><p><i>Valid values:</i> <code>ok</code> or an error</p></li></ul></li>
+                                            <li><b>notify_behavior</b> (<i>string</i>)  - Choice of when to send notifications<p><i>Valid values:</i> <code>always</code>, <code>never</code>, <code>ifnotempty</code>  -  send a notification only if execution returns  results that are not empty; see <b>result_count</b></p></li>
+                                            <li>
+                                                <p><b>name</b> (<i>string</i>)  - Schedule name</p>
+                                            </li>
+                                            <li><b>modified</b> (<i>object</i>)<ul><li><p><b>by</b> (<i>string</i>)  - User ID that changed the schedule</p></li><li><p><b>at</b> (<i>number</i>)   - Epoch time of the schedule change</p></li></ul></li>
+                                            <li>
+                                                <p><b>id</b> (<i>string</i>)  - Scheduled report execution ID</p>
+                                            </li>
+                                            <li>
+                                                <p><b>delete_empty_result</b> (<i>Boolean</i>)  - Whether the notification and report are deleted automatically if results are empty</p>
+                                            </li>
+                                            <li><b>created</b> (<i>object</i>)<ul><li><p><b>by</b> (<i>string</i>)  - User ID that created the schedule</p></li><li><p><b>at</b> (<i>number</i>)   - Epoch time of schedule creation</p></li></ul></li>
+                                            <li><b>artifact_data</b> (<i>object</i>)   - Information about the scheduled report<ul><li><p><b>result_id</b> (<i>string</i>)   - Generated report identifier</p></li><li><b>result_count</b>   (<i>number</i>) - Whether the execution result is empty<p><i>Valid values:</i> <code>0</code> (empty),<code>1</code> (if one or more)</p></li><li><b>metadata</b> (<i>object</i>) - Information in the email notification sent to the customer when the scheduled report is generated<ul><li><p><b>scheduled_report_name</b> (<i>string</i>) - Name of the report schedule</p></li><li><p><b>schedule_id</b> (<i>string</i>) - Schedule identifier</p></li><li><b>result_count</b> (<i>number</i>) - Whether result of running the scheduled report is empty or not<p><i>Valid values:</i> <code>0</code> (empty), <code>1</code> (if one or more)</p></li><li><p><b>report_type</b> (<i>string</i>) - Name of scheduled report as displayed in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></p></li><li><b>report_id</b> (<i>string</i>) - Report execution identifier</li><li><p><b>report_description</b> (<i>string</i>) - Description of the report that appears in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></p></li><li><p><b>customer_name</b> (<i>string</i>) - Customer name of the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> account where the report was scheduled</p></li><li><p><b>cadence</b> (<i>string</i>) - Schedule frequency and time when report is scheduled to run in human-readable format</p></li><li><p><b>artifact_create_date</b> (<i>string</i>) - Date and time the scheduled report was generated in the format YYYY-MM-DD HH:MM GMT</p></li></ul></li><li><p><b>create_time</b> (<i>number</i>) -  Epoch time when the report was generated</p></li><li><b>attachments</b> (<i>object</i>) - Information used internally to attach the scheduled report to the notification email<ul><li><p><b>url</b> (<i>string</i>) - URL&#160;to download the report</p></li><li><p><b>name</b> (<i>string</i>) - Name of the report as specified in the schedule with the report generation date appended</p></li></ul></li></ul></li>
+                                            <li>
+                                                <p><b>account_id</b> (<i>string</i>) - Customer account identifier</p>
+                                            </li>
+                                            <li>
+                                                <p><b>extra</b> (<i>object</i>) - Additional information about the scheduled report notification</p>
+                                                <ul>
+                                                    <li><b>tld</b> (<i>string</i>) - Top-level <span class="mc-variable ALVariables.Company variable">Alert Logic</span> domain of the customer based on the region in which the data resides<p><i>Valid values:&#160;</i> <code>uk</code>, <code>us</code></p></li>
+                                                    <li>
+                                                        <p><b>ui_url</b> (<i>string</i>) - URL that links to the scheduled report in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>download_url</b> (<i>string</i>) - URL for downloading the scheduled report from the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h2>Sample JSON</h2>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> uses this JSON&#160; object to test connectors with a Scheduled Report Notification payload type.</p>
+                                        <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
+                                            <div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="True"><pre><span class="codeSnippetLineNumbers" style="border-right: #AAA 2px solid;" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+</span><code>{<br />&#160;&#160;"type": "tableau",<br />&#160;&#160;"status": "completed",<br />&#160;&#160;"scheduled_time": 1596488400,<br />&#160;&#160;"schedule_id": "8915CB92-A75C-1005-8001-0242AC110004",<br />&#160;&#160;"schedule": {<br />&#160;&#160;&#160;&#160;"daily": {<br />&#160;&#160;&#160;&#160;&#160;&#160;"hour": 21<br />&#160;&#160;&#160;&#160;&#160;&#160;"minute": 0,<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;},<br />&#160;&#160;"run_once": false,<br />&#160;&#160;"published": true,<br />&#160;&#160;"publish_result": {<br />&#160;&#160;&#160;&#160;"timestamp": 1596488406,<br />&#160;&#160;&#160;&#160;"status": "ok"<br />&#160;&#160;},<br />&#160;&#160;"notify_behavior": "always",<br />&#160;&#160;"name": "XYZ Corporation Azure Multi-Tenant CIS Benchmark",<br />&#160;&#160;"modified": {<br />&#160;&#160;&#160;&#160;"by": "A3CBF982-2FED-4E4B-9168-9E28F22FEEF3",<br />&#160;&#160;&#160;&#160;"at": 1596488406<br />&#160;&#160;},<br />&#160;&#160;"id": "20200803-210000-8915CB92-A75C-1005-8001-0242AC110004",<br />&#160;&#160;"delete_empty_result": false,<br />&#160;&#160;},<br />&#160;&#160;"created": {<br />&#160;&#160;&#160;&#160;"by": "A3CBF982-2FED-4E4B-9168-9E28F22FEEF3",<br />&#160;&#160;&#160;&#160;"at": 1596488400<br />&#160;&#160;},<br />&#160;&#160;"artifact_data": {<br />&#160;&#160;&#160;&#160;"result_id": "6C3A6383-ABFF-1005-8001-0242AC110016",<br />&#160;&#160;&#160;&#160;"result_count": 1,<br />&#160;&#160;&#160;&#160;"metadata": {<br />&#160;&#160;&#160;&#160;&#160;&#160;"scheduled_report_name": "XYZ Corporation Azure Multi-Tenant CIS Benchmark",<br />&#160;&#160;&#160;&#160;&#160;&#160;"schedule_id": "8915CB92-A75C-1005-8001-0242AC110004",<br />&#160;&#160;&#160;&#160;&#160;&#160;"result_count": 1,<br />&#160;&#160;&#160;&#160;&#160;&#160;"report_type": "CIS Microsoft Azure Foundations Benchmark",<br />&#160;&#160;&#160;&#160;&#160;&#160;"report_id": "20200803-210000-8915CB92-A75C-1005-8001-0242AC110004",<br />&#160;&#160;&#160;&#160;&#160;&#160;"report_description": "This report displays the status of your environment to the CIS Microsoft Azure Foundations Benchmark Level 1 and 2.",<br />&#160;&#160;&#160;&#160;&#160;&#160;"customer_name": "XYZ Corporation",<br />&#160;&#160;&#160;&#160;&#160;&#160;"cadence": "Daily, 21:00 GMT",<br />&#160;&#160;&#160;&#160;&#160;&#160;"artifact_create_date": "2020-08-03 21:00 GMT"<br />&#160;&#160;&#160;&#160;},<br />&#160;&#160;&#160;&#160;"create_time": 1596488404,<br />&#160;&#160;&#160;&#160;"attachments": [<br />&#160;&#160;&#160;&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"url": "https://api.cloudinsight.alertlogic.com/cargo/v2/12345678/execution_record/20200803-210000-8915CB92-A75C-1005-8001-0242AC110004/result",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "XYZ Corporation Azure Multi-Tenant CIS Benchmark 2020-08-03 21:00 GMT.pdf"<br />&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;]<br />&#160;&#160;},<br />&#160;&#160;"account_id": "12345678",<br />&#160;&#160;"extra": {<br />&#160;&#160;&#160;&#160;"tld": "us",<br />&#160;&#160;&#160;&#160;"ui_url": "https://console.alertlogic.com/fake/scheduled/report/url",<br />&#160;&#160;&#160;&#160;"download_url": "https://console.alertlogic.com/fake/scheduled/report/url"<br />&#160;&#160;}<br />}</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

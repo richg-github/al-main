@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Deploy|Data Center" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Data Center deployments allow you to monitor and protect assets from your appliances, agents, hosts, and collectors in your on-premises environments." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Data Center Deployment Configuration (Essentials Subscription)</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Data Center Deployment Configuration (<span class="mc-variable ALVariables.Essentials variable">Essentials</span> Subscription)</h1>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> allows you to add deployments to the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. You can access the Deployments page from the <img src="../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /> <b>Configure</b> menu item in the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> console. To add a Data Center deployment, click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;" />), and then click <b>Data Center</b>.  </p>
+                                        <h2><a name="Name_your_Deployment"></a>Name your deployment</h2>
+                                        <p>In the Deployment Name field, type a descriptive name for the deployment you want to create, and then click <b>SAVE AND CONTINUE</b>.</p>
+                                        <h2><a name="Add_Assets"></a>Add assets</h2>
+                                        <p>Add your assets by network, subnet, domain name, or IP address to be scanned. </p>
+                                        <p><a name="Add_Network"></a>
+                                        </p>
+                                        <p><b>To add a network:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <b>Networks</b> tab, click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: text-bottom;" />), and then select <b>Network</b>.</li>
+                                            <li value="2">Type a name for the network, and add the <b>Private CIDR(s)</b> for each subnet.<div class="note"><p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends you add multiple /24 or smaller subnets instead of a CIDR over /16 to allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to operate and scan faster. </p></div></li>
+                                            <li value="3">Select <b>Do not use agents for IDS traffic. My network automatically forwards traffic to my appliances through a port mirroring feature.</b> if your network equipment is configured to SPAN or another port mirroring feature. </li>
+                                            <div class="note">
+                                                <p>A SPAN configured network forwards your <span class="mc-variable ALVariables.NetworkIDS variable">Network IDS</span> traffic to <span class="mc-variable ALVariables.Company variable">Alert Logic</span> appliances, which allows <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to analyze that traffic.</p>
+                                            </div>
+                                            <li value="4">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p><a name="Add_subnet"></a>
+                                        </p>
+                                        <p><b>To add a subnet:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <b>Networks</b> tab, click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;" />), and then select <b>Subnet</b>.</li>
+                                            <li value="2">Name the subnet, select the network, add the <b>Private CIDR</b>, and then click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p><a name="Add_Domain"></a><b>To add a domain name</b>: </p>
+                                        <ol>
+                                            <li value="1">In the <b>DNS Names and Public IPs</b> tab, click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" />), and then select <b>DNS Name</b>.</li>
+                                            <li value="2">Add the domain name, and then click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p><a name="Add_IP"></a><b>To add an IP address: </b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <b>DNS Names and Public IPs</b> tab, click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" />), and then select <b>Public IP</b>.</li>
+                                            <li value="2">Name the IP address, add the public IP address, and then click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p>When you are finished, click <b>NEXT</b>.</p>
+                                        <h2><a name="Scope_of_Protection"></a>Scope of protection</h2>
+                                        <p>
+                                            <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> discovers&#160;and organizes deployments into a visual topology where you can select the desired levels of protection for your assets.</p>
+                                            <p>You can define the scope of your protection per region or network<MadCap:conditionalText data-mc-conditions="SnippetConditions.DCsubnetprotection">  or subnet</MadCap:conditionalText>. Each network <MadCap:conditionalText data-mc-conditions="SnippetConditions.DCsubnetprotection">and subnet</MadCap:conditionalText> appears within its protected region. Click a region or individual network <MadCap:conditionalText data-mc-conditions="SnippetConditions.DCsubnetprotection">or subnet </MadCap:conditionalText>to set the service level  or leave it unprotected, and then click <b>SAVE</b>.  You must choose one of the following levels of coverage:</p>
+                                            <ul>
+                                                <li> Unprotected</li>
+                                                <li>
+                                                    <MadCap:conditionalText data-mc-conditions="SnippetConditions.Deployment-Essential"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.Essentials variable">Essentials</span> coverage</MadCap:conditionalText>
+                                                </li>
+                                            </ul>
+                                            <div>
+                                                <p>The choices available for scope of protection correspond directly with your entitlement. Although a <span class="mc-variable ALVariables.Professional variable">Professional</span> subscription includes all the features of <span class="mc-variable ALVariables.Essentials variable">Essentials</span>, a <span class="mc-variable ALVariables.Professional variable">Professional</span> customer cannot set the protection scope to <span class="mc-variable ALVariables.Essentials variable">Essentials</span> unless the account has a separate <span class="mc-variable ALVariables.Essentials variable">Essentials</span> subscription. </p>
+                                                <p>You can <a href="change-protection.htm">change the protection level</a> later as needed.</p>
+                                            </div>
+                                        </p>
+                                        <h3><a name="Exclusions"></a>Exclusions</h3>
+                                        <p>You can exclude assets or ports from external and internal scanning.</p>
+                                        <h4><a name="External_Scanning"></a>External scanning</h4>
+                                        <p><b>To exclude assets or ports from external scanning:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Click <b>EXCLUSIONS</b>.</li>
+                                            <li value="2">Click the <b>External Scanning</b> tab.</li>
+                                            <li value="3">To exclude assets, click <b>ASSETS</b> to search for available assets to exclude, and then click <b>EXCLUDE</b> for the asset you want to exclude.               <div class="note">
+You can remove an asset from the exclusion list at any time to include the asset in scanning. To remove an asset from the exclusion list, click <b>CANCEL</b>.
+                </div></li>
+                                            <li value="4">To exclude ports, click <b>PORTS</b>, and then do the following:<ol style="list-style-type: lower-alpha;"><li value="1">Search for the host, subnet, or network that has the ports you want to exclude from external scanning.</li><li value="2">In the <b>Protocol</b> field, select the port protocol:&#160;<b>UDP</b>&#160;or <b>TCP</b>.</li><li value="3">Enter one or more ports that you want to exclude. Use a dash or colon to indicate a range  (for example, 1-10001). Separate multiple ports or port ranges with a comma (for example, 11234, 11311, 12000-12010).</li><li value="4">Click <b>EXCLUDE AND&#160;ADD&#160;ANOTHER</b>.</li></ol></li>
+                                            <div class="note">You can remove ports from the exclusion list at any time to include the ports in scanning. To remove ports from the exclusion list, click <b>REMOVE</b>.</div>
+                                            <li value="5">After you apply your exclusions, close the <b>Exclusions</b> window.</li>
+                                            <li value="6">On the <b>Scope of Protection</b> page, click <b>SAVE</b>. </li>
+                                        </ol>
+                                        <div class="note">If you exclude assets or ports that are selected in the Scope or Ports tab in an active scan schedule, the assets or ports remain selected   but are not included in future scans.</div>
+                                        <h4><a name="Internal_Scanning"></a>Internal scanning</h4>
+                                        <p style="font-weight: bold;">To exclude assets or ports from internal scanning: </p>
+                                        <ol>
+                                            <li value="1">Click <b>EXCLUSIONS</b>.</li>
+                                            <li value="2">Click the <b>Internal Scanning</b> tab.</li>
+                                            <li value="3">To exclude assets, click <b>ASSETS</b> to search for available assets to exclude, and then click <b>EXCLUDE</b> for the asset you want to exclude.                 <div class="note">You can remove an asset from the exclusion list at any time to include the asset in scanning. To remove an asset from the exclusion list, click <b>CANCEL</b>.                </div></li>
+                                            <li value="4">To exclude ports, click <b>PORTS</b>, and then do the following:<ol style="list-style-type: lower-alpha;"><li value="1">Search for the host, subnet, or network that has the ports you want to exclude from internal scanning.</li><li value="2">In the <b>Protocol</b> field, select the port protocol:&#160;<b>UDP</b>&#160;or <b>TCP</b>.</li><li value="3">Enter one or more ports that you want to exclude. Use a dash or colon to indicate a range  (for example, 1-10001). Separate multiple ports or port ranges with a comma (for example, 11234, 11311, 12000-12010).</li><li value="4">Click <b>EXCLUDE AND&#160;ADD&#160;ANOTHER</b>.</li></ol></li>
+                                            <div class="note">You can remove ports from the exclusion list at any time to include the ports in scanning. To remove ports from the exclusion list, click <b>REMOVE</b>.</div>
+                                            <li value="5">After you apply your exclusions, close the <b>Exclusions</b> window. </li>
+                                            <li value="6">On the <b>Scope of Protection</b> page, click <b>SAVE</b>. </li>
+                                        </ol>
+                                        <div class="note">If you exclude assets or ports that are selected  in an active scan schedule in the Scope or Ports tab, the items remain selected   but are not included in future scans.</div>
+                                        <h2><a name="Scheduling"></a>Scan Schedules</h2>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> performs scans to protect your deployment. When you create a new Data Center deployment, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> automatically creates a default discovery scan schedule  to find new assets, and it creates default scan schedules to perform external and internal vulnerability scans on all non-excluded assets. The default scan schedules also perform external and internal vulnerability scans on all non-excluded TCP ports and common UDP ports. If agent-based scanning is enabled, the default agent-based scan schedule performs scans for vulnerabilities and missing patches on hosts with an  <span class="mc-variable ALVariables.Company variable">Alert Logic</span> agent installed. You can schedule when you want  to perform specific scans for all or selected assets  and ports  from the  <b>Discovery Scans</b>, <b>Agent-Based Scans</b>, <b>Internal Network Scans</b>, and <b>External Network Scans</b> tabs. For more information, see <a href="../analyze/manage-scans-and-results/schedules.htm" class="MCXref xref">Manage Scan Schedules</a>.</p>
+                                        <div class="note">Port selection does not apply to discovery scan schedules or agent-based scan schedules.</div>
+                                        <p>After reviewing the schedules and making any changes, click <b>NEXT</b>.</p>
+                                        <h2>Options</h2>
+                                        <h3>Configure <span class="mc-variable ALVariables.CNP variable">Cross-Network Protection</span></h3>
+                                        <p>You have the option to set up <span class="mc-variable ALVariables.Cross-Network_Protection variable">Cross-Network Protection</span> to create connections across networks, in the same or different deployment, but within the same account. <span class="mc-variable ALVariables.CNP variable">Cross-Network Protection</span> allows other networks to use resources from a protecting network with an assigned network appliance. The common places for  <span class="mc-variable ALVariables.Cross-Network_Protection variable">Cross-Network Protection</span> use are <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span> VPC Peering, <span class="mc-variable ALVariables.AWS variable">AWS</span> Transit Gateway, and <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> VNet Peering.</p>
+                                        <p>A protecting network hosts the appliance. The network protected by the  protecting network is the protected network. For more information on <span class="mc-variable ALVariables.CNP variable">Cross-Network Protection</span>, see <a href="cross-network-protection.htm" class="MCXref xref">Cross-Network Protection</a>.</p>
+                                        <p><b>To configure <span style="font-weight: bold;" class="mc-variable ALVariables.CNP variable">Cross-Network Protection</span>:</b> </p>
+                                        <ol>
+                                            <li value="1">On the side navigation, click <b>Options</b> under <b>Protection</b>.</li>
+                                            <li value="2">On the <span style="font-weight: bold;" class="mc-variable ALVariables.Cross-Network_Protection variable">Cross-Network Protection</span> tab, click the network or region you want to protect in the topology diagram, or in the <b>Search Assets</b> field, search for the network or region you want to protect.  </li>
+                                            <li value="3">Click the search field to search or type the name of a protecting network, and then select one. </li>
+                                            <li value="4">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <p>The protecting network and protected network are now visible in the topology diagram with distinguishing icons. The <span style="font-weight: bold;" class="mc-variable ALVariables.CNP variable">Cross-Network Protection</span><b> Breakdown</b>, on the top left of the topology graph, provides an overview of your <span class="mc-variable ALVariables.CNP variable">Cross-Network Protection</span> connections. </p>
+                                        <h4>View protected networks </h4>
+                                        <p><b>To view protected networks</b>: </p>
+                                        <ol>
+                                            <li value="1">Click the protecting network icon (<img src="../Resources/Images/Cross-network-protection/protecting-another-network.png" style="vertical-align: bottom;width: auto;height: auto;" />) to see the number of protected networks currently connected. </li>
+                                            <li value="2">Click the details icon (<img src="../Resources/Images/Cross-network-protection/View-networks-protecting-this-network_27x22.png" style="vertical-align: bottom;width: 27;height: 22;" />) to see a slideout panel that contains  protected network names. </li>
+                                        </ol>
+                                        <h4>View protecting networks </h4>
+                                        <p>To view protecting networks, click the protected network icon (<img src="../Resources/Images/Cross-network-protection/protected-by-another-network.png" style="vertical-align: bottom;width: auto;height: auto;" />). </p>
+                                        <h2>Agent-Based Scanning<a name="Agent-basedScanning"></a></h2>
+                                        <p>You have the option to enable agent-based scanning. Agent-based scanning improves the efficiency, accuracy, and usability of Alert Logic vulnerability scanning features. Agent-based scanning provides the vulnerability assessment coverage of authenticated network scanning without the need to manage credentials and with a reduction in network traffic and impact. To learn more about agent-based scanning, see <a href="../analyze/manage-scans-and-results/agent-based-scan.htm" class="MCXref xref">Agent-Based Scanning</a>.</p>
+                                        <h2><a name="Configuration"></a>Configuration Topology</h2>
+                                        <p>This topology diagram provides an overview of your scope of protection. You can see which assets are unprotected, or being scanned at the Essentials, Professional, or Enterprise levels. </p>
+                                        <p>The protection breakdown displays  how many assets are unprotected, excluded, and protected, along with the number of protected assets in each level. </p>
+                                        <p>
+                                            <img src="../Resources/Images/TopologyConfigurationOverviewProtectionBreakdown.png" />
+                                        </p>
+                                        <p>You can search for specific assets. The protection breakdown updates as it finds specific assets.</p>
+                                        <h2>Installation Instructions</h2>
+                                        <h3>Appliances</h3>
+                                        <p>You must assign appliances to your networks. Use the Unique Registration Key to assign one or more appliances to each network. For more information, see <a href="../prepare/alert-logic-physical-appliance.htm" class="MCXref xref">Install and Configure the  Physical Appliance</a> or <a href="../prepare/virtual-appliance.htm" class="MCXref xref">Install and Configure the  Virtual Appliances</a>.</p>
+                                        <h2>Verify the health of your deployment</h2>
+                                        <p>After you create your deployment, access the Health console in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> to determine the health of your networks, appliances, and agents, and then make any necessary changes. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

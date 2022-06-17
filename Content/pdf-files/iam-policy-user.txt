@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PolicyCheck",
+            "Effect": "Allow",
+            "Action": [
+                "iam:SimulatePrincipalPolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "IAMUserDisable",
+            "Effect": "Allow",
+            "Action": [
+                "iam:DeleteLoginProfile",
+                "iam:UpdateAccessKey",
+                "iam:ListAccessKeys"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

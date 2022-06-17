@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Configure" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to deploy Web Log Analytics, which is a log-based application attack detection solution that protects your web applications from common application vulnerabilities." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Web Log Analytics (WLA) Configuration</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><span class="mc-variable ALVariables.WLA_1 variable">Web Log Analytics (WLA)</span> Configuration</h1>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span>&#160;<span class="mc-variable ALVariables.WLA_1 variable">Web Log Analytics (WLA)</span> is a log-based application attack detection solution that protects your web applications from common application vulnerabilities. <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> reduces the need for tuning and minimizes false-positives using the combination of a machine learning-based analysis and detection engine and signatures. To learn more about <span class="mc-variable ALVariables.WLA_2 variable">WLA</span>, see <a href="../get-started/about-wla.htm" class="MCXref xref">About Alert Logic Web Log Analytics (WLA)</a>.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> generates   incidents detected from <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> in the  <a href="../analyze/incidents.htm" class="MCXref xref">Incidents</a> page. You can also search for <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> logs in the <a href="../get-started/search-a.htm">Search</a> page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. You can access the <a href="../analyze/dashboard/web-log-analytics.htm" class="MCXref xref">Web Log Analytics Dashboard</a>, which provides visibility into incidents and observations detected from <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> in your environment.</p>
+                                        <h2>Before you configure <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> access log </h2>
+                                        <p>To deploy <span class="mc-variable ALVariables.WLA_2 variable">WLA</span>, you must have a <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> <span class="mc-variable ALVariables.Professional variable">Professional</span> or <span class="mc-variable ALVariables.Enterprise variable">Enterprise</span> subscription. To learn more about <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> products, see <a href="../get-started/subscriptions-addons.htm" class="MCXref xref">Get Started with Alert Logic   Subscriptions and Add-ons</a>.  <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> currently supports IIS, Apache2, and Nginx web servers.</p>
+                                        <p>You must have an <span class="mc-variable ALVariables.Company variable">Alert Logic</span> agent or a local remote collector already installed. If you do not have either one already installed, you can do so before you begin deploying <span class="mc-variable ALVariables.WLA_2 variable">WLA</span>. <MadCap:conditionalText data-mc-conditions="Primary.NOTinBHOOF">For more information about <span class="mc-variable ALVariables.Company variable">Alert Logic</span> agents, see <a href="../prepare/alert-logic-agent-windows.htm" class="MCXref xref">Install the Alert Logic Agent for Windows</a> and <a href="../prepare/alert-logic-agent-linux.htm" class="MCXref xref">Install the Alert Logic Agent for Linux</a>.</MadCap:conditionalText>For more information about agents, see <a href="../prepare/alert-logic-agent-linux.htm" target="_blank" title="Install the Alert Logic Agent for Linux" alt="Install the Alert Logic Agent for Linux" class="MCXref xref">Install the Alert Logic Agent for Linux</a>, <a href="../prepare/alert-logic-agent-windows.htm" target="_blank" title="Install the Alert Logic Agent for Linux" alt="Install the Alert Logic Agent for Linux" class="MCXref xref">Install the Alert Logic Agent for Windows</a>, or <a href="../prepare/agent-install-automated-aws.htm" class="MCXref xref">Automate Alert Logic Agent Installation with AWS Systems Manager Distributor</a>. For more information about <span class="mc-variable ALVariables.Company variable">Alert Logic</span> remote collectors, see <a href="../prepare/remote-log-collector-linux.htm" class="MCXref xref">Install the  Remote Collector for Linux</a> and <a href="../prepare/remote-log-collector-windows.htm" class="MCXref xref">Install the Remote Collector for Windows</a>.</p>
+                                        <div class="note">
+                                            <p>Linux users who want to collect syslogs must forward their local syslog to the agent on TCP port 1514. </p>
+                                        </div>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends you also have the  following prepared before deploying <span class="mc-variable ALVariables.WLA_2 variable">WLA</span>: </p>
+                                        <ul>
+                                            <li>All application URLs in scope for protection</li>
+                                            <li>List of servers per application</li>
+                                            <li>File system locations of application log files on each server </li>
+                                            <li>Configured proxies, content delivery networks (CDNs), load balancers, or other relevant upstream network systems to insert the X-Forwarded-For header </li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>For large environments, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends that you use a <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span>. For more information, see <a href="inline-waf/basics.htm" class="MCXref xref">Alert Logic Managed Web Application Firewall (WAF) Basics</a>.</p>
+                                        </div>
+                                        <h2>IIS 8.5/10 <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> access log configuration</h2>
+                                        <p><span class="mc-variable ALVariables.WLA_2 variable">WLA</span> supports Microsoft W3C log formats. For <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> to capture W3C logs for Windows, you must install a third-party agent, Filebeat. </p>
+                                        <p style="font-weight: bold;">To deploy <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> on an IIS web server:</p>
+                                        <ol>
+                                            <li value="1">Open IIS Manager. For instructions on how to access IIS Manager, see <a href="https://docs.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/configure-logging-in-iis#to-configure-logging-at-the-site-level-by-using-the-ui">Configure Logging in IIS</a>.</li>
+                                            <li value="2">On the left pane, in the Connections, select your website.</li>
+                                            <li value="3">On the right side, under IIS, click <b>Logging</b>.
+			</li>
+                                            <li value="4">On the Logging page, in the Log file section under Format,  set the log file format to <b>W3C</b>.            </li>
+                                            <li value="5"> Click <b>Select Fields</b>.</li>
+                                            <li value="6">Ensure the <b>Directory</b> field is <kbd>%SystemDrive%\inetpub\logs\LogFiles</kbd>.</li>
+                                            <li value="7">In the <b>W3C Logging Fields</b> dialog box, select all fields, except cs(Cookie).
+			</li>
+                                            <li value="8">Under Custom Fields, click <b>Add Field</b>. </li>
+                                            <li value="9">Add the Content-Type Header custom field:<ol style="list-style-type: lower-alpha;"><li value="1">In <b>Field Name</b>, enter a name for the Content-Type Header.</li><li value="2">For the <b>Source Type</b>, select <b>Request Header</b>. </li><li value="3">For <b>Source</b>, select <b>Content-Type</b>. </li></ol></li>
+                                            <li value="10">Add the X-Forwarded-For Header custom field:
+			<ol style="list-style-type: lower-alpha;"><li value="1">In <b>Field Name</b>, enter a name for the  X-Forwarded-For Header.</li><li value="2">For the <b>Source Type</b>, select <b>Request Header</b>. </li><li value="3">For <b>Source</b>, enter the <b>X-Forwarded-For</b>. </li></ol></li>
+                                            <li value="11">Click <b>Save</b>, and then click <b>Apply</b>. </li>
+                                        </ol>
+                                        <h3>Filebeat</h3>
+                                        <p><b>To install Filebeat:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Refer to <a href="https://www.elastic.co/guide/en/beats/filebeat/7.17/filebeat-installation-configuration.html">these instructions</a> to download and install Filebeat version 7's latest release, or follow <a href="log-management-flat-file-policy.htm">these instructions</a> to configure flatfile collection and create a ticket with <a href="https://support.alertlogic.com/hc/en-us/requests/new"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Support</a> to confirm WLA is generating observations for your IIS logs without Filebeat.
+<div class="caution"><p>The Filebeat instructions mention installing Elastic Stack. You can skip this step and proceed to downloading Filebeat. </p></div></li>
+                                            <li value="2">After you download and install Filebeat, replace the <kbd>C:\Program Files\Filebeat\filebeat.yml</kbd> configuration file with this file: <a href="../pdf-files/filebeat.yml_File.txt" target="_blank">filebeat.yml File.txt</a>.</li>
+                                            <li value="3">Configure flat file collection from the Application Logs page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. When you add the application log, enter these values:<ul><li>For <b>Application File Path</b>: <kbd>c:\inetpub\logs\wla</kbd></li><li>For <b>File Name or Pattern</b>: <kbd>iis.log*</kbd></li></ul><p>For more information, see <a href="#ConfigureaflatfilecollectorintheAlertLogicconsole" class="MCXref xref">Configure a flat file collector in the Alert Logic console</a>.</p></li>
+                                            <li value="4">On the Rotation Scheme, select <b>Use a decreasing counter format</b>.</li>
+                                            <li value="5">Wait five to 10 minutes for access logs to register in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. Confirm log messages contain values for host and vhost client IP, XFF, referer, and user agent to verify your host configurations. For more information, see <a href="#SearchlogconfirmationintheAlertLogicconsole" class="MCXref xref">Search log confirmation in the Alert Logic console</a>.</li>
+                                        </ol>
+                                        <h2>Apache Tomcat web server <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> access log configuration</h2>
+                                        <p><span class="mc-variable ALVariables.WLA_2 variable">WLA</span> supports Tomcat common and combined access log formats.	You must use Tomcat  version 7 or greater and have sudo/root access to modify the Tomcat server configuration.</p>
+                                        <p style="font-weight: bold;">To deploy <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> on an  Apache Tomcat web server:</p>
+                                        <ol>
+                                            <li value="1">Locate the server.xml file (default location is <kbd>$CATALINA_HOME/conf/server.xml</kbd>)</li>
+                                            <li value="2">Update “pattern” attribute of the Server.Engine.Valve object for Access Logging with the wla_access_log format:</li>
+                                        </ol>
+                                        <div class="codeSnippet"> <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>"@WLALOG &amp;quot;%{YYYY-MM-dd}tT%{HH:mm:ss}t.%{msec_frac}t%{z}t&amp;quot;, &amp;quot;%{Host}i&amp;quot;, &amp;quot;%a&amp;quot;, &amp;quot;%{X-Forwarded-For}i&amp;quot;, &amp;quot;%m&amp;quot;, &amp;quot;%U%q&amp;quot;, &amp;quot;%s&amp;quot;, &amp;quot;%B&amp;quot;, &amp;quot;%{Content-Length}i&amp;quot;, &amp;quot;%{Referer}i&amp;quot;, &amp;quot;%{User-Agent}i&amp;quot;, &amp;quot;%{Content-Type}i&amp;quot;"</code></pre></div></div>
+                                        <h2>Linux Apache2 <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> access log configuration</h2>
+                                        <p><span class="mc-variable ALVariables.WLA_2 variable">WLA</span> supports Apache Common Log Format and Combined Log Format. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides the custom <kbd>wla_access_log</kbd> format to use with Apache, which includes all of the recommended fields. If you chose not to use the <kbd>wla_access_log</kbd> format, you must ensure the maximum security value fields are added to existing log format configurations.</p>
+                                        <p style="font-weight: bold;">To deploy <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> on a Linux Apache2 web server:</p>
+                                        <ol>
+                                            <li value="1">Access the CLI of the host you want to configure. You can use Secure Shell (SSH) or any other appropriate CLI. <div class="note"><p>You must have sudo/root access to modify the Apache2 configuration and review local access log messages.</p></div></li>
+                                            <li value="2" data-mc-conditions="Primary.NOTinBHOOF">
+                Locate the appropriate configuration file for the application you want to protect: <ul><li>For RPM based OS, the file is usually located in <kbd>/etc/httpd/conf/httpd.conf</kbd>. </li><li>For Debian based OS, the file is usually located in <kbd>/etc/apache2/sites-available/</kbd>. <ul style="list-style-type: circle;"><li>If only one website is hosted on the server, the file is located in <kbd>/etc/apache2/apache2.conf</kbd>.</li></ul></li></ul></li>
+                                            <li value="3">Locate the appropriate configuration file for the application you want to protect. The file is usually located in <kbd>/etc/httpd/conf/httpd.conf</kbd>.<div class="note">Steps and examples in this procedure are for RPM based OS. For Debian based OS, the file is usually located in <kbd>/etc/apache2/sites-available/</kbd>. If only one website is hosted on the server, the file is located in <kbd>/etc/apache2/apache2.conf</kbd>.</div></li>
+                                            <li value="4">Open the configuration file for editing, and then find the <kbd>LogFormat</kbd> directive. </li>
+                                            <li value="5">Replace the existing log format with the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <kbd>wla_access_log</kbd> format or add the recommended fields to your existing configuration. 
+			<div class="example"><p>Example of the <kbd>wla_access_log</kbd> format for HTTPD version greater than or equal to 2.2.30:</p><div class="codeSnippet"><div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>LogFormat "@WLALOG \"%{%Y-%m-%dT%T}t.%{msec_frac}t%{%z}t\", \"%{host}i\", \"%a\", \"%{x-forwarded-for}i\", \"%m\", \"%U%q\", \"%&gt;s\", \"%b\", \"%{content-length}i\", \"%{referer}i\", \"%{user-agent}i\", \"%{content-type}i\"" wla_access_log</code></pre></div></div><p>Example of the <kbd>wla_access_log</kbd> format for HTTPD version less than 2.2.30:</p><div class="codeSnippet"><div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>LogFormat "@WLALOG \"%{%Y-%m-%dT%T}t%{%z}t\", \"%{host}i\", \"%a\", \"%{x-forwarded-for}i\", \"%m\", \"%U%q\", \"%&gt;s\", \"%b\", \"%{content-length}i\", \"%{referer}i\", \"%{user-agent}i\", \"%{content-type}i\"" wla_access_log</code></pre></div></div><p>Example of Combined Log Format:</p><div class="codeSnippet"><div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-agent}i\" \"%{X-Forwarded-For}i\"" combined_proxy</code></pre></div></div></div></li>
+                                            <li value="6">You must add a new line at the bottom of the configuration file to ensure the new <kbd>LogFormat</kbd> is applied and logged to the correct file.  In the example below, the <kbd>LogFormat</kbd> was added to line 8, and the new line was added to line 29 under <code>logs/access_log</code>. <div class="note">This example is based on an RPM based 	OS. Use your CustomLog path for line 29. 			</div></li>
+                                            <div class="example">
+                                                <div class="codeSnippet">
+                                                    <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="True"><pre><span class="codeSnippetLineNumbers" style="border-right: #AAA 2px solid;" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</span><code>&lt;IfModule log_config_module&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# The following directives define some format nicknames for use with<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# a CustomLog directive (see below).<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;LogFormat "%h %l %u %t \"%r\" %&gt;s %b" common<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;LogFormat "@WLALOG \"%{%Y-%m-%dT%T}t.%{msec_frac}t%{%z}t\", \"%{host}i\", \"%a\", \"%{x-forwarded-for}i\", \"%m\", \"%U%q\", \"%&gt;s\", \"%b\", \"%{content-length}i\", \"%{referer}i\", \"%{user-agent}i\", \"%{content-type}i\"" wla_access_log<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;IfModule logio_module&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# You need to enable mod_logio.c to use %I and %O<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\" %I %O" combinedio<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/IfModule&gt;<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# The location and format of the access logfile (Common Logfile Format).<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# If you do not define any access logfiles within a &lt;VirtualHost&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# container, they will be logged here.&#160;&#160;Contrariwise, if you *do*<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# define per-&lt;VirtualHost&gt; access logfiles, transactions will be<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# logged therein and *not* in this file.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#CustomLog "logs/access_log" common<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# If you prefer a logfile with access, agent, and referer information<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# (Combined Logfile Format) you can use the following directive.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# CustomLog "logs/access_log" combined<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CustomLog "logs/access_log" wla_access_log<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/IfModule&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <li value="7">Save and close the file.</li>
+                                            <li value="8">Restart your Apache service.</li>
+                                            <li value="9">Verify the generation of <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> logs with:<p><kbd>tail -n 25</kbd> <i>/path/to/CustomLog</i></p></li>
+                                            <li value="10">Configure flat file collection from the Application Logs page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. When you add the application log, enter these values:<ul><li>For <b>Application File Path</b>: The path is usually <kbd>/var/log/httpd</kbd>. <div class="note">For Debian based OS, the path is usually <kbd>/var/log/apache2</kbd>.</div></li><li>For <b>File Name or Pattern</b>: <kbd>access_log</kbd></li></ul><p>For more information, see <a href="#ConfigureaflatfilecollectorintheAlertLogicconsole" class="MCXref xref">Configure a flat file collector in the Alert Logic console</a>.</p></li>
+                                            <li value="11">Wait five to 10 minutes for access logs to register in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. Confirm log messages contain values for host and vhost client IP, XFF, referer, and user agent to verify your host configurations. For more information, see <a href="#SearchlogconfirmationintheAlertLogicconsole" class="MCXref xref">Search log confirmation in the Alert Logic console</a>.</li>
+                                        </ol>
+                                        <h2>Linux Nginx <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> access log configuration</h2>
+                                        <p><span class="mc-variable ALVariables.WLA_2 variable">WLA</span> supports Nginx Common Log Format and Combined Log Format. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides the custom <kbd>wla_access_log</kbd> format to use with Nginx, which includes all of the recommended fields. If you chose not to use the <kbd>wla_access_log</kbd> format, you must ensure the maximum security value fields are added to existing log format configurations.</p>
+                                        <p style="font-weight: bold;">To deploy <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> on a Linux Nginx web server:</p>
+                                        <ol>
+                                            <li value="1">Access the CLI of the host for which you want to configure. You can use Secure Shell (SSH) or any other appropriate CLI. <div class="note"><p>You must have sudo/root access to modify the Nginx configuration and review local access log messages.</p></div></li>
+                                            <li value="2">Locate the appropriate configuration file for the application you want to protect. The file is usually located in <kbd>/etc/nginx/sites-available/</kbd>. If only one website is hosted on the server, the file is located in <kbd>/etc/nginx/nginx.conf</kbd>.</li>
+                                            <li value="3">Open the configuration file for editing, and then find the <kbd>log_format</kbd>. </li>
+                                            <li value="4">Replace the existing log format with the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <kbd>wla_access_log</kbd> format or add the recommended fields to your existing configuration.
+				<div class="caution" data-mc-conditions="Primary.NOTinBHOOF"><p> Do not click <b>Copy</b> as it distorts the code. You must manually copy and paste the code below for it to resolve to a valid code.</p></div><div class="example"><p>Example of a <kbd>wla_access_log</kbd>:</p><div class="codeSnippet"><div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="True"><pre><span class="codeSnippetLineNumbers" style="border-right: #AAA 2px solid;" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</span><code>map $time_iso8601 $time_iso8601_p1 {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;~([^+]+) $1;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map $time_iso8601 $time_iso8601_p2 {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;~\+([0-9:]+)$ $1;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map $msec $millisec {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;~\.([0-9]+)$ $1;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;log_format wla_access_log '@WLALOG "$time_iso8601_p1.$millisec+$time_iso8601_p2", '&#160;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_host", "$remote_addr", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_x_forwarded_for", "$request_method", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$request_uri", "$status", "$body_bytes_sent", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_content_length", "$http_referer", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_user_agent", "$http_content_type"';<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</code></pre></div></div><p>Example of a Combined Log Format:</p><div class="codeSnippet"><div style="mc-code-lang: PlainText;" class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="True"><pre><span class="codeSnippetLineNumbers" style="border-right: #AAA 2px solid;" aria-hidden="true">1
+2
+3
+4
+5
+</span><code>log_format combined_proxy '$remote_addr - $remote_user [$time_local] '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$request" $status $body_bytes_sent '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_referer" "$http_user_agent" '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_x_forwarded_for"';<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</code></pre></div></div></div></li>
+                                            <li value="5">You must edit the file to ensure the new <kbd>log_format</kbd> is logged to the correct file. You must modify or add the following line <kbd>access_log  /var/log/nginx/access.log wla_access_log;</kbd> as the main line. Your file will look similar to the example below.<div class="example"><p><div class="codeSnippet"><div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>http {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#&#160;&#160;&#160;&#160;log_format&#160;&#160;main&#160;&#160;'$remote_addr - $remote_user [$time_local] "$request" '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'$status $body_bytes_sent "$http_referer" '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_user_agent" "$http_x_forwarded_for"';<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map $time_iso8601 $time_iso8601_p1 {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;~([^+]+) $1;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map $time_iso8601 $time_iso8601_p2 {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;~\+([0-9:]+)$ $1;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map $msec $millisec {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;~\.([0-9]+)$ $1;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;log_format wla_access_log '@WLALOG "$time_iso8601_p1.$millisec+$time_iso8601_p2", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_host", "$remote_addr", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_x_forwarded_for", "$request_method", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$request_uri", "$status", "$body_bytes_sent", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_content_length", "$http_referer", '<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'"$http_user_agent", "$http_content_type"';<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;access_log&#160;&#160;/var/log/nginx/access.log wla_access_log;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</code></pre></div></div></p></div></li>
+                                            <li value="6">Save and close the file.</li>
+                                            <li value="7">Restart the Nginx service.</li>
+                                            <li value="8">Configure flat file collection from the Application Logs page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. When you add the application log, enter these values:<ul><li>For <b>Application File Path</b>: <kbd>/var/log/nginx</kbd></li><li>For <b>File Name or Pattern</b>: <kbd>access.log</kbd></li></ul><p>For more information, see <a href="#ConfigureaflatfilecollectorintheAlertLogicconsole" class="MCXref xref">Configure a flat file collector in the Alert Logic console</a>.</p></li>
+                                            <li value="9">Wait five to 10 minutes for access logs to register in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. Confirm log messages contain values for host and vhost client IP, XFF, referer, and user agent to verify your host configurations. For more information, see <a href="#SearchlogconfirmationintheAlertLogicconsole" class="MCXref xref">Search log confirmation in the Alert Logic console</a>.</li>
+                                        </ol>
+                                        <h2>Configure a flat file collector in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span><a name="ConfigureaflatfilecollectorintheAlertLogicconsole"></a></h2>
+                                        <p>You must configure a collection method and policy from the deployment from which you want to collect in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. The collection method and policy you configure determine which flat file log messages to collect, how to separate log messages within a flat file, and how to read the time of each log message. Rules determine the asset tags, assets, or topology elements from which <span class="mc-variable ALVariables.Company variable">Alert Logic</span> collects logs. </p>
+                                        <p>To access the log collection setup, from the navigation menu, click <img src="../Resources/Images/dashboard/configure-icon.png" style="vertical-align: top;" /><b>Configure</b>, and then click the deployment for which you want to configure collections. On the left navigation panel, click <b>Logs</b>, and then click <b>Application Logs</b>. </p>
+                                        <p>When you add the application log, see the instructions for <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> access log configuration relevant to your deployment's web server in this document for the values to enter in the <b>Application File Path</b> and <b>File Name or Pattern</b> fields.</p>
+                                        <div class="note">
+                                            <p>For <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> deployments on IIS web servers, you must use the file path pattern processed by the Filebeat agent. </p>
+                                        </div>
+                                        <p>For more information about the Application Logs page, see <a href="application-logs.htm" class="MCXref xref">Application Logs for Flat File Configuration</a>. </p>
+                                        <h2>Search log confirmation in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span><a name="SearchlogconfirmationintheAlertLogicconsole"></a></h2>
+                                        <p>To confirm that you configured <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> and  you are collecting logs, search for your messages in the Search page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. You can use this link to <a href="https://console.search.alertlogic.com/#/search/expert/acting?mode=simple&amp;sql=SELECT%0A%20%20%20%20time_recv%20AS%20%22Time%20Received%22,%0A%20%20%20%20message%20AS%20%22Message%22,%0A%20%20%20%20parsed.rule_name%20AS%20%22Message%20Type%22%0AFROM%20logmsgs%0AWHERE%20EXISTS(%20%22Message%22%20)%0A%20%20%20%20AND%0A%22Message%20Type%22%20%3D%20%27WLA%20Access%20Log%27%0AORDER%20BY%20%22Time%20Received%22%20DESC%0ALIMIT%201000&amp;timeframe=3600" target="_blank">open the query in the Alert Logic console</a>. When you click the link, it opens the Search page with the query already inserted for you:</p>
+                                        <p> <code>[Message Type] = 'WLA Access Log'</code> </p>
+                                        <p>You can narrow the search with a whitelist like the destination hosts for which you configured the log collection.</p>
+                                        <div class="example">
+                                            <p><kbd>[destination_host]</kbd> = <kbd>"mutillidae.alqalabs.com" OR [destination_host]</kbd> = <kbd>"bwapp.alqalabs.com" OR [destination_host]</kbd> = <kbd>"gb.alqalabs.com")</kbd></p>
+                                        </div>
+                                        <p>Review the log entry timestamps to verify log collection, and review log entries to confirm inclusion of security value fields like host and vhost client IP, XFF, referer, and user agent. </p>
+                                        <p>For more information about the Search page, see <a href="../get-started/search-a.htm" class="MCXref xref">Get Started with Search</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

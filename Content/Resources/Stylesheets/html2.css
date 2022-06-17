@@ -1,0 +1,271 @@
+/*<meta sourceDocument="C:\Users\catherine.may\Documents\manual\html.css" />*/
+body {
+  background-color: #fff;
+  color: #000;
+  margin: auto;
+  padding: 24px;
+  width: auto;
+  text-align: left;
+}
+
+p {
+  margin: 0 15px 6px 15px;
+}
+
+body, p, td, li, dt, dd {
+	font: 12px/18px Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+td {
+	vertical-align: top;
+	padding: 3px;
+}
+
+th {
+	padding: 3px;
+}
+
+/* sect(ion)1 title */
+h2 {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 125%;
+  font-weight: 600;
+  text-decoration: none;
+  color: #275d8d;
+  background-color: #e6e4cf;
+  margin: 15px 0 15px 0;
+  padding: 12px 15px 12px 15px;
+}
+
+/* sect(ion)2 title */
+h3 {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 110%;
+	font-weight: 600;
+	text-decoration: none;
+	color: #275d8d;
+	padding: 0;
+	margin: 15px 15px 6px 15px;
+}
+
+/* sect(ion)3 title */
+h4 {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 100%;
+	font-weight: 600;
+	text-decoration: none;
+	color: #275d8d;
+	padding: 0 0 0 15px;
+}
+
+/* sect(ion)4 title */
+h5 {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 100%;
+	font-weight: 300;
+	text-decoration: none ;
+	color: #275d8d;
+	padding: 0 0 0 15px;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+em {
+	font-weight: 500;
+	font-style: italic;
+}
+
+
+.mediaobject {
+	text-align: center;
+	margin: 0px 30px 15px 0px;
+}
+
+.calloutlist, .figure, .table {
+	margin: 15px 30px 15px 30px;
+}
+
+.table table {
+	border: 1px solid #333333;
+	border-collapse: collapse;
+}
+
+.table table tr td {
+	border: 1px solid #333333;
+	padding: 3px;
+}
+
+.itemizedlist, .variablelist, .informaltable{
+	margin: 15px 30px 15px 15px;
+}
+
+.blockquote {
+	margin-bottom: 30px;
+}
+
+.blockquote p, .blockquote td {
+	font: 12px/18px Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: 500;
+}
+
+
+.epigraph {
+	margin-bottom: 30px;
+}
+
+.epigraph p, .epigraph td {
+	font: 10px/14px Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: 600;
+}
+
+#customheader, #customfooter {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 80%;
+	line-height: 200%;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #94abb3;
+}
+
+#customfooter {
+	margin-top: 15px;
+}
+
+/* table {
+	margin: 0 15px 6px 15px;
+} */
+
+.navheader {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	background-color: #c9d5d9;
+}
+	
+.navheader th {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.navheader td {
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.navfooter th, .navfooter td {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.toc, .list-of-figures, .list-of-tables, .list-of-examples {
+	margin: 15px 30px 15px 15px;
+}
+
+/* the "headings" are rendered as paragraphs */
+.toc p, .list-of-figures p, .list-of-tables p, .list-of-examples p {
+	margin: 0;
+}
+
+.figure {
+	margin: 5px 5px 5px 5px;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+/* figure title */
+.figure p, .table p, .example p {
+	font-size: 80%;
+}
+
+.acronym {
+	border-bottom: 1px dashed #00cc00;
+	cursor: help;
+}
+
+.term {
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* admonition headings */
+div.note, div.important, div.warning, div.caution, div.tip {
+	padding: 0px 15px 0px 0px;
+}
+
+div.note th, div.important th, div.warning th, div.caution th, div.tip th {
+	font: 12px/18px Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: 600;
+	text-decoration: underline;
+	text-align: left;
+}
+
+.note p, .important p, .warning p, .caution p, .tip p {
+	margin: 0;
+}
+
+.note img, .important img, .warning img, .caution img, .tip img {
+	margin: 0px 15px 0px 15px;
+}
+
+/* verbatim: programlisting, screen*/
+pre.programlisting, pre.screen {
+	font-family: "Courier New", Courier, Monospace;
+	color: #000;
+	background-color: #eee;
+	margin: 0;
+	border: 1px dotted #ddd;
+	padding: 6px 6px 6px 6px;
+}
+
+/* title page */
+/* heading1 is used for document title */
+h1 {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 150%;
+	font-weight: 600;
+	line-height: 250%;
+	text-align: center;
+	color: #275d8d;
+  background-color: #e6e4cf;
+	margin: 15px 0 15px 0;
+	padding: 0;
+}
+
+h3.author {
+	font: 12px/18px Verdana, Arial, Helvetica, Sans-Serif;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	background-color: #fefefe;
+	margin: 0 15px 15px 15px;
+	padding: 0;
+	border: 0;
+}
+
+/* copyright and date */
+.copyright, .pubdate {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 90%;
+	text-align: center;
+	margin: 15px 15px 15px 15px;
+	padding: 0;
+	border: 0;
+}
+
+
+/* legal notice box */
+div.legalnotice {
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size: 90%;
+	color: #000;
+	background-color: #ddd;
+	margin: 10px 45px 10px 45px;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #000;
+}

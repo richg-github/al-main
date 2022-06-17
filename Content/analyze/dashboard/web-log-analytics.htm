@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Analyze|Dashboards" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn about the Web Log Analytics dashboard, which provides visibility into threats, incidents, and observations detected from your Web Log Analytics instance in your environment." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Web Log Analytics Dashboard</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Web Log Analytics Dashboard</h1>
+                                        <p>The <span class="mc-variable ALVariables.WLA_1 variable">Web Log Analytics (WLA)</span> dashboard provides visibility into threats, incidents, and observations detected from your <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> instance in your environment. Use this dashboard to gain insights into the types of incidents detected in your environment,  analyze the effectiveness of your current incident response efforts, and learn about emerging threats. This dashboard includes visuals of the following data: </p>
+                                        <ul>
+                                            <li>Count of open <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> incidents</li>
+                                            <li>List of most seen attackers </li>
+                                            <li>List of most attacked hosts </li>
+                                            <li>Countries where <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> incidents originate</li>
+                                            <li> Web attack trends</li>
+                                            <li>Top observations</li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>The <span class="mc-variable ALVariables.WLA_1 variable">Web Log Analytics (WLA)</span> Dashboard is only offered to <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span>&#160;<span class="mc-variable ALVariables.Professional variable">Professional</span> customers. You must have <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> deployed and flat file logs configured to see data in this dashboard. To learn more about <span class="mc-variable ALVariables.WLA_2 variable">WLA</span>, see <a href="../../get-started/about-wla.htm" class="MCXref xref">About Alert Logic Web Log Analytics (WLA)</a>.</p>
+                                        </div>
+                                        <h2>Access the Web Log Analytics dashboard</h2>
+                                        <p style="font-weight: normal;">To access the  Authentication Management Summary dashboard, in the Dashboards page, click the drop-down menu on the top left to see the list of available dashboards, and then click <b>Web Log Analytics</b>. </p>
+                                        <h2>Web Log Analytics visuals</h2>
+                                        <p>If available, you can click <b>INVESTIGATE</b> in the visuals to be redirected to the corresponding page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> and to take further action if necessary. You can also hover over an item in a visual to see a tooltip with additional details. You can also click items in the visuals to be redirected to the corresponding page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> and to take further action if necessary.  The corresponding page is already filtered with the data from the visual you clicked.</p>
+                                        <p>For visuals with information in a list, you can click <b>EXPORT&#160;TO&#160;CSV</b>&#160;to export the data in CSV  format. </p>
+                                        <h3>Select date range</h3>
+                                        <p style="font-weight: normal;">You can filter the date range you want to see in the visuals. Choose <b>7d</b>, <b>14d</b>, or <b>30d</b> to view data for the last 7 days, 14 days, or 30 days. You can also click the calendar icon (<img src="../../Resources/Images/dashboard/calendar-icon.png" style="vertical-align: bottom;" />) to select a customized date range with a specific start date. </p>
+                                        <h3>Open Incidents Count </h3>
+                                        <p>This visual provides the count of <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> incidents that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> identified in your environment during the selected date range. Click <b>INVESTIGATE</b> to be redirected to the <a href="../incidents.htm" class="MCXref xref">Incidents</a> page to see more information on the open <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> incidents. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/dashboard/WLA/incident-count.png" />
+                                        </p>
+                                        <h3>Top Attackers</h3>
+                                        <p>This visual provides a list of known attacking IPs, their count, and location, which were seen the most in your environment during the selected date range. Click <b>EXPORT&#160;TO&#160;CSV</b>&#160;to export the data in CSV format. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/dashboard/WLA/top-attackers.png" />
+                                        </p>
+                                        <h3>Top Attacked Host/Vhost</h3>
+                                        <p>This visual provides a list of hosts and virtual hosts that were identified as the most targeted based on their incident count during the selected date range. The list is organized by target, host name, attacker class and attacker IP, incident count and total percentage of attacks. Click <b>EXPORT&#160;TO&#160;CSV</b>&#160;to export the data in CSV format. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/dashboard/WLA/top-attacked-hosts.png" />
+                                        </p>
+                                        <h3>Incident Count by Source Location</h3>
+                                        <p>This visual provides a map that presents the countries where <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> incidents originate during the selected date range. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/dashboard/WLA/total-attacks-country.png" />
+                                        </p>
+                                        <h3 data-mc-conditions="Primary.Draft Content">Web Attack Trends by MITRE Tactic</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">This visual provides a bar chart with the number of incidents by MITRE Tactic. Click <b>INVESTIGATE</b> to be redirected to the <a href="../incidents.htm">Incidents</a> page and see more information on all the MITRE Tactics in the visual, or click on an item to see specific data related to that MITRE&#160;Tactic. </p>
+                                        <p data-mc-conditions="Primary.Draft Content">
+                                            <img src="../../Resources/Images/dashboard/WLA/web-attack-trends-MITRE.png" />
+                                        </p>
+                                        <h3>Web Attack Trends by Attack Class</h3>
+                                        <p>This visual provides a graph that presents the daily trends of incidents and their classification during the selected date range.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/dashboard/WLA/web-attack-trends.png" />
+                                        </p>
+                                        <h3><a name="Top"></a>Top Observations by SRC_IP and Attack</h3>
+                                        <p>This visual provides a list of observations derived daily from <span class="mc-variable ALVariables.WLA_2 variable">WLA</span> log data during the selected date range. The list is organized by date, attack type, host/virutal host attacked, source IP, count of attacks, user agent, status code, and trigger. Click <b>EXPORT&#160;TO&#160;CSV</b>&#160;to export the data in CSV format. </p>
+                                        <p>
+                                            <img src="../../Resources/Images/dashboard/WLA/top-observations.png" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

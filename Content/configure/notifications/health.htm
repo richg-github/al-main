@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Configure|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Health notifications can alert you, subscribed users, or a configured connector when an agent, appliance, or API collector is not configured properly or offline (unhealthy)." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title> Health Notifications</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1> Health Notifications</h1>
+                                        <p>Health notifications can alert you, subscribed users, or a configured connector when an <span class="mc-variable ALVariables.Agent/Remote_Collector variable">agent</span>, appliance, or API collector is collecting data or offline (unhealthy).</p>
+                                        <div class="note">Collection assets that have been configured for less than 1 hour are excluded from health notifications.</div>
+                                        <h2>Key concepts</h2>
+                                        <p>
+                                            <MadCap:conditionalText data-mc-conditions="Primary.NOTinBHOOF"><b>Health exposures</b>:  Health exposures result from configuration or connection problems that disrupt access to  <span class="mc-variable ALVariables.Company variable">Alert Logic</span> product capabilities by interrupting the ability to collect information from your environment. To learn about the Health page, which lists all health exposures in your environment, see <a href="../../analyze/health.htm" class="MCXref xref">Health</a>.</MadCap:conditionalText>
+                                        </p>
+                                        <p><b>Notifications</b>: The Notifications feature in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> can alert you, subscribed users, or a configured <a href="../connectors.htm">connector</a> when health statuses that meet the set criteria  occur.</p>
+                                        <p><b>Collection assets</b>:&#160;Collection assets are the class of assets that collect information in your environment and transfer that data to <span class="mc-variable ALVariables.Company variable">Alert Logic</span> for analysis.</p>
+                                        <h2>Types of collection assets<a name="Typesofcollectionassets"></a></h2>
+                                        <table style="width: 100%;">
+                                            <col style="width: 131px;" />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">Collector </MadCap:conditionalText>Type</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="mc-variable ALVariables.AgentName variable">Alert Logic agent</span>
+                                                    </td>
+                                                    <td>
+                                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides an agent that gathers data that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> must collect for analysis, such as log messages and network traffic, as well as metadata and host identification information. You must download the agent, and then deploy it to each host you want to monitor, or collect log messages. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> provides agents for Windows and Linux hosts. For more information, see <a href="../../requirements/agent.htm#reqsAgent" class="MCXref xref">Requirements for the Alert Logic Agent</a>. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Appliance</td>
+                                                    <td>
+                                                        <p>The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.NetworkIDS variable">Network IDS</span> appliance is a physical or virtual appliance that gathers network data and enables network scanning. The <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> appliance is a physical or virtual appliance that provides  <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> services. The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.ALProduct variable">Log Manager</span> appliance is a physical appliance for log management services. The Appliance asset type also includes remote collectors installed on hosts for syslog data collection. For more information, see <a href="../../requirements/appliance-requirements.htm" class="MCXref xref">Alert Logic Requirements for Virtual and Physical Appliances</a>.</p>
+                                                        <p>
+                                                            <MadCap:conditionalText data-mc-conditions="Primary.NOTinBHOOF">Info Dev and technical edits^^ (original text follows): The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Appliance is a physical or virtual appliance that gathers network IDS data, enables network scanning, and provides <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> services.</MadCap:conditionalText>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>API Collector</td>
+                                                    <td>
+                                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> offers integration with applications, including API-based integration with SaaS applications and passive log collecting through syslog forwarding  with most firewall platforms. Available applications include products for authentication, productivity, management, and more. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> serves as a remote collector to receive log data from SaaS and firewall applications related to different incident types, depending on the product type. For more information on configuring API&#160;collectors, see <a href="../application-registry.htm" class="MCXref xref">Application Registry</a>.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2 data-mc-conditions="Primary.Draft Content">Health exposure categories</h2>
+                                        <p data-mc-conditions="Primary.Draft Content"> For each unhealthy asset listed, you can see the health exposure category: connection or configuration. </p>
+                                        <h3 data-mc-conditions="Primary.Draft Content">Connection exposures</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">A connection exposure indicates that an asset such as a network appears to be offline. For example, an agent cannot connect to the appliance, or an appliance cannot connect to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> back-end environment. Hosts with expired SSL certificates also appear as connection exposures.</p>
+                                        <h3 data-mc-conditions="Primary.Draft Content">Configuration exposures</h3>
+                                        <p data-mc-conditions="Primary.Draft Content">A  configuration exposure indicates an issue in your deployment  that can hinder <span class="mc-variable ALVariables.Company variable">Alert Logic</span> from delivering service properly, such as:</p>
+                                        <ul>
+                                            <li data-mc-conditions="Primary.Draft Content">No appliance installations</li>
+                                            <li data-mc-conditions="Primary.Draft Content">Hosts with no agent</li>
+                                            <li data-mc-conditions="Primary.Draft Content">Misconfiguration preventing an appliance from connecting to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> back-end server</li>
+                                            <li data-mc-conditions="Primary.Draft Content">Hosts that have not been recently scanned</li>
+                                            <li data-mc-conditions="Primary.Draft Content">Insufficient policy and role privileges</li>
+                                            <li data-mc-conditions="Primary.Draft Content">Integrated third-party applications with incorrect access credentials</li>
+                                            <li data-mc-conditions="Primary.Draft Content"><span class="mc-variable ALVariables.AWS variable">AWS</span> Config is not enabled in all regions</li>
+                                        </ul>
+                                        <h2 style="font-weight: normal;"><b>Open the Create a Health Notification page</b>
+                                        </h2>
+                                        <p>You can create a health notification from the Health page or the Notifications page. Whichever method you use, the process is the same after  you open the Create a Health Notification page.</p>
+                                        <p><b>To create a health notification from the Health page:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;"></img>).</li>
+                                            <li value="2"> Click <img src="../../Resources/Images/dashboard/respond-icon.png" style="vertical-align: bottom;" /><b>Respond</b>, and then click <b>Health</b> to access the Health page.</li>
+                                            <li value="3">Click <img src="../../Resources/Images/dashboard/notifications-icon.png" style="vertical-align: bottom;" /><![CDATA[  ]]><b>NOTIFICATIONS</b>, and then click <b>Add Notification</b>.</li>
+                                            <li value="4">Complete the fields as described in <a href="#CreateaHealthNotification" class="MCXref xref">Create a Health Notification</a>.</li>
+                                        </ol>
+                                        <p style="font-weight: bold;"><span style="font-weight: bold;">To create a health notification from the Notifications page:</span>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;"></img>).</li>
+                                            <li value="2">Click <img src="../../Resources/Images/dashboard/manage-icon.png" style="vertical-align: bottom;"></img><b>Manage</b>, and then click <b>Notifications</b> to access the Notifications page.</li>
+                                            <li value="3">On the <b>Alert Notifications</b> tab, click the add icon (<img src="../../Resources/Images/Icons/cdAddPlus.png" style="vertical-align: bottom;" />), and then click <b>Health</b>.</li>
+                                            <li value="4">Complete the fields as described in <a href="#CreateaHealthNotification" class="MCXref xref">Create a Health Notification</a>.</li>
+                                        </ol>
+                                        <h2><b>Create a Health Notification</b><a name="CreateaHealthNotification"></a>
+                                        </h2>
+                                        <p>To create a health notification, you enter details about the notification, set the scope for the notification, and then configure delivery. For more information on collection asset statuses and the types of exposures and remediations associated with each, see <a href="#Healthnotificationtoexposuresandremediationsmap" class="MCXref xref">Health notification to exposures and remediations map</a>.</p>
+                                        <p><b>To enter details about the health notification:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Type a descriptive name for the health notification.</li>
+                                            <li value="2">Choose whether you want the notification to be active. Turn it off if you want to save the definition but not receive notifications.</li>
+                                            <li value="3">
+                                                <p>For an account without <a href="../../prepare/users-roles.htm#multiaccount">managed accounts</a>, your customer account is preselected, and the account selector does not appear. If your account is a managing (parent) account, select one or more accounts for which you want to send notifications. You can use the search bar to help you find:</p>
+                                                <ul>
+                                                    <li><b>Individual accounts</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Your account and  individual managed accounts</li>
+                                                    <li><b>Managed Accounts</b><span style="font-family: 'Microsoft Sans Serif'">—</span>This option selects all your managed accounts, excluding your own account, plus any managed accounts added later on.</li>
+                                                    <li><b>My Account and Managed Accounts</b><span style="font-family: 'Microsoft Sans Serif'">—</span>This option selects your account and all your managed accounts, plus any managed accounts added later.</li>
+                                                </ul>
+                                                <div class="tip">
+                                                    <p>If you choose <b>Managed Accounts</b> or <b>My Account and Managed Accounts</b>, future  managed accounts will be automatically  subscribed to send the notification.  You will not need to edit the notification later to add them manually.</p>
+                                                </div>
+                                            </li>
+                                            <li value="4">
+                 Choose  one type of collection asset. For more information about collection assets, see <a href="#Typesofcollectionassets" class="MCXref xref">Types of collection assets</a>.</li>
+                                            <li value="5">Click <b>NEXT</b>.</li>
+                                        </ol>
+                                        <div>
+                                            <p><b>To set the scope of the health notification:</b>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Select one or more  statuses for the collection asset. For more information on collection asset statuses and the types of exposures and remediations associated with each, see <a href="#Healthnotificationtoexposuresandremediationsmap" class="MCXref xref">Health notification to exposures and remediations map</a>.</li>
+                                                <li value="2">Select an asset from the table or use the filter to narrow down the asset you want to select.        <div class="note"><p>You must select one or more asset scopes. If no asset scope is selected,  you will not receive notifications. </p></div></li>
+                                                <li value="3">Under Settings, select <b>On</b> to enable notifications, and then click <b>APPLY</b>. Leave <b>Off</b> if you do not want notifications enabled for the asset selected. </li>
+                                                <li value="4">Click <b>NEXT</b>.</li>
+                                            </ol>
+                                        </div>
+                                        <div data-mc-conditions="Primary.NOTinBHOOF">
+                                            <p><b>To set the scope of the health notification:</b>
+                                            </p>
+                                            <ol>
+                                                <li value="1">Select one or more  statuses for the collection asset. For more information on collection asset statuses and the types of exposures and remediations associated with each, see <a href="#Healthnotificationtoexposuresandremediationsmap" class="MCXref xref">Health notification to exposures and remediations map</a>.</li>
+                                                <li value="2">(Optional) Select one or more asset scopes. If no asset scope is selected,  you will receive notifications for your entire environment.</li>
+                                                <li value="3">Click <b>NEXT</b>.</li>
+                                            </ol>
+                                        </div>
+                                        <p><b>To configure delivery for the health notification:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">(Optional) Set  preferences for delaying or suppressing notifications: <ul><li><b>Delay</b>—Use the delay preference to prevent notifications for health exposures that you anticipate, or that have a history of automatically resolving within a set amount of time. Health exposures that are resolved before the set delay do not result in a notification. <div class="example">If you set the delay to one hour for an agent offline status, you will not receive a notification unless the status persists for more than one hour.</div></li><li><b>Suppression</b>—Use the suppression preference to prevent mass email notifications for notification rules that you anticipate, or that have a history of occurring multiple times at once. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> suppresses notifications after the first for this rule  for the set amount of time. <div class="example">If you set suppression to one hour for an agent offline status and 25 agents went offline simultaneously, you would receive only the first notification. You only receive future notifications if a new agent goes offline after the one-hour suppression. With no suppression set, you would receive all 25 notifications.</div></li></ul></li>
+                                            <li value="2">To subscribe users to receive a notification email, click <b>Subscribed User(s)</b>, and then, under <b>Notification Delivery</b>, select the users that you want to receive the notification<MadCap:conditionalText data-mc-conditions="Primary.Draft Content">. The list includes your name and user names  in the managed accounts selected above</MadCap:conditionalText>. You can use the search bar to help you find recipients.</li>
+                                            <li value="3">To subscribe a connector, click <b>Subscribed Connector</b>, and then, under <b>Notification Delivery</b>, select a configured connector. For more information about configuring and using connectors, see <a href="../connectors.htm" class="MCXref xref">Webhook and Email Connectors</a>.</li>
+                                            <li value="4">(Optional) Customize the <b>Email Subject</b>. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">You can change the text and insert variables enclosed with double braces: {{<i>variable</i>}}. For the variable list, see <a href="#Emailsubjectvariables" class="MCXref xref"> Health Notifications</a>. </MadCap:conditionalText></li>
+                                            <li value="5">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h2>View and manage Health notifications</h2>
+                                        <p>You can view and manage health notifications from the Notifications page.  See <a href="manage.htm" class="MCXref xref">Manage Notifications</a> for information about how to:</p>
+                                        <ul>
+                                            <li>Filter the list of notifications</li>
+                                            <li>View notification details</li>
+                                            <li>Edit notifications</li>
+                                            <li>Delete notifications</li>
+                                        </ul>
+                                        <h2>Receiving a Health notification</h2>
+                                        <p>After you receive a notification, you can click <b>INVESTIGATE</b> to link directly to the specific remediation detail page associated with the health exposure. The remediation detail page is part of the Health console. For more information, see <a href="../../analyze/health.htm#Opentheremediationdetailpage" class="MCXref xref">Open the remediation detail page</a>.</p>
+                                        <h2>Health notification to exposures and remediations map<a name="Healthnotificationtoexposuresandremediationsmap"></a></h2>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Collection Asset Type</th>
+                                                    <th>Collection Asset Status</th>
+                                                    <th>Exposure Names</th>
+                                                    <th>Remediation Names</th>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="3">Agent</td>
+                                                    <td>Offline</td>
+                                                    <td>Alert Logic Agent is Offline</td>
+                                                    <td>Enable the agent on this host</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td rowspan="2">Not Collecting</td>
+                                                    <td>No logs have been received from the agent on this host for over 24 hours.</td>
+                                                    <td>Verify Agent Configuration Does Not Prevent Log Traffic</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>No IDS traffic has been received from the agent on this host for over 24 hours.</td>
+                                                    <td>Verify Agent Configuration Does Not Prevent IDS Traffic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="3">Appliance</td>
+                                                    <td>Offline</td>
+                                                    <td>The Alert Logic appliance is offline or unable to reach Alert Logic.</td>
+                                                    <td>Re-enable this appliance</td>
+                                                </tr>
+                                                <tr data-mc-conditions="Primary.Draft Content">
+                                                    <td rowspan="2">Not Collecting</td>
+                                                    <td>No logs have been received from the appliance on this host for over 24 hours.</td>
+                                                    <td>Verify Appliance Configuration Does Not Prevent Log Traffic</td>
+                                                </tr>
+                                                <tr data-mc-conditions="Primary.Draft Content">
+                                                    <td>No IDS traffic has been received from the appliance on this host for over 24 hours.</td>
+                                                    <td>Verify Appliance Configuration Does Not Prevent IDS Traffic</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">Collector</td>
+                                                    <td>Offline</td>
+                                                    <td>Collector reports an error communicating application API (offline).</td>
+                                                    <td rowspan="2">Verify collector configuration and credentials</td>
+                                                </tr>
+                                                <tr data-mc-conditions="">
+                                                    <td>Not Collecting</td>
+                                                    <td>Collector hasn't collected any data for the last 24 hours.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 100%;">
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <col data-mc-conditions="Primary.NOTinBHOOF" />
+                                            <tbody>
+                                                <tr>
+                                                    <th>Exposure Impact/Description</th>
+                                                    <th>Exposure API name</th>
+                                                    <th>Notification Rules</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Collector is reporting an error while collecting data.</td>
+                                                    <td>collector_offline</td>
+                                                    <td>
+                                                        <p>Collector</p>
+                                                        <p>Offline</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Collector hasn't collected any data for the last 24 hours.</td>
+                                                    <td>collector_no_collection</td>
+                                                    <td>
+                                                        <p>Collector</p>
+                                                        <p>Not Collecting</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Collector is reporting an error while collecting data. Please see evidence for error description.</td>
+                                                    <td>collector_collection_error</td>
+                                                    <td>
+                                                        <p>Collector</p>
+                                                        <p>Error</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Alert Logic appliance associated has either stopped or is unable to check in with Alert Logic. Ensure that the host is running and is able to reach Alert Logic.</td>
+                                                    <td>appliance_offline</td>
+                                                    <td>
+                                                        <p>Appliance</p>
+                                                        <p>Offline</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A?</td>
+                                                    <td>&#160;</td>
+                                                    <td>
+                                                        <p>Appliance</p>
+                                                        <p>Not Collecting</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The remote collector found a malformed log batch saved on the disk for later transport; any remaining log messages in the batch were lost. This warning is transient and should self-resolve with the next collection cycle</td>
+                                                    <td>appliance_malformed_syslog</td>
+                                                    <td>
+                                                        <p>Appliance</p>
+                                                        <p>Error</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>An Alert Logic Agent in your deployment is offline and unable to report potential threats.</td>
+                                                    <td>agent_offline</td>
+                                                    <td>
+                                                        <p>Agent</p>
+                                                        <p>Offline</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>N/A?</td>
+                                                    <td>&#160;</td>
+                                                    <td>
+                                                        <p>Agent</p>
+                                                        <p>Not Collecting</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The syslog collector failed to listen on the specified TCP or UDP port</td>
+                                                    <td>agent_slc_blocked_port</td>
+                                                    <td>
+                                                        <p>Agent</p>
+                                                        <p>Error</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A problem was observed with WinPcap installation on the host, or the installed WinPcap version is not working correctly. The agent may attempt to self-remediate by restarting WinPcap driver</td>
+                                                    <td>agent_ids_pcap_failing</td>
+                                                    <td>
+                                                        <p>Agent</p>
+                                                        <p>Error</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The file rotation scheme could not be auto-detected from the files matching the specified pattern, or the specified rotation scheme could not be applied to all files matching the specified pattern</td>
+                                                    <td>agent_ffc_invalid_file_pattern</td>
+                                                    <td>
+                                                        <p>Agent</p>
+                                                        <p>Error</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>The Windows Event Log file for the indicated host is damaged and cannot be collected.</td>
+                                                    <td>agent_elc_corrupted_file</td>
+                                                    <td>
+                                                        <p>Agent</p>
+                                                        <p>Error</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

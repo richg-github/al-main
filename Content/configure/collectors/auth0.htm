@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Collectors" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to configure the Auth0 collector and integrate it with Alert Logic in the Application Registry page to start collecting log data that you can search in the Alert Logic console." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Configure Auth0 Log Collector </title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Configure Auth0 Log Collector </h1>
+                                        <p>The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Auth0 Collector is an <span class="mc-variable ALVariables.AWS variable">AWS</span>-based API Poll (PAWS) log collector library mechanism designed to collect logs from the Auth0 Identity and Access Management platform.  </p>
+                                        <p>You can find Auth0 logs collected with keyword search in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span> <a href="../../get-started/search-a.htm" class="MCXref xref">Get Started with Search</a> page. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> also generates security incidents from Auth0 logs in the <a href="../../analyze/incidents.htm" class="MCXref xref">Incidents</a> page. For more information about authentication application security content, see <a href="../../analyze/security-incidents.htm" class="MCXref xref">Authentication Application Security Incidents</a>.
+
+
+ 
+
+ 
+ </p>
+                                        <p>The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Auth0 Log Collector collects the following log data relevant to: 
+
+ 
+
+</p>
+                                        <ul>
+                                            <li>Successful user logins  
+
+</li>
+                                            <li>Failed user logins, including the reason for the failure </li>
+                                            <li>
+
+Token exchanges (success and failure) 
+
+</li>
+                                            <li>Login warnings </li>
+                                            <li>
+
+User deletions 
+
+</li>
+                                            <li>Connection errors 
+
+</li>
+                                            <li>User signup events 
+
+</li>
+                                            <li>Email verification events </li>
+                                            <li>
+
+Password changes 
+
+</li>
+                                            <li>Rate limiting events </li>
+                                            <li>
+
+Operational events </li>
+                                            <li> 
+
+Operational errors </li>
+                                        </ul>
+                                        <p>You must complete the following to successfully configure your Auth0 Log Collector:</p>
+                                        <ol>
+                                            <li value="1"><a href="#Set" class="MCXref xref">Set up Auth0 application</a>
+                                            </li>
+                                            <li value="2"><a href="#Configur" class="MCXref xref">Configuring collection from the Alert Logic console</a>
+                                            </li>
+                                        </ol>
+                                        <h2><a name="Set"></a>Set up Auth0 application</h2>
+                                        <p>To grant <span class="mc-variable ALVariables.Company variable">Alert Logic</span> access to your Auth0 log data,  you must configure an application within your Auth0 tenant with the appropriate permissions and retrieve the credentials of the application in the <a href="https://manage.auth0.com/">Auth0 management console</a>.</p>
+                                        <p><b>To create the API</b>:</p>
+                                        <ol>
+                                            <li value="1">In the  <a href="https://manage.auth0.com/">Auth0 management console</a>, on the left panel , click <b>Applications</b>, and then click <b>Create Application</b>.</li>
+                                            <li value="2">In the <b>Name</b> field, enter a descriptive name for this API.</li>
+                                            <li value="3">In the <b>Choose an Application</b> pane, select <b>Machine to Machine Applications</b>. </li>
+                                            <li value="4">Click <b>CREATE</b>.</li>
+                                            <li value="5">On the Authorize Machine to Machine Application panel, click the <b>Select an API</b> drop-down menu, and select <b>Auth0 Management API</b>. </li>
+                                            <li value="6">Under the scopes pane, select <b>read:logs</b> and <b>read:logs_users</b>. </li>
+                                            <li value="7">Click <b>Authorize</b>. </li>
+                                        </ol>
+                                        <p>After you have created your application, you must locate the Client ID and the Client Secret from the application.</p>
+                                        <p><b>To obtain the API Secret Key and API ID</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">On the left panel, click <b>Applications</b>. </li>
+                                            <li value="2">In the Applications page, locate and click your application.</li>
+                                            <li value="3">Under <b>Settings</b>, make a note of the Domain Client ID and Client Secret, which you will need later. </li>
+                                        </ol>
+                                        <h2><a name="Configur"></a>Configuring collection from the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></h2>
+                                        <p>After  you identify the Auth0 domain endpoint and obtain the security token, you must complete the log collection process in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. This configuration is an account-level integration, which means you can configure more than one instance of Auth0 collection. This capability is  useful when more than one instance of the application exists.</p>
+                                        <p>To access the Application Registry page, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;"></img>) from the Dashboards page. Click <img src="../../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;"></img><b>Configure</b>, and then click <b>Application Registry</b>. </p>
+                                        <p><b>To add a new application collection</b>:</p>
+                                        <ol>
+                                            <li value="1">In the Application Registry, click the <b>Auth0</b> tile.</li>
+                                            <li value="2">In the <b>Application Name</b> field, enter a name for this Auth0 collection instance. </li>
+                                            <li value="3">Under Collection Method and Policy, in the <b>Auth0 Domain</b> field, enter the Auth0 domain you previously noted.
+            </li>
+                                            <li value="4">In the <b>Auth0 Client ID</b> field, enter the client ID you noted earlier.
+            </li>
+                                            <li value="5">In the <b>Auth0 Client Secret</b> field, enter the token you noted earlier.
+            </li>
+                                            <li value="6">(Optional) Enter a <b>Collection Start</b> time using a format such as (2020-01-01T16:00:00Z). If the <b>Collection Start</b> field is left blank, only logs generated after you configure this collection instance will be collected. 
+            <div class="note"><p>The collection start time determines how far back you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to collect logs if data already exists in your account. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> can only collect logs up to 30 days prior to the date you configured this collection instance. 
+</p></div></li>
+                                            <li value="7">Click <b>ADD</b>.
+Wait a few minutes for the application to create and appear in your application list. Do not click <b>ADD</b> again.   <![CDATA[            ]]></li>
+                                        </ol>
+                                        <p>In the Applications List tab, if you configured your application correctly, within approximately 10 minutes you will see Configured next to the application. For more information about how to add instances or manage existing collecting applications, see <a href="../application-registry.htm#Configur" class="MCXref xref">Manage your configured applications</a>.</p>
+                                        <h2>Security Content for incidents
+</h2>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> builds collectors to capture data from Auth0 and various other applications to create security content that is used to generate incidents for key security use cases. The following security incidents are available for Auth0 Identity and Access Management:</p>
+                                        <ul>
+                                            <li>Administrative Actions</li>
+                                            <li>User Login AD</li>
+                                            <li>User Behavior AD</li>
+                                        </ul>
+                                        <p>For more information about authentication application security content, see <a href="../../analyze/security-incidents.htm" class="MCXref xref">Authentication Application Security Incidents</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

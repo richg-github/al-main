@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Configure" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to manage security certificates if you have administrative privileges, which include uploading, viewing, and deleting certificates from the Certificates and Keys page." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Certificates and Keys</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Certificates and Keys</h1>
+                                        <p>If you have an <span class="mc-variable ALVariables.Professional_1 variable">Alert Logic MDR Professional</span>  or an <span class="mc-variable ALVariables.Enterprise_1 variable">Alert Logic MDR Enterprise</span> subscription and administrative privileges to manage certificate and keys, you can upload certificates. </p>
+                                        <p><a name="where"></a>Access the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Certificates and Keys page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. Click the <img src="../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b> menu item, and then click <b>Certificates and Keys</b>.</p>
+                                        <h2 class="bhoofTop"><a name="manageSecurityCert"></a>Manage security certificates</h2>
+                                        <h3><a name="uploadSecurityCert"></a>Upload security certificates</h3>
+                                        <p>Customers with administrative privileges can upload security certificates in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>.</p>
+                                        <div class="note">
+                                            <p> After you upload your certificate, the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> provisioning team performs a back-end installation to validate your certificate.</p>
+                                        </div>
+                                        <p style="font-weight: bold;">To upload security certificates:</p>
+                                        <ol>
+                                            <li value="1">In the <b>Certificates and Keys</b> page, click the add icon (<img src="../Resources/Images/Icons/cdAddPlus.png" />). </li>
+                                            <li value="2">
+                In the slideout panel, complete the required fields:
+</li>
+                                            <ul>
+                                                <li><b>Name</b>- Type a unique name to identify the certificate.</li>
+                                                <li><b>Certificate Content</b>—The PEM-encoded certificate. This field must  include the header and footer notes.</li>
+                                                <li><b>Private Key Content</b>—The PEM-encoded private key. This field must include the header and footer notes. The PEM-encoded private key must be in RSA format, or you must convert the key to RSA format. </li>
+                                                <div class="note">
+                You cannot change the certificate name after you enter and save it.</div>
+                                            </ul>
+                                        </ol>
+                                        <ol start="3">
+                                            <li value="3">
+                                                <p>The correct format for the <b>Certificate Content</b> field: </p>
+                                            </li>
+                                            <div class="example">
+                                                <p style="text-align: left;">The public certificate is the section of the certificate file between (and including) the certificate start and end tags.</p>
+                                                <p style="text-align: center;"><kbd>-----BEGIN CERTIFICATE-----</kbd>
+                                                </p>
+                                                <p style="text-align: center;"><kbd>Certificate characters</kbd>
+                                                </p>
+                                                <p style="text-align: center;"><kbd>-----END CERTIFICATE-----</kbd>
+                                                </p>
+                                            </div> </ol>
+                                        <ol start="4">
+                                            <li value="4">
+                                                <p>The correct format for the <b>Private Key Content</b> field: </p>
+                                            </li>
+                                            <div class="example">
+                                                <p style="text-align: left;">The private key is the section of the certificate file between (and including) the private key start and end tags.</p>
+                                                <p style="text-align: center;"><kbd>-----BEGIN RSA PRIVATE KEY-----</kbd>
+                                                </p>
+                                                <p style="text-align: center;"><kbd>Private key characters</kbd>
+                                                </p>
+                                                <p style="text-align: center;"><kbd>-----END RSA PRIVATE KEY-----</kbd>
+                                                </p>
+                                            </div>
+                                        </ol>
+                                        <ol start="5">
+                                            <li style="font-weight: normal;" value="5">Click <b>Save</b>.</li>
+                                        </ol>
+                                        <p>You can upload a PEM file instead of completing the empty fields. </p>
+                                        <p><b>To upload a PEM&#160;file</b>:</p>
+                                        <ol>
+                                            <li value="1"> Click  <b>PEM File Upload</b> field, and then search for and select the desired PEM file. </li>
+                                            <div class="note">
+                                                <p>Your PEM file must have both certificate information and private key information. </p>
+                                            </div>
+                                        </ol>
+                                        <ol start="2">
+                                            <li style="font-weight: normal;" value="2">Click <b>Save</b>.</li>
+                                        </ol>
+                                        <p style="font-weight: normal;">Allow about 15 minutes for your system to update with these changes. Once uploaded, your certificate is listed in the <b>Certificates and Keys</b> page. </p>
+                                        <h3><a name="viewSecurityCert"></a>View security certificates</h3>
+                                        <p>Customers with administrative privileges   in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span> can view information for public certificates. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> protects confidential private keys, so you cannot retrieve or view private keys. </p>
+                                        <p>To view information about a certificate, in the <b>Certificates and Keys</b> page, in the list of certificates, click anywhere on the row of the certificate you want to see. A slideout panel, which includes the name of the certificate and the certificate contents appears on the right side of the page. </p>
+                                        <h3><a name="deleteSecurityCert"></a>Delete security certificates</h3>
+                                        <p>Customers with administrative privileges  can delete security certificates in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>.</p>
+                                        <div class="caution">
+                                            <p> When you delete a certificate, you permanently remove it.</p>
+                                        </div>
+                                        <p style="font-weight: bold;">To delete security certificates:</p>
+                                        <ol>
+                                            <li value="1">In the <b>Certificates and Keys</b> page, in the certificates list, to the right of the certificate you want to remove, click the delete icon (<img src="../Resources/Images/Icons/trash_icon.png" />).</li>
+                                            <li value="2">Click <b>DELETE</b> in the slideout panel.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

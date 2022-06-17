@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Inline WAF|Web Application Firewall&#160;Manual|Web Application Firewall" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Learning
+</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <div class="titlepage">
+                                            <div>
+                                                <h1 id="Learning" data-magellan-target="Learning">Learning
+<a name="ref_services_learning.htm"></a></h1>
+                                                <p>Learning is a section  in the <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> management interface. To access the Learning  section, click <b>Websites</b> on the left panel, under Services. On the Websites page, click the website you want to manage, and click <b>Learning status</b> to access the first section. </p>
+                                                <p>Learning includes the following features. Click on the link to go to the corresponding documentation to learn more: </p>
+                                                <ul>
+                                                    <li><a href="#" class="MCXref xref" xrefformat="{para}">Learning
+</a>
+                                                        <ul>
+                                                            <li><a href="#ref_services_learning_status.htm" class="MCXref xref">Learning status
+</a>
+                                                            </li>
+                                                            <li><a href="ref_services_learning_data.htm" class="MCXref xref">Learning Data</a>
+                                                            </li>
+                                                            <li data-mc-conditions="Primary.Draft Content"><a href="ref_services_response_data.htm" class="MCXref xref">Alert Logic Managed Web Application Firewall (WAF) </a>
+                                                            </li>
+                                                            <li><a href="ref_services_learning_settings.htm" class="MCXref xref">Learning Settings</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <p>This document includes the following sections. Click on the link to go to the corresponding section to learn more: </p>
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_menuInBody mc-component">
+                                                    <li><a href="#Learning">Learning
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Learningstatus">Learning status
+</a>
+                                                        </li>
+                                                        <ul>
+                                                            <li><a href="#Learningprogressindicators">Learning progress indicators
+</a>
+                                                            </li>
+                                                            <li><a href="#Policyresultingfromcurrentlearnsettings">Policy resulting from current learn settings</a>
+                                                            </li>
+                                                            <li><a href="#Policyhistory">Policy history
+</a>
+                                                            </li>
+                                                            <li><a href="#Sampleruninformation">Sample run information
+</a>
+                                                            </li>
+                                                            <li><a href="#Lowerbuttonbar">Lower button bar
+</a>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </ul>
+                                                <p>To go to the documentation for the previous section of <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> management integration, see <a href="ref_services_deny_and_error_handling.htm" class="MCXref xref">Deny and Error Handling
+</a>. To go to  the documentation for next subsection in the Learning section, see <a href="ref_services_learning_data.htm" class="MCXref xref">Learning Data</a>.</p>
+                                                <p>To save configuration changes or edits you make to any features and options, you must click <b>Save</b> on the lower-right of the section or page where you are making changes. Click <b>apply changes</b> on the upper-left corner of the page, and then click <b>OK</b>. Your changes will not be stored if you do not properly save your changes. </p>
+                                            </div>
+                                        </div>
+                                        <p>The Learner builds a complete profile of the web site including static requests, web applications and input parameters bu
+ analyzing incoming requests.
+         </p>
+                                        <p>To avoid learning from worms, attacks and other unauthorized access the Learner employs a combination of heuristic attack
+ classification, statistics and server responses.
+         </p>
+                                        <p>When learning is enabled for the website the Learner keeps analyzing requests until no changes to the resulting policy are
+ recorded. That is, for every 10,000 requests the Learner builds a trial policy, compares it to the former trial policy and
+ records the number of changes. When a configurable number of trial policies in a row (default 30) has not resulted in a number
+ of changes between each trial build exceeding a configurable threshold (default 0) a policy is built.
+         </p>
+                                        <p>By default the Learner is configured to generate a short yet fine grained policy. This is achieved by identifying global characteristics
+ of the web site and generating global patterns matching those characteristics. The global patterns typically account for the
+ majority of the web systems content and applications leaving only the "real" web applications to be accounted for by specific
+ web application policy entries.
+</p>
+                                        <div class="titlepage">
+                                            <div>
+                                                <h2 id="Learningstatus" data-magellan-target="Learningstatus">Learning status
+<a name="ref_services_learning_status.htm"></a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="3.2.1.&#160;Learning progress indicators">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 id="Learningprogressindicators" data-magellan-target="Learningprogressindicators">Learning progress indicators
+<a name="ref_services_learning_status.htm#ref_services_learning_status_progress_indicators"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The two bars in the top of the page indicates the current state of sampling and verification.</p>
+                                            <p>The Learner works in two stages when profiling the website.</p>
+                                            <div class="orderedlist">
+                                                <ol class="orderedlist" style="list-style-type: decimal;">
+                                                    <li class="listitem" value="1">
+                                                        <p><b>Sampling progress</b>
+                                                        </p>
+                                                        <p>This is the process of collecting information about the website in terms of what paths/applications are used, what parameters
+ do they take as input, what extensions are used for static content, etc.
+                     </p>
+                                                    </li>
+                                                    <li class="listitem" value="2">
+                                                        <p><span class="bold"><strong>Verification</strong></span>
+                                                        </p>
+                                                        <p>The verification process 1) validates the data samples using statistical methods like analyzing spread in IP sources and time,
+ number of requests, etc. and 2) verifies that the resulting policy covers the requests sampled.
+                     </p>
+                                                        <p>As the <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> Learner extracts characteristics like extensions, specific directories in paths and global parameters
+ (parameter names a number of applications take as input - like print=1) and even patterns used in global parameters the verification
+ process may start before the Data sampling progress has reached 100%.
+                     </p>
+                                                        <p>Verification is calculated as the number of sample runs in a row with no policy changes relative to the required number configured
+ in learner settings.
+                     </p>
+                                                        <p>When Verification has reached 100% <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> will either build and commit a new policy or notify the administrator
+ by email that verification has reached 100% and a new policy can be built and committed.                     </p>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="3.2.3.&#160;Resulting policy">
+                                            <div>
+                                                <h3 id="Policyresultingfromcurrentlearnsettings" data-magellan-target="Policyresultingfromcurrentlearnsettings">Policy resulting from current learn settings<a name="ref_services_learning_status.htm#ref_services_learning_status_resulting_policy"></a></h3>
+                                            </div>
+                                            <p>This section shows a sample of the policy resulting from the <span class="emphasis"><em>Learner</em></span> settings effective.
+            </p>
+                                            <p>When the settings are changed the resulting policy sample is rebuilt using the new threshold values. This is done as a background
+ job and depending on the load on the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> node and the complexity of the sample data it may take anywhere
+ from e few seconds to a minute or two to build the policy. If the new policy is not visible yet, wait a while and refresh
+ the window.
+            </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left">
+                                                        </col>
+                                                        <col width="75%" align="left">
+                                                        </col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Commit to WAF</span></b>
+                                                                <p>Button</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Builds a policy which is accessible and editable in the Global Patterns and Web applications windows.</p>
+                                                                <p>When clicked the policy displayed in the table will be committed to the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> engine, that is: made active for filtering requests.</p>
+                                                                <p>If policy verification has not reached a warning message (two actually) will be displayed asking to confirm the action. Remember:
+ <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> is a white-list based <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. If the policy put into production does not match real
+ life requests building the policy prematurely (not fully verified) is likely to result in false positives. If verification
+ has not reached 100% it means that it not verified that the policy does not generate false posivites. Have patience and wait
+ for verification to reach 100%.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Web applications</span></b>
+                                                                <p>Expandable: Click <b><span class="guibutton">+</span></b> to expand.
+                           </p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Learned web applications.</p>
+                                                                <p>Expand the item to get a list of applications learned. For each application is shown:</p>
+                                                                <div class="itemizedlist">
+                                                                    <ul class="itemizedlist" type="disc">
+                                                                        <li class="listitem">
+                                                                            <p>URL path</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Methods learned</p>
+                                                                        </li>
+                                                                        <li class="listitem">
+                                                                            <p>Parameters.</p>
+                                                                            <p>Parameters are shown as name, value pairs where the value is the name of the input validation class learned for that parameter.</p>
+                                                                            <p>Note that only the applications private parameters are shown here. Parameters which the application have in common with other
+ applications are included in the Global parameters list.
+                                    </p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Global URL patterns</span></b>
+                                                                <p>Expandable: Click <b><span class="guibutton">+</span></b> to expand.
+                           </p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Global URL Path Policy built from learned applications.</p>
+                                                                <p>For each application group (see <a href="ref_services_learning_data.htm#ref_services_learning_data.htm#ref_services_learning_data_applications_learned">Applications learned</a>) a regular expression is built which matches all samples in that specific group.
+                           </p>
+                                                                <p>Most CMS based web systems have a number of global parameters, like for instance <code class="literal">print=1</code>, which can be appended to most requests. Without the combination of <span class="emphasis"><em>Global URL Path Policy</em></span> and <span class="emphasis"><em>Global Parameters Policy</em></span> pages with static content that take global parameters, like <code class="literal">index.php?print=1</code>, would be learned as web applications and the URL paths would have to be added to the policy as web applications. This can
+ potentially result in a huge policy which is never up to date because new content is added all the time.
+                           </p>
+                                                                <p>By making global policies that account for all the static content which is served dynamically only "real" web applications
+ with a number of private parameters have to be mapped in detail. 
+                           </p>
+                                                                <p>Thus the global patterns allows for building a condensed, yet fine grained, policy which also account for future standard
+ content added to the web site. 
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Global parameters</span></b>
+                                                                <p>Expandable: Click <b><span class="guibutton">+</span></b> to expand.
+                           </p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Global Parameters Policy built from learned applications.</p>
+                                                                <p>Displayed in the format:</p>
+                                                                <p><code class="literal">name = value</code>
+                                                                </p>
+                                                                <p>Depending on the Name grouping threshold value the name can either be a literal string or a regular expression matching a
+ number of parameter names with name and value similarities. 
+                           </p>
+                                                                <p>The value is displayed as a class name. When the policy is built the corresponding regular expression will be used.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Static content allowed extensions</span></b>
+                                                                <p>Expandable: Click <b><span class="guibutton">+</span></b> to expand.
+                           </p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Learned static path extensions which will be allowed. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Static content path allowed characters</span></b>
+                                                                <p>Expandable: Click <b><span class="guibutton">+</span></b> to expand.
+                           </p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Unique characters and character classes (like 'A' - all international word characters) learned from static path samples.</p>
+                                                                <p>Also the regular expression built to match requests for static content is shown. Note the last set of parantheses preceded
+ by an escaped period <code class="literal">\.(\w+)</code>. This part will be matched with the list of allowed extensions to determine if the extension is alowed.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="3.2.2.&#160;Policy history">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 id="Policyhistory" data-magellan-target="Policyhistory">Policy history
+<a name="ref_services_learning_status.htm#ref_services_learning_status_policy_history"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>When a new policy is generated and committed, either automatically or manually, it is added to the Policy history list.</p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left">
+                                                        </col>
+                                                        <col width="75%" align="left">
+                                                        </col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Policy history</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The policy number.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Type</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Automatic or manual (requested by administrator user)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Report</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Click link to see resulting policy and changes compared to the former (if any).</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Sample run</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The sample run number at which the policy was generated.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Web Apps</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The number of entries in the <code class="literal">Web Application Policy</code>.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Global URLs</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The number of entries in the <code class="literal">Global URL Policy</code>.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Global Parms</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The number of entries in <code class="literal">Global Parameter Policy</code>.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Static</span></b>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>The number of entries in static file types <code class="literal">Static Content Policy</code>.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b>Time</b>
+                                                            </td>
+                                                            <td align="left">&#160;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="3.2.4.&#160;Sample run information">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 id="Sampleruninformation" data-magellan-target="Sampleruninformation">Sample run information
+<a name="ref_services_learning_status.htm#ref_services_learning_status_sample_run_info"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The Learner analyzes request samples in chunks of approximately 10,000 requests (or more if the system is very busy) . For
+ each sample run an entry is added to the Sample run information table which shows total and delta values of summarizing the
+ learning process.
+            </p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left">
+                                                        </col>
+                                                        <col width="75%" align="left">
+                                                        </col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Sample run</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The sample run number.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Hits total</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The total number of hits processed during the learning process. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">URL paths</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Total number of unique URL paths identified. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Parameters</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>Total number of unique parameter names identified. Uniqueness is determined by URL path. Two parameters with the same name
+ but mapped as belonging to different URL paths are therefore identified as two unique parameters. When the policy is built
+ <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> identifies parameters with similar names and input data as as global in scope and builds global patterns
+ matching such parameters. 
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Changes</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>When the chunk of raw sample data has been processed <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> builds a policy based on the total sample population.
+ This policy is compared to the policy built in the last sample run and changes are recorded.
+                           </p>
+                                                                <p>The number shown is the sum changes recorded to the Web Application Policy (<code class="literal">ACL</code>), Global URL Policy (<code class="literal">GURL)</code>, Global Parameter Policy (<code class="literal">GParm</code>) and the Static Content Policy (<code class="literal">EXT</code>).
+                           </p>
+                                                                <p>Click on the number shown to get a change report detailing the changes. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">ACL</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The number of changes to the <code class="literal">Web Application Policy</code> compared to the sample run before.
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">GURL</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The number of changes to the <code class="literal">Global URL Policy</code> compared to the sample run before. 
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">GParm</span></b>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">
+                                                                <p>The number of changes to <code class="literal">Global Parameter Policy</code> compared to the sample run before. 
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Ext</span></b>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>The number of changes to the <code class="literal">Static Content Policy</code> compared to the sample run before. 
+                           </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b>Updated time</b>
+                                                            </td>
+                                                            <td align="left">&#160;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="note">
+                                                <p>The number of policy changes recorded is calculated with the <span class="emphasis"><em style="font-weight: bold; font-style: normal;">Learner</em></span> settings effective when the sample data is analyzed. Whereas the resulting policy (below) is recalculated when the <span class="emphasis"><em style="font-style: normal; font-weight: bold;">Learner</em></span> settings are changed this is not the case with the sample run policy builds. It is therefore possible that the two sections
+ show different results. The next sample run is run using the new settings.
+</p>
+                                            </div>
+                                        </div>
+                                        <div class="sect3" title="3.2.5.&#160;Lower button bar">
+                                            <div class="titlepage">
+                                                <div>
+                                                    <div>
+                                                        <h3 id="Lowerbuttonbar" data-magellan-target="Lowerbuttonbar">Lower button bar
+<a name="ref_services_learning_status.htm#ref_services_learning_status_lbb"></a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>The lower button bar contains the following buttons.</p>
+                                            <div class="informaltable">
+                                                <table style="border-collapse: collapse;border-top: 0.5pt solid;border-bottom: 0.5pt solid;border-left: 0.5pt solid;border-right: 0.5pt solid;">
+                                                    <colgroup>
+                                                        <col width="25%" align="left" />
+                                                        <col width="75%" align="left" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;border-bottom: 0.5pt solid;" align="left"><b><span class="guilabel">Re-analyze data</span></b>
+                                                                <p>Button</p>
+                                                            </td>
+                                                            <td style="border-bottom: 0.5pt solid;" align="left">To see the effect of deleting selected learning data in the resulting policy section click this button. Wait a few seconds
+ and reload the page.
+                        </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border-right: 0.5pt solid;" align="left"><b><span class="guilabel">Reset learn data</span></b>
+                                                                <p>Button</p>
+                                                            </td>
+                                                            <td align="left">
+                                                                <p>Use with caution!</p>
+                                                                <p>When clicking this button and accepting the confirm pop-up window.</p>
+                                                                <p><span class="emphasis"><em style="font-style: normal;">All learning data for that proxy will be deleted!</em></span>
+                                                                </p>
+                                                                <p>If learning is enabled the learning and data sampling process will start from scratch.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

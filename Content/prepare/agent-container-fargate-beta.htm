@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-searchable="False" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Deploy the Alert Logic Agent Container for AWS Fargate (Beta)</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Agent Container for <span class="mc-variable ALVariables.AWS variable">AWS</span> Fargate (Beta)</h1>
+                                        <div class="note">This document is intended for early-access customers. </div>
+                                        <p>You can deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Agent Container in Amazon Elastic Container Service (ECS) environments that run <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span> Fargate.</p>
+                                        <p>Use these instructions for environments running Amazon ECS tasks with the Fargate launch type. To deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Agent Container for Amazon ECS tasks with the EC2 launch type, see the <a href="https://algithub.pd.alertlogic.net/alertlogic/al-agent-container/blob/a8a620cc2df45dd329025064648988cd11095713/ecs/README.md">ECS README</a> instead.</p>
+                                        <h2><span class="mc-variable ALVariables.AWS variable">AWS</span> Fargate support</h2>
+                                        <p>To  protect  environments that use  Fargate  with Amazon ECS,  the required method is to deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Agent Container as a sidecar in each Fargate ECS task. With this method, the <span class="mc-variable ALVariables.AgentName variable">Alert Logic agent</span> can still access the network interfaces of that task. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> collects network traffic and syslog messages   from a specific task without violating the integrity of other customer environments in the <span class="mc-variable ALVariables.AWS variable">AWS</span> Fargate cluster.</p>
+                                        <p>For  <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to fully integrate with a container environment, the Docker socket must be mounted through the volume mounting capability in Docker, which the Fargate environment does not allow. For this reason, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> can protect containers on Fargate workloads but  does not discover other containers running on the host, capture traffic from their virtual network interfaces, or collect the native container logs stdout and stderr.    </p>
+                                        <h2>Before you begin</h2>
+                                        <p>Complete the following tasks before you deploy the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Agent Container for Fargate. </p>
+                                        <p data-mc-conditions="Primary.Draft Content">Most customers should just need to update their IAM policy, and then auto-claim will work for Fargate. For Defender customers who do not allow us to discover their deployments, the fallback is the unique registration key. Set up your deployment and let us discover it using the latest policy. We should encourage them to set up their deployment so we can discover it using the latest policy. Still mention the fallback. URK&#160;was before we had cloud deployments and customers had to enter something that proved that it was our agent. With Fargate, we know that it is AWS, we discover it, so if an agent comes in, we have all the metadata that we need. We just need to tie that to an asset, the asset model, and we don't have that asset if fg discovery doesn't work. So that's why we need the IAM policy change. Two ways to do things. The URK is the old one. We suggest that we create the policies so that auto claim works. Let us discover your hosts so you don't have to worry about agent claim. </p>
+                                        <h3>Update your <span class="mc-variable ALVariables.AWS variable">AWS</span> IAM policies</h3>
+                                        <p>To deploy and claim your containers for collection, you must update the appropriate <span class="mc-variable ALVariables.AWS variable">AWS</span> IAM policies with the following permissions:</p><pre xml:space="preserve"><code><code>"ecs:Describe*",</code><br /><code>"ecs:List*"</code><br /><code>"workspaces:Describe*",</code><br /><code>"workspaces:List*"</code></code></pre>
+                                        <p>The "ecs" updates enable the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Cloud Explorer service to properly identify your ECS tasks, which later include the Fargate tasks that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> protects after you finish the Fargate deployment process. The "workspaces" updates prepare for upcoming <span class="mc-variable ALVariables.AWS variable">AWS</span> Workspaces support.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> updated each policy with these permissions in the following files to make it easier to update the policy. Copy the appropriate policy and paste it into the <span class="mc-variable ALVariables.AWS variable">AWS</span> console.</p>
+                                        <ul>
+                                            <li><a href="../pdf-files/defender-min.json"><span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> Minimal Policy</a>
+                                            </li>
+                                            <li><a href="../pdf-files/defender.json"><span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> Full Policy</a>
+                                            </li>
+                                            <li><a href="../pdf-files/insight-min.json">MDR Minimal Policy:&#160;<span class="mc-variable ALVariables.AWS_Deployment_Mode variable">Automatic Mode</span></a>
+                                            </li>
+                                            <li><a href="../pdf-files/insight.json">MDR Full Policy:&#160;<span class="mc-variable ALVariables.AWS_Deployment_Mode variable">Automatic Mode</span></a>
+                                            </li>
+                                            <li><a href="../pdf-files/manual-min.json">MDR Minimal Policy:&#160;Manual Mode</a>
+                                            </li>
+                                            <li><a href="../pdf-files/manual.json">MDR Full Policy:&#160;Manual Mode</a>
+                                            </li>
+                                        </ul>
+                                        <p>If you do not add the permissions  to the appropriate policies, automatic claiming of agents fails when you deploy the Agent Container for Fargate. Cloud Defender customers who  use the minimal permission policy for deployment must also provide their unique registration key to claim their agents. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> strongly recommends deploying with full permissions to facilitate the discovery of your <span class="mc-variable ALVariables.AWS variable">AWS</span> environment and allow <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to automate the agent claim process. </p>
+                                        <h3>Find your unique registration key (<span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> minimal permission deployments only)</h3>
+                                        <p><span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> customers who deploy with the minimal permission policy must find their unique registration key to prepare for deploying  the  Agent Container for <span class="mc-variable ALVariables.AWS variable">AWS</span> Fargate. For all <span class="mc-variable ALVariables.SIEMless variable">Managed Detection and Response</span> (MDR) deployments and the <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> platform deployed with the full permission policy,  the unique registration key is not required. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> automates your <span class="mc-variable ALVariables.AWS variable">AWS</span> deployment in those environments and claims your agent automatically. </p>
+                                        <p><b>To find your unique registration key (</b><span style="font-weight: bold;" class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span><b> platform minimal permission deployments only):</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> console, click the Support Information icon.</li>
+                                            <li value="2">Click "Details."</li>
+                                            <li value="3">Copy your unique registration key.</li>
+                                        </ol>
+                                        <h3>Install the <span class="mc-variable ALVariables.AWS variable">AWS</span> CLI</h3>
+                                        <p>In  addition, be sure you install the <span class="mc-variable ALVariables.AWS variable">AWS</span> command line interface (CLI), and ensure you point it to, and configure it for, the appropriate <span class="mc-variable ALVariables.AWS variable">AWS</span> account. For more information about the <span class="mc-variable ALVariables.AWS variable">AWS</span> CLI, see <a href="https://aws.amazon.com/cli/">https://aws.amazon.com/cli/</a>.</p>
+                                        <h2>Deploy the Agent Container for Fargate</h2>
+                                        <p>Complete the following tasks to protect your <span class="mc-variable ALVariables.AWS variable">AWS</span> Fargate deployments:</p>
+                                        <ol>
+                                            <li value="1">Modify your AWS Fargate task definition.</li>
+                                            <li value="2">Update the task definition.</li>
+                                            <li value="3">Deploy the updated task definition.</li>
+                                        </ol>
+                                        <h3>Modify your AWS Fargate task definition</h3>
+                                        <p>You must run the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Agent Container  as a sidecar to each Fargate ECS task. Append the following entry to the <code>containerDefinitions</code> section of your Fargate ECS task:</p><pre><code><code>{</code><br /><code>  "name": "al-agent",</code><br /><code>  "image": "alertlogic/al-agent-container:latest",</code><br /><code>  "environment": [</code><br /><code>    {</code><br /><code>      "name": "KEY",</code><br /><code>      "value": "your_registration_key_here"</code><br /><code>    }</code><br /><code>  ]</code><br /><code>}</code></code></pre>
+                                        <p>For the <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> platform minimal permission deployments only, in the task definition, update the <code>value</code> variable with your unique registration key.</p>
+                                        <p>For all MDR deployments and the <span class="mc-variable ALVariables.CloudDefender variable">Cloud Defender</span> platform deployed with the full permission policy, leave the <code>KEY</code> environment variable undefined. <span class="mc-variable ALVariables.AWS variable">AWS</span> deployments with valid credentials do not require registration keys. The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> agent and back end gather cloud metadata to provision the deployment.</p>
+                                        <h3>Update the task definition</h3>
+                                        <p>To register your task definition, enter the following command in the <span class="mc-variable ALVariables.AWS variable">AWS</span> CLI:</p>
+                                        <p><code>aws ecs register-task-definition --cli-input-json file://path//to/task-definition.json</code>
+                                        </p>
+                                        <h3>Deploy the updated task definition</h3>
+                                        <p>Use your preferred method to deploy the updated task definition. For example, you can enter the following command in the AWS CLI and replace the <code>{service_using_task_definition}</code> and <code>{task_definition_name}</code> variables with valid values:</p>
+                                        <p><code>aws ecs update-service --service {service_using_task_definition} --task-definition {task_definition_name}</code>
+                                        </p>
+                                        <p>For reference, see the <a href="https://docs.aws.amazon.com/cli/latest/reference/ecs/update-service.html">AWS update-service documentation</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

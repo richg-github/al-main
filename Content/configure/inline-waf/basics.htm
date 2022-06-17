@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Inline WAF" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="We provide extensive documentation on Alert Logic Web Security Manager Premier so you can make sure your web applications are protected properly." />
+        <meta name="flareArticleId" content="6221965c-a9f5-4ca4-852a-d5ebc115f663" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Alert Logic Managed Web Application Firewall (WAF) Basics</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="wsmp"></a><span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> Basics</h1>
+                                        <p><span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> is a web server protection  that actively blocks attacks on your web servers. </p>
+                                        <p><b>To access <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>  in the </b><span style="font-weight: bold;" class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, enter your  credentials. </li>
+                                            <li value="2">Click the <img src="../../Resources/Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /> <b>Configure</b> menu item, and then click <span style="font-weight: bold;" class="mc-variable ALVariables.WAF_2 variable">WAF</span>. </li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>You can check the operational status of the <span class="mc-variable ALVariables.Company variable">Alert Logic</span><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> in the Service Status page in the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends that you subscribe to the Service Status page and all your <span class="mc-variable ALVariables.Company variable">Alert Logic</span> components, including <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. For more information about the Service Status page and how to subscribe, see <a href="../../analyze/service-status.htm" class="MCXref xref">Service Status</a>.</p>
+                                        </div>
+                                        <h2><a name="searchAndWorkWebsites"></a><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> websites</h2>
+                                        <p>The <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> Websites page allows you to search and apply filters to narrow the list of results on the page. You can perform a website or IP address search across all displayed websites by using the search bar. To search websites,  type the website or IP address you want to investigate in the search bar, and then click <b>Search</b>.</p>
+                                        <p>You can apply filters based on customer and/or appliance to conduct an investigation into websites. You can combine these custom search parameters to refine your results.</p>
+                                        <p style="font-weight: bold;">To define filters for websites:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> page, click <b>Websites</b>.</li>
+                                            <li value="2">Click <b>Filters</b>. A filters area will expand and display choices.</li>
+                                            <li value="3">In the <b>All Appliances</b> list, select the appliance, and then select whether to include (<b>In</b>) or exclude (<b>Not In</b>).</li>
+                                            <li value="4">Click <b>Filter</b>.</li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>To reset customer and appliance filters to default, click <b>Clear Filters</b>.</p>
+                                        </div>
+                                        <h3><a name="manageWebsite"></a>Manage a website</h3>
+                                        <p>You can manage website options regarding <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>, ADC, learning, logs, and reports. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">To learn how to manage options, see <a href="manual/ch_waf.htm" class="MCXref xref">WAF</a>, and <a href="manual/ch_adc.htm" class="MCXref xref">Application Delivery Controller (ADC)</a>.</MadCap:conditionalText></p>
+                                        <h2 class="bhoofTop"><a name="searchAppWithFilters"></a><span class="mc-variable ALVariables.WSM_OutBndWaf_2 variable">Web Security Manager</span> appliances</h2>
+                                        <p style="font-weight: bold;">To search appliances with filters:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> page, click <b>Appliances</b>.</li>
+                                            <li value="2">Click <b>Filters</b>. A filters area will expand and display choices.</li>
+                                            <li value="3">In the <b>All Appliances</b> list, select the appliance.</li>
+                                            <li value="4">Click <b>Filter</b>.</li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>To reset customer and appliance filters to default, click <b>Clear Filters</b>.</p>
+                                        </div>
+                                        <h3><a name="defineAppConfigFilters"></a>Define appliance configuration filters </h3>
+                                        <p>You can use filters to customize the configuration sections shown for appliances listed on the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> management interface. Viewable sections include network, date/time settings, logging to external host, and more. </p>
+                                        <p style="font-weight: bold;">To define appliance configuration filters:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> page, click <b>Appliances</b>.</li>
+                                            <li value="2">Click <b>View Config</b> for the appliance you wan to configure.</li>
+                                            <li value="3">Click the configuration section you want to view. (Click the configuration section again to hide it.)</li>
+                                        </ol>
+                                        <div class="note">
+                                            <p>To view all configuration sections, click <b>Show All</b>. To hide all configuration sections, click <b>Hide All</b>.</p>
+                                        </div>
+                                        <h3><a name="manageAnApp"></a>Manage an appliance</h3>
+                                        <p>You can manage <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> appliance options such as  operating modes. To manage a <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> appliance, in the <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> page, click <b>Appliances</b>. In the table of appliances, within the corresponding row, click <b>Manage Appliance</b>. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">To learn how to manage your appliance, see <a href="manual/ref_services.htm" class="MCXref xref">Websites
+</a>.</MadCap:conditionalText></p>
+                                        <h2><a name="manageSSLCerts"></a>Manage SSL certificates</h2>
+                                        <p>When you create a website proxy for an existing HTTPS web server, you must export the SSL certificate from the web server and import it into <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>. <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> supports importing PKCS12, PEM (Apache), and intermediate encoded server certificates. </p>
+                                        <p>To manage a <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> certificate, in the <span class="mc-variable ALVariables.WAF_2__ variable">WAF</span> page, click <b>Certificates</b>, and then click <b>Manage Certificate</b> for the certificate you want to manage. You can also use the search bar to find a specific certificate. To learn howto configure your SSL certificates, see <a href="manage-certificates.htm" class="MCXref xref">Manage Your SSL Certificates</a>.</p>
+                                        <div>
+                                            <h2 class="bhoofTop"><a name="searchAndWorkWithDenyLogs"></a>Deny logs</h2>
+                                            <p>Deny logs list the requests that <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> denied based on your security policies when the appliance is configured to Protect mode.  If the appliance is configured to Detect mode, deny logs continue to be generated but the traffic is not blocked.</p>
+                                            <p>When you first configure <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends that you start in detect mode and study deny logs before you create security policies. If you study the deny logs, you can determine which requests are false positives that you can whitelist and which requests represent threats you want to block. </p>
+                                            <h3>Dashboard Deny Log page</h3>
+                                            <p>For the security administrator, you must have the ability to monitor the deny log for all websites. The deny summary window provides summarized log data for all configured websites. The window consists of two sections:
+         </p>
+                                            <ul class="orderedlist">
+                                                <li>
+                    An interactive graph with a drill down functionality that summarizes all deny log events in a column graph.
+                </li>
+                                                <li class="listitem">
+                    A more detailed interactive list with drill down functionality that shows deny log events for all websites above a configured
+ risk level (default medium).
+                  
+                </li>
+                                            </ul>
+                                            <p>Both elements allow you to narrow in on events in the specific website's deny log.</p>
+                                            <p>To access the Dashboards Deny Logs page, in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> page, click <b>Websites</b>, and then click <b>Manage Website</b> on the website you want to manage. You can filter by appliance, or use the search bar to look for a website. In the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> management interface, on the left panel, under Dashboards, click <b>Deny Log</b>. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">For more information about the Dashboard Deny Log page, see <a href="manual/ch_dashboards.htm#ref_dashboards_deny_log.htm" class="MCXref xref">Deny Log </a>.</MadCap:conditionalText></p>
+                                            <h3>View the website deny log </h3>
+                                            <p>The Deny log page provides access to all denied requests to the proxy. Filtering functions allows for fine
+ grained filtering of log information to find a deny log.
+</p>
+                                            <p>To access the Deny log page, in the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> page, click <b>Websites</b>, and then click <b>Manage Website</b> on the website you want to manage.  In the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> management interface, on the upper bar, hover over <b>Log</b>, and then click <b>Deny log</b>. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">For more information about the Dashboard Deny Log page, see <a href="manual/ch_dashboards.htm#ref_dashboards_deny_log.htm" class="MCXref xref">Deny Log </a>.</MadCap:conditionalText></p>
+                                        </div>
+                                        <div>
+                                            <h4><a name="searchDenyLogsFilters"></a>Deny logs list</h4>
+                                            <p>The Deny log page displays all the request resources for the selected proxy that <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> blocked for the website. Failed requests are shown in the deny log, which allows you to  identify broken internal and external links, and broken robots not using the 404 not found message.</p>
+                                            <p>Total number of log entries matching the current filter criteria (if specified) is indicated on the upper-right corner of the list. If the total number of records is larger than the entries per page selection, you can  select how many entries you want to view per page in the Show drop-down list, or go to the next page. </p>
+                                            <p>Click the inspect icon (<img src="../../Resources/Images/wsm/alDenyLogDetailsIcon.png" style="vertical-align: bottom;" />) to view more details for a log entry. The deny logs are organized by columns with the following information:</p>
+                                            <ul>
+                                                <li>Time <![CDATA[                ]]></li>
+                                                <li>Source IP</li>
+                                                <li>Host</li>
+                                                <li>Risk</li>
+                                                <li>Class</li>
+                                                <li>Action </li>
+                                                <li>Response </li>
+                                                <li>URL Path</li>
+                                            </ul>
+                                            <p>You can select log entries to add to the access policy. This allows further requests based on the information in the log entries you selected. After you select all of the log entries to add to the access policy, click <b>Add selected to ACL</b> on the lower-right corner.</p>
+                                            <p>To delete all log data for the website, click <b>Flush log</b>. To generate an HTML version of the logs, select the logs you want in the report, and then click <b>Log report</b>.</p>
+                                            <h3><a name="customizeColumnsTableDenyLogs"></a>Filter the list of deny logs</h3>
+                                            <p>The Deny log page allows you to filter and narrow the list of results on the page. You can apply any combination of the following filter types to find a deny log:</p>
+                                            <ul>
+                                                <li> Request details </li>
+                                                <li> Response </li>
+                                                <li>Attack classification</li>
+                                                <li>Policy violation</li>
+                                                <li>Country from where the request originated</li>
+                                            </ul>
+                                            <p style="font-weight: normal;">To define filters for deny logs,  click <b>Filters</b> to view the options. You can combine custom search parameters. In the Request section, you can enter specific information related to the log, including ID, reference ID, path, IP, host, date, risk, and deny action. In the Response section, you can select from compromise risk or unlikely. </p>
+                                            <p style="font-weight: normal;">For the Attack classification, Policy violation, and Country sections, select parameters from the list, and then <b>Add</b>, or <b>Add All</b> to include all the parameters in the list. You can also <b>Remove</b>, or <b>Remove All</b> from the list on the right.</p>
+                                            <p style="font-weight: normal;">After you make your changes, click <b>Apply</b>.  To clear the options, click <b>Reset</b> and revert to the default filters. Click <b>Close</b> to close the filter section. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

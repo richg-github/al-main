@@ -1,0 +1,35 @@
+﻿{
+  "Id": "Policy1462667998730",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1462667984069",
+      "Action": [
+        "s3:GetObjectVersionAcl",
+        "s3:GetObject",
+        "s3:GetObjectAcl"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::BUCKET_NAME/PREFIX/*",
+      "Principal": {
+        "AWS": [
+          "YOUR_IAM_ROLE_ARN"
+        ]
+      }
+    },
+    {
+      "Sid": "Stmt1462667997005",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucket*"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::BUCKET_NAME",
+      "Principal": {
+        "AWS": [
+          "YOUR_IAM_ROLE_ARN"
+        ]
+      }
+    }
+  ]
+}

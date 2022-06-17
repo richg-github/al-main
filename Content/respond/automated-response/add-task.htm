@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="False" data-mc-toc-path="Respond|Automated Response|Playbooks" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Add a Task to a Playbook (Beta)</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Add a Task to a Playbook (Beta)</h1>
+                                        <div class="note">This document is intended for early-access customers, and it is updated as Automated Response features are enhanced. </div>
+                                        <p>A task is an action that you want the playbook to perform. Instructions in this document are common to all tasks. For  task-specific configuration instructions, see the <a href="task-configuration-guide.htm" class="MCXref xref">Playbook Task Configuration Guide (Beta)</a>. </p>
+                                        <p>Complete the following steps to add a task to your playbook:</p>
+                                        <ol>
+                                            <li value="1"><a href="#Addataskintheworkflowdiagram" class="MCXref xref">Add a task in the workflow diagram</a>
+                                            </li>
+                                            <li value="2"><a href="#Addtaskdetailsoptional" class="MCXref xref">Add task details (optional)</a>
+                                            </li>
+                                            <li value="3"><a href="#Configuretaskinput" class="MCXref xref">Configure task input</a>
+                                            </li>
+                                            <li value="4"><a href="#Viewtaskresultsoptional" class="MCXref xref">View task results (optional)</a>
+                                            </li>
+                                            <li value="5"><a href="#Configuretaskoutputoptional" class="MCXref xref">Configure task output (optional)</a>
+                                            </li>
+                                        </ol>
+                                        <h2>Add a task in the workflow diagram<a name="Addataskintheworkflowdiagram"></a></h2>
+                                        <p>To add a task, click the add task icon (<img src="../../Resources/Images/automated-response/icon-add-task-gray.png" style="vertical-align: bottom;" />) in the workflow diagram, and then select the task that you want to add. A status tag  appears in square brackets next to each listed task. To narrow results, you can search the list and filter it by vendor.</p>
+                                        <p>
+                                            <img src="../../Resources/Images/automated-response/add-task-to-context.png" />
+                                        </p>
+                                        <h3>Status tags</h3>
+                                        <p>A status tag next to each task indicates its development status. </p>
+                                        <table>
+                                            <col style="width: 163px;" />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Status Tag</th>
+                                                    <th>Definition</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>alpha</td>
+                                                    <td>Ready for testing with <span class="mc-variable ALVariables.Company variable">Alert Logic</span> assistance. Contact <span class="mc-variable ALVariables.Company variable">Alert Logic</span> before using.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>beta</td>
+                                                    <td>Tested internally and ready for customer feedback.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>deprecated</td>
+                                                    <td>Task that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> plans to replace or remove.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>production</td>
+                                                    <td>Fully tested and documented task.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2>Add task details (optional)<a name="Addtaskdetailsoptional"></a></h2>
+                                        <p>On the Task tab, you can enter a descriptive task name or use the default name suggested based on the action type. The Task tab also includes information about the action associated with the task. Advanced settings are optional and allow you to control when and how often to run the task or its action.</p>
+                                        <p><b>To add task details:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">(Optional) On the <b>Task</b> tab, enter a descriptive task name in the <b>Name</b> field. The name is a key in the YAML file that the playbook builds as you design the workflow interactively and cannot include spaces or special characters except the underscore "_" character.</li>
+                                            <li value="2">If you want the playbook to pause before it runs this task, select the <b>Delay running this task</b> check box, and then enter the amount of time to pause running this task in seconds.<p>For more information and an example, see <a href="#Delayrunningthistask" class="MCXref xref">Delay running this task</a>.</p></li>
+                                            <li value="3">
+                                                <p> If you want the task to repeat the action on a list of items, select the <b>Repeat the action on a list</b> check box, and then enter the list of item values or a YAQL expression to reference the list. </p>
+                                                <p>For more information and examples, see <a href="#Repeattheactiononalist" class="MCXref xref">Repeat the action on a list</a>.</p>
+                                            </li>
+                                            <li value="4">If this task joins parallel branches and you want it to run only once, not in each branch, select the <b>Add a barrier policy for a join</b> check box, and then:<ul><li>If you want to block this task until all previous tasks in joined parallel branches complete, click <b>Yes</b>.</li><li>If you want the task to run when a specified number of previous tasks completes, click <b>No</b>, and then enter the number of previous tasks that must run before this task.</li></ul><p>If the check box is cleared, the task repeats in each branch with no barrier. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">For more information, see [link to topic or section about adding a join].</MadCap:conditionalText></p></li>
+                                            <li value="5">If you want the playbook to retry a task, such as if it fails the first time, select the <b>Add a retry policy</b> check box, and then enter the following information:<ul><li><b>When to Retry</b>—Condition for retrying the task as a YAQL expression</li></ul><ul><li><b>Number of Retries</b>—Number of times to retry before the task fails</li><li><b>Delay in Seconds</b>—Time (in seconds) to delay between retries</li></ul><p>For more information and examples, see <a href="#Addaretrypolicy" class="MCXref xref">Add a retry policy</a>.</p></li>
+                                        </ol>
+                                        <h3>Delay running this task<a name="Delayrunningthistask"></a></h3>
+                                        <p>Add a delay if you expect the task to fail if the playbook runs it immediately. The default delay is zero, which means the task starts without delay, as soon as the previous task completes.</p>
+                                        <div class="example">Suppose, for example, that a task in your playbook launches an instance of <span class="mc-variable ALVariables.AWS variable">AWS</span> EC2. Then the next task is to check the status. Because you know that launching <span class="mc-variable ALVariables.AWS variable">AWS</span> can take a few minutes, you  set a delay of 300 seconds (5 minutes) in the task for checking the status. The delay allows time for the service to launch.</div>
+                                        <h3>Repeat the action on a list<a name="Repeattheactiononalist"></a></h3>
+                                        <p>A task can repeat an action on a list of items. To indicate the list of items to process, you can type a list of item values or enter a YAQL expression. An expression is powerful because it can add a list dynamically, using variable information. You can click <b>SELECT VARIABLE</b> to find a variable. When you select a variable, the playbook adds it to <b>Items</b> as a YAQL expression. </p>
+                                        <p>Examples of typical item lists and their syntax include:</p>
+                                        <ul>
+                                            <li>Comma-separated list of values, which must be enclosed in square brackets: [item_1, item_2, item_3]<div class="example">To repeat an action on a list of specific <span class="mc-variable ALVariables.AWS variable">AWS</span> regions, select the <b>Repeat the action on a list</b> check box, and then type the list:&#160;<p><kbd>[us-east-1, us-west-2]</kbd></p></div></li>
+                                            <li>Expression that adds a list dynamically, using variable information available from previous task results that were published: <code>&lt;% task(<var>task_name</var>).result.result.<var>published_variable_name</var> %&gt;</code><div class="example">Suppose that a previous task in your playbook requests a list of vulnerabilities through the <span class="mc-variable ALVariables.API_documentTitle variable">Alert Logic API</span>. Now you want the playbook to create a ticket in your external system for every vulnerability. In the task to create the tickets, you select the <b>Repeat the action on a list</b> check box, click <b>SELECT VARIABLE</b>, and then select the variable published by the previous task. When you select the variable, the playbook creates the expression in the format <code>&lt;% task(<var>task_name</var>).result.result.<var>vulnerability_list</var> %&gt;</code>, where <var>task_name</var> is a placeholder for the actual task name and <i>vulnerability_list</i> is a placeholder for the actual variable name that you selected.</div></li>
+                                        </ul>
+                                        <ul>
+                                            <li> Expression that adds a list dynamically, using variable information available from the payload object:&#160;<code>&lt;% ctx().<var>payload_variable_name</var> %&gt;</code><div class="example">Suppose that a task requests that the <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> block a list of attacker IP addresses. In this case, you select the <b>Repeat the action on a list</b> check box, click <b>SELECT VARIABLE</b>, and then choose the payload attacker_lset variable. When you select the variable, the playbook creates this expression:&#160;<code>&lt;% ctx().payload.attacker_lset %&gt;</code></div></li>
+                                            <li> List that combines item values and expressions. To do this, merge the lists with the zip command, and enclose the lists in parentheses: <p><kbd>zip([<var>item_1</var>, <var>item_2</var>], &lt;% <var>expression</var> %&gt;)</kbd></p></li>
+                                        </ul>
+                                        <h3>Add a retry policy<a name="Addaretrypolicy"></a></h3>
+                                        <p>You can specify that you want the playbook to retry a task that fails or meets other criteria. The YAQL expression that indicates when to retry can evaluate the status of the last action, or it can evaluate the result of the last action. </p>
+                                        <p>The following examples cover both scenarios:</p>
+                                        <ul>
+                                            <li>This YAQL expression is an example that evaluates the status of the last action: <p><code>&lt;% failed() %&gt;</code></p><div class="example">Suppose that  a task is likely to fail for reasons other than misconfiguration. You decide to add a policy that retries the task three times if it fails, with a delay of five seconds between retries. To do this, you select the <b>Add a retry policy</b> check box, click <b>SELECT VARIABLE</b>, and then select <b>Fail</b> under <b>Task Run Status</b>. This selection adds the expression <code>&lt;% failed() %&gt;</code> to <b>When to Retry</b>.  You then enter <b>3</b> in the <b>Number of Retries</b> and <b>5</b> in <b>Delay in Seconds</b>.</div></li>
+                                            <li>The following YAQL expressions are examples that evaluate the result of the last action:<ul><li><code>&lt;% result().status_code = 429%&gt;</code><p>This expression indicates that you want the playbook to retry the task if the result is status 429 (too many requests).</p></li></ul><div class="example">Suppose that  a cloud service that you request in your playbook, such as issuing an IP block, imposes a limit on the number of API requests that an account can pass through at one time. To overcome the rate limit, you decide to configure a policy that retries the IP&#160;block task five times if it returns error code 429, with a delay of two seconds between retries. To do this, you select the <b>Add a retry policy</b> check box, and then type <code>&lt;% result().status_code = 429%&gt;</code> in <b>When to Retry</b>.  You then enter <b>5</b> in the <b>Number of Retries</b> and <b>2</b> in <b>Delay in Seconds</b>.</div><ul><li><code>&lt;% result().status_code != 200 %&gt;</code><p>This expression indicates that you want the playbook to retry the task if the result is not HTTP status code 200 (success). </p></li></ul><ul><li><code>&lt;% result().status_code = 400 %&gt;</code><p>This expression indicates that you want the playbook to retry the task if the result is HTTP status code 400 (bad request).</p></li></ul></li>
+                                        </ul>
+                                        <p>If the number of retries is exceeded, the result of the last action carried out for the task determines the final task result. For example, it the action returns HTTP error 409 four times and then the last result is a 404 error, the final task result is error 404.</p>
+                                        <h2>Configure task input<a name="Configuretaskinput"></a></h2>
+                                        <p>On the <b>Input</b> tab, provide the input values for your task. Task requirements vary and often require different information. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">For instructions on how to configure the input for a specific task, see the <a href="task-configuration-guide.htm" class="MCXref xref">Playbook Task Configuration Guide (Beta)</a>.</MadCap:conditionalText></p>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Task List and Configuration Instructions</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>The following table lists all playbook tasks with an available configuration guide. For instructions on how to configure the input for a specific task, click a link in the Task column. </p>
+                                                <table style="width: 100%;">
+                                                    <col style="width: 246px;" data-mc-conditions="" />
+                                                    <col style="width: 246px;" data-mc-conditions="" />
+                                                    <col />
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Vendor</th>
+                                                            <th>Task</th>
+                                                            <th>Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td>Block IPs with<span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.WAF_2 variable">WAF</span></td>
+                                                            <td>Request the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> appliance to block a list of IP addresses.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td><a href="tasks/incident-close.htm">Close Incident</a>
+                                                            </td>
+                                                            <td>Close an incident and provide the threat assessment.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td><a href="tasks/incident-reopen.htm">Reopen Incident</a>
+                                                            </td>
+                                                            <td>Reopen a closed incident.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td>
+                                                                <p>Run <span class="mc-variable ALVariables.Company variable">Alert Logic</span> MDR Action
+					</p>
+                                                            </td>
+                                                            <td>
+						Run an <span class="mc-variable ALVariables.Company variable">Alert Logic</span> MDR action for an <a href="https://alertlogic-sdk-python.readthedocs.io/en/latest/"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> service</a>.
+					</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td><a href="tasks/send-approval-user.htm">Send Approval Request to User</a>
+                                                            </td>
+                                                            <td>Request approval from a user via an email or a push notification to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> Mobile App.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td><a href="tasks/send-approval-channel.htm">Send Approval Request via Connection Target</a>
+                                                            </td>
+                                                            <td>Send an approval request to an application via a connection target.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td><a href="tasks/connector-send-incident.htm">Send Incident via Connector</a>
+                                                            </td>
+                                                            <td>
+                                                                <p>Send incident details or create a service ticket via a webhook or email connector.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.Company variable">Alert Logic</span>
+                                                            </td>
+                                                            <td><a href="tasks/incident-update.htm">Update Incident</a>
+                                                            </td>
+                                                            <td>Update an incident with threat assessment feedback. </td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span> WAF Block IP Address - CloudFront</td>
+                                                            <td>
+						Block an IP&#160;address in an Amazon CloudFront web distribution integrated with the  <span class="mc-variable ALVariables.AWS variable">AWS</span> WAF  (web application firewall) service.
+					</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span> WAF Block IP Address - Regional</td>
+                                                            <td>Block an IP&#160;address in a regional <span class="mc-variable ALVariables.AWS variable">AWS</span> WAF (web application firewall).</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span> WAF Unblock IP Address - CloudFront</td>
+                                                            <td>
+						Unblock an IP&#160;address in an Amazon CloudFront web distribution integrated with the  <span class="mc-variable ALVariables.AWS variable">AWS</span> WAF (web application firewall) service.
+					</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span> WAF Unblock IP Address - Regional</td>
+                                                            <td>Unblock an IP address in a regional <span class="mc-variable ALVariables.AWS variable">AWS</span> WAF (web application firewall).</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><a href="tasks/aws-disable-user.htm">Disable <span class="mc-variable ALVariables.AWS variable">AWS</span> User</a>
+                                                            </td>
+                                                            <td>Disable an <span class="mc-variable ALVariables.AWS variable">AWS</span> user and its access keys.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><a href="tasks/amazon-sns-publish.htm">Send Message to Amazon SNS Topic</a>
+                                                            </td>
+                                                            <td>
+						Trigger an action in <span class="mc-variable ALVariables.AWS variable">AWS</span> by sending a message. 					</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td>Run <span class="mc-variable ALVariables.AWS variable">AWS</span> Action
+					</td>
+                                                            <td>
+						Run any action supported by <a href="https://docs.aws.amazon.com/pythonsdk/?id=docs_gateway"> SDK for Python (Boto3) (AWS documentation)</a> for an <span class="mc-variable ALVariables.AWS variable">AWS</span> service.
+					</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td>Send Event to Amazon EventBridge
+					</td>
+                                                            <td>
+						Send events to Amazon EventBridge for a serverless infrastructure such as <span class="mc-variable ALVariables.AWS variable">AWS</span> Lambda.
+					</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td><span class="mc-variable ALVariables.AWS variable">AWS</span>
+                                                            </td>
+                                                            <td><a href="tasks/aws-waf-update-ip-set.htm">Update <span class="mc-variable ALVariables.AWS variable">AWS</span> WAF IP Set</a>
+                                                            </td>
+                                                            <td>Update an <span class="mc-variable ALVariables.AWS variable">AWS</span> <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> (web application firewall) IP set that controls access to a protected Amazon CloudFront distribution or regional application.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Microsoft</td>
+                                                            <td><a href="tasks/azure-disable-user.htm">Disable <span class="mc-variable ALVariables.Azure variable">Azure</span> AD User</a>
+                                                            </td>
+                                                            <td>Disable a user in <span class="mc-variable ALVariables.Azure_1 variable">Microsoft Azure</span> Active Directory (AD).</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Microsoft</td>
+                                                            <td><a href="tasks/azure-enable-user.htm">Enable <span class="mc-variable ALVariables.Azure variable">Azure</span> AD User</a>
+                                                            </td>
+                                                            <td>Enable a user in <span class="mc-variable ALVariables.Azure variable">Azure</span> AD.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Microsoft</td>
+                                                            <td><a href="tasks/teams-send-incident.htm">Send Incident to Microsoft Teams</a>
+                                                            </td>
+                                                            <td>Send incident details to Microsoft Teams via a connector.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td>Do Nothing</td>
+                                                            <td>Do nothing, such as while waiting for a parallel task to complete or when transitioning from one condition to another.</td>
+                                                        </tr>
+                                                        <tr style="height: 4px;" data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td>Format as CSV</td>
+                                                            <td>Format a list of JSON objects as a list of CSV strings.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td>Parse CSV</td>
+                                                            <td>Convert a list of CSV strings to a JSON&#160;object in which the first string contains the property names and the following strings contain the values.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td> Pause Playbook</td>
+                                                            <td>Pause running of the playbook.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td>Print Message</td>
+                                                            <td>Print a message to the playbook for troubleshooting purposes.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td>Run Remote Command</td>
+                                                            <td>Run a remote command securely with the SSH protocol.</td>
+                                                        </tr>
+                                                        <tr style="height: 4px;" data-mc-conditions="Primary.Draft Content">
+                                                            <td>General Operation</td>
+                                                            <td>Send HTTP Request</td>
+                                                            <td>
+					Invoke  REST API to carry out HTTP&#160;requests. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">This action supports specifying HTTP&#160;verbs, an authorization header, custom headers, and payload.</MadCap:conditionalText></td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td>PagerDuty</td>
+                                                            <td><a href="tasks/pagerduty-send-incident.htm">Send Incident to PagerDuty</a>
+                                                            </td>
+                                                            <td>Send incident details to PagerDuty via a connector.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.beta">
+                                                            <td>ServiceNow</td>
+                                                            <td><a href="tasks/servicenow-create-incident.htm">Create ServiceNow Incident</a>
+                                                            </td>
+                                                            <td>Create an incident in ServiceNow via a connector.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>ServiceNow</td>
+                                                            <td>Create ServiceNow Record</td>
+                                                            <td>Create a record in a ServiceNow table.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>ServiceNow</td>
+                                                            <td>Delete ServiceNow Record</td>
+                                                            <td>Delete a record from a ServiceNow table.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>ServiceNow</td>
+                                                            <td>Get ServiceNow Records</td>
+                                                            <td>Get records from a ServiceNow table.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>ServiceNow</td>
+                                                            <td>Update ServiceNow Record</td>
+                                                            <td>Update an existing record in a ServiceNow table.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>ServiceNow</td>
+                                                            <td>Upload Data to ServiceNow</td>
+                                                            <td>Upload data to a ServiceNow table as an attachment.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Slack</td>
+                                                            <td><a href="tasks/slack-send-incident.htm">Send Incident to Slack</a>
+                                                            </td>
+                                                            <td>Send incident details to Slack via a connector.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="">
+                                                            <td>Slack</td>
+                                                            <td><a href="tasks/post-message.htm">Send Message to Slack</a>
+                                                            </td>
+                                                            <td>Send a message to a Slack channel via a connection target.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>Zendesk</td>
+                                                            <td>Create Zendesk Ticket</td>
+                                                            <td>Create a ticket on Zendesk.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>Zendesk</td>
+                                                            <td>Search Zendesk Tickets</td>
+                                                            <td>Search tickets on Zendesk.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>Zendesk</td>
+                                                            <td>Update Zendesk Ticket</td>
+                                                            <td>Update a ticket on Zendesk.</td>
+                                                        </tr>
+                                                        <tr data-mc-conditions="Primary.Draft Content">
+                                                            <td>Zendesk</td>
+                                                            <td>Update Zendesk Ticket Status</td>
+                                                            <td>Update the status of a Zendesk ticket.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <h2>View task results (optional)<a name="Viewtaskresultsoptional"></a></h2>
+                                        <p>On the Results tab, you can view all results that the task generates. </p>
+                                        <p>If you want to make a result available as a variable for later tasks, you can publish it to the playbook context by adding it on the Output tab for the task or to the relevant task condition.</p>
+                                        <h2>Configure task output (optional)<a name="Configuretaskoutputoptional"></a></h2>
+                                        <div class="note">This section is under development.</div>
+                                        <p>On the Output tab, you can view the next playbook task, if any, after you add it. You can also add current task results or other output for use in later tasks. To add output, you define a variable that later tasks can reference. </p>
+                                        <p>If one or more conditions follow your task, the Output tab does not appear. You add the output when you set up the condition. The playbook then publishes the output into the playbook context if the condition is met. </p>
+                                        <p><b>To add output:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Click <b>ADD OUTPUT</b>.</li>
+                                            <li value="2">In <b>Variable Name</b>, enter a descriptive variable name. The name cannot include spaces or special characters except the underscore "_" character.</li>
+                                            <li value="3">In <b>Value</b>, type a fixed value or enter a YAQL expression to reference a value, for example, a current task result, a playbook input  parameter, or a playbook variable. <div class="example">Suppose that the current task creates a ticket in Zendesk, and you want to reference the resulting ticket ID in a later task.  You name the variable Zendesk_Ticket_ID. To enter a YAQL expression that references the ticket_id variable as the value, click <b>SELECT VARIABLE</b>, and then select ticket_id under <b>Current Task Results</b>. A YAQL expression that references the value  appears in the field: <code>&lt;% task(create_zendesk_ticket).result.result.ticket_id %&gt;</code>, where "<code>create_zendesk_ticket</code>" is the current task name.</div></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

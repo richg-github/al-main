@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "1",
+            "Action": [
+                "sqs:GetQueueUrl",
+				"sqs:Receivemessage",
+				"sqs:DeleteMessage"
+            ],
+            "Effect": "Allow",
+            "Resource": "<ARN_FOR_SQS_QUEUE>" 
+        },
+        {
+            "Sid": "2", 
+	        "Action": [ 
+	          "s3:GetObject" 
+	        ], 
+	       "Effect": "Allow", 
+	       "Resource": "arn:aws:s3:::<CLOUDTRAIL_S3BUCKET_NAME>/*" 
+        }
+    ]
+}

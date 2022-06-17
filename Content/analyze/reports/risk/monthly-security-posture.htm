@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="bhoofNormal _Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Analyze|Reports|Risk Reports" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="The Monthly Security Posture provides the current and historic security risk and health posture of your environment, vulnerabilities assessment, and threat analysis." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Monthly Security Posture Report</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Monthly Security Posture Report</h1>
+                                        <p>The Monthly Security Posture report provides the current and historic monthly security risk and health posture of your environment, including configuration and security remediations, risk posture overviews, vulnerabilities assessments, and threat analysis.</p>
+                                        <p>Use this report to prioritize opportunities to improve your overall security posture and optimize security collection, detection, and response capabilities deployed in your environment.</p>
+                                        <p>This report is composed of the following six pages:</p>
+                                        <ul>
+                                            <li>Summary</li>
+                                            <li>Configuration Remediations</li>
+                                            <li>Risk Index</li>
+                                            <li>Vulnerabilities</li>
+                                            <li>Security Remediations</li>
+                                            <li>Threats</li>
+                                        </ul>
+                                        <p>To page through the report, go to the next page, click the arrow icon (<img src="../../../Resources/Images/Reports/VulnerabilityHostExplorer/arrow.png" />) on the top right of the report. </p>
+                                        <p style="font-weight: bold;">To access the Monthly Security Posture report:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>, click the menu icon (<img src="../../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), and then click <img src="../../../Resources/Images/dashboard/validate-icon.png" style="vertical-align: bottom;" /><b>Validate</b>.</li>
+                                            <li value="2">Click <b>Reports</b>, and then click   <b>Risk</b>.</li>
+                                            <li value="3">Click <b>Security Posture</b>, and then click <b>Monthly Security Posture</b>.</li>
+                                        </ol>
+                                        <h2>Filter the report</h2>
+                                        <p style="font-weight: normal;">To refine your findings, filter your report by month and customer account name. </p>
+                                        <h3>Filter the report using drop-down menus</h3>
+                                        <p>By default, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> includes <b>(All)</b> filter values in the report. </p>
+                                        <p><b>To add or remove filter values: </b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">Click the drop-down menu in the filter, and then select or clear values. </li>
+                                            <li value="2">Click <b>Apply</b>. </li>
+                                        </ol>
+                                        <p>The report allows you to share its data by email, or download the report as an image, data, crosstab, or PDF file.</p>
+                                        <h2>Schedule the report</h2>
+                                        <p>After you finish setting up the report, you can  use <b>SCHEDULE THIS REPORT</b> to run it periodically and subscribe users or an integration (such as a webhook) to receive a notification when the report is generated. To learn how to schedule the report and subscribe notification recipients, see <a href="../../../configure/notifications/report.htm" class="MCXref xref">Scheduled Reports and Notifications</a>.</p>
+                                        <h2>Summary page</h2>
+                                        <p>The Summary page provides an overview of the contents analyzed within the pages of this report. </p>
+                                        <h3>Open Configuration Remediations section</h3>
+                                        <p>This section provides the total number of open configuration remediations for the previous month and the selected month, and the total change with percentage for open configuration remediations between those two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Open-configuration-remediations.png" />
+                                        </p>
+                                        <h3>Average Threat Risk Index (TRI) section</h3>
+                                        <p>This section provides the average TRI score for the previous month and the selected month, and the total change (and the percentage of change) of the TRI score between those two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Average-threat-risk-index.png" />
+                                        </p>
+                                        <h3>Vulnerabilities section</h3>
+                                        <p>This section provides the total number of vulnerabilities and assets with high severity vulnerabilities. </p>
+                                        <p style="font-weight: bold;"><span style="font-weight: bold;">Total Count</span>
+                                        </p>
+                                        <p>The top row provides the total number of vulnerabilities for the previous month and the selected month, and the total change (and the percentage of change) for the total number of vulnerabilities between those two months.</p>
+                                        <p><b>Assets with High Severity Vulnerabilities</b>
+                                        </p>
+                                        <p>The bottom row provides the total number of assets with high severity vulnerabilities for the previous month and the selected month, and the total change (and the percentage of change) for those assets between the two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Vulnerabilities.png" />
+                                        </p>
+                                        <h3>Threats section</h3>
+                                        <p>This section provides the  total number of incidents and the percentages of those incidents in the critical and high severity categories. </p>
+                                        <p><b>Total Incident Count</b>
+                                        </p>
+                                        <p>The top row provides the total number of incidents for the previous month and the selected month, and the total change with percentage for the number of incidents between those two months.</p>
+                                        <p><b>Critical and High Severity Percentage</b>
+                                        </p>
+                                        <p>The bottom row provides the percentages of incidents in the critical and high severity categories for the previous month and the selected month, and the total change (and the percentage of change) for those incidents in the critical and high severity categories between the two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Threats.png" />
+                                        </p>
+                                        <h2>Configuration Remediations page</h2>
+                                        <p>To see the Configuration Remediations page, click the arrow icon (<img src="../../../Resources/Images/Reports/VulnerabilityHostExplorer/arrow.png" />) on the top right of the Summary page. </p>
+                                        <p>The Configuration Remediations page provides an overview of the state of configuration remediations and how they are handled in the Remediations page of the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. </p>
+                                        <h3>Open Configuration Remediations section</h3>
+                                        <p>This section provides the total number of open configuration remediations for the previous month and the selected month, and the total change (and the percentage of change) of open configuration remediations between those two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Open-configuration-remediations.png" />
+                                        </p>
+                                        <h3>Average Remediation Age section</h3>
+                                        <p>This section provides the average number of days to add new configuration remediations to your planned remediations for the previous month and the selected month, and the percentage change of the average number of days between those two months. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Average-remediation-age.png" />
+                                        </p>
+                                        <h3>Mean Days to Complete section</h3>
+                                        <p>This section provides the average number of days to complete the configuration remediations added to your planned remediations for the previous month and the selected month, and the total change (and the percentage of change) of the average number of days to complete those remediations between those two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/mean-time-to-remediate.png" />
+                                        </p>
+                                        <h3>Unplanned Configuration Remediations by Asset section</h3>
+                                        <p>This section provides the number and percentage changes of configuration remediations, by asset type, that you did not add to your planned remediations for the last month, the selected month, and the total change (and the percentage of change) between those two months. The color-coded bars represent the percentage change of configuration remediations that went unplanned for that asset.</p>
+                                        <p>To view the number of unplanned configuration remediations from deployments, VPC/networks, or customer accounts, click the <b>Asset Type</b> drop-down menu on the top right of the graph, and then select the asset type you want to see.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Unplanned-Configuration-Remediations-by-Assets.png" />
+                                        </p>
+                                        <h3>Top Configuration Remediations by Impacted Assets section</h3>
+                                        <p>This section displays the configuration remediations with the most impacted assets in your environment for the selected month. The list is organized by customer account, deployment name, remediation, and number of impacted assets. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Top-Configuration-Remediations-by-Impacted-Assets.png" />
+                                        </p>
+                                        <h2>Risk Index page</h2>
+                                        <p>To see the Risk Index page, click the arrow icon (<img src="../../../Resources/Images/Reports/VulnerabilityHostExplorer/arrow.png" />) on the top right of the Configuration Remediations page. </p>
+                                        <p>The Risk Index page provides an overview of your TRI score trends by assets. </p>
+                                        <div class="note">
+                                            <p>The <b>Customer Account</b> filter impacts the TRI score and averages displayed in some sections of this page when there are multiple customer accounts. If you filter by all customer accounts,  the report displays the Average TRI Score across all customer accounts. If you filter by a single customer account, the report displays the TRI score (not the average) for the selected customer account. </p>
+                                        </div>
+                                        <h3>Threat Risk Index section</h3>
+                                        <p>This section provides the average TRI score for the previous month and the selected month, and the total change (and the percentage of change) for the TRI score between those two months. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Threat-Risk-Index.png" />
+                                        </p>
+                                        <h3>Threat Risk Index Trends section</h3>
+                                        <p>This section provides the daily TRI score trend of the last 14 days for the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Threat-Risk-Score-Trends.png" />
+                                        </p>
+                                        <h3>TRI Score and Vulnerabilities Change by Asset section</h3>
+                                        <p>This section provides the number and percentage changes of TRI scores, by asset type, for the previous month, and the selected month. The color-coded bars represent the percentage change of TRI score change between those two months. The report organizes the list by asset name, previous month, selected month, and the number and percentage change.</p>
+                                        <p>To view the TRI score changes from deployments, VPC/networks, or customer accounts, click the <b>Asset Type</b> drop-down menu on the top right of the graph, and then select the asset type you want to see.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/TRI-ScoreandVulnerabilities-Change-by-Asset.png" />
+                                        </p>
+                                        <h2>Vulnerabilities page</h2>
+                                        <p>To see the Vulnerabilities page, click the arrow icon (<img src="../../../Resources/Images/Reports/VulnerabilityHostExplorer/arrow.png" />) on the top right of the Risk Index page. </p>
+                                        <p>The Vulnerabilities page provides an overview of vulnerabilities found across your environment. </p>
+                                        <h3>Assets section</h3>
+                                        <p>This section provides a bar graph that displays the number of scanned assets and the number of vulnerable assets found in the selected month.</p>
+                                        <p> <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Assets.png" /></p>
+                                        <h3>Vulnerabilities section</h3>
+                                        <p>This section provides a bar graph that displays the total number of vulnerabilities found, the number of vulnerabilities seen for the first time, and the number of vulnerabilities in the high severity category in the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/VulnerabilitiesP4.png" />
+                                        </p>
+                                        <h3>Total Vulnerabilities section</h3>
+                                        <p>This section provides the total number of vulnerabilities found in the previous and the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/TotalVulnerabilities.png" />
+                                        </p>
+                                        <h3>Assets with High Severity Vulnerabilities section</h3>
+                                        <p>This section provides the number of assets with vulnerabilities in the high severity category in the previous month and the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/AssetswithHighSeverVulns.png" />
+                                        </p>
+                                        <h3>Vulnerabilities with Known Exploits section</h3>
+                                        <p>This section provides the number of vulnerabilities with known exploit code available in the previous month and the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Vulnerwith-Known-Exploits.png" />
+                                        </p>
+                                        <h3>Internet-Facing Vulnerabilities section</h3>
+                                        <p>This section provides the number of vulnerabilities found in external scans in the previous month and the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Internet-Facing-Vulnerabilities.png" />
+                                        </p>
+                                        <h3>Vulnerabilities by Asset and Severity section</h3>
+                                        <p>This section presents the distribution of assets and vulnerability severity categories in the previous and selected months displayed as color-coded circles. The size of the circles represents the total vulnerabilities in each severity category, while the color represents the month.</p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> assigns each vulnerability one of the following severities based on the CVSS v2 score set by the National Institute of Standards and Technology, and reported to the National Vulnerability Database:</p>
+                                        <table style="width: 100%;" cellspacing="0">
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Severity</th>
+                                                    <th>CVSS base score</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../../Resources/Images/Icons/threat_critical_icon.png" style="padding-right: 5px;" /> High</td>
+                                                    <td>7.0 - 10.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../../Resources/Images/Icons/threat_high_icon.png" style="padding-right: 5px;" />Medium</td>
+                                                    <td>4.0 - 6.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../../Resources/Images/Icons/threat_medium_icon.png" style="padding-right: 5px;" />Low</td>
+                                                    <td>0.1 - 3.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../../Resources/Images/Icons/threat_info_icon.png" style="padding-right: 5px;" />Informational</td>
+                                                    <td>0.0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>To see more information on a specific set of vulnerabilities, hover over a circle. </p>
+                                        <p>To view the distribution of assets and severity categories of vulnerabilities from deployments, VPC/networks, or customer accounts, click the <b>Asset Type</b> drop-down menu on the top right of the graph, and then select the asset type you want to see.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/VulnerabilitiesbyAssetandSeverity.png" />
+                                        </p>
+                                        <h2>Security Remediations page</h2>
+                                        <p>To see the Security Remediations page, click the arrow icon (<img src="../../../Resources/Images/Reports/VulnerabilityHostExplorer/arrow.png" />) on the top right of the Vulnerabilities page. </p>
+                                        <p>The Security Remediations page provides an overview of the state of security remediations and how they are handled in the Remediations page of the <span class="mc-variable ALVariables.ALUI variable">Alert Logic console</span>. </p>
+                                        <h3>Security Remediations section</h3>
+                                        <p>This section provides the total number of open security remediations for the previous month and the selected month, and the total change (and the percentage of change) of open security remediations between those two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/security-remediations.png" />
+                                        </p>
+                                        <h3>Average Remediation Age section</h3>
+                                        <p>This section provides the average number of days to add new security remediations to your planned remediations for the previous month and the selected month, and the (and the percentage of change) of the average days between those two months. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/average-remediation-age-security.png" />
+                                        </p>
+                                        <h3>Mean Days to Remediate section</h3>
+                                        <p>This section provides the average number of days to complete the security remediations added to your planned remediations for the previous month and the selected month, and the total change (and the percentage of change) of the average number of days to complete between those two months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/mean-time-to-remediate.png">
+                                            </img>
+                                        </p>
+                                        <h3>Unplanned Security Remediations by Asset section</h3>
+                                        <p>This section provides the number and percentage changes of security remediations, by asset type, that you did not add to your planned remediations for the last month, the selected month, and the total change with percentage between those two months. The color-coded bars on the right represents the percentage change of security remediations that went unplanned in that asset.</p>
+                                        <p>To view the number of unplanned security remediations from deployments, VPC/networks, or customer accounts, click the <b>Asset Type</b> drop-down menu on the top right of the graph, and then select the asset type you want to see.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Unplanned-Security-Remediations-by-Assets.png" />
+                                        </p>
+                                        <h3>Top Security Remediations by Impact Assets section</h3>
+                                        <p>This section displays the security remediations with the most impacted assets in your environment for the selected month. The list is organized by customer account, deployment name, remediation, and number of impacted assets. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Top-Security-Remediations-by-Impacted-Assets.png" />
+                                        </p>
+                                        <h2>Threats page</h2>
+                                        <p>To see the Threats page, click the arrow icon (<img src="../../../Resources/Images/Reports/VulnerabilityHostExplorer/arrow.png" />) on the top right of the Security Remediations page. </p>
+                                        <p>The Threats page provides an overview of threats found across your environment. </p>
+                                        <h3>Threat Collection section</h3>
+                                        <p>This section provides a color-coded bar graph that displays IDS traffic, log and <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> traffic in the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Threat-collection.png" />
+                                        </p>
+                                        <h3>Threat Detection section</h3>
+                                        <p>This section provides a graph that displays the total incidents, incidents in the critical or high threat level categories, and incidents that were escalated in the selected month.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/Threat-detection.png" />
+                                        </p>
+                                        <h3>Total Incidents section</h3>
+                                        <p>This section provides the total number of incidents in the selected month. </p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/TotalIncidents.png" />
+                                        </p>
+                                        <h3>Critical and High Incidents section</h3>
+                                        <p>This section provides the number of incidents in the critical or high threat level categories for the previous and selected months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/critical-high-incident.png" />
+                                        </p>
+                                        <h3>Assets with Critical or High Incidents section</h3>
+                                        <p>This section provides the number of assets with incidents in the critical or high threat level categories for the previous and selected months.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/assets-with-high-critical-incidents.png" />
+                                        </p>
+                                        <h3>Incidents by Asset and Threat Level section</h3>
+                                        <p>This section displays the distribution of assets and threat level categories of incidents for the previous and selected months presented in color-coded circles. The size of the circles represents the number of incidents in each threat level category while the  color represents the month. </p>
+                                        <p>The threat levels are the following:</p>
+                                        <ul>
+                                            <li>Critical: May represent a successful breach</li>
+                                            <li>High: Requires immediate attention</li>
+                                            <li>Medium: Requires closer observation and monitoring</li>
+                                            <li>Low: Common events</li>
+                                        </ul>
+                                        <p>To see more information on a specific set of incidents, hover over a circle. </p>
+                                        <p>To view the distribution of assets and severity categories of incidents from deployments, VPC/networks, or customer accounts, click the <b>Asset Type</b> drop-down menu on the top right of the graph, and then select the asset type you want to see.</p>
+                                        <p>
+                                            <img src="../../../Resources/Images/Reports/Monthly-Security-Posture/IncidentsbyAssetsandSeverity.png" />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="bhoofNormal _Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Prepare" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn about the Alert Logic virtual appliance for VMWare deployments and how to install the appliance to ensure that it runs at peak performance." />
+        <meta name="flareArticleId" content="a5e24eec-ea38-4329-91f8-c511750bbbd7" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Install and Configure the  Virtual Appliances</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="installLmVirtualApp"></a>Install and Configure the  Virtual Appliances</h1>
+                                        <p>Learn  about <span class="mc-variable ALVariables.Company variable">Alert Logic</span> appliances and how to install them to ensure that they run at peak performance.</p>
+                                        <h2>Install an <span class="mc-variable ALVariables.Company variable">Alert Logic</span> IDS virtual appliance</h2>
+                                        <p>The main use for an <span class="mc-variable ALVariables.Company variable">Alert Logic</span> virtual appliance is for network IDS analysis and scanning in VMWare deployments.</p>
+                                        <p>If you have experience with VMWare management tools and virtual machine installation, you can install a virtual appliance into your environment to collect network traffic and data.</p>
+                                        <p>The instructions below are not a complete guide to configure vSphere or virtual data centers. VMWare offers <a href="http://www.vmware.com/support/">more information regarding vSphere</a>. </p>
+                                        <div class="note">
+                                            <p style="font-weight: bold;">Data Center deployments only</p>
+                                            <p style="font-weight: normal;">For Data Center deployments, you must locate and copy your <b>Unique Registration Key</b>, which you need to install the <span class="mc-variable ALVariables.Agent/Remote_Collector variable">appliance</span>. </p>
+                                            <p style="font-weight: normal;"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> uses the Unique Registration Key to specify where the <span class="mc-variable ALVariables.Agent/Remote_Collector variable">appliance</span> is located.</p>
+                                            <p style="font-weight: bold;">To access your Unique Registration Key:</p>
+                                            <ol>
+                                                <li style="font-weight: normal;" value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, open the relevant Data Center deployment.</li>
+                                                <li style="font-weight: normal;" value="2">Under <b>Configuration Overview</b>, click <b>Installation Instructions</b>. </li>
+                                                <li style="font-weight: normal;" value="3">Copy your Unique Registration Key. </li>
+                                            </ol>
+                                        </div>
+                                        <h3><a name="downloadVirtualApp"></a>Download the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> IDS virtual appliance</h3>
+                                        <p>Before you download the virtual appliance, review the <a href="../requirements/appliance-requirements.htm">virtual appliance</a> requirements.</p>
+                                        <table>
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Link</th>
+                                                    <th>MD5</th>
+                                                    <th>Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="https://scc.alertlogic.net/software/threat-virtual-appliance_LATEST.ova">Latest Virtual Appliance link</a>
+                                                    </td>
+                                                    <td>c1d541b2e7c7c4cd08a9da32630a75a0</td>
+                                                    <td>VMWare image</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://scc.alertlogic.net/software/threat-virtual-appliance_LATEST.zip">Latest Virtual Appliance link</a>
+                                                    </td>
+                                                    <td>1e33f60226b68d9e08995820d9603e27</td>
+                                                    <td>Hyper-V</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table data-mc-conditions="Primary.Draft Content">
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Link</th>
+                                                    <th>Version</th>
+                                                    <th>MD5</th>
+                                                    <th>Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="https://scc.alertlogic.net/software/threat-virtual-appliance_LATEST.ova">Latest Virtual Appliance link</a>
+                                                    </td>
+                                                    <td>2.0</td>
+                                                    <td>0dd254c201b71bdb7c251c61b1ad84ec</td>
+                                                    <td>VMWare image</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&#160;</td>
+                                                    <td>1.9</td>
+                                                    <td>b5734be9bed1822283703fa86ee33a2f</td>
+                                                    <td>VMWare image</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://scc.alertlogic.net/software/threat-virtual-appliance_LATEST.zip">Latest Virtual Appliance link</a>
+                                                    </td>
+                                                    <td>&#160;</td>
+                                                    <td>fe890ca50d7467bebd95bf54a1b35353</td>
+                                                    <td>Hyper-V</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3><a name="installVirtualApp"></a>Install the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> IDS virtual appliance</h3>
+                                        <p>The appliance is configured with a 60 GB virtual drive.</p>
+                                        <p><b>To install a virtual <span class="mc-variable ALVariables.Company variable">Alert Logic</span> IDS appliance with vSphere:</b>
+                                        </p>
+                                        <ol style="font-size: 11pt;">
+                                            <li value="1">Save the virtual appliance image to your target machine.</li>
+                                            <li value="2">Import the file into vSphere.</li>
+                                            <li value="3">Power on the virtual machine.</li>
+                                            <li value="4">Configure your IP address. To manually assign an address, log into a serial console with the following credentials: setup/7739521</li>
+                                            <li value="5">In your browser, type: <b>http://&lt;YourVirtualApplianceIPAddress&gt;</b>.</li>
+                                            <li value="6">For Data Center deployments only, in <b>Unique Registration ID</b>, paste your unique registration key.</li>
+                                            <li value="7">Click <b>Start Claim Process</b>. A screen appears informing you that your appliance is provisioning. For status details, click <b>Go To Detailed Status</b>.</li>
+                                        </ol>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <h3>Install a virtual appliance on KVM</h3>
+                                            <p><b>Deploying on KVM</b>:</p>
+                                            <ol>
+                                                <li value="1">Download the qcow2 image from the portal.</li>
+                                                <li value="2">In order to keep a copy of the qcow2 image we will copy it where we want the virtual hard drive to live.<pre>root@kvm-01:~# mkdir /var/lib/libvirt/disks</pre><pre xml:space="preserve">root@kvm-01:~# cp /root/threat-virtual-appliance_LATEST-disk1.qcow2 </pre><pre xml:space="preserve">/var/lib/libvirt/disks/appliance-1.qcow2</pre><pre>root@kvm-01:~#</pre></li>
+                                                <li value="3">Use virt-install to provide the metadata that encapsulates the disk.<pre>virt-install \</pre><pre>--name appliance-1 \</pre><pre>--memory 16384 \</pre><pre>--vcpus 4 \</pre><pre>--disk /var/lib/libvirt/disks/appliance-1.qcow2 \</pre><pre>--import \</pre><pre>--os-variant rhel6 \</pre><pre>--noautoconsole</pre><ul><li>The <kbd>noautoconsole</kbd> flag returns you to the command prompt.</li><li>The import flag tells KVM to skip the disk creation and installation, and to instead use what is provided by --disk or --filesystem.</li></ul></li>
+                                                <li value="4">
+                                                    <p>In environments where DHCP is available, this process should work automatically. If you need to be able to interact with the console to login as the setup user, then you'll need to add the graphics flag.</p>
+                                                    <div class="example"><pre>1virt-install \</pre><pre>2   --name appliance-1 \</pre><pre>3   --memory 16384 \</pre><pre>4   --vcpus 4 \</pre><pre>5   --disk /var/lib/libvirt/disks/appliance-1.qcow2 \</pre><pre>6   --import \</pre><pre>7   --os-variant rhel6 \</pre><pre>8   --graphics vnc,listen=0.0.0.0 \</pre><pre>9   --noautoconsole</pre>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <p>This will create a VNC session on the host on port 5900. You can then login as the setup user and set the IP configuration as desired.</p>
+                                        </div>
+                                        <h2>Install an <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> virtual appliance</h2>
+                                        <p><span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span> is an add-on implemented per website as a filtering gateway to validate all requests to  web systems. The virtual appliance is for use in VMWare deployments.</p>
+                                        <h3><a name="downloadWAFVirtualApp"></a>Download the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> virtual appliance</h3>
+                                        <p>Click the download link in the customer onboarding email to download the ISO install image or create a ticket with <a href="https://support.alertlogic.com/hc/en-us/requests/new"><span class="mc-variable ALVariables.Company variable">Alert Logic</span> Support</a> to request a link to download.</p>
+                                        <h3>Install the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> virtual appliance</h3>
+                                        <p><b>To install the </b><span style="font-weight: bold;" class="mc-variable ALVariables.WAF_2 variable">WAF</span><b> virtual appliance with vSphere:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">
+                                                <p>In the vSphere client, create a new virtual machine with the following minimum specifications:</p>
+                                                <table>
+                                                    <col class="TableStyle-al_tablestyle-Column-Column1" style="width: 177px;" />
+                                                    <col class="TableStyle-al_tablestyle-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-al_tablestyle-Head-Header1">
+                                                            <th class="TableStyle-al_tablestyle-HeadE-Column1-Header1">Components</th>
+                                                            <th class="TableStyle-al_tablestyle-HeadD-Column1-Header1">System Requirements</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1" data-mc-conditions="">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Guest operating system</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">CentOS 64-bit</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">CPU</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">2 CPUs 64 bit</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">RAM</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">4 GB</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Disk space</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">250 GB</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Virtual network interface(s)</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1"> An interface with an external IP address for management<br />An interface with access to the web servers to be protected</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1" data-mc-conditions="">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">NIC type</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">em1000</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                            <td class="TableStyle-al_tablestyle-BodyE-Column1-Body1">Encryption/decryption for SSL&#160;traffic</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyD-Column1-Body1">AES-NI CPU instruction set for encryption/decryption of SSL traffic on VMs and host OS is recommended
+</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-al_tablestyle-Body-Body1">
+                                                            <td class="TableStyle-al_tablestyle-BodyB-Column1-Body1">Clustering</td>
+                                                            <td class="TableStyle-al_tablestyle-BodyA-Column1-Body1">For clustering to work, ensure promiscuous mode, forged transmits, and MAC address changes are allowed on the VMware virtual switch (vSwitch) or the port group in the VMware ESX network configuration
+</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li value="2">Mount the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> install ISO image, start the appliance on the image, and then follow the on-screen instructions.</li>
+                                            <li value="3">Restart the appliance.</li>
+                                            <li value="4">Verify appliance connectivity</li>
+                                            <li value="5">In the console, log in with the credentials <kbd>operator/changeme</kbd>.</li>
+                                            <li value="6">Run the <kbd>system backend verify</kbd> command. This test verifies that the appliance can connect to the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> backend systems.<div class="note"><p>Every test should report OK except the last test 216.52.175.200:123. This test will time out because the appliance has not been fully provisioned.</p></div></li>
+                                            <li value="7">Call the <span class="mc-variable ALVariables.ALSOC_1 variable">Alert Logic Security Operations Center (SOC)</span> at (877) 484-8383, option 2, and then request that a Managed <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> subject matter expert perform a connectivity test.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

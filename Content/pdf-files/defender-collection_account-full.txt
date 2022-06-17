@@ -1,0 +1,76 @@
+﻿{
+  "Version": "2012-10-17",
+  "Statement": [{
+      "Sid": "ReadExistingCloudTrailsTopic",
+      "Effect": "Allow",
+      "Action": [
+        "sns:gettopicattributes",
+        "sns:listtopics",
+        "sns:settopicattributes",
+        "sns:subscribe"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "BeAbleToListSQS",
+      "Effect": "Allow",
+      "Action": [
+        "sqs:ListQueues"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CreateAlertLogicSqsQueueToSubscribeToCloudTrailsSnsTopicNotifications",
+      "Effect": "Allow",
+      "Action": [
+        "sqs:CreateQueue",
+        "sqs:DeleteQueue",
+        "sqs:SetQueueAttributes",
+        "sqs:GetQueueAttributes",
+        "sqs:ReceiveMessage",
+        "sqs:DeleteMessage",
+        "sqs:GetQueueUrl"
+      ],
+      "Resource": "arn:aws:sqs:*:*:outcomesbucket*"
+    },
+    {
+      "Sid": "ReadExistingCloudTrailS3Bucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetBucketPolicy",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:GetObject"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CreateCloudTrailsTopicTfOneWasntAlreadySetupForCloudTrails",
+      "Effect": "Allow",
+      "Action": [
+        "sns:CreateTopic",
+        "sns:DeleteTopic"
+      ],
+      "Resource": "arn:aws:sns:*:*:outcomestopic"
+    },
+    {
+      "Sid": "CreateCloudTrailS3BucketIfCloudTrailsAreBeingSetupByAlertLogic",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:PutBucketPolicy",
+        "s3:DeleteBucket"
+      ],
+      "Resource": "arn:aws:s3:::outcomesbucket-*"
+    },
+    {
+      "Sid": "BeAbleToValidateOurRoleAndDiscoverIAM",
+      "Effect": "Allow",
+      "Action": [
+        "iam:List*",
+        "iam:Get*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

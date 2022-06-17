@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="Configure|Inline WAF" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Learn how to preserve the client IP address when using Alert Logic Managed Web Application Firewall (WAF)." />
+        <meta name="flareArticleId" content="141639aa-6ecc-40d3-93c7-d9504e333c06" />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Preserve the Client IP Address</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="preserveClientIP"></a>Preserve the Client IP Address</h1>
+                                        <p>HTTP requests often pass through one or more proxy servers before they reach the endpoint web server, which changes the source IP address for the request.  As a result, endpoint web servers cannot rely on the source IP from the network connection (socket) to be the IP address of the original request. For this reason, you may want to use one of two options to preserve the original client IP address: X-Forwarded-For (XFF), or transparent proxy. </p>
+                                        <h2 class="bhoofTop">X-Forwarded-For</h2>
+                                        <p>The XFF field in the HTTP header identifies the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer. The HTTP header field is the standard for preserving the client IP. </p>
+                                        <p><b>Key elements of X-Forwarded-For are the following</b>:</p>
+                                        <ul>
+                                            <li>Standards compliant approach</li>
+                                            <li>The default behavior of <span class="mc-variable ALVariables.WAF_2 variable">WAF</span></li>
+                                            <li>Client source IP is inserted in XFF header</li>
+                                            <li>Client source IP is present in the header even if the request has passed through other proxy servers</li>
+                                            <li>Better performance because connections to backend web servers can be kept alive</li>
+                                        </ul>
+                                        <p>The XFF  header identifies the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.</p>
+                                        <p>When the request passes through multiple proxy servers, each server adds its respective source IP to the XFF  header. This makes XFF header contain a list of IP addresses the request passed through. The leftmost IP address is the original client IP. The rightmost IP address is the second-to-last proxy in the chain, and the source IP of the request is the address of the last proxy.</p>
+                                        <p>This allows the endpoint web server that received the request to extract and log the original client IP address from the XFF header. </p>
+                                        <p>The <span class="mc-variable ALVariables.WAF_1 variable">Alert Logic Managed Web Application Firewall (WAF)</span>, as a proxy-based device, terminates requests from clients and makes requests to the backend web server on behalf of the client. The <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> forwards the source IP address to the backend server in the XFF header. This allows the original source IP available to the backend web application.</p>
+                                        <div class="example">
+                                            <p><b>Direct request through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span></b>
+                                            </p>
+                                            <p>A client with an IP address of 10.10.10.10 makes a direct request through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> with an IP address of 192.168.100.10. When the request reaches the web server, the XFF  header and source IP will be:</p>
+                                            <ul>
+                                                <li>Source IP: 192.168.100.10</li>
+                                                <li>XFF: 10.10.10.10</li>
+                                            </ul>
+                                            <p><b>Request through forward proxy through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span></b>
+                                            </p>
+                                            <p>A client with an IP address of 10.10.10.10 makes a request through a forward proxy with an IP address of 10.200.200.20, and through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> with an IP address of 192.168.100.10. When the request reaches the web server, the XFF  header and source IP will be:</p>
+                                            <ul>
+                                                <li>Source IP: 192.168.100.10</li>
+                                                <li>XFF: 10.10.10.10, 10.200.200.20</li>
+                                            </ul>
+                                            <p><b>Request through forward proxy through load balancer through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span></b>
+                                            </p>
+                                            <p>A client with an IP address of 10.10.10.10 makes a request through a forward proxy with an IP address of 10.200.200.20, through a load balancer with an IP address of 192.168.100.5, and through a <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> with an IP address of 192.168.100.10. When the request reaches the web server, the X-Forwarded-For header and source IP will be:</p>
+                                            <ul>
+                                                <li>Source IP: 192.168.100.10</li>
+                                                <li>XFF: 10.10.10.10, 10.200.200.20, 192.168.100.5</li>
+                                            </ul>
+                                        </div>
+                                        <h2 class="bhoofTop">X-Forwarded-For options </h2>
+                                        <p>If <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> deploys behind another reverse proxy, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> inserts the source IP from that proxy in the XFF  header sent to the backend web server. If the XFF  header is already present, the source IP appends to the header.</p>
+                                        <p>This configuration calls for <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to read the source IP from the XFF header. <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> uses it in place of the source IP for IP blocking functions, and when logging blocked requests. The client can set the XFF  header which should not be trusted by default. While this behavior conforms to standards, it is not always recommended if some or all requests pass through some other proxy server.</p>
+                                        <p>For that reason, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> only extracts a client source IP from the XFF header from those IP addresses that are designated as trusted proxies. When extracting the source IP from the header, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> uses the last IP address in the XFF  list.</p>
+                                        <h3>Reset X-Forwarded-For header to last untrusted source in list
+                </h3>
+                                        <p>The XFF header may contain a comma separated list of IP addresses. Depending on the configuration options in the endpoint web server and application, the XFF header may be logged as a comma separated list of IP addresses, which is not desirable.</p>
+                                        <p><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> can forward the XFF header as a single IP address. For applications that cannot select an IP address in the list, this configuration enables the XFF header as a replacement of the client source IP.</p>
+                                        <p style="font-weight: bold;">To enable the XFF  header: </p>
+                                        <ol>
+                                            <li value="1">On the Websites page, click the website you want to change.</li>
+                                            <li value="2">Click <b>ADC</b>, and then click <b>Virtual host</b>.</li>
+                                            <li value="3">Under <b>Trusted Proxy</b>, select  <b>Reset X-Forwarded-For header to last untrusted source in list</b>.</li>
+                                            <li value="4">Click <b>Save settings</b>, and then click <b>Apply changes</b>.</li>
+                                        </ol>
+                                        <p>When the XFF  header is enabled, the behavior differs depending on whether the request is from a trusted proxy or an untrusted proxy. </p>
+                                        <h4 style="font-weight: bold;"><b style="font-style: normal;">Trusted proxy</b>
+                                        </h4>
+                                        <p>If a trusted proxy makes the request, the list of IP addresses in the XFF  header replaces the last untrusted IP address in that list.</p>
+                                        <div class="example">
+                                            <p>A client with an IP address of 10.10.10.10 makes a request through a forward proxy with an IP address of 10.200.200.20 through a load balancer with an IP address of 192.168.100.5 that is designated as a trusted proxy; and then through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> with an IP address of 192.168.100.10. When the request reaches the web server, the XFF header and source IP are:</p>
+                                            <ul>
+                                                <li>Source IP: 192.168.100.10</li>
+                                                <li>X-Forwarded-For: 10.200.200.20</li>
+                                            </ul>
+                                        </div>
+                                        <h4 style="font-style: normal;"><b style="font-style: normal;">Untrusted proxy</b>
+                                        </h4>
+                                        <p>If an untrusted proxy makes the request, the list of IP addresses in the XFF header is replaced with the IP of the untrusted source.</p>
+                                        <div class="example">
+                                            <p> A client with an IP address of 10.10.10.10 makes a request through a forward proxy with an IP address of 10.200.200.20, through a load balancer with an IP address of 192.168.100.5, that is not designated as a trusted proxy; and then through <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> with an IP address of 192.168.100.10. When the request reaches the web server, the XFF  header and source IP will be:</p>
+                                            <ul>
+                                                <li>Source IP: 192.168.100.10</li>
+                                                <li>XFF: 192.168.100.5</li>
+                                            </ul>
+                                        </div>
+                                        <h3>Keep X-Forwarded-For header from trusted proxy</h3>
+                                        <p>When requests are received from a trusted proxy, you may want to leave the XFF  header unchanged and forward the header to the endpoint web server.</p>
+                                        <p style="font-weight: bold;">To configure your trusted proxy settings:</p>
+                                        <ol>
+                                            <li value="1">On the Websites page, click the website you want to change.</li>
+                                            <li value="2">Click <b>ADC</b>, and then click <b>Virtual host</b>.</li>
+                                            <li value="3">In the “List of trusted proxies,” add the IP address of one or more trusted proxies or networks as a single IP address or in CIDR notation.</li>
+                                            <li value="4">If you want the X-Forwarded-For header from the trusted proxies to be left unchanged, select <b>Forward X-Forwarded-For and X-Forwarded-Pro to headers from trusted proxy unaltered</b>.</li>
+                                            <li value="5">To reset the X-Forwarded-For header to the last source IP before either <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> or a trusted proxy, select <b>Reset X-Forwarded-For header to last untrusted source in list</b>.</li>
+                                            <li value="6">Click <b>Save settings</b>, and then click <b>Apply changes</b>. </li>
+                                        </ol>
+                                        <h2 class="bhoofTop">X-Forwarded-For web server and application configuration</h2>
+                                        <p>You can configure the endpoint application or web server to use the information in the XFF header rather than the client source IP. You can configure standard web applications like Wordpress, Drupal, and Sharepoint to use the XFF  header rather than the source IP. For server-based web analytic tools based on reading web server logs, you must configure the web server to log the XFF header information in addition to, or in place of, the client source IP.</p>
+                                        <p>However, the client can set the XFF header which results in the contents of the header being altered to contain false information. When <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>&#160;sets the XFF  header, the last address in the list cannot be forged. <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>&#160;receives a request of the source IP, which is the last address in the list.</p>
+                                        <p>Configure <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to replace the header with the last untrusted source IP to ensure the X-Forwarded-For header can be trusted.</p>
+                                        <p>In the following examples, where possible, the last IP address in the XFF  list is extracted from the header.</p>
+                                        <h3>IIS 7 and later</h3>
+                                        <p>To have IIS 7 log the XFF header, you must install the IIS Advanced Logging feature. You can download the module <a href="http://www.iis.net/downloads/microsoft/advanced-logging">here</a>.</p>
+                                        <p>After you install the module, you must add the XFF log field.</p>
+                                        <p><b>To add the log field</b>:</p>
+                                        <ol>
+                                            <li value="1">Open the <b>Add Fields</b> box</li>
+                                            <li value="2">Open IIS Manager.</li>
+                                            <li value="3">In the Connections navigation pane, click the appropriate server, website, or directory for which you want to configure advanced logging.</li>
+                                            <li value="4">On the Home page, in the IIS section, double-click <b>Advanced Logging</b>.</li>
+                                            <li value="5">Under <b>Actions</b> on the right, click <b>Edit Logging Fields</b>.</li>
+                                            <li value="6">Click <b>Add Fields</b>.</li>
+                                        </ol>
+                                        <p><b>To add your fields</b>:</p>
+                                        <ol>
+                                            <li value="1">In the Category list, select <b>Default</b>.</li>
+                                            <li value="2">In <b>Field ID</b>, type <kbd>X-Forwarded-For</kbd>.</li>
+                                            <li value="3">In the Source Type list, select <b>Request Header</b>.</li>
+                                            <li value="4">In the Source Name field, type <kbd>X-Forwarded-For</kbd>.</li>
+                                            <li value="5">In the <b>Add Logging</b> field, click <b>OK</b>.</li>
+                                        </ol>
+                                        <p><b>To define and enable advanced logging</b>:</p>
+                                        <ol>
+                                            <li value="1">Select a <b>Log Definition</b>. By default, there is only one: <kbd>%COMPUTERNAME%-Server</kbd>. The log definition you select must be <b>Enabled</b>.</li>
+                                            <li value="2">Under <b>Actions</b>, click <b>Edit Log Definition</b>.</li>
+                                            <li value="3">Click <b>Select Fields</b>, and then select <b>X-Forwarded-For logging field</b>.</li>
+                                            <li value="4">Click <b>OK</b>.</li>
+                                            <li value="5">Under <b>Actions</b>, click <b>Apply</b>.</li>
+                                            <li value="6">Click <b>Return To Advanced Logging</b>.</li>
+                                            <li value="7">Under <b>Actions</b>, click <b>Enable Advanced Logging</b>.</li>
+                                        </ol>
+                                        <h3>Apache Web Server</h3>
+                                        <p>Apache includes  built-in support for conditional logging based on environmental variables, which allows Apache Web Server to use the XFF header in place of the client source. This configuration is possible if the header is set and otherwise uses the client source IP.</p>
+                                        <div class="example">
+                                            <p>This example is based on the following standard log format definition:</p>
+                                            <p><kbd>LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-agent}i\"" combined CustomLog log/acces_log combined</kbd>
+                                            </p>
+                                            <p>To log the X-Forwarded-For header conditionally in place of the client source IP, change the above log definition to:</p>
+                                            <ol>
+                                                <li value="1"><kbd>LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined</kbd>
+                                                </li>
+                                                <li value="2"><kbd>LogFormat "%{X-Forwarded-For}i %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-Agent}i\"" proxy</kbd>
+                                                </li>
+                                                <li value="3"><kbd>SetEnvIf X-Forwarded-For "^.*\..*\..*\..*" forwarded</kbd>
+                                                </li>
+                                                <li value="4"><kbd>CustomLog "logs/access_log" combined env=!forwarded</kbd>
+                                                </li>
+                                                <li value="5"><kbd>CustomLog "logs/access_log" proxy env=forwarded</kbd>
+                                                </li>
+                                            </ol>
+                                            <p>In line 2, an additional log format which logs X-Forwarded-For in place of <kbd>%h</kbd> (remote host) is defined and named “proxy”.</p>
+                                            <p>In line 3, a simple regular expression matching an IP address is run against the X-Forwarded-Header and if it matches, an environment variable named “forwarded” is set.</p>
+                                            <p>In lines 4 and 5, the log formats are selected based on the status of the “forwarded” environment variable.</p>
+                                        </div>
+                                        <h3>Apache Tomcat</h3>
+                                        <p>For versions of Apache Tomcat greater than version 6.0.21 or Tomcat 7, Remote IP Valve can automatically log the XFF header. When an IP address is present in the XFF header, the valve automatically logs it in place of the source IP.</p>
+                                        <p>To load the valve, add <kbd>org.apache.catalina.valves.RemoteIpValve</kbd> to server.xml before the <kbd>AccessLogValve</kbd> declaration.</p>
+                                        <p>For more information, see <a href="http://www.techstacks.com/howto/configure-access-logging-in-tomcat.html">this document</a>. </p>
+                                        <h3>Wordpress and other PHP based applications</h3>
+                                        <p>To have functions that use <kbd>$_SERVER['REMOTE_ADDR']</kbd>, use the first IP address in the XFF header to replace the IP address in that variable with the last address in the XFF  list.</p>
+                                        <div class="example">
+                                            <p>For Wordpress, place the code below at the top of wp-config.php:</p>
+                                            <p><kbd>if(isset($_SERVER['HTTP_X_FORWARDED_FOR'])) { $xffaddrs = explode(',',$_SERVER['HTTP_X_FORWARDED_FOR']); $_SERVER['REMOTE_ADDR'] = end($xffaddrs); }</kbd>
+                                            </p>
+                                        </div>
+                                        <h3>Drupal</h3>
+                                        <p>Drupal directly supports operation behind a reverse proxy. Configuration options are similar to the <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> trusted proxy where it restricts the usage of the header to trusted proxies.</p>
+                                        <div class="example">
+                                            <p>To configure Drupal to run behind <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>, add the following lines at the bottom of the settings.php file:</p>
+                                            <p><kbd># Tell Drupal it's behind a proxy</kbd>
+                                            </p>
+                                            <p><kbd>$conf['reverse_proxy'] = TRUE;</kbd>
+                                            </p>
+                                            <p><kbd># Tell Drupal what addresses the proxy server(s) use</kbd>
+                                            </p>
+                                            <p><kbd>$conf['reverse_proxy_addresses'] = array('10.10.10.10','10.10.10.11');</kbd>
+                                            </p>
+                                            <p>Where 10.10.10.10 and 10.10.10.11 are the IP addresses of the two <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> nodes in a <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> cluster.</p>
+                                        </div>
+                                        <h3>Sharepoint</h3>
+                                        <p>If you want Sharepoint to use an IP address in the XFF  header in place of the source IP, you must install the  module, ARR helper.</p>
+                                        <p>As with Drupal, the module allows you to configure trusted proxies. For more information, <a href="http://blogs.iis.net/anilr/archive/2009/03/03/client-ip-not-logged-on-content-server-when-using-arr.aspx">see this article</a>.</p>
+                                        <h2 class="bhoofTop">Transparent proxy</h2>
+                                        <p>You can apply the transparent proxy as a configuration option to both the routing proxy and reverse proxy deployment modes. When client source IP is enabled, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> inserts the client source IP in the request to the backend web server. Because <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is spoofing the client source IP, this feature is sometimes called "client impersonation."</p>
+                                        <p>Transparent proxy preserves the client source IP in the HTTP requests, but can affect performance and availability. For every request, a new connection must be made, otherwise connections from other client IPs are used. The original client IP is inserted as the source IP of the connection made to the backend web server, and the newly created connection  impacts performance on the web server. When acting as a transparent proxy, <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> must be configured as the backend default gateway for the web server. Therefore, a transparent proxy requires an extra step, since the backend web server’s default gateway must change. For this reason, <span class="mc-variable ALVariables.Company variable">Alert Logic</span>&#160;does&#160;not recommend a transparent proxy mode if you deploy <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>&#160;with a load balancer for a high-performance environment. </p>
+                                        <p><b>Key elements of transparent proxy are the following</b>:</p>
+                                        <ul>
+                                            <li>Reinserts the client source IP before forwarding the request to the backend web environment.</li>
+                                            <li><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> inserts the client source IP as the source IP of the request it forwards to the backend web server.</li>
+                                            <li>You must configure backend web servers to us <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> as the default gateway for the backend server response to be returned to the client.</li>
+                                            <li>You must enable IP forwarding (routing) in <span class="mc-variable ALVariables.WAF_2 variable">WAF</span>.</li>
+                                            <li>Performance drawbacks may occur from connections from <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> to backend web servers.</li>
+                                            <li><span class="mc-variable ALVariables.WAF_2 variable">WAF</span> must be the default gateway. <div class="note"><p>The transparent proxy setting is only recommended for smaller deployments where <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is not deployed in combination with a load balancer.</p></div></li>
+                                        </ul>
+                                        <h3>Transparent proxy disadvantages</h3>
+                                        <p>Transparent proxy has some disadvantages in terms of performance, complexity of administration, and lack of transparency in how the HTTP stack operates. This includes availability risk, because other network equipment or server OSes may not accept the transparent proxy fundamentally “lying to the network.” Spoofing the client for every request made to the web server also causes performance issues because TCP connections to the backend web server cannot be kept open and re-used. The repeated re-establishment of the TCP connection introduces added latency, which affects user experience, and ultimately can affect search engine position.</p>
+                                        <p><b>Disadvantages of transparent proxy are the following</b>:</p>
+                                        <table style="width: 100%;">
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Caveat</th>
+                                                    <th>Reason</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Poor performance</td>
+                                                    <td>Lack of TCP keepalive</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Complicated to take out of line in case a problem occurs</td>
+                                                    <td>Web servers use the <span class="mc-variable ALVariables.WSM_OutBndWaf_2 variable">Web Security Manager</span> proxy as the default gateway, and must be re-configured to use the network default gateway for the stack to work without <span class="mc-variable ALVariables.WSM_OutBndWaf_2 variable">Web Security Manager</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Difficult to troubleshoot</td>
+                                                    <td>Part of the network configuration is done on the web server.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Availability is not guaranteed</td>
+                                                    <td>Transparent proxy relies on other network equipment and server OSes to accept it, which may not be the case after updates.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Testing is uncertain, including risks associated with applying updates and rebooting</td>
+                                                    <td>
+                                                        <p>Testing prior to releasing software updates to <span class="mc-variable ALVariables.WSM_OutBndWaf_2 variable">Web Security Manager</span> is more uncertain in regards to uncovering potential issues with transparent proxy, because it depends on the surrounding network to accept it. This increases the risk associated with applying updates and rebooting the appliance in customer-specific networks.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h3>Configure the transparent proxy</h3>
+                                        <p>To minimize the availability impact on the web properties, configure the transparent proxy in the order described below.</p>
+                                        <p>If <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> is deployed as a cluster, create a cluster interface with a VIP that is reachable by the backend web servers.</p>
+                                        <ol>
+                                            <li value="1">On the Websites page, click <b>Services</b>, and then click <b>Network</b>.</li>
+                                            <li value="2">Select <b>Enable IP Forwarding</b> in Network routing.</li>
+                                            <li value="3">Check the Network segmentation table to verify routing does not violate network segmentation settings. Edit the segmentation table if necessary. By default, routing cannot cross network interfaces.</li>
+                                            <li value="4">Configure backend web servers to use <span class="mc-variable ALVariables.WAF_2 variable">WAF</span> as the default gateway.</li>
+                                        </ol>
+                                        <p><b>To configure the transparent proxy for each website in the website list:</b>
+                                        </p>
+                                        <ol>
+                                            <li value="1">On the Websites page, under <b>ADC</b>, click <b>Virtual host</b>.</li>
+                                            <li value="2">In the Client Source IP, under Transparent Proxy, select <b>Preserve client source IP</b>.</li>
+                                            <li value="3">In the <b>ADC</b> tab, click <b>Load balancing</b>.</li>
+                                            <li value="4">In the Advance settings, clear <b>Enable real server keepalive</b>.</li>
+                                            <li value="5">Click <b>Save settings</b>, and then click <b>Apply changes</b>.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

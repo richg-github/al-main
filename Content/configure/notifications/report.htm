@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="Configure|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="You can schedule an Alert Logic report to run periodically and receive an email notification when the report is generated." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" /><title>Scheduled Reports and Notifications</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Scheduled Reports and Notifications</h1>
+                                        <p>You can schedule an <span class="mc-variable ALVariables.PST_Product variable">Alert Logic</span> report to run periodically and receive an email notification when the report is generated. If you need to generate a compliance report on a regular schedule, for example, you can schedule the report and then receive the report or a confirmation that the report generated successfully. Scheduled reports also offer <span class="mc-variable ALVariables.Company variable">Alert Logic</span> partners a way to generate reports regularly and deliver them to their customers.</p>
+                                        <p>Reports generated from schedules are saved and available for review and download. When the report is ready, a notification can be sent to your email, emails of other users, or even a <a href="../connectors.htm">connector</a> like a webhook. </p>
+                                        <p>For more information about the Notifications feature, see <a href="../notifications.htm" class="MCXref xref">Notifications</a> and <a href="manage.htm" class="MCXref xref">Manage Notifications</a>.</p>
+                                        <h2><a name="Create"></a>Create a report schedule and notification</h2>
+                                        <p>After you set up the report you want to schedule, you can create the schedule and subscribe users and/or a connector to receive a notification when the report is ready. </p>
+                                        <p style="font-weight: bold;">To create a report schedule and notification:</p>
+                                        <ol>
+                                            <li value="1">In the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, click the menu icon (<img src="../../Resources/Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />).</li>
+                                            <li value="2">Click <img src="../../Resources/Images/dashboard/validate-icon.png" style="vertical-align: bottom;" /><b>Validate</b>,  click <b>Reports</b>, and then access the report you want to schedule. </li>
+                                            <li value="3" data-mc-conditions="Primary.Draft Content">From the <b>Reports</b> page in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>,  access the report you want to schedule.</li>
+                                            <li value="4">Set up the report criteria<MadCap:conditionalText data-mc-conditions="Primary.inBhoofAndDev"> if the report is interactive</MadCap:conditionalText>.</li>
+                                            <li value="5">Click <b>SCHEDULE THIS&#160;REPORT</b> to open the Schedule a Report page.</li>
+                                            <div class="note" data-mc-conditions="Primary.NOTinBHOOF">Some reports such as the Current Vulnerability Finder, List of Vulnerabilities, and Current Vulnerabilities Breakdown cannot be scheduled because they are tabular reports primarily downloaded as CSV files not PDF files.  If the report cannot be scheduled, the option appears grayed out.</div>
+                                            <div class="note">Some reports such as the Current Vulnerability Finder  cannot be scheduled.  If the report cannot be scheduled, the option appears grayed out.</div>
+                                            <li value="6">Type a descriptive name for the report schedule<span style="font-family: 'Microsoft Sans Serif'">—</span>for example, "Daily Health Summary Report for Security Team."</li>
+                                            <li value="7">If you want the schedule to be active, leave  <b>Schedule Is Active</b> turned on. Turn it off if you want to save the schedule but not activate it yet. </li>
+                                            <li value="8" data-mc-conditions="Primary.inBhoofAndDev">Select a report option. Available options can vary according to report contents.<ul><li><b>Summary (PDF File)</b>—Contains the report visualization only in a PDF&#160;file.</li><li><b>Full (PDF File)</b>—Contains the full report, including visualizations and any tabular data, in a PDF file.</li><li><b>Data Only (CSV File)</b>—Contains all data  fields for the report in a CSV file that is compressed with gzip.</li><li><b>Summary and Data (Compressed File)</b>— Contains the summary report (visualizations only) in a PDF&#160;file and the data fields in a CSV file. The files are compressed with gzip.</li></ul></li>
+                                            <li value="9">Specify how often you want to generate the report. For reports designed to be generated daily, weekly, or monthly, the frequency is selected for you.<ul><li><b>Daily</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Every day, generates the report for the previous day.  </li><li data-mc-conditions="Primary.NOTinBHOOF"><b>Weekly</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Every Monday, generates the report for the previous calendar week (Monday<span style="font-family: 'Microsoft Sans Serif'">—</span>Sunday). </li><li data-mc-conditions="Primary.NOTinBHOOF"><b>Monthly</b><span style="font-family: 'Microsoft Sans Serif'">—</span>The first day of the month, generates the report for the previous calendar month. </li><li data-mc-conditions="Primary.inBhoofAndDev"><b>Weekly</b><span style="font-family: 'Microsoft Sans Serif'">—</span>On the day you select, generates the report for the previous calendar week (Monday<span style="font-family: 'Microsoft Sans Serif'">—</span>Sunday).</li><li data-mc-conditions="Primary.inBhoofAndDev"><b>Monthly</b><span style="font-family: 'Microsoft Sans Serif'">—</span>On the day of the month you select, generates the report for the previous calendar month.</li><li data-mc-conditions="Primary.inBhoofAndDev"><b>Run Once</b><span style="font-family: 'Microsoft Sans Serif'">—</span>Available for non-interactive reports only, generates the report immediately for the period you select. For a monthly report, for example, you can choose to generate a report for the last month or an earlier one.</li></ul></li>
+                                            <li value="10">Select the time you want <span class="mc-variable ALVariables.Company variable">Alert Logic</span> to generate the report, using the 24-hour clock standard. <MadCap:conditionalText data-mc-conditions="Primary.inBhoofAndDev">You can schedule some reports only during specific hours to avoid generating an empty or incomplete report. </MadCap:conditionalText><span class="mc-variable ALVariables.Company variable">Alert Logic</span> schedules the report in the time zone reported by your web browser. </li>
+                                            <li value="11">(Optional) Under <b>Report Settings</b>, check the report criteria.  <MadCap:conditionalText data-mc-conditions="Primary.inBhoofAndDev">This area appears only for interactive reports. </MadCap:conditionalText>If you want to change the settings, click <b>CANCEL</b> to go back to the report and change the criteria there. To change the report settings for an existing schedule, set up the report with the new settings, create the schedule, and then delete the old schedule if you want.</li>
+                                            <li value="12">To subscribe users to receive a notification email, click <b>Subscribe User(s)</b>, and then:<ol style="list-style-type: lower-alpha;"><li value="1">Under <b>Notification Delivery</b>, select the users that you want to receive the notification. The list includes your name and user names in the customer account. You can use the search bar to help you find recipients. </li><li value="2">(Optional) Customize the <b>Email Subject</b>. You can change the text and insert variables enclosed with double braces: {{<i>variable</i>}}. For the variable list, see <a href="#Emailsubjectvariables" class="MCXref xref">Email subject variables</a>.</li><li value="3" data-mc-conditions="Primary.NOTinBHOOF">If you want to send the report as a PDF file attachment, select the <b>Attach PDF File</b> check box. If you leave it cleared, the email will provide only a link to the Downloads page with the list filtered to display the report generated by the schedule.<div class="note">The PDF report attachment is unencrypted and may contain sensitive information about your organization.</div></li><li value="4" data-mc-conditions="Primary.inBhoofAndDev">If you want to attach the generated report to the email, select the <b>Attach File</b> check box. If you leave it cleared, the email provides a link to the Downloads page instead, with the list filtered to display the report generated by the schedule.<div class="note">The report attachment is unencrypted and may contain sensitive information about your organization.</div></li></ol></li>
+                                            <li value="13"> To subscribe a connector to receive a notification, click <b>Subscribe Connector</b>, and then select a configured connector under <b>Notification Delivery</b>. The connector URL will receive the payload listed.</li>
+                                            <li value="14">Click <b>SAVE</b>.</li>
+                                        </ol>
+                                        <h2>Email subject variables<a name="Emailsubjectvariables"></a></h2>
+                                        <p>To customize the subject line of an email notification, you can add the following variables to the Email Subject field:</p>
+                                        <table style="width: 100%;">
+                                            <col style="width: 365px;" data-mc-conditions="" />
+                                            <col data-mc-conditions="" />
+                                            <col data-mc-conditions="" />
+                                            <thead>
+                                                <tr>
+                                                    <th>Variable</th>
+                                                    <th>Description</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>{{artifact_create_date}}</td>
+                                                    <td>Date and time when the report was generated</td>
+                                                    <td>2020-05-11 12:00 GMT</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{cadence}}</td>
+                                                    <td>Frequency of report generation and when it is run</td>
+                                                    <td>Daily, 12:00 GMT</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>{{cid}}</p>
+                                                    </td>
+                                                    <td>Customer account identifier</td>
+                                                    <td>12345678</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{customer_name}}</td>
+                                                    <td>Customer name of the <span class="mc-variable ALVariables.Company variable">Alert Logic</span> account where the report was generated</td>
+                                                    <td>XYZ Corporation</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{report_id}}</td>
+                                                    <td>Report identifier</td>
+                                                    <td>20200511-120000-652A6542-D5F7-3E0C-7290-AD4F789B61E0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{report_type}}</td>
+                                                    <td>Name of scheduled report as displayed in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span></td>
+                                                    <td>Daily Health Summary</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{schedule_id}}</td>
+                                                    <td>Schedule identifier</td>
+                                                    <td>652A6542-D5F7-3E0C-7290-AD4F789B61E0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{scheduled_report_name}}</td>
+                                                    <td>Report schedule name</td>
+                                                    <td>Daily Health Summary Report for Security Team</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h2>View and manage report schedules and notifications</h2>
+                                        <p>You can view and manage report schedules and their notifications from the Notifications page, listed under <img src="../../Resources/Images/dashboard/manage-icon.png" style="vertical-align: bottom;" /> <b>Manage</b> in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">To access the Notifications page, click the Settings icon (<img src="../../Resources/Images/supportThreeDots.png" />) in the <span class="mc-variable ALVariables.ALUI_1 variable">Alert Logic console</span>, and then click <b>Notifications</b>.</MadCap:conditionalText>The Schedules tab on the Notifications page lists existing report schedules and  the number of recipients notified when the scheduled report is generated.<MadCap:conditionalText data-mc-conditions="Primary.inBhoofAndDev"> A schedule does not appear for non-interactive reports generated with the <b>Run Once</b> option.</MadCap:conditionalText></p>
+                                        <p>See <a href="manage.htm" class="MCXref xref">Manage Notifications</a> for information about how to:</p>
+                                        <ul>
+                                            <li>Filter the list</li>
+                                            <li>View report schedule details</li>
+                                            <li>Delete report schedules and notifications</li>
+                                            <li>Edit report schedules and notifications</li>
+                                            <li>View the interactive report related to a schedule</li>
+                                            <li>Open a list of reports generated by a schedule</li>
+                                        </ul>
+                                        <h2>View list of generated reports<a name="Viewlistofgeneratedreports"></a></h2>
+                                        <p>The Downloads page lists all reports generated by your report schedules. From this page, you can download and manage generated reports. To access the Downloads page, click the Downloads tab on the Reports page. </p>
+                                        <p>The list includes all reports in your customer account and its managed accounts. You can narrow the set of reports listed  by using the filters in the left navigation. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">You can also group and sort the reports with tools available toward the top of the page.</MadCap:conditionalText></p>
+                                        <h3><a name="filter-report-list"></a>Filter the report downloads list</h3>
+                                        <p> The Downloads page lists all reports generated from report schedules. You can  apply filters to narrow the list to a specific set of reports. </p>
+                                        <p style="font-weight: bold;">To filter the report downloads list:</p>
+                                        <ol>
+                                            <li value="1">In the left navigation, click any of the filters to narrow the list. Available filters vary according to the schedules in your environment and filters you select.<ul><li>Display<span style="font-family: 'Microsoft Sans Serif'">—</span>You can use this filter to display the latest reports only.</li><li>Schedule<span style="font-family: 'Microsoft Sans Serif'">—</span>You can use this filter to display only the reports generated by a specific schedule</li></ul></li>
+                                            <li value="2">To search for a filter, type a filter value in <b>search filters</b>. For example, you can quickly find downloads for a specific schedule by typing part of the schedule name.</li>
+                                            <li value="3">To clear filters and start over, delete text from <b>search filters</b> (if applicable) or select <b>CLEAR ALL FILTERS</b>.</li>
+                                        </ol>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <h3><a name="organize-report-list"></a>Organize the generated report list</h3>
+                                            <p>In addition to filtering the reports list, you can organize the reports by grouping and sorting the list. <span class="mc-variable ALVariables.PST_Product variable">Alert Logic</span> groups your reports by report type and sorts them by date within each grouping. You can group and sort the reports by other criteria to suit your needs.</p>
+                                            <p>Organizing the list of generated reports is similar to <a href="#organize">organizing the report schedule list</a>.</p>
+                                        </div>
+                                        <h3><a name="search-report-list"></a>Search by date to filter the list</h3>
+                                        <p>You can use the date range drop-down menu at the top of the downloads list to filter the reports by generation date. Click the menu and then use the calendar to select a date range.</p>
+                                        <h3><a name="download-report"></a>Download a report generated by a schedule</h3>
+                                        <p>To the right of the report you want to download, click <b>Download</b>. If you select more than one report, the download is a compressed file containing the selected report files.</p>
+                                        <h3><a name="delete-report"></a>Delete reports generated by a schedule</h3>
+                                        <p>Click the  icon next to one or more reports you want to delete, and then click the <b>DELETE</b> icon.</p>
+                                        <p>If you want to delete all reports currently listed, select the check box at the top of the list. On the bar that appears at the bottom of the page, click the <b>DELETE</b> icon. </p>
+                                        <div data-mc-conditions="Primary.Draft Content">
+                                            <h2>View and manage report schedules and notifications</h2>
+                                            <p>The Report Schedules page  lists existing report schedules and  the number of users or connectors that receive a notification when the scheduled report is generated. You can view and manage scheduled reports  from this page.</p>
+                                            <p>The list includes all report schedules in your customer account and its managed accounts.  You can use filters in the left navigation to narrow the set of report schedules listed. You can also group and sort the schedules with tools available toward the top of the page.</p>
+                                            <p>You can click  <b>View</b> next to a specific report schedule to see details about and manage the schedule.</p>
+                                            <p>
+                                                <p>For more information, see:</p>
+                                                <ul>
+                                                    <li><a href="#access" class="MCXref xref">Access the report schedule list</a>
+                                                    </li>
+                                                    <li><a href="#filter" class="MCXref xref">Filter the report schedule list</a>
+                                                    </li>
+                                                    <li><a href="#organize" class="MCXref xref">Organize the report schedule list</a>
+                                                    </li>
+                                                    <li><a href="#search" class="MCXref xref">Search the report schedule list</a>
+                                                    </li>
+                                                    <li><a href="#view" class="MCXref xref">View and manage report schedules</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="note">You can also view and manage report schedules and notifications from the <a href="manage.htm">Notifications page</a>.</div>
+                                            </p>
+                                            <h3><a name="access"></a>Access the report schedule list</h3>
+                                            <p>From the Reports page, click the <b>Report Schedules</b> tab to open the report schedule list.</p>
+                                            <h3><a name="filter"></a>Filter the report schedule list</h3>
+                                            <p>The Report Schedules page displays all active report schedules created from the customer account and its managed accounts. You can also display inactive or deleted schedules, and apply additional filters to narrow the list to a specific set of schedules. </p>
+                                            <p style="font-weight: bold;">To filter the report schedule list:</p>
+                                            <ol>
+                                                <li value="1">In the left navigation, click the schedule status of interest: <ul><li><b>Active</b></li><li><b>Inactive</b> (schedule is saved but not turned on)</li><li><b>Deleted</b></li></ul></li>
+                                                <li value="2">Click any of the filters to further narrow the list. Available filters vary according to the schedules in your environment and filters you select.<ul><li>Managed Accounts</li><li>Recipients</li><li>Customers</li><li>Report Category</li><li>Report Subcategory</li><li>Report Subcategory 2</li><li>Schedules</li><li>Scheduling Cadence</li></ul></li>
+                                                <li value="3">To search for a filter, type a filter value in <b>Search filters</b>. For example, you can quickly find schedules for a specific report by typing part of the report name.</li>
+                                                <li value="4">To clear filters and start over, delete text from <b>Search filters</b> (if applicable) or select <b>CLEAR ALL FILTERS</b>.</li>
+                                            </ol>
+                                            <div class="example">
+                                                <p> To display your own report schedules, you can select yourself as recipient.</p>
+                                            </div>
+                                            <h3><a name="organize"></a>Organize the report schedule list</h3>
+                                            <p>In addition to filtering the report schedules, you can organize them  by grouping and sorting the list. <span class="mc-variable ALVariables.PST_Product variable">Alert Logic</span> groups your report schedules by report type and sorts them by date within each grouping. You can group and sort the schedules by other criteria to suit your needs. </p>
+                                            <p style="font-weight: bold;">To organize your report schedules:</p>
+                                            <ol>
+                                                <li value="1">To change the grouping, click <b>Group by</b>, and then click the option you want. <MadCap:conditionalText data-mc-conditions="Primary.Draft Content">Available options match the filters listed in the left panel.</MadCap:conditionalText></li>
+                                                <li value="2">To change the way the list of alert notifications is sorted within each grouping, click <b>Sort by</b>, and then click the option you want. Available options include Name, Create Time, and Updated Time.<MadCap:conditionalText data-mc-conditions="Primary.Draft Content"> Available options include Date and filters listed in the left panel.</MadCap:conditionalText></li>
+                                            </ol>
+                                            <h3><a name="search"></a>Search the report schedule list</h3>
+                                            <p>You can use the Search bar toward the upper-right corner of the page to highlight schedules that contain specific search words. You can search by schedule name, recipients, and filter names.</p>
+                                            <h3><a name="view"></a>View and manage report schedules</h3>
+                                            <p>You can view the details about a specific report schedule. From the detail view, you can edit or delete the report schedule, view the interactive report from which the schedule was created, and view a list of reports generated by the schedule. Examples of editing capabilities include:</p>
+                                            <ul>
+                                                <li>Make the schedule active or inactive</li>
+                                                <li>Change the scheduling cadence</li>
+                                                <li>Subscribe or unsubscribe users or connector</li>
+                                                <li>Change delivery options</li>
+                                            </ul>
+                                            <p><b>To view details about a schedule:</b>
+                                            </p>
+                                            <ol>
+                                                <li value="1">From the Reports page, click the <b>Report Schedules</b> tab.</li>
+                                                <li value="2">To the right of the schedule you want to view, click <b>View</b>.</li>
+                                                <li value="3">When you are finished viewing notification details, click <b>Hide</b>.</li>
+                                            </ol>
+                                            <p style="font-weight: bold;">To delete a report schedule:</p>
+                                            <ol>
+                                                <li value="1">From the Reports page, click the <b>Report Schedules</b> tab.</li>
+                                                <li value="2">To the right of the schedule you want to delete, click <b>View</b>.</li>
+                                                <li value="3">Toward the bottom of the detail view, click the <b>DELETE</b> icon.</li>
+                                            </ol>
+                                            <p>Deleted notifications are moved from Active to Deleted status.</p>
+                                            <p style="font-weight: bold;">To edit a report schedule:</p>
+                                            <ol>
+                                                <li value="1">From the Reports page, click the <b>Report Schedules</b> tab.</li>
+                                                <li value="2">To the right of the schedule you want to edit, click <b>View</b>.</li>
+                                                <li value="3">Toward the bottom of the detail view, click the <b>EDIT</b> icon.</li>
+                                                <li value="4">In the Edit Report Schedule page, change any of the settings.</li>
+                                            </ol>
+                                            <p><b>To view the interactive report related to a schedule:</b>
+                                            </p>
+                                            <ol>
+                                                <li value="1">From the Reports page, click the <b>Report Schedules</b> tab.</li>
+                                                <li value="2">To the right of the report schedule, click <b>View</b>.</li>
+                                                <li value="3">Toward the bottom of the detail view, click the <b>VIEW INTERACTIVE&#160;REPORT</b> icon.</li>
+                                            </ol>
+                                            <p><b>To open a list of reports generated by a schedule:</b>
+                                            </p>
+                                            <ol>
+                                                <li value="1">From the Reports page, click the <b>Report Schedules</b> tab.</li>
+                                                <li value="2">To the right of the report schedule, click <b>View</b>.</li>
+                                                <li value="3">Toward the bottom of the detail view, click the <b>VIEW PAST REPORTS</b> icon.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

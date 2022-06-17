@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation_Skin" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Prepare" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="zd-site-verification" content="9muqcovj07pyvoduai2al" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Use Windows or SSH credentials to perform host-level authenticated scanning for more accurate vulnerability scans and fewer false positive results." />
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Authenticated Scanning</title>
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>@import url('https://richg-github.github.io/al-styles/override-main.css');
+
+</style>
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="1545x1545" href="../../Skins/Favicons/AlertLogic_Logo_2C_RGB_V_Standard.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="button-separator">
+                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <div>
+                                                    <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                        <div class="button-icon"> </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="authScanning"></a>Authenticated Scanning</h1>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> allows you to use credentials to perform host-level authenticated scanning. Using Windows or Secure Shell (SSH) credentials as part of your scans allows for more accurate vulnerability scans and lowers the number of false positive results.</p>
+                                        <h2><a name="windowsAuthScan"></a>Windows authenticated scanning</h2>
+                                        <p>Windows authenticated scanning is an authenticated network-based method for interrogating the target machine for missing security-related patches and updates.</p>
+                                        <p>To run Windows authenticated scanning, you must set up the following parameters:</p>
+                                        <ul>
+                                            <li style="font-weight: normal;"><b>Credentials</b>—<span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning needs a local or domain administrator account to accurately assess the patch level of your computers.</li>
+                                            <li style="font-weight: normal;"><b>Network access to RPC/WMI, NetBIOS, or SMB/CIFS ports</b>—<span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning requires access to RPC/WMI (135/tcp, 49152-65535/tcp), NetBIOS (139/tcp, 137/udp, 138/udp), or SMB/CIFS (445/tcp adn445/udp). Network or personal firewalls blocking access to any of these protocols will prevent access to Windows patch scanning.</li>
+                                            <li style="font-weight: normal;"><b>Enable Remote Registry services</b>—The Remote Registry service must be enabled and started. Verify this from the Administrative Control Panel under Services.</li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>If the authentication failed, the scan report will list Exposure ID: 16205 - Local Checks Error.</p>
+                                        </div>
+                                        <p><b>To set up a dedicated user for scanning:</b>
+                                        </p>
+                                        <p>Use the following procedure to set up a dedicated user that <span class="mc-variable ALVariables.Company variable">Alert Logic</span> can use for authenticated scanning.</p>
+                                        <ol>
+                                            <li value="1">Click <b>Start</b>, type <kbd>lusrmgr.msc</kbd>, and then press <b>Enter</b>.</li>
+                                            <li value="2">Right-click the <b>Users</b> folder, and then click <b>New User</b>.<br /></li>
+                                            <li value="3">On the <b>New User</b> window:<ol style="list-style-type: lower-alpha;"><li value="1">In <b>User Name</b>, type a new user name (for example, <kbd>Alert Logic Dedicated Scanning User</kbd>).</li><li value="2">In <b>Password</b>, type a password.</li><li value="3">In <b>Confirm Password</b>, type the password again.</li><li value="4">Click <b>Create</b>.<br /></li></ol></li>
+                                            <li value="4">After the window refreshes, indicating successful user creation, click <b>Close</b>.</li>
+                                            <li value="5">Click the <b>Groups</b> folder, right-click <b>Administrators</b>, and then click <b>Add to Group</b>.<br /></li>
+                                            <li value="6">On the <b>Administrators Properties</b> window, click <b>Add</b>.<br /></li>
+                                            <li value="7">On the <b>Select Users</b> window, in <b>Enter the object names to select</b>, type the newly created user (for example, <kbd>Alert Logic</kbd>), and then click <b>Check Names</b>.<br /></li>
+                                            <li value="8">After the window refreshes, reflecting any changes and user confirmation, click <b>OK</b>.<br /></li>
+                                            <li value="9">On the <b>Administrators Properties</b> window, confirm that the user appears under <b>Members</b>, and then click <b>OK</b>.<br /></li>
+                                            <li value="10">Close <b>lusrmgr</b>.</li>
+                                        </ol>
+                                        <p><b>To set up WMI:</b>
+                                        </p>
+                                        <p>The <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanner needs to connect to Windows Management Instrumentation (WMI) on the machine, in addition to remote registry, to pull version information from .dll and .exe files, as well as information stored within Windows Management services and settings. Unlike UNIX and Linux, which come with SSH secure remote access where the system can log on and interrogate things as a user, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning requires the administrative privileges due to the limitations of methods available to remotely access Windows machines. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning does not make registry changes and does not write to the machine. To learn more about registry keys, refer to the Microsoft documentation <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724878%28v=vs.85%29.aspx">here</a>.</p>
+                                        <p>The Open Vulnerability and Assessment Language (OVAL®) method is the preferred method of network-based patch scanning. The scanner uses the OVAL method for assessing Windows-based machines for a variety of Microsoft-specific and third-party application security patches.</p>
+                                        <p>WMI comes installed on all Microsoft operating systems. The following procedure describes how to enable remote access to WMI. </p>
+                                        <p style="font-weight: bold;">To enable remote WMI requests:</p>
+                                        <ol>
+                                            <li value="1">On the target server, go to <b>Administrative Tools</b>, <b>Computer Management</b>.</li>
+                                            <li value="2">Expand <b>Services and Applications</b>.</li>
+                                            <li value="3">Right-click <b>WMI Control</b>, and then select <b>Properties</b>.<br /></li>
+                                            <li value="4">Select the <b>Security</b> tab.</li>
+                                            <li value="5">Click <b>Security</b>.<br /></li>
+                                            <li value="6">Add the scan user (if needed), and then be sure to select <b>Remote Enable</b> for the user/group that will be requesting WMI data.<br /></li>
+                                        </ol>
+                                        <h3>Further Investigation</h3>
+                                        <p>If the above steps did not help, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> recommends installing the WMI Administrative Tools from Microsoft. This includes a WMI browser that will let you connect to a remote machine and browse through the WMI information. That will help to isolate any issues in a more direct and simple environment. When the WMI browser can access a remote machine, <span class="mc-variable ALVariables.Company variable">Alert Logic</span> should have access as well.</p>
+                                        <h2><a name="unixLinuxAuthScan"></a>UNIX/Linux authenticated scanning
+		</h2>
+                                        <p>All UNIX and Linux authenticated scanning (security patch scanning) is performed with SSH access using a standard user account.<br /></p>
+                                        <p><b>UNIX/Linux operating system types</b>
+                                        </p>
+                                        <p><span class="mc-variable ALVariables.Company variable">Alert Logic</span> scanning supports the following operating systems for authenticated scanning:</p>
+                                        <ul>
+                                            <li>Amazon Linux AMI</li>
+                                            <li>CentOS</li>
+                                            <li>Debian</li>
+                                            <li>Fedora</li>
+                                            <li>RedHat</li>
+                                            <li>SuSe</li>
+                                            <li>Ubuntu</li>
+                                        </ul>
+                                        <p style="font-weight: bold;">
+            Commands used by the UNIX/Linux authenticated scan
+        </p>
+                                        <ul>
+                                            <li style="font-weight: normal;">cat</li>
+                                            <li style="font-weight: normal;">ls</li>
+                                            <li style="font-weight: normal;">pwd</li>
+                                            <li style="font-weight: normal;">awk</li>
+                                            <li style="font-weight: normal;">sed</li>
+                                            <li style="font-weight: normal;">ps</li>
+                                            <li style="font-weight: normal;">cd</li>
+                                            <li style="font-weight: normal;">echo</li>
+                                            <li style="font-weight: normal;">grep</li>
+                                            <li style="font-weight: normal;">tail</li>
+                                            <li style="font-weight: normal;">head</li>
+                                            <li style="font-weight: normal;">uname</li>
+                                            <li style="font-weight: normal;">hostname</li>
+                                            <li style="font-weight: normal;">exit</li>
+                                            <li style="font-weight: normal;">dpkg (debian)</li>
+                                            <li style="font-weight: normal;">dpkg-query (debian)</li>
+                                            <li style="font-weight: normal;">rpm (linux)</li>
+                                        </ul>
+                                        <div class="note">
+                                            <p>If the authentication failed, the scan report will list Exposure ID: 16205 - Local Checks Error.</p>
+                                        </div>
+                                        <h2><a name="authAWSEnv"></a>Authenticated scanning in an <span class="mc-variable ALVariables.AWS_1 variable">Amazon Web Services (AWS)</span> environment</h2>
+                                        <p>For authenticated scans to work properly in your environment, you must set your <span class="mc-variable ALVariables.AWS variable">AWS</span> security groups to allow full access by the scanning appliance. Doing so allows an appliance to communicate with client instances, so the authenticated scan can detect all possible vulnerabilities and configuration issues. <span class="mc-variable ALVariables.Company variable">Alert Logic</span> installs appliances alongside the instances inside each Amazon VPC.</p>
+                                        <p>By default, security groups are set up to allow full communication among group members. If you modify the default settings, authenticated scans may not reflect a full picture of your instance.</p>
+                                        <h3><a name="credStorage"></a>Credential storage</h3>
+                                        <table>
+                                            <col />
+                                            <col />
+                                            <col />
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>Encryption type</th>
+                                                    <th>Notes</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Front end web traffic</td>
+                                                    <td>TLS 1.2 and AES 256 bit encryption, via HTTPS</td>
+                                                    <td>User credentials are encrypted using the public key from the  FusionVM server, and only the FusionVM server can decrypt the information.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>FusionVM back end</td>
+                                                    <td>RSA and Api call EncryptByAsymKey, 2048 bit key length</td>
+                                                    <td>Encryption of user passwords and authentication credentials for scanned systems is handled by MS-SQL server.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Scanning appliances</td>
+                                                    <td>RSA and DSA, 2048 bit key length</td>
+                                                    <td>
+                                                        <p>Encryption by OpenSSH in SSH connections between the Appliance and the FusionVM server.</p>
+                                                        <p>Scanning appliances do not have anything encrypted on the appliances except the password file for appliance login authentication.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

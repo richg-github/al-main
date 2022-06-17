@@ -1,0 +1,7 @@
+﻿{
+    "Sid": "AWSCloudTrailSNSPolicy20131101",
+    "Effect": "Allow",
+    "Principal": {"Service": "cloudtrail.amazonaws.com"},
+    "Action": "SNS:Publish",
+    "Resource": "ReceivingAccountSNSTopicARN"
+}

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol MadCap:conditions="Primary.excludeDevInBhoof">
+            <li>In the <MadCap:variable name="ALVariables.ALUI_1" />, click the navigation menu icon (<img src="../../../Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), click <img src="../../../Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b>, and then click <b>Connectors</b>.</li>
+            <li>Click the <b>Connection Targets</b> tab.</li>
+            <li>On the Connection Targets page, click the add icon (<img src="../../../Images/Icons/cdAddPlus.png" style="vertical-align: text-bottom;" />), and then click <b><MadCap:variable name="ALVariables.Connector_Type" /></b>. </li>
+            <li>On the Create a <MadCap:variable name="ALVariables.Connector_Type" /> Connection page, type a descriptive name for the connection target <span style="font-family: 'Microsoft Sans Serif'">—</span>for example, "<MadCap:variable name="ALVariables.Connector_Type" /> Connection Target".</li>
+            <li>In  <b>Base URL</b>, replace &lt;myinstance&gt; with the <MadCap:variable name="ALVariables.Connector_Type" /> instance name identified earlier.</li>
+            <li>In <b>Authorization Header</b>, paste the authorization header you generated <MadCap:annotation MadCap:createDate="2022-02-24T09:00:37.3816125-06:00" MadCap:creator="bob.baskin" MadCap:initials="BO" MadCap:comment="Might not have to for Jira/JSD?" MadCap:editor="bob.baskin" MadCap:editDate="2022-02-24T09:00:43.0543390-06:00">earlier</MadCap:annotation>.</li>
+            <li>In <b>Custom Header(s)</b>, <MadCap:annotation MadCap:createDate="2022-04-08T13:32:36.0476090-05:00" MadCap:creator="kimberly.heintschel" MadCap:initials="KI" MadCap:comment="Previously worded as &quot;In Custom Header(s), leave the information as is. The field is prepopulated with the custom headers that  Jira requires.&quot;\r\n\r\nEach header on a separate line" MadCap:editor="kimberly.heintschel" MadCap:editDate="2022-04-11T09:20:39.4258952-05:00">leave the following default HTTP header</MadCap:annotation> that <MadCap:variable name="ALVariables.Connector_Type" /> requires or customize the headers for advanced integrations. <p><code>Content-Type: application/json</code><br /></p><p>If you add headers, each HTTP header name-value pair must be on a separate line.</p></li>
+            <li>Click <b>SAVE</b>.</li>
+        </ol>
+        <ol MadCap:conditions="Primary.beta">
+            <li>In the <MadCap:variable name="ALVariables.ALUI_1" />, click the navigation menu icon (<img src="../../../Images/dashboard/menu-icon.png" style="vertical-align: bottom;" />), click <img src="../../../Images/dashboard/configure-icon.png" style="vertical-align: bottom;" /><b>Configure</b>, and then click <b>Connections</b>.</li>
+            <li>On the Connections page, click the add icon (<img src="../../../Images/Icons/cdAddPlus.png" style="vertical-align: text-bottom;" />), and then click <b><MadCap:variable name="ALVariables.Connector_Type" /></b>. </li>
+            <li>On the Create a <MadCap:variable name="ALVariables.Connector_Type" /> Connection page, type a descriptive name for the connection<span style="font-family: 'Microsoft Sans Serif'">—</span>for example, "<MadCap:variable name="ALVariables.Connector_Type" /> Connection".</li>
+            <li>In  <b>Base URL</b>, replace &lt;myinstance&gt; with the <MadCap:variable name="ALVariables.Connector_Type" /> instance name identified earlier.</li>
+            <li>In <b>Authorization Header</b>, paste the authorization header you generated <MadCap:annotation MadCap:createDate="2022-02-24T09:00:37.3816125-06:00" MadCap:creator="bob.baskin" MadCap:initials="BO" MadCap:comment="Might not have to for Jira/JSD?" MadCap:editor="bob.baskin" MadCap:editDate="2022-02-24T09:00:43.0543390-06:00">earlier</MadCap:annotation>.</li>
+            <li>In <b>Custom Header(s)</b>, <MadCap:annotation MadCap:createDate="2022-04-08T13:32:36.0476090-05:00" MadCap:creator="kimberly.heintschel" MadCap:initials="KI" MadCap:comment="Previously worded as &quot;In Custom Header(s), leave the information as is. The field is prepopulated with the custom headers that  Jira requires.&quot;\r\n\r\nEach header on a separate line" MadCap:editor="kimberly.heintschel" MadCap:editDate="2022-04-11T09:20:39.4258952-05:00">leave the following default HTTP header</MadCap:annotation> that <MadCap:variable name="ALVariables.Connector_Type" /> requires or customize the headers for advanced integrations. <p><code>Content-Type: application/json</code><br /></p><p>If you add headers, each HTTP header name-value pair must be on a separate line.</p></li>
+            <li>Click <b>SAVE</b>.</li>
+        </ol>
+    </body>
+</html>

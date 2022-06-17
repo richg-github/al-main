@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div MadCap:conditions="Primary.excludeDevInBhoof">
+            <p>Decide which type of security information that you want <MadCap:variable name="ALVariables.Company" /> to send to <MadCap:variable name="ALVariables.Connector_Type" />:&#160;Incident, Observation (of a log correlation), or a Scheduled Report Notification payload. </p>
+            <div class="note">If you want to send more than one payload type, you must configure a connector for each one. Because the payload is different, each payload type requires a separate connector instance. </div>
+            <p><MadCap:variable name="ALVariables.Company" /> provides a <MadCap:annotation MadCap:createDate="2020-08-27T08:40:21.0162329-05:00" MadCap:creator="kimberly.heintschel" MadCap:initials="KI" MadCap:comment="Added wording about Mustache and linked to https://mustache.github.io/mustache.5.html in the note below" MadCap:editor="kimberly.heintschel" MadCap:editDate="2020-08-31T10:57:10.5627438-05:00">payload template</MadCap:annotation> for an incident and an observation <MadCap:variable name="ALVariables.Connector_Payload_Format" />. A payload template converts the <MadCap:variable name="ALVariables.Company" /> security information to the format expected by <MadCap:variable name="ALVariables.Connector_Type" />. You can add or remove lines in the sample template to meet your workflow requirements and security goals. <MadCap:conditionalText MadCap:conditions="SnippetConditions.ExcludedText">You must replace placeholder information in angle brackets with valid values. </MadCap:conditionalText>If you want to create a <MadCap:variable name="ALVariables.Connector_Type" /> connector for scheduled report notifications, you will need to configure the payload template. </p>
+            <p>For definitions of the <MadCap:variable name="ALVariables.Company" /> variables in the templates and the full  JSON that you can use to configure your payload template in JQ or JSON&#160;format, see:</p>
+            <ul>
+                <li>
+                    <MadCap:xref href="../../../configure/connectors/incident.htm">Incident Schema</MadCap:xref>
+                </li>
+                <li>
+                    <MadCap:xref href="../../../configure/connectors/observation.htm">Observation Schema</MadCap:xref>
+                </li>
+                <li>
+                    <MadCap:xref href="../../../configure/connectors/scheduled-report-notification-payload.htm">Scheduled Report Notification Schema</MadCap:xref>
+                </li>
+            </ul>
+        </div>
+        <div MadCap:conditions="Primary.beta">
+            <p>Decide which type of security information that you want <MadCap:variable name="ALVariables.Company" /> to send to <MadCap:variable name="ALVariables.Connector_Type" />:&#160;Incident, Observation (of a log correlation),  Scheduled Report Notification, or Health Notification payload. </p>
+            <div class="note">If you want to send more than one payload type, you must configure a templated connection for each one. Because the payload is different, each payload type requires a separate templated connection instance. </div>
+            <p><MadCap:variable name="ALVariables.Company" /> provides a <MadCap:annotation MadCap:createDate="2020-08-27T08:40:21.0162329-05:00" MadCap:creator="kimberly.heintschel" MadCap:initials="KI" MadCap:comment="Added wording about Mustache and linked to https://mustache.github.io/mustache.5.html in the note below" MadCap:editor="kimberly.heintschel" MadCap:editDate="2020-08-31T10:57:10.5627438-05:00">template</MadCap:annotation> for each payload type <MadCap:variable name="ALVariables.Connector_Payload_Format" />. A payload template converts the <MadCap:variable name="ALVariables.Company" /> security information to the format expected by <MadCap:variable name="ALVariables.Connector_Type" />. You can add or remove lines in the sample template to meet your workflow requirements and security goals. <MadCap:conditionalText MadCap:conditions="SnippetConditions.ExcludedText">You must replace placeholder information in angle brackets with valid values. </MadCap:conditionalText> </p>
+            <p>For definitions of the <MadCap:variable name="ALVariables.Company" /> variables in the templates and the full  JSON that you can use to configure your payload template in JQ or JSON&#160;format, see:</p>
+            <ul>
+                <li>
+                    <MadCap:xref href="../../../configure/connections/templated/incident.htm">Incident Schema</MadCap:xref>
+                </li>
+                <li>
+                    <MadCap:xref href="../../../configure/connections/templated/observation.htm">Observation Schema</MadCap:xref>
+                </li>
+                <li>
+                    <MadCap:xref href="../../../configure/connections/templated/scheduled-report-notification.htm">Scheduled Report Notification Schema</MadCap:xref>
+                </li>
+                <li>
+                    <MadCap:xref href="../../../configure/connections/templated/health.htm">Health Schema</MadCap:xref>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
