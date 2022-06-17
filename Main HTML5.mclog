@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2021 r2 Generated Main HTML5.fltar" Date="2022-06-17T11:28:26.6245490+01:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2021 r2 Generated Main HTML5.fltar" Date="2022-06-17T15:26:22.4240787+01:00">
     <Messages>Compiling target Main HTML5...
 Removing previously generated content...
 Loading skin info...
@@ -2442,7 +2442,7 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
 Ignored Compiler Warnings: 3532
-Output generated in 2 minute(s) and 49 second(s).
+Output generated in 2 minute(s) and 41 second(s).
 
 Done
 Saving log to "C:\Users\Rich Green\Documents\Development\docs.alertlogic.com\Output\Rich_Green\Main HTML5\Main HTML5.mclog"
